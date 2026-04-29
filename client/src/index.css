@@ -1,0 +1,616 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ============================================================
+   CLASSUP DESIGN SYSTEM — v4 locked
+   Philosophy: "Editorial restraint with strategic colour."
+   Mood: Linear · The Atlantic · Notion
+   Font: Plus Jakarta Sans
+   ============================================================ */
+
+@theme inline {
+  /* ClassUp brand colours */
+  --color-cu-cream: #F5F2EC;
+  --color-cu-card: #FFFFFF;
+  --color-cu-lavender-tint: #EEEDFE;
+  --color-cu-mint-tint: #EAF3DE;
+  --color-cu-amber-tint: #FAEEDA;
+  --color-cu-navy: #1F2745;
+  --color-cu-black-cta: #1A1A1A;
+
+  --color-cu-lavender: #7F77DD;
+  --color-cu-lavender-deep: #534AB7;
+  --color-cu-lavender-darkest: #26215C;
+  --color-cu-headline: #1A1A1A;
+  --color-cu-body: #444444;
+  --color-cu-muted: #888888;
+  --color-cu-subtle-dark: #B8A8E8;
+
+  --color-cu-strong-bg: #EAF3DE;
+  --color-cu-strong-text: #4A7515;
+  --color-cu-strong-pill: #639922;
+  --color-cu-ontrack-bg: #EEEDFE;
+  --color-cu-ontrack-text: #534AB7;
+  --color-cu-ontrack-pill: #7F77DD;
+  --color-cu-support-bg: #FAEEDA;
+  --color-cu-support-text: #B36B0A;
+  --color-cu-support-pill: #EF9F27;
+
+  --color-cu-border: #E8E4D8;
+  --color-cu-border-faint: #F0EDE5;
+  --color-cu-border-strong: #D3D1C7;
+
+  --color-cu-amber-dark: #FAC775;
+  --color-cu-mint-dark: #9FE1CB;
+
+  /* Radius tokens */
+  --radius-pill: 999px;
+  --radius-large: 24px;
+  --radius-medium: 20px;
+  --radius-card: 16px;
+  --radius-tile: 14px;
+  --radius-element: 12px;
+  --radius-small: 8px;
+
+  /* Tailwind theme overrides */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  --color-background: var(--color-cu-cream);
+  --color-foreground: var(--color-cu-headline);
+  --color-card: var(--color-cu-card);
+  --color-card-foreground: var(--color-cu-headline);
+  --color-popover: var(--color-cu-card);
+  --color-popover-foreground: var(--color-cu-headline);
+  --color-primary: var(--color-cu-black-cta);
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: var(--color-cu-lavender-tint);
+  --color-secondary-foreground: var(--color-cu-lavender-deep);
+  --color-muted: var(--color-cu-cream);
+  --color-muted-foreground: var(--color-cu-muted);
+  --color-accent: var(--color-cu-lavender-tint);
+  --color-accent-foreground: var(--color-cu-lavender-deep);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-destructive-foreground: oklch(0.985 0 0);
+  --color-border: var(--color-cu-border);
+  --color-input: var(--color-cu-border);
+  --color-ring: var(--color-cu-lavender);
+  --color-sidebar: var(--color-cu-card);
+  --color-sidebar-foreground: var(--color-cu-headline);
+  --color-sidebar-primary: var(--color-cu-black-cta);
+  --color-sidebar-primary-foreground: #FFFFFF;
+  --color-sidebar-accent: var(--color-cu-lavender-tint);
+  --color-sidebar-accent-foreground: var(--color-cu-lavender-deep);
+  --color-sidebar-border: var(--color-cu-border);
+  --color-sidebar-ring: var(--color-cu-lavender);
+}
+
+:root {
+  --radius: 1rem;
+  --background: #F5F2EC;
+  --foreground: #1A1A1A;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A1A;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A1A;
+  --primary: #1A1A1A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #EEEDFE;
+  --secondary-foreground: #534AB7;
+  --muted: #F5F2EC;
+  --muted-foreground: #888888;
+  --accent: #EEEDFE;
+  --accent-foreground: #534AB7;
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: #E8E4D8;
+  --input: #E8E4D8;
+  --ring: #7F77DD;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1A1A1A;
+  --sidebar-primary: #1A1A1A;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #EEEDFE;
+  --sidebar-accent-foreground: #534AB7;
+  --sidebar-border: #E8E4D8;
+  --sidebar-ring: #7F77DD;
+}
+
+/* Dark mode disabled — cream is the brand */
+/* .dark { ... } intentionally omitted */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background-color: #F5F2EC;
+    color: #1A1A1A;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  a[href],
+  select:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1100px;
+    }
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  /* ---- Typography utilities ---- */
+  .cu-h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 0.97;
+    letter-spacing: -0.035em;
+    color: #1A1A1A;
+  }
+  @media (min-width: 768px) {
+    .cu-h1 { font-size: 56px; }
+  }
+  @media (min-width: 1024px) {
+    .cu-h1 { font-size: 72px; }
+  }
+
+  .cu-h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    color: #1A1A1A;
+  }
+  @media (min-width: 768px) {
+    .cu-h2 { font-size: 32px; }
+  }
+  @media (min-width: 1024px) {
+    .cu-h2 { font-size: 36px; }
+  }
+
+  .cu-h2-card {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+  }
+  @media (min-width: 768px) {
+    .cu-h2-card { font-size: 28px; }
+  }
+
+  .cu-h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #1A1A1A;
+  }
+  @media (min-width: 768px) {
+    .cu-h3 { font-size: 22px; }
+  }
+
+  .cu-eyebrow {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #7F77DD;
+  }
+
+  .cu-body-large {
+    font-size: 17px;
+    line-height: 1.55;
+    color: #444444;
+  }
+  @media (min-width: 768px) {
+    .cu-body-large { font-size: 19px; }
+  }
+
+  .cu-body {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444444;
+  }
+
+  .cu-body-card {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444444;
+  }
+
+  .cu-italic-accent {
+    font-style: italic;
+    color: #7F77DD;
+    font-weight: 700;
+  }
+
+  /* ---- CTA buttons ---- */
+  .cu-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 24px;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    transition: opacity 0.15s ease;
+    white-space: nowrap;
+  }
+  .cu-btn-primary:hover {
+    opacity: 0.85;
+  }
+  .cu-btn-primary:focus-visible {
+    outline: 2px solid #7F77DD;
+    outline-offset: 2px;
+  }
+
+  .cu-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #FFFFFF;
+    color: #1A1A1A;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 13px 23px;
+    border-radius: 999px;
+    border: 1px solid #D3D1C7;
+    text-decoration: none;
+    transition: background-color 0.15s ease;
+    white-space: nowrap;
+  }
+  .cu-btn-secondary:hover {
+    background-color: #F5F2EC;
+  }
+  .cu-btn-secondary:focus-visible {
+    outline: 2px solid #7F77DD;
+    outline-offset: 2px;
+  }
+
+  /* ---- Cards ---- */
+  .cu-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #E8E4D8;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  .cu-card-large {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    border: 1px solid #E8E4D8;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  /* ---- Status badges ---- */
+  .cu-badge-strong {
+    display: inline-flex;
+    align-items: center;
+    background-color: #639922;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  .cu-badge-ontrack {
+    display: inline-flex;
+    align-items: center;
+    background-color: #7F77DD;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  .cu-badge-support {
+    display: inline-flex;
+    align-items: center;
+    background-color: #EF9F27;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  /* ---- Tinted tiles ---- */
+  .cu-tile-mint {
+    background-color: #EAF3DE;
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .cu-tile-amber {
+    background-color: #FAEEDA;
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .cu-tile-lavender {
+    background-color: #EEEDFE;
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .cu-tile-cream {
+    background-color: #F5F2EC;
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  /* ---- Section spacing ---- */
+  .cu-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  @media (min-width: 1024px) {
+    .cu-section {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+
+  /* ---- Sticky CTA bar ---- */
+  .cu-sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #7F77DD;
+    color: #FFFFFF;
+    z-index: 40;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  .cu-sticky-cta.visible {
+    transform: translateY(0);
+  }
+
+  /* ---- Floating Ask Luna button ---- */
+  .cu-ask-luna {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #7F77DD;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(127,119,221,0.35);
+    z-index: 50;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .cu-ask-luna:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(127,119,221,0.45);
+  }
+  @media (max-width: 767px) {
+    .cu-ask-luna {
+      font-size: 13px;
+      padding: 12px 18px;
+      bottom: 80px;
+    }
+  }
+
+  /* ---- FAQ accordion ---- */
+  .cu-faq-item {
+    border-bottom: 1px solid #E8E4D8;
+  }
+  .cu-faq-item:last-child {
+    border-bottom: none;
+  }
+
+  /* ---- Comparison table ---- */
+  .cu-comparison-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cu-comparison-table {
+    min-width: 640px;
+    width: 100%;
+  }
+
+  /* ---- Trust strip ---- */
+  .cu-trust-strip {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E4D8;
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-weight: 600;
+    color: #444444;
+  }
+
+  /* ---- Dark band ---- */
+  .cu-dark-band {
+    background-color: #1F2745;
+    color: #FFFFFF;
+  }
+
+  /* ---- Founders banner ---- */
+  .cu-founders-banner {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 10px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    font-size: 13px;
+  }
+
+  /* ---- Nav ---- */
+  .cu-nav {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E4D8;
+    border-radius: 999px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  /* ---- Sample question card ---- */
+  .cu-question-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #E8E4D8;
+    padding: 28px;
+  }
+
+  .cu-common-mistake {
+    background-color: #F5F2EC;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 16px;
+  }
+
+  /* ---- Blog ---- */
+  .cu-prose h2 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .cu-prose h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1A1A1A;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .cu-prose p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #444444;
+    margin-bottom: 1.25rem;
+  }
+  .cu-prose blockquote {
+    border-left: 3px solid #7F77DD;
+    padding-left: 20px;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #534AB7;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .cu-prose ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .cu-prose ul li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444444;
+    margin-bottom: 0.4rem;
+  }
+
+  /* ---- Email capture ---- */
+  .cu-email-capture {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #E8E4D8;
+    padding: 32px;
+  }
+
+  /* ---- Placeholder SAMPLE badge ---- */
+  .cu-sample-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #FAEEDA;
+    color: #B36B0A;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 999px;
+  }
+
+  /* ---- Scroll animations ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    .cu-fade-in {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .cu-fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
