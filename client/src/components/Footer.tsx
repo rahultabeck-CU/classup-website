@@ -72,6 +72,16 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Comparisons */}
+          <div>
+            <div className="cu-eyebrow mb-3">COMPARISONS</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              <Link href="/compare/classup-vs-mathletics" style={linkStyle}>ClassUp vs Mathletics</Link>
+              <Link href="/compare/classup-vs-reading-eggs" style={linkStyle}>ClassUp vs Reading Eggs</Link>
+              <Link href="/compare/classup-vs-kumon" style={linkStyle}>ClassUp vs Kumon</Link>
+            </div>
+          </div>
+
           {/* Company */}
           <div>
             <div className="cu-eyebrow mb-3">COMPANY</div>

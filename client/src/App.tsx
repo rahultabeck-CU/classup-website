@@ -32,6 +32,7 @@ import {
   BlogPostYear7MathsShock,
 } from "./pages/BlogPosts";
 import Pricing from "./pages/Pricing";
+import { CompareMathletics, CompareReadingEggs, CompareKumon } from "./pages/Compare";
 import { Contact, Privacy, Terms, Resources } from "./pages/StaticPages";
 
 function Router() {
@@ -74,6 +75,11 @@ function Router() {
 
       {/* Pricing */}
       <Route path="/pricing" component={Pricing} />
+
+      {/* Comparisons */}
+      <Route path="/compare/classup-vs-mathletics" component={CompareMathletics} />
+      <Route path="/compare/classup-vs-reading-eggs" component={CompareReadingEggs} />
+      <Route path="/compare/classup-vs-kumon" component={CompareKumon} />
 
       {/* Static / legal */}
       <Route path="/contact" component={Contact} />
