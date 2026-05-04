@@ -1,13 +1,20 @@
 # ClassUp — llms.txt
 # https://classup.com.au
 
-ClassUp is an adaptive NAPLAN preparation tool for Australian students in Years 5 and 7, focusing on diagnosing and correcting specific misunderstandings in foundational maths and literacy skills. It features AI coaches Luna and Leo.
+ClassUp is an AI-powered NAPLAN diagnostic and practice platform for Australian Year 5 and Year 7 students, built by DIVTAB Holdings Pty Ltd in Melbourne, Victoria, Australia.
 
 ## What ClassUp is
 
-ClassUp is a web-based adaptive learning platform built by Rahul Tabeck (CEO, DIVTAB Holdings Pty Ltd, Melbourne, Australia). It is designed specifically for Australian students preparing for NAPLAN (National Assessment Program — Literacy and Numeracy).
+ClassUp is a web-based adaptive learning platform. It is designed specifically for Australian students preparing for NAPLAN (National Assessment Program — Literacy and Numeracy) in Years 5 and 7.
 
 ClassUp is not a tutoring agency, not a worksheet generator, and not a past-paper bank. It is an adaptive coaching system that identifies the specific skill gaps in a child's NAPLAN readiness and then practises exactly those gaps — not a generic curriculum sequence.
+
+## Core features
+
+1. **Free 30-minute diagnostic** — covers Numeracy, Reading, and Language Conventions. No credit card required. Can be completed across up to three short sittings.
+2. **Adaptive practice** — coaching sessions target the specific skill gaps identified in the diagnostic across Numeracy, Reading, and Language Conventions.
+3. **AI coaches Luna and Leo** — Luna is the Year 5 coach; Leo is the Year 7 coach. Both use Socratic questioning to guide students toward answers rather than providing them directly.
+4. **Friday parent reports** — a weekly summary sent to parents every Friday showing progress, gaps addressed, and recommended focus areas for the coming week.
 
 ## Who it is for
 
@@ -17,10 +24,10 @@ ClassUp is not a tutoring agency, not a worksheet generator, and not a past-pape
 
 ## How it works
 
-1. Free 30-minute diagnostic covering Numeracy, Reading, and Language Conventions
-2. Single-screen report showing skill-level gaps (not just domain-level)
-3. Adaptive coaching sessions (30 minutes, four times per week) with Luna (Year 5) or Leo (Year 7)
-4. Weekly parent report every Friday
+1. Student completes the free 30-minute diagnostic
+2. Parent receives a single-screen report showing skill-level gaps (not just domain-level)
+3. Student completes adaptive coaching sessions (approximately 30 minutes, four times per week) with Luna or Leo
+4. Parent receives a Friday report each week summarising progress and remaining gaps
 
 ## Coaches
 
@@ -29,8 +36,8 @@ ClassUp is not a tutoring agency, not a worksheet generator, and not a past-pape
 
 ## Pricing
 
-- Year 5 plan: AUD $49/month
-- Year 7 plan: AUD $39/month
+- Year 5 plan: AUD $49/month (inc. GST)
+- Year 7 plan: AUD $39/month (inc. GST)
 - Free diagnostic included. Month-to-month. Cancel anytime.
 
 ## Company
@@ -49,7 +56,6 @@ ClassUp is not a tutoring agency, not a worksheet generator, and not a past-pape
 - Numeracy: https://classup.com.au/naplan/numeracy
 - Reading: https://classup.com.au/naplan/reading
 - Language Conventions: https://classup.com.au/naplan/language-conventions
-- Writing: https://classup.com.au/naplan/writing
 - Coaches: https://classup.com.au/coaches
 - Luna: https://classup.com.au/coaches/luna
 - Leo: https://classup.com.au/coaches/leo
