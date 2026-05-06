@@ -335,17 +335,33 @@ export function AskLunaButton() {
 // ============================================================
 export function FAQAccordion({
   items,
+  defaultOpenIndexes,
 }: {
   items: { question: string; answer: string }[];
+  defaultOpenIndexes?: number[];
 }) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndexes, setOpenIndexes] = useState<Set<number>>(
+    new Set(defaultOpenIndexes ?? [0])
+  );
+
+  const toggle = (i: number) => {
+    setOpenIndexes((prev) => {
+      const next = new Set(prev);
+      if (next.has(i)) {
+        next.delete(i);
+      } else {
+        next.add(i);
+      }
+      return next;
+    });
+  };
 
   return (
     <div>
       {items.map((item, i) => (
         <div key={i} className="cu-faq-item">
           <button
-            onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            onClick={() => toggle(i)}
             style={{
               width: "100%",
               display: "flex",
@@ -358,7 +374,7 @@ export function FAQAccordion({
               cursor: "pointer",
               gap: 16,
             }}
-            aria-expanded={openIndex === i}
+            aria-expanded={openIndexes.has(i)}
           >
             <span
               style={{
@@ -384,13 +400,13 @@ export function FAQAccordion({
                 fontSize: 14,
                 color: "#888",
                 transition: "transform 0.2s ease",
-                transform: openIndex === i ? "rotate(45deg)" : "none",
+                transform: openIndexes.has(i) ? "rotate(45deg)" : "none",
               }}
             >
               +
             </span>
           </button>
-          {openIndex === i && (
+          {openIndexes.has(i) && (
             <div
               style={{
                 paddingBottom: 18,

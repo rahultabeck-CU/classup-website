@@ -24,7 +24,7 @@ function HeroSection() {
         >
           {/* Left, copy */}
           <div>
-            <div className="cu-eyebrow mb-4">FOR YEAR 5 AND YEAR 7 AUSTRALIAN FAMILIES</div>
+            <div className="cu-eyebrow mb-4" style={{ fontSize: 14, letterSpacing: 2 }}>FOR YEAR 5 AND YEAR 7 AUSTRALIAN FAMILIES</div>
             <h1 className="cu-h1 mb-5">
               NAPLAN prep that tells you{" "}
               <em className="cu-italic-accent">the truth.</em>
@@ -208,7 +208,7 @@ function DemoLoopSection() {
     <section className="cu-section">
       <div className="container" style={{ maxWidth: 1100 }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
-          <div className="cu-eyebrow mb-3">HOW THE COACHING WORKS</div>
+          <div className="cu-eyebrow mb-3" style={{ fontSize: 14, letterSpacing: 2 }}>HOW THE COACHING WORKS</div>
           <h2 className="cu-h2">
             10 seconds. See how a wrong answer turns into{" "}
             <em className="cu-italic-accent">the next right one.</em>
@@ -978,11 +978,6 @@ function ComparisonSection() {
                   <th style={{ textAlign: "left", padding: "10px 14px", fontSize: 12, fontWeight: 700, color: "#888", textTransform: "uppercase", letterSpacing: 1, minWidth: 200 }}>
                     Feature
                   </th>
-                  {["Generic edtech subscription", "Franchise tutoring centres", "Imported overseas platforms"].map((col) => (
-                    <th key={col} style={{ padding: "10px 14px", fontSize: 12, fontWeight: 600, color: "#888", textAlign: "center", minWidth: 140 }}>
-                      {col}
-                    </th>
-                  ))}
                   <th style={{ padding: "10px 14px", textAlign: "center", minWidth: 140 }}>
                     <div style={{ fontSize: 10, fontWeight: 700, color: "#7F77DD", textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>
                       🇦🇺 BUILT IN MELBOURNE
@@ -992,6 +987,11 @@ function ComparisonSection() {
                       NEW
                     </span>
                   </th>
+                  {["Generic edtech subscription", "Franchise tutoring centres", "Imported overseas platforms"].map((col) => (
+                    <th key={col} style={{ padding: "10px 14px", fontSize: 12, fontWeight: 600, color: "#888", textAlign: "center", minWidth: 140 }}>
+                      {col}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -1000,24 +1000,24 @@ function ComparisonSection() {
                     <td style={{ padding: "12px 14px", fontSize: 14, fontWeight: 600, color: "#1A1A1A" }}>
                       {row.feature}
                     </td>
+                    <td style={{ padding: "12px 14px", textAlign: "center" }}>
+                      <span style={{ color: "#639922", fontSize: 16, fontWeight: 700 }}>✓</span>
+                    </td>
                     {[row.generic, row.franchise, row.overseas].map((val, j) => (
                       <td key={j} style={{ padding: "12px 14px", textAlign: "center", fontSize: 13, color: "#666" }}>
                         {val}
                       </td>
                     ))}
-                    <td style={{ padding: "12px 14px", textAlign: "center" }}>
-                      <span style={{ color: "#639922", fontSize: 16, fontWeight: 700 }}>✓</span>
-                    </td>
                   </tr>
                 ))}
                 <tr style={{ borderTop: "1px solid #E8E4D8", background: "#EEEDFE" }}>
-                  <td colSpan={4} style={{ padding: "14px 14px", fontSize: 14, color: "#534AB7", fontStyle: "italic" }}>
-                    We'll prove our value on the free diagnostic. Cancel in one tap if it isn't right.
-                  </td>
                   <td style={{ padding: "14px 14px", textAlign: "center" }}>
                     <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 12, padding: "8px 14px" }}>
                       Start free →
                     </a>
+                  </td>
+                  <td colSpan={3} style={{ padding: "14px 14px", fontSize: 14, color: "#534AB7", fontStyle: "italic" }}>
+                    We'll prove our value on the free diagnostic. Cancel in one tap if it isn't right.
                   </td>
                 </tr>
               </tbody>
@@ -1081,17 +1081,17 @@ function PricingSection() {
                 whiteSpace: "nowrap",
               }}
             >
-              FOUNDERS OFFER
+              MOST POPULAR
             </div>
             <div style={{ fontSize: 13, fontWeight: 600, color: "#534AB7", marginBottom: 8 }}>
               First child
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginBottom: 4 }}>
-              <span style={{ fontSize: 42, fontWeight: 800, color: "#26215C", lineHeight: 1 }}>$29</span>
+              <span style={{ fontSize: 42, fontWeight: 800, color: "#26215C", lineHeight: 1 }}>$49</span>
               <span style={{ fontSize: 14, color: "#534AB7" }}>/month</span>
             </div>
             <div style={{ fontSize: 12, color: "#7F77DD", marginBottom: 20 }}>
-              Founders price: $29/month for your first 6 months. After that, $49/month if you stay.
+              Includes GST. Month-to-month. No lock-in.
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 24 }}>
               {["Free 30-minute diagnostic", "Year 5 or Year 7 coaching", "Adapts to your child's gaps", "Friday parent report", "Cancel in one tap"].map((feat) => (
@@ -1132,7 +1132,7 @@ function PricingSection() {
           </div>
         </div>
 
-        <p style={{ textAlign: "center", fontSize: 13, color: "#888", marginTop: 20 }}>
+        <p style={{ textAlign: "center", fontSize: 15, fontWeight: 600, color: "#1A1A1A", marginTop: 20 }}>
           Cancel in one tap from your account. No phone calls. No retention scripts. No guilt.
         </p>
       </div>
@@ -1258,7 +1258,7 @@ function FAQSection() {
           </h2>
         </div>
         <div className="cu-card-large" style={{ padding: "32px 40px" }}>
-          <FAQAccordion items={HOME_FAQ} />
+          <FAQAccordion items={HOME_FAQ} defaultOpenIndexes={[0, 5]} />
         </div>
       </div>
     </section>
@@ -1414,9 +1414,9 @@ export default function Home() {
       <DemoLoopSection />
       <MechanismBand />
       <CoachesSection />
+      <FeedbackCardSection />
       <FounderSection />
       <HowItWorksSection />
-      <FeedbackCardSection />
       <NAPLANBasicsSection />
       <ComparisonSection />
       <PricingSection />
