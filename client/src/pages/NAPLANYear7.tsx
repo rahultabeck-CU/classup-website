@@ -78,7 +78,7 @@ const NAPLAN_Y7_SCHEMA = [
     },
     "offers": {
       "@type": "Offer",
-      "price": "39",
+      "price": "59",
       "priceCurrency": "AUD",
       "billingIncrement": "P1M"
     }
@@ -169,7 +169,7 @@ export default function NAPLANYear7() {
                 </p>
                 <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <div style={{ width: 36, height: 36, borderRadius: "50%", overflow: "hidden", flexShrink: 0, background: "#E8E4F8" }}>
-                    <img src="/manus-storage/kavya-photo_ae6ad241.png" alt="Kavya" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
+                    <img src="https://d36hbw14aib5lz.cloudfront.net/310519663609833835/REXxUTrQVxgfiFBcKDxW3x/kavya-photo_ae6ad241.png" alt="Kavya" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }} />
                   </div>
                   <div style={{ fontSize: 13, color: "#888" }}>Kavya, age 12, Year 7 student</div>
                 </div>

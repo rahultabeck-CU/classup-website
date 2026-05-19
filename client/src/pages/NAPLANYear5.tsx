@@ -78,7 +78,7 @@ const NAPLAN_Y5_SCHEMA = [
     },
     "offers": {
       "@type": "Offer",
-      "price": "49",
+      "price": "59",
       "priceCurrency": "AUD",
       "billingIncrement": "P1M"
     }

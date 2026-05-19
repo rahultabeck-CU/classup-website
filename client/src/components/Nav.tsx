@@ -64,6 +64,7 @@ export function FoundersBanner() {
         </div>
         <a
           href={DIAGNOSTIC_URL}
+          className="founders-cta-link"
           style={{
             fontSize: 12,
             fontWeight: 600,
@@ -87,6 +88,7 @@ const NAV_LINKS = [
   { label: "Coaches", href: "/coaches" },
   { label: "How it works", href: "/how-it-works" },
   { label: "Pricing", href: "/pricing" },
+  { label: "Roadmap", href: "/roadmap" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -97,6 +99,12 @@ export function TopNav() {
   useEffect(() => {
     setMenuOpen(false);
   }, [location]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
 
   return (
     <div style={{ padding: "12px 0" }}>
@@ -147,15 +155,8 @@ export function TopNav() {
             </span>
           </Link>
 
-          {/* Desktop nav links */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 4,
-            }}
-            className="hidden-mobile"
-          >
+          {/* Desktop nav links — hidden on mobile via CSS */}
+          <div className="nav-desktop-links">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
@@ -178,8 +179,10 @@ export function TopNav() {
 
           {/* Right side */}
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            {/* Sign in — desktop only */}
             <a
               href="https://app.classup.com.au/sign-in"
+              className="nav-desktop-links"
               style={{
                 fontSize: 14,
                 fontWeight: 600,
@@ -187,30 +190,27 @@ export function TopNav() {
                 textDecoration: "none",
                 padding: "6px 12px",
               }}
-              className="hidden-mobile"
             >
               Sign in
             </a>
-            <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 13, padding: "10px 18px" }}>
+            {/* CTA — desktop only */}
+            <a
+              href={DIAGNOSTIC_URL}
+              className="cu-btn-primary nav-cta-desktop"
+              style={{ fontSize: 13, padding: "10px 18px" }}
+            >
               Start free diagnostic →
             </a>
-            {/* Mobile hamburger */}
+            {/* Hamburger — mobile only */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="show-mobile"
-              style={{
-                background: "none",
-                border: "none",
-                padding: 6,
-                cursor: "pointer",
-                display: "none",
-              }}
+              className="nav-hamburger"
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
             >
-              <div style={{ width: 20, height: 2, background: "#1A1A1A", marginBottom: 4 }} />
-              <div style={{ width: 20, height: 2, background: "#1A1A1A", marginBottom: 4 }} />
-              <div style={{ width: 20, height: 2, background: "#1A1A1A" }} />
+              <div style={{ width: 22, height: 2, background: "#1A1A1A", marginBottom: 5, borderRadius: 2 }} />
+              <div style={{ width: 22, height: 2, background: "#1A1A1A", marginBottom: 5, borderRadius: 2 }} />
+              <div style={{ width: 22, height: 2, background: "#1A1A1A", borderRadius: 2 }} />
             </button>
           </div>
         </nav>
@@ -222,10 +222,11 @@ export function TopNav() {
               position: "fixed",
               inset: 0,
               background: "#7F77DD",
-              zIndex: 100,
+              zIndex: 200,
               display: "flex",
               flexDirection: "column",
               padding: "24px",
+              overflowY: "auto",
             }}
           >
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 40 }}>
@@ -241,7 +242,7 @@ export function TopNav() {
               </span>
               <button
                 onClick={() => setMenuOpen(false)}
-                style={{ background: "none", border: "none", color: "#FFF", fontSize: 24, cursor: "pointer" }}
+                style={{ background: "none", border: "none", color: "#FFF", fontSize: 32, cursor: "pointer", lineHeight: 1, padding: "0 4px" }}
                 aria-label="Close menu"
               >
                 ×
@@ -257,8 +258,9 @@ export function TopNav() {
                     fontWeight: 800,
                     color: "#FFF",
                     textDecoration: "none",
-                    padding: "12px 0",
+                    padding: "14px 0",
                     borderBottom: "1px solid rgba(255,255,255,0.2)",
+                    display: "block",
                   }}
                 >
                   {link.label}
@@ -271,20 +273,25 @@ export function TopNav() {
                   fontWeight: 800,
                   color: "#FFF",
                   textDecoration: "none",
-                  padding: "12px 0",
+                  padding: "14px 0",
                   borderBottom: "1px solid rgba(255,255,255,0.2)",
+                  display: "block",
                 }}
               >
                 About
               </Link>
             </div>
-            <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: 12 }}>
-              <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ background: "#FFF", color: "#1A1A1A", textAlign: "center", justifyContent: "center" }}>
+            <div style={{ marginTop: "auto", paddingTop: 32, display: "flex", flexDirection: "column", gap: 12 }}>
+              <a
+                href={DIAGNOSTIC_URL}
+                className="cu-btn-primary"
+                style={{ background: "#FFF", color: "#1A1A1A", textAlign: "center", justifyContent: "center", display: "block", padding: "16px 24px", fontSize: 16 }}
+              >
                 Start free diagnostic →
               </a>
               <a
                 href="https://app.classup.com.au/sign-in"
-                style={{ fontSize: 14, color: "rgba(255,255,255,0.8)", textAlign: "center", textDecoration: "none" }}
+                style={{ fontSize: 14, color: "rgba(255,255,255,0.8)", textAlign: "center", textDecoration: "none", padding: "8px 0" }}
               >
                 Sign in
               </a>
@@ -294,13 +301,40 @@ export function TopNav() {
       </div>
 
       <style>{`
-        @media (max-width: 767px) {
-          .hidden-mobile { display: none !important; }
-          .show-mobile { display: flex !important; }
+        /* Desktop: show nav links and CTA, hide hamburger */
+        .nav-desktop-links {
+          display: flex;
+          align-items: center;
+          gap: 4;
         }
-        @media (min-width: 768px) {
-          .show-mobile { display: none !important; }
-          .hidden-mobile { display: flex !important; }
+        .nav-cta-desktop {
+          display: inline-flex;
+        }
+        .nav-hamburger {
+          display: none;
+          background: none;
+          border: none;
+          padding: 6px;
+          cursor: pointer;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        /* Mobile: hide desktop nav, show hamburger */
+        @media (max-width: 767px) {
+          .nav-desktop-links {
+            display: none !important;
+          }
+          .nav-cta-desktop {
+            display: none !important;
+          }
+          .nav-hamburger {
+            display: flex !important;
+          }
+          .founders-cta-link {
+            display: none;
+          }
         }
       `}</style>
     </div>

@@ -524,7 +524,7 @@ function FounderSection() {
             {/* Left: family photo */}
             <div className="founder-photo" style={{ position: "relative", minHeight: 420, background: "#E8E4F8" }}>
               <img
-                src="/manus-storage/family-photo_d6b5ca9c.webp"
+                src="https://d36hbw14aib5lz.cloudfront.net/310519663609833835/REXxUTrQVxgfiFBcKDxW3x/family-photo_d6b5ca9c.webp"
                 alt="Rahul and his family — the reason ClassUp exists"
                 style={{
                   width: "100%",
@@ -1011,7 +1011,7 @@ function ComparisonSection() {
                   </tr>
                 ))}
                 <tr style={{ borderTop: "1px solid #E8E4D8", background: "#EEEDFE" }}>
-                  <td style={{ padding: "14px 14px", textAlign: "center" }}>
+                  <td colSpan={1} style={{ padding: "14px 14px", textAlign: "center" }}>
                     <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 12, padding: "8px 14px" }}>
                       Start free →
                     </a>
@@ -1064,34 +1064,16 @@ function PricingSection() {
               position: "relative",
             }}
           >
-            <div
-              style={{
-                position: "absolute",
-                top: -12,
-                left: "50%",
-                transform: "translateX(-50%)",
-                background: "#7F77DD",
-                color: "#FFF",
-                fontSize: 10,
-                fontWeight: 700,
-                textTransform: "uppercase",
-                letterSpacing: 1,
-                padding: "4px 12px",
-                borderRadius: 999,
-                whiteSpace: "nowrap",
-              }}
-            >
-              MOST POPULAR
-            </div>
+
             <div style={{ fontSize: 13, fontWeight: 600, color: "#534AB7", marginBottom: 8 }}>
               First child
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginBottom: 4 }}>
-              <span style={{ fontSize: 42, fontWeight: 800, color: "#26215C", lineHeight: 1 }}>$49</span>
+              <span style={{ fontSize: 42, fontWeight: 800, color: "#26215C", lineHeight: 1 }}>$59</span>
               <span style={{ fontSize: 14, color: "#534AB7" }}>/month</span>
             </div>
             <div style={{ fontSize: 12, color: "#7F77DD", marginBottom: 20 }}>
-              Includes GST. Month-to-month. No lock-in.
+              Includes GST. Month-to-month. Cancel anytime.
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 24 }}>
               {["Free 30-minute diagnostic", "Year 5 or Year 7 coaching", "Adapts to your child's gaps", "Friday parent report", "Cancel in one tap"].map((feat) => (
@@ -1112,7 +1094,7 @@ function PricingSection() {
               Additional child
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginBottom: 4 }}>
-              <span style={{ fontSize: 42, fontWeight: 800, color: "#1A1A1A", lineHeight: 1 }}>$39</span>
+              <span style={{ fontSize: 42, fontWeight: 800, color: "#1A1A1A", lineHeight: 1 }}>$49</span>
               <span style={{ fontSize: 14, color: "#888" }}>/month</span>
             </div>
             <div style={{ fontSize: 12, color: "#888", marginBottom: 20 }}>
@@ -1132,7 +1114,7 @@ function PricingSection() {
           </div>
         </div>
 
-        <p style={{ textAlign: "center", fontSize: 15, fontWeight: 600, color: "#1A1A1A", marginTop: 20 }}>
+        <p style={{ textAlign: "center", fontSize: 15, color: "#1A1A1A", fontWeight: 600, marginTop: 20 }}>
           Cancel in one tap from your account. No phone calls. No retention scripts. No guilt.
         </p>
       </div>
@@ -1325,14 +1307,14 @@ const HOME_SCHEMA = [
       {
         "@type": "Offer",
         "name": "Year 5 Plan",
-        "price": "49",
+        "price": "59",
         "priceCurrency": "AUD",
         "billingIncrement": "P1M"
       },
       {
         "@type": "Offer",
         "name": "Year 7 Plan",
-        "price": "39",
+        "price": "59",
         "priceCurrency": "AUD",
         "billingIncrement": "P1M"
       }

@@ -96,7 +96,7 @@ export default function Roadmap() {
     <PageLayout>
       <SEO
         title="ClassUp roadmap — what we're building next"
-        description="Every feature on the ClassUp roadmap is included in your $49/month subscription. Writing coaching, Speaking and Listening, school benchmarking, and more."
+        description="Every feature on the ClassUp roadmap is included in your $59/month subscription. Writing coaching, Speaking and Listening, school benchmarking, and more."
         canonicalPath="/roadmap"
       />
 
@@ -136,7 +136,7 @@ export default function Roadmap() {
               margin: 0,
             }}
           >
-            Your $49/month grows with ClassUp. Every feature on this timeline is included — no upgrades, no extra tiers, no surprises.
+            Your $59/month grows with ClassUp. Every feature on this timeline is included — no upgrades, no extra tiers, no surprises.
           </p>
         </div>
       </section>
@@ -156,7 +156,7 @@ export default function Roadmap() {
             }}
           >
             <p style={{ fontSize: 15, fontWeight: 700, color: "#534AB7", margin: 0, lineHeight: 1.6 }}>
-              Every feature on this roadmap is included in your $49/month subscription. No extra tiers. No upgrade prompts. Your subscription grows with ClassUp.
+              Every feature on this roadmap is included in your $59/month subscription. No extra tiers. No upgrade prompts. Your subscription grows with ClassUp.
             </p>
           </div>
 
@@ -281,7 +281,7 @@ export default function Roadmap() {
                   {/* Included tag */}
                   <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                     <span style={{ color: "#7F77DD", fontSize: 13 }}>✦</span>
-                    <span style={{ fontSize: 13, fontWeight: 600, color: "#7F77DD" }}>Included in $49/month</span>
+                    <span style={{ fontSize: 13, fontWeight: 600, color: "#7F77DD" }}>Included in $59/month</span>
                   </div>
                 </div>
               </div>
@@ -317,7 +317,7 @@ export default function Roadmap() {
             <div className="cu-eyebrow mb-4">READY TO START?</div>
             <h2 className="cu-h2 mb-4">Start free. Grow with us.</h2>
             <p style={{ fontSize: 15, color: "#444", marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-              One plan, $49/month. No lock-in. Every feature above is included as we ship it.
+              One plan, $59/month. No lock-in. Every feature above is included as we ship it.
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 15, padding: "14px 28px" }}>
