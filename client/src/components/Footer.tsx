@@ -12,7 +12,7 @@ export function Footer() {
       }}
     >
       <div className="container" style={{ maxWidth: 1100 }}>
-        {/* Footer grid — 5 cols desktop, 2 cols mobile */}
+        {/* Footer grid — 6 cols desktop, 2 cols mobile */}
         <div className="footer-grid" style={{ marginBottom: 40 }}>
           {/* Brand */}
           <div className="footer-brand">
@@ -68,6 +68,18 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Resources */}
+          <div>
+            <div className="cu-eyebrow mb-3">RESOURCES</div>
+            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+              <Link href="/naplan-year-5" style={linkStyle}>Year 5 NAPLAN Hub</Link>
+              <Link href="/naplan/year-5" style={linkStyle}>Year 5 Test Guide</Link>
+              <Link href="/naplan/year-7" style={linkStyle}>Year 7 Test Guide</Link>
+              <Link href="/naplan/bands-explained" style={linkStyle}>Bands Explained</Link>
+              <Link href="/resources" style={linkStyle}>All Resources</Link>
+            </div>
+          </div>
+
           {/* Comparisons */}
           <div>
             <div className="cu-eyebrow mb-3">COMPARISONS</div>
@@ -108,7 +120,7 @@ export function Footer() {
       <style>{`
         .footer-grid {
           display: grid;
-          grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 1fr;
           gap: 32px;
         }
         .footer-bottom {

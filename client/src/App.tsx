@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -13,6 +14,7 @@ import CoachLuna from "./pages/CoachLuna";
 import CoachLeo from "./pages/CoachLeo";
 import NAPLAN from "./pages/NAPLAN";
 import NAPLANYear5 from "./pages/NAPLANYear5";
+import NaplanYear5Hub from "./pages/NaplanYear5Hub";
 import NAPLANYear7 from "./pages/NAPLANYear7";
 import NAPLANNumeracy from "./pages/NAPLANNumeracy";
 import { NAPLANReading, NAPLANLanguageConventions, NAPLANWriting, NAPLANBandsExplained } from "./pages/NAPLANDomains";
@@ -32,11 +34,21 @@ import {
   BlogPostYear7MathsShock,
 } from "./pages/BlogPosts";
 import Pricing from "./pages/Pricing";
-import { CompareMathletics, CompareReadingEggs, CompareKumon } from "./pages/Compare";
+import Roadmap from "./pages/Roadmap";
 import { Contact, Privacy, Terms, Resources } from "./pages/StaticPages";
+
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [location]);
+  return null;
+}
 
 function Router() {
   return (
+    <>
+      <ScrollToTop />
     <Switch>
       {/* Home */}
       <Route path="/" component={Home} />
@@ -49,6 +61,7 @@ function Router() {
       {/* NAPLAN hub */}
       <Route path="/naplan" component={NAPLAN} />
       <Route path="/naplan/year-5" component={NAPLANYear5} />
+      <Route path="/naplan-year-5" component={NaplanYear5Hub} />
       <Route path="/naplan/year-7" component={NAPLANYear7} />
       <Route path="/naplan/numeracy" component={NAPLANNumeracy} />
       <Route path="/naplan/reading" component={NAPLANReading} />
@@ -75,11 +88,8 @@ function Router() {
 
       {/* Pricing */}
       <Route path="/pricing" component={Pricing} />
-
-      {/* Comparisons */}
-      <Route path="/compare/classup-vs-mathletics" component={CompareMathletics} />
-      <Route path="/compare/classup-vs-reading-eggs" component={CompareReadingEggs} />
-      <Route path="/compare/classup-vs-kumon" component={CompareKumon} />
+      {/* Roadmap */}
+      <Route path="/roadmap" component={Roadmap} />
 
       {/* Static / legal */}
       <Route path="/contact" component={Contact} />
@@ -91,7 +101,7 @@ function Router() {
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
-  );
+    </>  );
 }
 
 function App() {
