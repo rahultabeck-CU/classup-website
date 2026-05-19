@@ -12,16 +12,10 @@ export function Footer() {
       }}
     >
       <div className="container" style={{ maxWidth: 1100 }}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-            gap: 32,
-            marginBottom: 40,
-          }}
-        >
+        {/* Footer grid — 5 cols desktop, 2 cols mobile */}
+        <div className="footer-grid" style={{ marginBottom: 40 }}>
           {/* Brand */}
-          <div>
+          <div className="footer-brand">
             <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}>
               <div
                 style={{
@@ -32,16 +26,17 @@ export function Footer() {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  flexShrink: 0,
                 }}
               >
                 <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 14, fontWeight: 800, color: "#7F77DD" }}>C</span>
               </div>
               <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: 15, fontWeight: 800, color: "#1A1A1A" }}>ClassUp</span>
             </div>
-            <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, marginBottom: 12 }}>
+            <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, marginBottom: 8 }}>
               NAPLAN prep that tells you the truth.
             </p>
-            <p style={{ fontSize: 12, color: "#888" }}>
+            <p style={{ fontSize: 12, color: "#888", margin: 0 }}>
               Built in Melbourne by Australian parents.
             </p>
           </div>
@@ -68,6 +63,7 @@ export function Footer() {
               <Link href="/how-it-works" style={linkStyle}>How It Works</Link>
               <Link href="/methodology" style={linkStyle}>Methodology</Link>
               <Link href="/pricing" style={linkStyle}>Pricing</Link>
+              <Link href="/roadmap" style={linkStyle}>Roadmap</Link>
               <a href="https://app.classup.com.au/diagnostic/start" style={linkStyle}>Free Diagnostic</a>
             </div>
           </div>
@@ -96,27 +92,49 @@ export function Footer() {
           </div>
         </div>
 
-        <div
-          style={{
-            borderTop: "1px solid #E8E4D8",
-            paddingTop: 24,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: 12,
-          }}
-        >
-          <p style={{ fontSize: 12, color: "#888" }}>
+        {/* Bottom bar */}
+        <div className="footer-bottom">
+          <p style={{ fontSize: 12, color: "#888", margin: 0 }}>
             © {new Date().getFullYear()} DIVTAB Holdings Pty Ltd · ABN [TBD] · Melbourne, Victoria, Australia
           </p>
-          <div style={{ display: "flex", gap: 16 }}>
+          <div style={{ display: "flex", gap: 16, flexShrink: 0 }}>
             <Link href="/privacy" style={{ fontSize: 12, color: "#888", textDecoration: "none" }}>Privacy</Link>
             <Link href="/terms" style={{ fontSize: 12, color: "#888", textDecoration: "none" }}>Terms</Link>
             <Link href="/contact" style={{ fontSize: 12, color: "#888", textDecoration: "none" }}>Contact</Link>
           </div>
         </div>
       </div>
+
+      <style>{`
+        .footer-grid {
+          display: grid;
+          grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+          gap: 32px;
+        }
+        .footer-bottom {
+          border-top: 1px solid #E8E4D8;
+          padding-top: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 12px;
+        }
+        @media (max-width: 767px) {
+          .footer-grid {
+            grid-template-columns: 1fr 1fr;
+            gap: 28px 20px;
+          }
+          .footer-brand {
+            grid-column: 1 / -1;
+          }
+          .footer-bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+          }
+        }
+      `}</style>
     </footer>
   );
 }
@@ -126,5 +144,6 @@ const linkStyle: React.CSSProperties = {
   color: "#444",
   textDecoration: "none",
   fontWeight: 500,
-  lineHeight: 1.4,
+  lineHeight: 1.6,
+  display: "block",
 };
