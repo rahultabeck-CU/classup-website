@@ -15,6 +15,7 @@ import CoachLeo from "./pages/CoachLeo";
 import NAPLAN from "./pages/NAPLAN";
 import NAPLANYear5 from "./pages/NAPLANYear5";
 import NaplanYear5Hub from "./pages/NaplanYear5Hub";
+import NaplanYear7Hub from "./pages/NaplanYear7Hub";
 import NAPLANYear7 from "./pages/NAPLANYear7";
 import NAPLANNumeracy from "./pages/NAPLANNumeracy";
 import { NAPLANReading, NAPLANLanguageConventions, NAPLANWriting, NAPLANBandsExplained } from "./pages/NAPLANDomains";
@@ -62,6 +63,7 @@ function Router() {
       <Route path="/naplan" component={NAPLAN} />
       <Route path="/naplan/year-5" component={NAPLANYear5} />
       <Route path="/naplan-year-5" component={NaplanYear5Hub} />
+      <Route path="/naplan-year-7" component={NaplanYear7Hub} />
       <Route path="/naplan/year-7" component={NAPLANYear7} />
       <Route path="/naplan/numeracy" component={NAPLANNumeracy} />
       <Route path="/naplan/reading" component={NAPLANReading} />

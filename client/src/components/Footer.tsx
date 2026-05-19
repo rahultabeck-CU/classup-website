@@ -73,6 +73,7 @@ export function Footer() {
             <div className="cu-eyebrow mb-3">RESOURCES</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <Link href="/naplan-year-5" style={linkStyle}>Year 5 NAPLAN Hub</Link>
+              <Link href="/naplan-year-7" style={linkStyle}>Year 7 NAPLAN Hub</Link>
               <Link href="/naplan/year-5" style={linkStyle}>Year 5 Test Guide</Link>
               <Link href="/naplan/year-7" style={linkStyle}>Year 7 Test Guide</Link>
               <Link href="/naplan/bands-explained" style={linkStyle}>Bands Explained</Link>
