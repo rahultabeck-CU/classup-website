@@ -106,8 +106,8 @@ export function SampleQuestionCard({ sample }: { sample: SampleQuestion }) {
 // COACH AVATAR
 // ============================================================
 const COACH_IMAGES: Record<"luna" | "leo", string> = {
-  luna: "/manus-storage/luna-avatar_5949aa3a.png",
-  leo: "/manus-storage/leo-avatar_2aa1a13e.png",
+  luna: "/images/luna-avatar.png",
+  leo: "/images/leo-avatar.png",
 };
 
 export function CoachAvatar({

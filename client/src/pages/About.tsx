@@ -41,7 +41,7 @@ export default function About() {
               {/* Left: family photo */}
               <div className="about-founder-photo" style={{ position: "relative", minHeight: 460, background: "#E8E4F8" }}>
                 <img
-                  src="/manus-storage/family-photo_d6b5ca9c.webp"
+                  src="/images/family-photo.webp"
                   alt="Rahul and his family"
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", position: "absolute", inset: 0 }}
                 />
