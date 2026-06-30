@@ -41,8 +41,8 @@ export default function About() {
               {/* Left: family photo */}
               <div className="about-founder-photo" style={{ position: "relative", minHeight: 460, background: "#E8E4F8" }}>
                 <img
-                  src="/images/family-photo.webp"
-                  alt="Rahul and his family"
+                  src="/images/classup-founder-family.webp"
+                  alt="Rahul Tabeck, ClassUp founder, with his daughter Kavya and family"
                   style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", display: "block", position: "absolute", inset: 0 }}
                 />
                 <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 100%)", padding: "32px 20px 16px" }}>

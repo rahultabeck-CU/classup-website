@@ -107,3 +107,6 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+# Backed-up original (pre-optimisation) image assets — kept locally, not committed
+client/public/images/_originals/

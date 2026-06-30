@@ -524,8 +524,8 @@ function FounderSection() {
             {/* Left: family photo */}
             <div className="founder-photo" style={{ position: "relative", minHeight: 420, background: "#E8E4F8" }}>
               <img
-                src="https://d36hbw14aib5lz.cloudfront.net/310519663609833835/REXxUTrQVxgfiFBcKDxW3x/family-photo_d6b5ca9c.webp"
-                alt="Rahul and his family — the reason ClassUp exists"
+                src="/images/classup-founder-family.webp"
+                alt="Rahul Tabeck, ClassUp founder, with his daughter Kavya and family — the reason ClassUp exists"
                 style={{
                   width: "100%",
                   height: "100%",

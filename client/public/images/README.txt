@@ -1,13 +1,10 @@
-ClassUp local image slots
-=========================
+ClassUp local image assets
+==========================
 
-These image files are referenced by the site but not yet committed.
-Add the following files to this folder (client/public/images/) to fix
-the broken image slots in production:
+Web-optimised image assets used by the site (resized, compressed, EXIF/GPS
+stripped). Pre-optimisation originals are kept locally in _originals/
+(gitignored).
 
-  luna-avatar.png    - Coach Luna avatar (referenced in client/src/components/ClassUpUI.tsx)
-  leo-avatar.png     - Coach Leo avatar (referenced in client/src/components/ClassUpUI.tsx)
-  family-photo.webp  - Founder family photo (referenced in client/src/pages/About.tsx)
-
-Until these files are added, the corresponding images will not render.
-This is expected and no worse than the previous production state.
+  luna-avatar.png               - Coach Luna avatar  (client/src/components/ClassUpUI.tsx)  734x400 PNG RGBA
+  leo-avatar.png                - Coach Leo avatar   (client/src/components/ClassUpUI.tsx)  426x400 PNG RGBA
+  classup-founder-family.webp   - Founder family photo (client/src/pages/About.tsx)        1600x2844 WebP q85
