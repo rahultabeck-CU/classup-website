@@ -14,7 +14,7 @@ export const BLOG_POSTS = [
     category: "Founders",
     categoryColor: "#EEEDFE",
     categoryTextColor: "#534AB7",
-    excerpt: "My daughter Kavya is sharp, curious, and genuinely good at maths. Until NAPLAN prep started. One evening she said something I haven't forgotten. That's why ClassUp exists.",
+    excerpt: "My daughter Kavya is sharp, curious, and genuinely good at maths. Until Year 6 NAPLAN prep started. One evening she said something I haven't forgotten. That's why ClassUp exists.",
   },
   {
     slug: "what-naplan-actually-tests",
@@ -58,7 +58,7 @@ export const BLOG_POSTS = [
     category: "Coaches",
     categoryColor: "#EEEDFE",
     categoryTextColor: "#534AB7",
-    excerpt: "Luna is methodical and warm. Leo is direct and energetic. Both cover the same content. Here's how to help your child choose.",
+    excerpt: "Luna and Leo are ClassUp's AI coaches. Both cover Numeracy, Reading, and Language Conventions. Here's how to help your child choose after signup.",
   },
   {
     slug: "naplan-anxiety-what-parents-can-do",
@@ -84,7 +84,7 @@ export const BLOG_POSTS = [
   },
   {
     slug: "help-child-catch-up-reading",
-    title: "How to help your child catch up in reading without the battle",
+    title: "How to help your reluctant reader catch up without the battle",
     subtitle: "Comprehension strategies for 10 to 12 year olds",
     date: "April 2026",
     readTime: "4 min read",
@@ -110,12 +110,7 @@ export default function Blog() {
   return (
     <PageLayout>
       <SEO
-        title="ClassUp Blog — NAPLAN guides for Australian parents"
-        description="Practical guides for Australian parents navigating NAPLAN. What the test actually measures, how to read results, and how to help without adding pressure."
-        canonicalPath="/blog"
-      />
-      <SEO
-        title="ClassUp Blog — NAPLAN guides for Australian parents"
+        title="ClassUp Blog: NAPLAN guides for Australian parents"
         description="Practical guides for Australian parents navigating NAPLAN. What the test actually measures, how to read results, and how to help without adding pressure."
         canonicalPath="/blog"
       />

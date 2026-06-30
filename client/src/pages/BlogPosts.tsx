@@ -92,7 +92,7 @@ export function BlogPostWhyWeBuilt() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="Why we built ClassUp — ClassUp Blog"
+        title="Why we built ClassUp - ClassUp Blog"
         description="Rahul Tabeck explains why he built ClassUp after sitting with his daughter Kavya through a NAPLAN practice paper and realising the problem was not her ability."
         canonicalPath="/blog/why-we-built-classup"
         schemaMarkup={BLOG_WHY_SCHEMA}
@@ -111,7 +111,7 @@ export function BlogPostWhyWeBuilt() {
         <p>The market had plenty of "more practice". It had almost nothing that was genuinely diagnostic.</p>
 
         <h2>What we built instead</h2>
-        <p>ClassUp starts with a free 30-minute diagnostic that maps your child's performance across the four NAPLAN domains: <Link href="/naplan/numeracy" style={{ color: "#7F77DD", fontWeight: 600 }}>Numeracy</Link>, <Link href="/naplan/reading" style={{ color: "#7F77DD", fontWeight: 600 }}>Reading</Link>, Language Conventions, and Writing. The diagnostic does not just score them. It identifies the specific sub-skills that are weak, so the coaching that follows is targeted from the first session.</p>
+        <p>ClassUp starts with a free 30-minute diagnostic that maps your child's performance across three NAPLAN domains: <Link href="/naplan/numeracy" style={{ color: "#7F77DD", fontWeight: 600 }}>Numeracy</Link>, <Link href="/naplan/reading" style={{ color: "#7F77DD", fontWeight: 600 }}>Reading</Link>, and Language Conventions. The diagnostic does not just score them. It identifies the specific sub-skills that are weak, so the coaching that follows is targeted from the first session.</p>
         <p>After the diagnostic, your child is matched with a coach, either Luna or Leo, who works on exactly those gaps. Not a fixed curriculum. Not a worksheet. A coach who gives a different question on the same skill until it is solid, and who explains the specific reasoning error, not just "incorrect".</p>
         <p>The sessions are 30 minutes, four times a week. That is two hours of targeted practice per week, which is enough to produce measurable improvement in eight to twelve weeks if the gaps are specific and the practice is consistent.</p>
 
@@ -152,13 +152,15 @@ export function BlogPostWhatNAPLANTests() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="What NAPLAN actually tests — ClassUp Blog"
+        title="What NAPLAN actually tests - ClassUp Blog"
         description="NAPLAN tests four domains: Numeracy, Reading, Language Conventions, and Writing. Here is what each domain covers and what it does not cover."
         canonicalPath="/blog/what-naplan-actually-tests"
         schemaMarkup={BLOG_WHAT_SCHEMA}
       />
       <div className="blog-body">
         <p>NAPLAN tests four specific domains: Numeracy, Reading, Language Conventions, and Writing. It does not test general intelligence, creativity, or your child's ability to learn new things. Understanding exactly what is and is not assessed is the most useful thing a parent can know before starting any preparation programme.</p>
+
+        <p><strong>ClassUp currently covers three of these four domains: Numeracy, Reading, and Language Conventions. We do not provide Writing coaching.</strong></p>
 
         <h2>The four domains</h2>
 
@@ -176,7 +178,6 @@ export function BlogPostWhatNAPLANTests() {
 
         <h3>Writing</h3>
         <p>Writing is the only domain where your child produces an extended response. One piece of writing, 42 minutes, marked against 10 criteria covering audience, text structure, ideas, vocabulary, cohesion, paragraphing, sentence structure, punctuation, spelling, and character and setting (for narrative). The text type alternates between persuasive and narrative each year, though ACARA does not announce in advance which type will appear.</p>
-        <p>Writing is the domain where preparation makes the most visible difference. A child who understands the marking criteria and has practised both text types will approach the writing task with a clear structure in mind, which reduces the time spent deciding what to write and increases the time spent writing well.</p>
 
         <h2>What NAPLAN does not test</h2>
         <p>NAPLAN does not test general knowledge, science, history, or any subject-specific content outside literacy and numeracy. It does not test oral communication, visual arts, or physical education. It does not measure effort, curiosity, or the ability to learn new things quickly.</p>
@@ -199,7 +200,7 @@ const BLOG_GENERIC_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "The problem with generic NAPLAN prep",
-  "description": "Most NAPLAN prep gives children more questions. ClassUp gives them the right questions — the ones that target the exact skill they got wrong.",
+  "description": "Most NAPLAN prep gives children more questions. ClassUp gives them the right questions - the ones that target the exact skill they got wrong.",
   "author": { "@type": "Person", "name": "Rahul Tabeck" },
   "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
   "url": "https://classup.com.au/blog/the-problem-with-generic-naplan-prep",
@@ -213,8 +214,8 @@ export function BlogPostGenericPrep() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="The problem with generic NAPLAN prep — ClassUp Blog"
-        description="Most NAPLAN prep gives children more questions. ClassUp gives them the right questions — the ones that target the exact skill they got wrong."
+        title="The problem with generic NAPLAN prep - ClassUp Blog"
+        description="Most NAPLAN prep gives children more questions. ClassUp gives them the right questions - the ones that target the exact skill they got wrong."
         canonicalPath="/blog/the-problem-with-generic-naplan-prep"
         schemaMarkup={BLOG_GENERIC_SCHEMA}
       />
@@ -270,7 +271,7 @@ export function BlogPostReadResults() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="How to read your child's NAPLAN results — ClassUp Blog"
+        title="How to read your child's NAPLAN results - ClassUp Blog"
         description="NAPLAN results arrive as a band score, a scaled score, and a comparison to the national average. Here is how to read each one without panicking."
         canonicalPath="/blog/how-to-read-naplan-results"
         schemaMarkup={BLOG_RESULTS_SCHEMA}
@@ -314,7 +315,7 @@ export function BlogPostReadResults() {
 const BLOG_LUNA_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Luna vs Leo — which ClassUp coach is right for your child?",
+  "headline": "Luna vs Leo - which ClassUp coach is right for your child?",
   "description": "Luna coaches Year 5. Leo coaches Year 7. Here is how they differ and how to choose.",
   "author": { "@type": "Person", "name": "Rahul Tabeck" },
   "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
@@ -329,7 +330,7 @@ export function BlogPostLunaVsLeo() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="Luna vs Leo — which ClassUp coach is right for your child? — ClassUp Blog"
+        title="Luna vs Leo - which ClassUp coach is right for your child? - ClassUp Blog"
         description="Luna coaches Year 5. Leo coaches Year 7. Here is how they differ, what each one focuses on, and how to choose."
         canonicalPath="/blog/luna-vs-leo"
         schemaMarkup={BLOG_LUNA_SCHEMA}
@@ -367,13 +368,13 @@ export function BlogPostLunaVsLeo() {
 
 
 // ============================================================
-// POST 6: NAPLAN anxiety — what parents can do (~710 words)
+// POST 6: NAPLAN anxiety - what parents can do (~710 words)
 // ============================================================
 
 const BLOG_ANXIETY_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "NAPLAN anxiety — what parents can do",
+  "headline": "NAPLAN anxiety - what parents can do",
   "description": "NAPLAN anxiety is real. Here is what the research says and what parents can do to help without adding pressure.",
   "author": { "@type": "Person", "name": "Rahul Tabeck" },
   "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
@@ -388,7 +389,7 @@ export function BlogPostNAPLANAnxiety() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="NAPLAN anxiety — what parents can do — ClassUp Blog"
+        title="NAPLAN anxiety - what parents can do - ClassUp Blog"
         description="NAPLAN anxiety is real. Here is what the research says about test anxiety in primary school children, and what parents can do to help without adding pressure."
         canonicalPath="/blog/naplan-anxiety-what-parents-can-do"
         schemaMarkup={BLOG_ANXIETY_SCHEMA}
@@ -455,7 +456,7 @@ export function BlogPostYear5MathsTerm2() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="Year 5 maths struggles in Term 2: what to look out for — ClassUp Blog"
+        title="Year 5 maths struggles in Term 2: what to look out for - ClassUp Blog"
         description="Term 2 is when Year 5 maths gets harder. Here is what the curriculum introduces, which concepts trip children up most, and what parents can do about it."
         canonicalPath="/blog/year-5-maths-struggles-term-2"
         schemaMarkup={BLOG_Y5_MATHS_SCHEMA}
@@ -476,8 +477,15 @@ export function BlogPostYear5MathsTerm2() {
         <p>If your child gets the arithmetic right but the answer wrong, the problem is usually in how they are reading the question. Reading the problem aloud and identifying what is being asked before attempting any calculation is a simple strategy that helps most children at this stage.</p>
 
         <h2>Signs your child is struggling</h2>
-        <p>The signs are usually behavioural before they are academic. A child who is struggling with new maths concepts will often avoid maths homework, rush through it without checking, or become frustrated quickly when they cannot get the answer immediately. These are not signs of laziness. They are signs of a child who does not yet have the tools to approach the problem confidently.</p>
-        <p>Other signs: getting arithmetic questions right but word problems wrong, being able to do a skill in isolation but not in a mixed exercise, and being unable to explain their reasoning even when they get the answer correct. The last one is particularly telling: if your child cannot explain how they got an answer, they are likely using a memorised procedure rather than genuine understanding, which breaks down as soon as the question changes slightly.</p>
+        <p>The signs are usually behavioural before they are academic. These are not signs of laziness. They are signs of a child who does not yet have the tools to approach the problem confidently.</p>
+        <ul>
+          <li>Avoiding maths homework or rushing through it without checking</li>
+          <li>Becoming frustrated quickly when they cannot get the answer immediately</li>
+          <li>Getting arithmetic questions right but word problems wrong</li>
+          <li>Being able to do a skill in isolation but not in a mixed exercise</li>
+          <li>Being unable to explain their reasoning even when they get the answer correct</li>
+        </ul>
+        <p>The last one is particularly telling: if your child cannot explain how they got an answer, they are likely using a memorised procedure rather than genuine understanding, which breaks down as soon as the question changes slightly.</p>
 
         <h2>What parents can do</h2>
         <p>The most useful thing you can do at home is not to reteach the content, but to ask your child to explain their thinking. "How did you get that?" is more useful than "let me show you how to do it." If they can explain it, they understand it. If they cannot, the gap is in the reasoning, not the arithmetic.</p>
@@ -497,8 +505,8 @@ export function BlogPostYear5MathsTerm2() {
 const BLOG_READING_CATCHUP_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "How to help your child catch up in reading without the battle",
-  "description": "Comprehension strategies for 10 to 12 year olds who are behind in reading. What actually works and what makes it worse.",
+  "headline": "How to help your reluctant reader catch up without the battle",
+  "description": "Comprehension strategies for reluctant readers aged 10 to 12. What actually works and what makes it worse.",
   "author": { "@type": "Person", "name": "Rahul Tabeck" },
   "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
   "url": "https://classup.com.au/blog/help-child-catch-up-reading",
@@ -512,13 +520,13 @@ export function BlogPostReadingCatchup() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="How to help your child catch up in reading without the battle — ClassUp Blog"
-        description="Comprehension strategies for 10 to 12 year olds who are behind in reading. What actually works, what makes it worse, and how to make progress without conflict."
+        title="How to help your reluctant reader catch up without the battle - ClassUp Blog"
+        description="Comprehension strategies for reluctant readers aged 10 to 12. What actually works and what makes it worse."
         canonicalPath="/blog/help-child-catch-up-reading"
         schemaMarkup={BLOG_READING_CATCHUP_SCHEMA}
       />
       <div className="blog-body">
-        <p>Children who are behind in reading at age 10 to 12 are usually not behind in decoding, they can read the words. The gap is in comprehension: understanding what the words mean together, inferring what is not stated, and thinking critically about what they have read. These are learnable skills, and they respond well to specific, low-pressure practice at home.</p>
+        <p>If your child is a reluctant reader, you know the battle. They avoid books, they rush through reading homework, they claim they "don't understand" before they have even tried. If your child is behind in reading at age 10 to 12, they are usually not behind in decoding - they can read the words. The gap is in comprehension: understanding what the words mean together, inferring what is not stated, and thinking critically about what they have read. These are learnable skills, and they respond well to specific, low-pressure practice at home.</p>
 
         <h2>Why comprehension gaps are different from decoding gaps</h2>
         <p>A child who cannot decode words needs phonics intervention, which is a specific and well-researched area. A child who can decode fluently but struggles to answer comprehension questions has a different problem. They can read the text, but they are not processing it at the level the questions require.</p>
@@ -531,15 +539,11 @@ export function BlogPostReadingCatchup() {
         <p>Asking "did you understand it?" after reading is not useful. Most children will say yes regardless of whether they understood it, because they do not want to be wrong. Asking specific questions about the text is more useful, and asking them to predict what will happen next before they read on is more useful still.</p>
 
         <h2>Strategies that work at home</h2>
-
-        <h3>Read together and think aloud</h3>
-        <p>Reading a text together and thinking aloud about what you are inferring is one of the most effective things a parent can do. "I wonder why the character did that" or "I think the author is trying to make us feel worried here, because of the way they described the weather" models the kind of thinking that comprehension questions require. Children who see this modelled consistently start to do it themselves.</p>
-
-        <h3>Ask questions before, during, and after reading</h3>
-        <p>Before reading: "What do you think this will be about based on the title?" During reading: "Why do you think that happened?" After reading: "What was the most important idea in that section?" These questions are not tests. They are invitations to think, and the goal is to make thinking about text a habit rather than an assessment.</p>
-
-        <h3>Use non-fiction texts</h3>
-        <p>Many children who resist fiction are happy to read about topics they are interested in, sport, animals, history, technology. Non-fiction comprehension uses the same skills as fiction comprehension. If your child will engage with a magazine article about football but not with a novel, use the football article. The skill transfers.</p>
+        <ul>
+          <li><strong>Read together and think aloud:</strong> Reading a text together and thinking aloud about what you are inferring is one of the most effective things a parent can do. "I wonder why the character did that" or "I think the author is trying to make us feel worried here, because of the way they described the weather" models the kind of thinking that comprehension questions require. Children who see this modelled consistently start to do it themselves.</li>
+          <li><strong>Ask questions before, during, and after reading:</strong> Before reading: "What do you think this will be about based on the title?" During reading: "Why do you think that happened?" After reading: "What was the most important idea in that section?" These questions are not tests. They are invitations to think, and the goal is to make thinking about text a habit rather than an assessment.</li>
+          <li><strong>Use non-fiction texts:</strong> Many children who resist fiction are happy to read about topics they are interested in: sport, animals, history, technology. Non-fiction comprehension uses the same skills as fiction comprehension. If your child will engage with a magazine article about football but not with a novel, use the football article. The skill transfers.</li>
+        </ul>
 
         <h2>How long does it take</h2>
         <p>Comprehension gaps at this age typically close in two to four school terms with consistent, targeted practice. The key word is consistent: fifteen to twenty minutes of focused reading with discussion three or four times a week produces more improvement than an hour of silent reading once a week.</p>
@@ -552,7 +556,7 @@ export function BlogPostReadingCatchup() {
 
 
 // ============================================================
-// POST 9: The Year 7 transition — high school maths shock (~710 words)
+// POST 9: The Year 7 transition - high school maths shock (~710 words)
 // ============================================================
 
 const BLOG_Y7_MATHS_SCHEMA = {
@@ -573,7 +577,7 @@ export function BlogPostYear7MathsShock() {
   return (
     <BlogLayout post={post}>
       <SEO
-        title="The Year 7 transition: high school maths shock — ClassUp Blog"
+        title="The Year 7 transition: high school maths shock - ClassUp Blog"
         description="The jump from primary to secondary maths is real. Here is what changes in the curriculum, why children struggle, and how parents can support the transition without adding pressure."
         canonicalPath="/blog/year-7-high-school-maths-shock"
         schemaMarkup={BLOG_Y7_MATHS_SCHEMA}
@@ -586,7 +590,11 @@ export function BlogPostYear7MathsShock() {
         <p>In secondary school, maths becomes abstract much faster. Algebra, which most children encounter seriously for the first time in Year 7, requires thinking about unknown quantities and relationships rather than specific numbers. The pace of the curriculum increases significantly: a secondary maths class might cover in a week what a primary class covered in a term. And the class sizes are often larger, which means less individual attention when a child falls behind.</p>
 
         <h3>The algebra wall</h3>
-        <p>Algebra is the concept that causes the most difficulty in Year 7. The transition from arithmetic to algebra requires a shift in thinking that many children find genuinely difficult. In arithmetic, the equals sign means "the answer is". In algebra, it means "these two things are the same". That is a subtle but important difference, and children who have not made that shift will struggle with every algebraic concept that follows.</p>
+        <p>Algebra is the concept that causes the most difficulty in Year 7. The transition from arithmetic to algebra requires a shift in thinking that many children find genuinely difficult.</p>
+        <blockquote>
+          <p>In arithmetic, the equals sign means "the answer is". In algebra, it means "these two things are the same".</p>
+        </blockquote>
+        <p>That is a subtle but important difference, and children who have not made that shift will struggle with every algebraic concept that follows.</p>
         <p>The most common algebraic errors in Year 7 are: treating variables as labels rather than unknowns, applying arithmetic rules to algebraic expressions incorrectly, and struggling with the order of operations when expressions become more complex. Each of these is fixable with targeted practice, but they need to be identified specifically rather than addressed with general "more algebra" practice.</p>
 
         <h3>Negative numbers</h3>
