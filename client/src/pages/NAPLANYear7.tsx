@@ -129,13 +129,7 @@ export default function NAPLANYear7() {
         title="NAPLAN Year 7 prep — ClassUp"
         description="Year 7 NAPLAN is the first test where results can affect selective school and scholarship applications. Here is what is tested and how to prepare."
         canonicalPath="/naplan/year-7"
-      
         schemaMarkup={NAPLAN_Y7_SCHEMA}
-      />
-      <SEO
-        title="NAPLAN Year 7 prep — ClassUp"
-        description="Year 7 NAPLAN is the first test where results can affect selective school and scholarship applications. Here is what is tested and how to prepare."
-        canonicalPath="/naplan/year-7"
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>

@@ -117,13 +117,7 @@ export default function NAPLANNumeracy() {
         title="NAPLAN Numeracy — what is tested and how to improve — ClassUp"
         description="NAPLAN Numeracy covers number, algebra, measurement, space, statistics, and probability. Non-calculator throughout. Here are the most common mistakes and how ClassUp addresses them."
         canonicalPath="/naplan/numeracy"
-      
         schemaMarkup={NAPLAN_NUMERACY_SCHEMA}
-      />
-      <SEO
-        title="NAPLAN Numeracy — what is tested and how to improve — ClassUp"
-        description="NAPLAN Numeracy covers number, algebra, measurement, space, statistics, and probability. Non-calculator throughout. Here are the most common mistakes and how ClassUp addresses them."
-        canonicalPath="/naplan/numeracy"
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>

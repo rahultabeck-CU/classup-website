@@ -41,11 +41,6 @@ export default function Coaches() {
         description="Meet Luna (Year 5) and Leo (Year 7), ClassUp's two adaptive coaches. Each one specialises in a different year level and adjusts every question based on what your child got wrong."
         canonicalPath="/coaches"
       />
-      <SEO
-        title="Luna and Leo — ClassUp's NAPLAN coaches"
-        description="Meet Luna (Year 5) and Leo (Year 7), ClassUp's two adaptive coaches. Each one specialises in a different year level and adjusts every question based on what your child got wrong."
-        canonicalPath="/coaches"
-      />
       {/* HERO */}
       <section className="cu-section" style={{ paddingTop: 32, paddingBottom: 0 }}>
         <div className="container" style={{ maxWidth: 900 }}>

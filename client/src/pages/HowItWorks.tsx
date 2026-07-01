@@ -53,11 +53,6 @@ export default function HowItWorks() {
         description="ClassUp starts with a free 30-minute diagnostic that maps your child's exact gaps. Then Luna or Leo works on those gaps every session, four times a week."
         canonicalPath="/how-it-works"
       />
-      <SEO
-        title="How ClassUp works — free diagnostic, adaptive coaching, weekly report"
-        description="ClassUp starts with a free 30-minute diagnostic that maps your child's exact gaps. Then Luna or Leo works on those gaps every session, four times a week."
-        canonicalPath="/how-it-works"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div className="cu-eyebrow mb-4">HOW IT WORKS</div>

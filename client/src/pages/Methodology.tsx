@@ -17,11 +17,6 @@ export default function Methodology() {
         description="ClassUp is built on three principles: identify the exact mistake, practise the same skill differently, and space repetitions over time. Here is the research behind each one."
         canonicalPath="/methodology"
       />
-      <SEO
-        title="ClassUp's methodology — spaced retrieval, error analysis, adaptive practice"
-        description="ClassUp is built on three principles: identify the exact mistake, practise the same skill differently, and space repetitions over time. Here is the research behind each one."
-        canonicalPath="/methodology"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div className="cu-eyebrow mb-4">METHODOLOGY</div>

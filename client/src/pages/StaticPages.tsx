@@ -24,11 +24,6 @@ export function Contact() {
         description="Get in touch with the ClassUp team. We are a small team based in Melbourne, Australia."
         canonicalPath="/contact"
       />
-      <SEO
-        title="Contact ClassUp"
-        description="Get in touch with the ClassUp team. We are a small team based in Melbourne, Australia."
-        canonicalPath="/contact"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 800 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
@@ -143,11 +138,6 @@ export function Privacy() {
         description="ClassUp's privacy policy. How we collect, use, and protect your data and your child's data."
         canonicalPath="/privacy"
       />
-      <SEO
-        title="Privacy policy — ClassUp"
-        description="ClassUp's privacy policy. How we collect, use, and protect your data and your child's data."
-        canonicalPath="/privacy"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 800 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Privacy Policy" }]} />
@@ -216,11 +206,6 @@ export function Terms() {
         description="ClassUp's terms of service. Your rights and responsibilities as a ClassUp subscriber."
         canonicalPath="/terms"
       />
-      <SEO
-        title="Terms of service — ClassUp"
-        description="ClassUp's terms of service. Your rights and responsibilities as a ClassUp subscriber."
-        canonicalPath="/terms"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 800 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Terms of Service" }]} />
@@ -280,11 +265,6 @@ export function Terms() {
 export function Resources() {
   return (
     <PageLayout>
-      <SEO
-        title="Free NAPLAN resources for parents — ClassUp"
-        description="Free guides, checklists, and practice tools for Australian families preparing for NAPLAN Year 5 and Year 7."
-        canonicalPath="/resources"
-      />
       <SEO
         title="Free NAPLAN resources for parents — ClassUp"
         description="Free guides, checklists, and practice tools for Australian families preparing for NAPLAN Year 5 and Year 7."

@@ -1384,13 +1384,7 @@ export default function Home() {
         title="ClassUp — NAPLAN prep that tells you the truth"
         description="A free 30-minute diagnostic that shows exactly where your child stands, then a coach who works on those exact gaps every session. For Year 5 and Year 7 Australian families."
         canonicalPath="/"
-      
         schemaMarkup={HOME_SCHEMA}
-      />
-      <SEO
-        title="ClassUp — NAPLAN prep that tells you the truth"
-        description="A free 30-minute diagnostic that shows exactly where your child stands, then a coach who works on those exact gaps every session. For Year 5 and Year 7 Australian families."
-        canonicalPath="/"
       />
       <HeroSection />
       <DemoLoopSection />

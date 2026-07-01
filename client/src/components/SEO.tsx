@@ -9,6 +9,8 @@ interface SEOProps {
   description: string;
   canonicalPath: string; // e.g. "/naplan/year-5" — will be prefixed with BASE_URL
   ogImage?: string;
+  ogTitle?: string; // falls back to `title` when omitted
+  ogDescription?: string; // falls back to `description` when omitted
   schemaMarkup?: object | object[]; // JSON-LD object(s)
   noIndex?: boolean;
 }
@@ -18,10 +20,14 @@ export function SEO({
   description,
   canonicalPath,
   ogImage = DEFAULT_OG_IMAGE,
+  ogTitle,
+  ogDescription,
   schemaMarkup,
   noIndex = false,
 }: SEOProps) {
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+  const socialTitle = ogTitle ?? title;
+  const socialDescription = ogDescription ?? description;
 
   // Normalise schemaMarkup to an array so we can render multiple scripts
   const schemas: object[] = schemaMarkup
@@ -41,16 +47,16 @@ export function SEO({
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={socialTitle} />
+      <meta property="og:description" content={socialDescription} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:locale" content="en_AU" />
 
       {/* Twitter / X */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={socialTitle} />
+      <meta name="twitter:description" content={socialDescription} />
       <meta name="twitter:image" content={ogImage} />
 
       {/* JSON-LD structured data — one <script> per schema object */}

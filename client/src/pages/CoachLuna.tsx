@@ -41,11 +41,6 @@ export default function CoachLuna() {
         description="Luna is ClassUp's Year 5 coach. She specialises in reading and language conventions, and adjusts every question based on what your child got wrong."
         canonicalPath="/coaches/luna"
       />
-      <SEO
-        title="Luna — ClassUp's Year 5 NAPLAN coach"
-        description="Luna is ClassUp's Year 5 coach. She specialises in reading and language conventions, and adjusts every question based on what your child got wrong."
-        canonicalPath="/coaches/luna"
-      />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coaches", href: "/coaches" }, { label: "Luna" }]} />

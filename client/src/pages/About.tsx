@@ -18,11 +18,6 @@ export default function About() {
         description="ClassUp was built by Rahul Tabeck after his daughter Kavya said 'Dad, you explain it like it's obvious. It's not obvious to me.' Here is the full story."
         canonicalPath="/about"
       />
-      <SEO
-        title="About ClassUp — built by a parent, for our own kids"
-        description="ClassUp was built by Rahul Tabeck after his daughter Kavya said 'Dad, you explain it like it's obvious. It's not obvious to me.' Here is the full story."
-        canonicalPath="/about"
-      />
       <section className="cu-section" style={{ paddingTop: 32 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div className="cu-eyebrow mb-4">ABOUT CLASSUP</div>

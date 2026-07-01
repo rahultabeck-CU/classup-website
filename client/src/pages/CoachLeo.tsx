@@ -41,11 +41,6 @@ export default function CoachLeo() {
         description="Leo is ClassUp's Year 7 coach. He specialises in numeracy and writing, and adjusts every question based on what your child got wrong."
         canonicalPath="/coaches/leo"
       />
-      <SEO
-        title="Leo — ClassUp's Year 7 NAPLAN coach"
-        description="Leo is ClassUp's Year 7 coach. He specialises in numeracy and writing, and adjusts every question based on what your child got wrong."
-        canonicalPath="/coaches/leo"
-      />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Coaches", href: "/coaches" }, { label: "Leo" }]} />

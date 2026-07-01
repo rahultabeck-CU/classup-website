@@ -129,13 +129,7 @@ export default function NAPLANYear5() {
         title="NAPLAN Year 5 prep — ClassUp"
         description="Year 5 NAPLAN covers Numeracy, Reading, Language Conventions, and Writing. Here is what is tested, common gaps, and how ClassUp helps your child prepare."
         canonicalPath="/naplan/year-5"
-      
         schemaMarkup={NAPLAN_Y5_SCHEMA}
-      />
-      <SEO
-        title="NAPLAN Year 5 prep — ClassUp"
-        description="Year 5 NAPLAN covers Numeracy, Reading, Language Conventions, and Writing. Here is what is tested, common gaps, and how ClassUp helps your child prepare."
-        canonicalPath="/naplan/year-5"
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>

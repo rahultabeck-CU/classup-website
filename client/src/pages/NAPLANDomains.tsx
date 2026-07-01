@@ -63,11 +63,6 @@ export function NAPLANReading() {
         description="NAPLAN Reading tests a student's ability to understand and interpret written texts. Here is what the test covers, common mistakes, and how ClassUp's coaches address them."
         canonicalPath="/naplan/reading"
       />
-      <SEO
-        title="NAPLAN Reading — what is tested and how to improve — ClassUp"
-        description="NAPLAN Reading tests a student's ability to understand and interpret written texts. Here is what the test covers, common mistakes, and how ClassUp's coaches address them."
-        canonicalPath="/naplan/reading"
-      />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "NAPLAN", href: "/naplan" }, { label: "Reading" }]} />
@@ -144,11 +139,6 @@ export function NAPLANLanguageConventions() {
         description="NAPLAN Language Conventions tests spelling, grammar, and punctuation. Here is what Year 5 and Year 7 students are expected to know."
         canonicalPath="/naplan/language-conventions"
       />
-      <SEO
-        title="NAPLAN Language Conventions — spelling, grammar, punctuation — ClassUp"
-        description="NAPLAN Language Conventions tests spelling, grammar, and punctuation. Here is what Year 5 and Year 7 students are expected to know."
-        canonicalPath="/naplan/language-conventions"
-      />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "NAPLAN", href: "/naplan" }, { label: "Language Conventions" }]} />
@@ -206,11 +196,6 @@ export function NAPLANLanguageConventions() {
 export function NAPLANWriting() {
   return (
     <PageLayout>
-      <SEO
-        title="NAPLAN Writing — what markers look for — ClassUp"
-        description="NAPLAN Writing is marked on six criteria: audience, text structure, ideas, vocabulary, cohesion, and paragraphing. Here is what each criterion means."
-        canonicalPath="/naplan/writing"
-      />
       <SEO
         title="NAPLAN Writing — what markers look for — ClassUp"
         description="NAPLAN Writing is marked on six criteria: audience, text structure, ideas, vocabulary, cohesion, and paragraphing. Here is what each criterion means."
@@ -279,11 +264,6 @@ export function NAPLANWriting() {
 export function NAPLANBandsExplained() {
   return (
     <PageLayout>
-      <SEO
-        title="NAPLAN bands explained — what the scores mean — ClassUp"
-        description="NAPLAN results are reported on a 10-band scale. Here is what each band means, what the National Minimum Standard is, and how to interpret your child's report."
-        canonicalPath="/naplan/bands-explained"
-      />
       <SEO
         title="NAPLAN bands explained — what the scores mean — ClassUp"
         description="NAPLAN results are reported on a 10-band scale. Here is what each band means, what the National Minimum Standard is, and how to interpret your child's report."
