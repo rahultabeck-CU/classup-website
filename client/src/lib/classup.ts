@@ -1,8 +1,8 @@
 // ClassUp shared constants and data
 // VERBATIM sample questions -- do NOT modify any text, options, answers, or explanations
 
-export const APP_URL = "https://app.classup.com.au";
-export const DIAGNOSTIC_URL = `${APP_URL}/diagnostic/start`;
+export const APP_URL = import.meta.env.VITE_APP_URL ?? "https://app.classup.com.au";
+export const DIAGNOSTIC_URL = `${APP_URL}/auth/sign-up?intent=diagnostic`;
 export const FOUNDERS_CODE = "FOUNDERS";
 
 export interface SampleQuestion {

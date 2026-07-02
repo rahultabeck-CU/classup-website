@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { DIAGNOSTIC_URL, FOUNDERS_CODE } from "@/lib/classup";
+import { APP_URL, DIAGNOSTIC_URL, FOUNDERS_CODE } from "@/lib/classup";
 
 // ============================================================
 // FOUNDERS BANNER
@@ -181,7 +181,7 @@ export function TopNav() {
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             {/* Sign in — desktop only */}
             <a
-              href="https://app.classup.com.au/sign-in"
+              href={`${APP_URL}/sign-in`}
               className="nav-desktop-links"
               style={{
                 fontSize: 14,
@@ -290,7 +290,7 @@ export function TopNav() {
                 Start free diagnostic →
               </a>
               <a
-                href="https://app.classup.com.au/sign-in"
+                href={`${APP_URL}/sign-in`}
                 style={{ fontSize: 14, color: "rgba(255,255,255,0.8)", textAlign: "center", textDecoration: "none", padding: "8px 0" }}
               >
                 Sign in

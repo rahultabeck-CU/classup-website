@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "wouter";
+import { DIAGNOSTIC_URL } from "@/lib/classup";
 
 export function Footer() {
   return (
@@ -64,7 +65,7 @@ export function Footer() {
               <Link href="/methodology" style={linkStyle}>Methodology</Link>
               <Link href="/pricing" style={linkStyle}>Pricing</Link>
               <Link href="/roadmap" style={linkStyle}>Roadmap</Link>
-              <a href="https://app.classup.com.au/diagnostic/start" style={linkStyle}>Free Diagnostic</a>
+              <a href={DIAGNOSTIC_URL} style={linkStyle}>Free Diagnostic</a>
             </div>
           </div>
 
