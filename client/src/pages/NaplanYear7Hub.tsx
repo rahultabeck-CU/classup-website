@@ -186,7 +186,7 @@ export default function NaplanYear7Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan/numeracy" style={LINK}>Year 7 Numeracy</Link> — the jump is real: proper algebra, ratio and
+                <Link href="/naplan-year-7-numeracy" style={LINK}>Year 7 Numeracy</Link> — the jump is real: proper algebra, ratio and
                 rate, fractions and decimals used fluently, and multi-step problems that reward reasoning, not just recall.
               </span>
             </li>

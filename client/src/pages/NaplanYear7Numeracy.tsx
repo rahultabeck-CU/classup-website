@@ -6,36 +6,36 @@ import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
-// /naplan-year-5-numeracy — Year 5 NAPLAN Numeracy domain landing
-// Flat route, consistent with /naplan-year-5 hub pattern.
+// /naplan-year-7-numeracy — Year 7 NAPLAN Numeracy domain landing
+// Flat route, consistent with /naplan-year-7 hub pattern.
 // All CTAs route via DIAGNOSTIC_URL (never hardcoded).
 // ============================================================
 
 const PAGE_FAQ = [
   {
-    question: "Is a calculator allowed in Year 5 NAPLAN numeracy?",
+    question: "Is a calculator allowed in Year 7 NAPLAN numeracy?",
     answer:
-      "No. Calculators are not permitted at Year 5. Every question is designed to be solved with your child's own working. (The on-screen calculator only appears in part of the Years 7 and 9 tests.)",
+      "Partly. The test starts with a short non-calculator section, then an on-screen calculator unlocks for the remaining questions. Students can't return to the non-calculator section once the calculator is available.",
   },
   {
-    question: "How many questions are in the Year 5 numeracy test?",
+    question: "How long is the Year 7 numeracy test?",
     answer:
-      "Around 42 questions, sat online in 50 minutes. Because the test is adaptive, the exact questions differ between students — the difficulty adjusts to how your child is answering.",
+      "65 minutes, sat online. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of questions differs between students.",
   },
   {
-    question: "What maths should a Year 5 child know for NAPLAN?",
+    question: "What maths should a Year 7 child know for NAPLAN?",
     answer:
-      "The six curriculum strands: number (including fractions and decimals), algebra patterns, measurement, space, statistics and probability. The step up from Year 3 is multi-step reasoning — combining skills within one question.",
+      "The six curriculum strands — number (fractions, decimals, percentages, ratio), beginning algebra, measurement, space, statistics and probability. The big shifts from Year 5 are algebra and ratio appearing properly, and multi-step reasoning becoming the default.",
   },
   {
-    question: "What are the hardest Year 5 NAPLAN numeracy topics?",
+    question: "What are the hardest Year 7 NAPLAN numeracy topics?",
     answer:
-      "Teachers and tutors consistently point to the same three: fractions and decimals, multi-step word problems, and unit conversions. These account for a large share of lost marks — and they're all very fixable with targeted practice.",
+      "Teachers and tutors consistently point to non-calculator arithmetic, early algebra, and ratio and rate problems. All three are new or newly demanding at Year 7 — and all three respond well to targeted practice.",
   },
   {
-    question: "How can I help my child prepare for Year 5 numeracy?",
+    question: "How is Year 7 numeracy different from Year 5?",
     answer:
-      "Find the actual gaps first, then practise those specifically in short sessions. ClassUp's free diagnostic maps your child's skills across all six strands and gives you an honest starting picture.",
+      "It's 15 minutes longer, includes a non-calculator section followed by a calculator section, and introduces algebra, ratio and index notation. The reasoning demand steps up to match the start of high school.",
   },
   {
     question: "Does ClassUp cover all six numeracy strands?",
@@ -47,27 +47,27 @@ const PAGE_FAQ = [
 const STRAND_ROWS = [
   {
     strand: "Number",
-    detail: "Place value into the tens of thousands, fractions and decimals, multiplication and division with larger numbers",
+    detail: "Fractions, decimals and percentages used fluently, ratio and rate, index notation, negative numbers",
   },
   {
     strand: "Algebra",
-    detail: "Number patterns, missing-value problems, simple rules (\"what comes next, and why?\")",
+    detail: "Proper algebra begins — variables, expressions, solving simple equations, linear patterns and graphs",
   },
   {
     strand: "Measurement",
-    detail: "Length, area, perimeter, volume, mass, time — including unit conversions",
+    detail: "Area and perimeter of composite shapes, volume, unit conversions, time and scale",
   },
   {
     strand: "Space",
-    detail: "2D shapes and 3D objects, symmetry, grids, maps and simple transformations",
+    detail: "Angle relationships, transformations, coordinates on the Cartesian plane, 3D objects",
   },
   {
     strand: "Statistics",
-    detail: "Reading tables and graphs, comparing data, drawing conclusions",
+    detail: "Mean, median, mode and range, interpreting real data sets and graphs",
   },
   {
     strand: "Probability",
-    detail: "Chance in everyday language — certain, likely, impossible — and simple experiments",
+    detail: "Sample spaces, assigning probabilities as fractions and decimals, simple experiments",
   },
 ];
 
@@ -78,12 +78,12 @@ const SCHEMA = [
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://classup.com.au/" },
       { "@type": "ListItem", position: 2, name: "NAPLAN", item: "https://classup.com.au/naplan" },
-      { "@type": "ListItem", position: 3, name: "Year 5 NAPLAN", item: "https://classup.com.au/naplan-year-5" },
+      { "@type": "ListItem", position: 3, name: "Year 7 NAPLAN", item: "https://classup.com.au/naplan-year-7" },
       {
         "@type": "ListItem",
         position: 4,
-        name: "Year 5 NAPLAN Numeracy",
-        item: "https://classup.com.au/naplan-year-5-numeracy",
+        name: "Year 7 NAPLAN Numeracy",
+        item: "https://classup.com.au/naplan-year-7-numeracy",
       },
     ],
   },
@@ -131,13 +131,13 @@ function PrimaryCTA({ label = "Start the free diagnostic" }: { label?: string })
   );
 }
 
-export default function NaplanYear5Numeracy() {
+export default function NaplanYear7Numeracy() {
   return (
     <PageLayout>
       <SEO
-        title="Year 5 NAPLAN Numeracy: What's Tested & How to Prepare | ClassUp"
-        description="What Year 5 NAPLAN numeracy actually tests — the six strands, the common traps, and how to prepare honestly. Free diagnostic shows where your child stands."
-        canonicalPath="/naplan-year-5-numeracy"
+        title="Year 7 NAPLAN Numeracy: What's Tested & How to Prepare | ClassUp"
+        description="What Year 7 NAPLAN numeracy actually tests — the calculator and non-calculator sections, the six strands, and how to prepare honestly. Free diagnostic included."
+        canonicalPath="/naplan-year-7-numeracy"
         schemaMarkup={SCHEMA}
       />
 
@@ -149,7 +149,7 @@ export default function NaplanYear5Numeracy() {
               {[
                 { label: "Home", href: "/" },
                 { label: "NAPLAN", href: "/naplan" },
-                { label: "Year 5", href: "/naplan-year-5" },
+                { label: "Year 7", href: "/naplan-year-7" },
                 { label: "Numeracy", href: null as string | null },
               ].map((crumb, i, arr) => (
                 <li key={crumb.label} style={{ display: "flex", alignItems: "center", gap: 6 }}>
@@ -166,7 +166,7 @@ export default function NaplanYear5Numeracy() {
             </ol>
           </nav>
 
-          <div className="cu-eyebrow mb-4">YEAR 5 NAPLAN NUMERACY</div>
+          <div className="cu-eyebrow mb-4">YEAR 7 NAPLAN NUMERACY</div>
           <h1
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -178,13 +178,13 @@ export default function NaplanYear5Numeracy() {
               maxWidth: 820,
             }}
           >
-            Year 5 NAPLAN Numeracy: what's tested, and how to prepare{" "}
+            Year 7 NAPLAN Numeracy: what's tested, and how to prepare{" "}
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            By Year 5, maths quietly shifts from counting to reasoning — fractions, decimals, and word problems that take more
-            than one step. Here's what the numeracy test actually covers, where children typically lose marks, and how to find
-            your child's real gaps before March.
+            Year 7 numeracy is the first NAPLAN maths test of high school — longer, harder, and with a format change most
+            parents don't know about: part of it is done without a calculator. Here's what it covers, where students lose marks,
+            and how to find your child's real gaps before March.
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
@@ -193,15 +193,16 @@ export default function NaplanYear5Numeracy() {
         </div>
       </section>
 
-      {/* ── WHAT YEAR 5 NUMERACY TESTS ── */}
+      {/* ── WHAT YEAR 7 NUMERACY TESTS ── */}
       <section className="cu-section">
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>What Year 5 NAPLAN numeracy actually tests</h2>
+          <h2 style={H2}>What Year 7 NAPLAN numeracy actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and — worth knowing — no calculator is allowed at Year 5. Every answer comes from
-            your child's own working.
+            The test is online, adaptive, and runs for 65 minutes — noticeably longer than Year 5's. And it comes in two sections:
+            a short non-calculator section first, where your child works everything by hand, then an on-screen calculator unlocks
+            for the rest. Once it unlocks, they can't go back — so those first questions have to stand on mental arithmetic alone.
           </p>
-          <p style={P}>NAPLAN numeracy draws on six strands of the Australian curriculum:</p>
+          <p style={P}>The questions draw on six strands of the Australian curriculum:</p>
 
           <div style={{ overflowX: "auto", margin: "0 0 24px", maxWidth: 860 }}>
             <table
@@ -243,7 +244,7 @@ export default function NaplanYear5Numeracy() {
                       borderBottom: "2px solid #7F77DD",
                     }}
                   >
-                    What it looks like at Year 5
+                    What it looks like at Year 7
                   </th>
                 </tr>
               </thead>
@@ -271,15 +272,15 @@ export default function NaplanYear5Numeracy() {
           </div>
 
           <p style={P}>
-            Most questions are multiple choice, with some typed answers. And the real jump from Year 3 isn't the topics — it's
-            that questions become multi-step: read a situation, decide the operation, carry a result into a second step, and
-            avoid the trap option that's waiting for the child who stops one step early.
+            The step up from Year 5 is real: algebra appears properly for the first time, percentages and ratio become everyday
+            tools, and questions assume the multi-step reasoning high school expects.
           </p>
           <p style={P}>
             Numeracy is one of four tests in{" "}
-            <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link>. The others are{" "}
+            <Link href="/naplan-year-7" style={LINK}>Year 7 NAPLAN</Link>. The others are{" "}
             <Link href="/naplan/reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
-            <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
+            <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
+            <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link> to see how the maths steps up.
           </p>
         </div>
       </section>
@@ -287,17 +288,14 @@ export default function NaplanYear5Numeracy() {
       {/* ── WHERE STUDENTS LOSE MARKS ── */}
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>Where Year 5 students actually lose marks</h2>
-          <p style={P}>
-            Teachers and tutors see the same patterns every year. The most common Year 5 numeracy gaps aren't exotic — they're
-            these:
-          </p>
+          <h2 style={H2}>Where Year 7 students actually lose marks</h2>
+          <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Fractions and decimals. The single biggest wall. A child can be fine with halves and quarters, then wobble on equivalence, comparing decimals, or placing fractions on a number line.",
-              "Multi-step word problems. The maths is fine; the reading-to-maths translation isn't. Children solve step one correctly and pick the answer that matches it — not noticing the question asked for step two.",
-              "Units and conversions. Metres to centimetres, minutes to hours, grams to kilograms. Small slips, real marks.",
-              "Misreading graphs and tables. Reading the wrong row, missing the scale, or answering from the picture instead of the data.",
+              "The non-calculator section. Students who've grown reliant on a calculator lose easy marks on arithmetic they'd normally sail through — fractions, decimals and percentages by hand.",
+              "Algebra basics. It's new territory. Translating a worded situation into an expression, or solving for an unknown, trips students who've only just met the idea.",
+              "Ratio and rate. \"Best buy\" comparisons, speed and scale problems — conceptually new at Year 7 and heavily tested.",
+              "Multi-step problems. The single most common pattern: solving step one correctly and choosing the answer that matches it, when the question asked for step two.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -306,9 +304,8 @@ export default function NaplanYear5Numeracy() {
             ))}
           </ul>
           <p style={P}>
-            Test writers know these patterns too — the wrong options in NAPLAN aren't random, they're built from exactly these
-            mistakes. That's why practising blind is inefficient: a pile of worksheets tells you your child got 6 out of 10, but
-            not which of these walls they're hitting.
+            NAPLAN's wrong options are built from exactly these mistakes. That's why blind practice is inefficient — a stack of
+            worksheets says 6 out of 10 without telling you which of these walls your child is hitting.
           </p>
         </div>
       </section>
@@ -317,11 +314,11 @@ export default function NaplanYear5Numeracy() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
-            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 numeracy</h2>
+            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 7 numeracy</h2>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic samples questions across all
-              six strands, pitched so your child feels capable rather than examined. You get an honest report of where they
-              stand — strengths and gaps, in plain English.
+              six strands, pitched so your child feels capable rather than examined — they're adjusting to high school as it is.
+              You get an honest report of where they stand, in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
@@ -329,7 +326,7 @@ export default function NaplanYear5Numeracy() {
               method and the trap, so a wrong answer becomes a lesson rather than a red mark.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
-              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If fractions are a problem, the report
+              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If algebra is a problem, the report
               says so — early enough in the year to do something about it. No green-tick theatre. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
@@ -345,10 +342,10 @@ export default function NaplanYear5Numeracy() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Short beats long. Two 15-minute sessions do more than one exhausting hour. Attention is the limiting ingredient at this age.",
-              "Ask \"how did you work it out?\" Explaining the method out loud is where reasoning gets built — more valuable than the answer itself.",
-              "Use real life. Cooking (fractions), shopping (money and change), travel (time and distance). Year 5 maths is everywhere; let them catch you using it.",
-              "Keep the test small. NAPLAN is a snapshot, not a verdict. A calm child who knows what to expect performs closer to their real ability.",
+              "Rebuild the by-hand muscle. A few minutes of mental arithmetic — fractions, percentages, times tables — pays off directly in the non-calculator section.",
+              "Ask \"how did you work it out?\" Explaining the method out loud is where reasoning gets built, especially with new algebra ideas.",
+              "Use real life. Discounts and percentages while shopping, ratios in cooking, speed and time on trips. Year 7 maths is everywhere.",
+              "Keep the test small. It's a snapshot in a year full of new things — new school, new teachers, new subjects. A calm child performs closer to their real ability.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -376,14 +373,14 @@ export default function NaplanYear5Numeracy() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 16, marginTop: 24 }} className="links-grid">
             {[
               {
-                href: "/naplan-year-5",
-                label: "Year 5 NAPLAN",
-                desc: "The full picture of Year 5 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                href: "/naplan-year-7",
+                label: "Year 7 NAPLAN",
+                desc: "The full picture of Year 7 NAPLAN — all four tests, preparation, and how ClassUp helps.",
               },
               {
-                href: "/naplan-year-7-numeracy",
-                label: "Year 7 numeracy",
-                desc: "What Year 7 NAPLAN numeracy tests — calculator sections, algebra, and the high-school step up.",
+                href: "/naplan-year-5-numeracy",
+                label: "Year 5 numeracy",
+                desc: "What Year 5 NAPLAN numeracy tests — and how the maths steps up by Year 7.",
               },
               {
                 href: "/naplan/reading",
@@ -393,7 +390,7 @@ export default function NaplanYear5Numeracy() {
               {
                 href: "/naplan/language-conventions",
                 label: "Language Conventions",
-                desc: "Spelling, grammar and punctuation — what Year 5 students are expected to know.",
+                desc: "Spelling, grammar and punctuation — what Year 7 students are expected to know.",
               },
               {
                 href: "/how-it-works",
@@ -404,6 +401,11 @@ export default function NaplanYear5Numeracy() {
                 href: "/methodology",
                 label: "Methodology",
                 desc: "Why targeted practice outperforms generic worksheets for NAPLAN preparation.",
+              },
+              {
+                href: "/blog/year-7-high-school-maths-shock",
+                label: "Year 7 high-school maths shock",
+                desc: "Algebra, ratio and multi-step reasoning arrive fast. What the Year 7 jump looks like.",
               },
               {
                 href: "/blog/what-naplan-actually-tests",
@@ -445,7 +447,7 @@ export default function NaplanYear5Numeracy() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 5 child really stands in maths — free.
+              Find out where your Year 7 child really stands in maths — free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest diagnostic across all six numeracy strands, and a report that tells you the truth. About 30 minutes.
