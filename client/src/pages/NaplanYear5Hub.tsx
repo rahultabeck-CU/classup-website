@@ -176,7 +176,7 @@ export default function NaplanYear5Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan/numeracy" style={LINK}>Year 5 Numeracy</Link> — number, algebra, measurement, space,
+                <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 Numeracy</Link> — number, algebra, measurement, space,
                 statistics and probability. By Year 5 this steps up: fractions, decimals, multi-step problems and reasoning,
                 not just arithmetic.
               </span>
