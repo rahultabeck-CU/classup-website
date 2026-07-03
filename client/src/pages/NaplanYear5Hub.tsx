@@ -184,7 +184,7 @@ export default function NaplanYear5Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan/reading" style={LINK}>Reading</Link> — longer and more varied passages than Year 3,
+                <Link href="/naplan-year-5-reading" style={LINK}>Reading</Link> — longer and more varied passages than Year 3,
                 testing whether your child can locate information, connect ideas across a text, and read between the lines.
               </span>
             </li>

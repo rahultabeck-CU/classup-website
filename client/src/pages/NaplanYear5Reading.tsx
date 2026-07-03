@@ -6,68 +6,59 @@ import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
-// /naplan-year-5-numeracy — Year 5 NAPLAN Numeracy domain landing
-// Flat route, consistent with /naplan-year-5 hub pattern.
+// /naplan-year-5-reading — Year 5 NAPLAN Reading domain landing
+// Flat route, consistent with /naplan-year-5-numeracy pattern.
 // All CTAs route via DIAGNOSTIC_URL (never hardcoded).
 // ============================================================
 
 const PAGE_FAQ = [
   {
-    question: "Is a calculator allowed in Year 5 NAPLAN numeracy?",
+    question: "How long is the Year 5 NAPLAN reading test?",
     answer:
-      "No. Calculators are not permitted at Year 5. Every question is designed to be solved with your child's own working. (The on-screen calculator only appears in part of the Years 7 and 9 tests.)",
+      "50 minutes, sat online. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of passages differs between students.",
   },
   {
-    question: "How many questions are in the Year 5 numeracy test?",
+    question: "What kinds of texts are in Year 5 NAPLAN reading?",
     answer:
-      "Around 42 questions, sat online in 50 minutes. Because the test is adaptive, the exact questions differ between students — the difficulty adjusts to how your child is answering.",
+      "A mix of imaginative texts (stories), informative texts (factual articles), and persuasive texts (opinion pieces and arguments). The variety is deliberate — different text types demand different reading skills.",
   },
   {
-    question: "What maths should a Year 5 child know for NAPLAN?",
+    question: "What reading skills does Year 5 NAPLAN test?",
     answer:
-      "The six curriculum strands: number (including fractions and decimals), algebra patterns, measurement, space, statistics and probability. The step up from Year 3 is multi-step reasoning — combining skills within one question.",
+      "Three: locating directly stated information, interpreting (inference, vocabulary in context, connecting ideas), and evaluating (author's purpose and technique). Most Year 5 marks are decided in the interpreting questions.",
   },
   {
-    question: "What are the hardest Year 5 NAPLAN numeracy topics?",
+    question: "What are the hardest Year 5 NAPLAN reading questions?",
     answer:
-      "Teachers and tutors consistently point to the same three: fractions and decimals, multi-step word problems, and unit conversions. These account for a large share of lost marks — and they're all very fixable with targeted practice.",
+      "Teachers and tutors consistently point to inference questions, vocabulary in context, and author's-purpose questions. All three ask the child to go beyond what's literally written — and all three respond well to targeted practice.",
   },
   {
-    question: "How can I help my child prepare for Year 5 numeracy?",
+    question: "How can I help my child prepare for Year 5 reading?",
     answer:
-      "Find the actual gaps first, then practise those specifically in short sessions. ClassUp's free diagnostic maps your child's skills across all six strands and gives you an honest starting picture.",
+      "Read with them and talk about it — asking \"why\" and \"how do you know\" builds inference better than any worksheet. Then find their specific gaps and practise those. ClassUp's free diagnostic maps all three reading skills and gives you an honest starting picture.",
   },
   {
-    question: "Does ClassUp cover all six numeracy strands?",
+    question: "Does ClassUp use real passages like the actual test?",
     answer:
-      "Yes — the diagnostic samples across Number, Algebra, Measurement, Space, Statistics and Probability, and practice adapts to where your child needs work.",
+      "Yes — the diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
   },
 ];
 
-const STRAND_ROWS = [
+const SKILL_ROWS = [
   {
-    strand: "Number",
-    detail: "Place value into the tens of thousands, fractions and decimals, multiplication and division with larger numbers",
+    strand: "Locating",
+    detail:
+      "Finding directly stated information — the \"it says so right here\" questions. The easiest skill, and the one most children arrive with.",
   },
   {
-    strand: "Algebra",
-    detail: "Number patterns, missing-value problems, simple rules (\"what comes next, and why?\")",
+    strand: "Interpreting",
+    detail:
+      "Reading between the lines: making inferences, working out word meanings from context, connecting ideas across paragraphs. This is where Year 5 lives — and where most marks are won and lost.",
   },
   {
-    strand: "Measurement",
-    detail: "Length, area, perimeter, volume, mass, time — including unit conversions",
-  },
-  {
-    strand: "Space",
-    detail: "2D shapes and 3D objects, symmetry, grids, maps and simple transformations",
-  },
-  {
-    strand: "Statistics",
-    detail: "Reading tables and graphs, comparing data, drawing conclusions",
-  },
-  {
-    strand: "Probability",
-    detail: "Chance in everyday language — certain, likely, impossible — and simple experiments",
+    strand: "Evaluating",
+    detail:
+      "Stepping outside the text: why did the author write this, what technique are they using, is this fact or opinion?",
   },
 ];
 
@@ -82,8 +73,8 @@ const SCHEMA = [
       {
         "@type": "ListItem",
         position: 4,
-        name: "Year 5 NAPLAN Numeracy",
-        item: "https://classup.com.au/naplan-year-5-numeracy",
+        name: "Year 5 NAPLAN Reading",
+        item: "https://classup.com.au/naplan-year-5-reading",
       },
     ],
   },
@@ -131,13 +122,13 @@ function PrimaryCTA({ label = "Start the free diagnostic" }: { label?: string })
   );
 }
 
-export default function NaplanYear5Numeracy() {
+export default function NaplanYear5Reading() {
   return (
     <PageLayout>
       <SEO
-        title="Year 5 NAPLAN Numeracy: What's Tested & How to Prepare | ClassUp"
-        description="What Year 5 NAPLAN numeracy actually tests — the six strands, the common traps, and how to prepare honestly. Free diagnostic shows where your child stands."
-        canonicalPath="/naplan-year-5-numeracy"
+        title="Year 5 NAPLAN Reading: What's Tested & How to Prepare | ClassUp"
+        description="What Year 5 NAPLAN reading actually tests — the three reading skills, the question types that catch children out, and how to prepare honestly."
+        canonicalPath="/naplan-year-5-reading"
         schemaMarkup={SCHEMA}
       />
 
@@ -150,7 +141,7 @@ export default function NaplanYear5Numeracy() {
                 { label: "Home", href: "/" },
                 { label: "NAPLAN", href: "/naplan" },
                 { label: "Year 5", href: "/naplan-year-5" },
-                { label: "Numeracy", href: null as string | null },
+                { label: "Reading", href: null as string | null },
               ].map((crumb, i, arr) => (
                 <li key={crumb.label} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                   {crumb.href ? (
@@ -166,7 +157,7 @@ export default function NaplanYear5Numeracy() {
             </ol>
           </nav>
 
-          <div className="cu-eyebrow mb-4">YEAR 5 NAPLAN NUMERACY</div>
+          <div className="cu-eyebrow mb-4">YEAR 5 NAPLAN READING</div>
           <h1
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -178,13 +169,13 @@ export default function NaplanYear5Numeracy() {
               maxWidth: 820,
             }}
           >
-            Year 5 NAPLAN Numeracy: what's tested, and how to prepare{" "}
+            Year 5 NAPLAN Reading: what's tested, and how to prepare{" "}
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            By Year 5, maths quietly shifts from counting to reasoning — fractions, decimals, and word problems that take more
-            than one step. Here's what the numeracy test actually covers, where children typically lose marks, and how to find
-            your child's real gaps before March.
+            By Year 5, reading questions stop asking "what happened?" and start asking "what does it mean?" Here's what the
+            reading test actually measures, where children typically lose marks, and how to find your child's real gaps before
+            March.
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
@@ -193,15 +184,15 @@ export default function NaplanYear5Numeracy() {
         </div>
       </section>
 
-      {/* ── WHAT YEAR 5 NUMERACY TESTS ── */}
+      {/* ── WHAT YEAR 5 READING TESTS ── */}
       <section className="cu-section">
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>What Year 5 NAPLAN numeracy actually tests</h2>
+          <h2 style={H2}>What Year 5 NAPLAN reading actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and — worth knowing — no calculator is allowed at Year 5. Every answer comes from
-            your child's own working.
+            The test is online, adaptive, and runs for 50 minutes. Your child reads a series of passages — stories, factual
+            articles, and persuasive pieces — and answers questions about each one.
           </p>
-          <p style={P}>NAPLAN numeracy draws on six strands of the Australian curriculum:</p>
+          <p style={P}>Underneath, every question is testing one of three reading skills:</p>
 
           <div style={{ overflowX: "auto", margin: "0 0 24px", maxWidth: 860 }}>
             <table
@@ -230,7 +221,7 @@ export default function NaplanYear5Numeracy() {
                       width: "22%",
                     }}
                   >
-                    Strand
+                    Reading skill
                   </th>
                   <th
                     scope="col"
@@ -248,7 +239,7 @@ export default function NaplanYear5Numeracy() {
                 </tr>
               </thead>
               <tbody>
-                {STRAND_ROWS.map((row, i) => (
+                {SKILL_ROWS.map((row, i) => (
                   <tr key={row.strand} style={{ background: i % 2 === 0 ? "#FFF" : "#FAFAF8" }}>
                     <td
                       style={{
@@ -271,14 +262,13 @@ export default function NaplanYear5Numeracy() {
           </div>
 
           <p style={P}>
-            Most questions are multiple choice, with some typed answers. And the real jump from Year 3 isn't the topics — it's
-            that questions become multi-step: read a situation, decide the operation, carry a result into a second step, and
-            avoid the trap option that's waiting for the child who stops one step early.
+            The passages themselves step up from Year 3: longer texts, richer vocabulary, and a mix of imaginative, informative
+            and persuasive writing — because reading a story and reading an argument are different skills.
           </p>
           <p style={P}>
-            Numeracy is one of four tests in{" "}
+            Reading is one of four tests in{" "}
             <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link>. The others are{" "}
-            <Link href="/naplan/reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
+            <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link>, Writing, and Language Conventions (
             <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
           </p>
         </div>
@@ -288,16 +278,14 @@ export default function NaplanYear5Numeracy() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>Where Year 5 students actually lose marks</h2>
-          <p style={P}>
-            Teachers and tutors see the same patterns every year. The most common Year 5 numeracy gaps aren't exotic — they're
-            these:
-          </p>
+          <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Fractions and decimals. The single biggest wall. A child can be fine with halves and quarters, then wobble on equivalence, comparing decimals, or placing fractions on a number line.",
-              "Multi-step word problems. The maths is fine; the reading-to-maths translation isn't. Children solve step one correctly and pick the answer that matches it — not noticing the question asked for step two.",
-              "Units and conversions. Metres to centimetres, minutes to hours, grams to kilograms. Small slips, real marks.",
-              "Misreading graphs and tables. Reading the wrong row, missing the scale, or answering from the picture instead of the data.",
+              "Inference questions. The answer isn't written anywhere — it has to be worked out. Children who read fluently but literally pick the option that copies words from the text, which is usually the trap.",
+              "Vocabulary in context. \"What does 'reluctant' mean in this sentence?\" Guessing from the word alone instead of the sentence around it.",
+              "Connecting across a text. Questions that need paragraph two and paragraph five held together. Children answer from whichever paragraph they read last.",
+              "Author's purpose and technique. \"Why did the author include this?\" is a new kind of question at Year 5, and it catches children who've only ever been asked \"what happened?\"",
+              "Rushing the passage. Skimming, then answering from memory of the skim. The wrong options are written for exactly this reader.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -306,9 +294,8 @@ export default function NaplanYear5Numeracy() {
             ))}
           </ul>
           <p style={P}>
-            Test writers know these patterns too — the wrong options in NAPLAN aren't random, they're built from exactly these
-            mistakes. That's why practising blind is inefficient: a pile of worksheets tells you your child got 6 out of 10, but
-            not which of these walls they're hitting.
+            A stack of comprehension worksheets tells you your child got 7 out of 10 — but not whether the three they missed were
+            inference, vocabulary, or author's purpose. And those need different practice.
           </p>
         </div>
       </section>
@@ -317,20 +304,20 @@ export default function NaplanYear5Numeracy() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
-            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 numeracy</h2>
+            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 reading</h2>
             <p style={{ ...P, marginBottom: 16 }}>
-              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic samples questions across all
-              six strands, pitched so your child feels capable rather than examined. You get an honest report of where they
-              stand — strengths and gaps, in plain English.
+              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic uses real passage-and-question
+              sets — the same structure as NAPLAN itself — and reads which of the three skills are solid and which are wobbly.
+              You get an honest report in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more of what's wobbly, less of what's already solid. Every question comes with a clear explanation of the
-              method and the trap, so a wrong answer becomes a lesson rather than a red mark.
+              gaps — more inference work if inference is the wall, less of what's already strong. Every question comes with a
+              clear explanation of the reasoning and the trap, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
-              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If fractions are a problem, the report
-              says so — early enough in the year to do something about it. No green-tick theatre. See{" "}
+              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If your child reads fluently but struggles
+              to read between the lines, the report says exactly that — early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -345,10 +332,10 @@ export default function NaplanYear5Numeracy() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Short beats long. Two 15-minute sessions do more than one exhausting hour. Attention is the limiting ingredient at this age.",
-              "Ask \"how did you work it out?\" Explaining the method out loud is where reasoning gets built — more valuable than the answer itself.",
-              "Use real life. Cooking (fractions), shopping (money and change), travel (time and distance). Year 5 maths is everywhere; let them catch you using it.",
-              "Keep the test small. NAPLAN is a snapshot, not a verdict. A calm child who knows what to expect performs closer to their real ability.",
+              "Read together, then talk. The single best reading practice is conversation: \"Why do you think she did that?\" \"How do you know?\" — that's inference training in disguise.",
+              "Ask for evidence. When your child answers a question about a book or show, ask \"what makes you say that?\" Pointing to evidence is exactly what NAPLAN rewards.",
+              "Mix the diet. Stories build one muscle; news articles, instructions and opinion pieces build others. Year 5 tests all of them.",
+              "Keep it calm. A child who knows the test is a snapshot, not a verdict, reads more carefully than an anxious one.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -381,14 +368,9 @@ export default function NaplanYear5Numeracy() {
                 desc: "The full picture of Year 5 NAPLAN — all four tests, preparation, and how ClassUp helps.",
               },
               {
-                href: "/naplan-year-7-numeracy",
-                label: "Year 7 numeracy",
-                desc: "What Year 7 NAPLAN numeracy tests — calculator sections, algebra, and the high-school step up.",
-              },
-              {
-                href: "/naplan-year-5-reading",
-                label: "Year 5 reading",
-                desc: "What Year 5 NAPLAN reading tests — the three reading skills and the questions that catch children out.",
+                href: "/naplan-year-5-numeracy",
+                label: "Year 5 numeracy",
+                desc: "What Year 5 NAPLAN numeracy tests — the six strands and the traps that cost marks.",
               },
               {
                 href: "/naplan/language-conventions",
@@ -406,9 +388,14 @@ export default function NaplanYear5Numeracy() {
                 desc: "Why targeted practice outperforms generic worksheets for NAPLAN preparation.",
               },
               {
-                href: "/blog/what-naplan-actually-tests",
-                label: "What NAPLAN actually tests",
-                desc: "A plain-English look at what each NAPLAN domain is really assessing.",
+                href: "/blog/how-to-read-naplan-results",
+                label: "How to read NAPLAN results",
+                desc: "What the four proficiency levels mean — and what to do next.",
+              },
+              {
+                href: "/blog/help-child-catch-up-reading",
+                label: "Help your child catch up on reading",
+                desc: "Practical ways to build reading skills when your child has fallen behind.",
               },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
@@ -445,10 +432,10 @@ export default function NaplanYear5Numeracy() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 5 child really stands in maths — free.
+              Find out where your Year 5 child really stands in reading — free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
-              An honest diagnostic across all six numeracy strands, and a report that tells you the truth. About 30 minutes.
+              An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.
             </p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 17, padding: "18px 40px", background: "#7F77DD", color: "#FFF" }}>
               Start the free diagnostic &#8594;
