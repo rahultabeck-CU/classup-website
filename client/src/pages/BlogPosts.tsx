@@ -253,54 +253,112 @@ export function BlogPostGenericPrep() {
 // POST 4: How to read your child's NAPLAN results (~690 words)
 // ============================================================
 
-const BLOG_RESULTS_SCHEMA = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How to read your child's NAPLAN results",
-  "description": "NAPLAN results arrive as a band score, a scaled score, and a comparison to the national average. Here is how to read each one.",
-  "author": { "@type": "Person", "name": "Rahul Tabeck" },
-  "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
-  "url": "https://classup.com.au/blog/how-to-read-naplan-results",
-  "datePublished": "2025-03-01",
-  "dateModified": "2026-04-29",
-  "wordCount": 690,
-  "inLanguage": "en-AU"
-};
+const BLOG_RESULTS_FAQ = [
+  {
+    question: "When do NAPLAN results come out?",
+    answer:
+      "In stages. Schools receive preliminary results from late April and full results around June. Individual Student Reports reach parents through schools in early Term 3 — around July.",
+  },
+  {
+    question: "What replaced NAPLAN bands?",
+    answer:
+      "Four proficiency levels, introduced in 2023: Exceeding, Strong, Developing, and Needs additional support. The old ten-band scale and the old \"national minimum standard\" no longer apply.",
+  },
+  {
+    question: "Is \"Developing\" a bad NAPLAN result?",
+    answer:
+      "It's not failing — it means your child is still working towards year-level expectations. It's best read as an early, useful signal: there are specific skills to build, and there's most of a school year to build them.",
+  },
+  {
+    question: "Do NAPLAN results affect my child's future?",
+    answer:
+      "NAPLAN is mainly a progress snapshot for you, the school, and the system. Some schools consider results as one input among many, but it isn't a pass-or-fail exam and it doesn't determine your child's path.",
+  },
+  {
+    question: "How do I find out which specific skills my child needs help with?",
+    answer:
+      "The NAPLAN report won't tell you — it shows levels, not causes. A skill-by-skill diagnostic (like ClassUp's free one) or a conversation with your child's teacher will get you to the specifics.",
+  },
+];
+
+const BLOG_RESULTS_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to read your child's NAPLAN results — a parent's honest guide",
+    "description": "What the four NAPLAN proficiency levels actually mean, what the report doesn't tell you, and what's genuinely worth doing next.",
+    "author": { "@type": "Organization", "name": "ClassUp" },
+    "publisher": { "@type": "Organization", "name": "ClassUp", "url": "https://classup.com.au" },
+    "url": "https://classup.com.au/blog/how-to-read-naplan-results",
+    "datePublished": "2026-07-03",
+    "dateModified": "2026-07-03",
+    "inLanguage": "en-AU",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: BLOG_RESULTS_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  },
+];
+
+const BLOG_LINK: React.CSSProperties = { color: "#7F77DD", fontWeight: 600 };
+
 export function BlogPostReadResults() {
   const post = BLOG_POSTS.find((p) => p.slug === "how-to-read-naplan-results")!;
   return (
     <BlogLayout post={post}>
       <SEO
-        title="How to read your child's NAPLAN results - ClassUp Blog"
-        description="NAPLAN results arrive as a band score, a scaled score, and a comparison to the national average. Here is how to read each one without panicking."
+        title="How to Read Your Child's NAPLAN Results (2026 Guide) | ClassUp"
+        description="NAPLAN reports arrive early Term 3. What Exceeding, Strong, Developing and Needs additional support actually mean — and what to do next, honestly."
         canonicalPath="/blog/how-to-read-naplan-results"
         schemaMarkup={BLOG_RESULTS_SCHEMA}
       />
       <div className="blog-body">
-        <p>Your child's NAPLAN results report contains three main pieces of information: a band score for each domain, a comparison to the national average, and an indication of whether your child met the National Minimum Standard. Each of these tells you something different, and understanding the difference prevents both unnecessary panic and misplaced reassurance.</p>
+        <p>Individual Student Reports arrive through schools in early Term 3, and for many parents they raise more questions than they answer. Here's what the report actually says, what it doesn't, and what's genuinely worth doing next.</p>
 
-        <h2>The band scale</h2>
-        <p>NAPLAN results are reported on a proficiency scale with four levels: Exceeding, Strong, Developing, and Needs additional support. This replaced the previous Band 1-10 system in 2023. The proficiency levels are defined relative to the expected standard for each year level, so "Strong" in Year 5 and "Strong" in Year 7 represent different absolute levels of skill.</p>
-        <p>Most students fall in the "Developing" or "Strong" range. "Exceeding" represents performance well above the expected standard. "Needs additional support" indicates that a student is working below the expected level and may benefit from targeted intervention.</p>
+        <h2>The four proficiency levels (there are no more "bands")</h2>
+        <p>Since 2023, NAPLAN results use four proficiency levels instead of the old ten bands. Each of your child's tests — Numeracy, Reading, Writing, and Conventions of Language — gets one of:</p>
+        <ul>
+          <li><strong>Exceeding</strong> — your child's result is well above what's expected at their year level.</li>
+          <li><strong>Strong</strong> — your child's result meets the challenging-but-reasonable expectations for their year level. This is a good result.</li>
+          <li><strong>Developing</strong> — your child is working towards the expectations for their year level. Some skills need building.</li>
+          <li><strong>Needs additional support</strong> — your child's result suggests they're not yet meeting year-level expectations and would benefit from targeted help.</li>
+        </ul>
+        <p>Two things parents often misread. First, "Strong" is not second place — it means your child is where they should be. Second, "Developing" is not failing — it's a signal, arriving early enough in the year to act on.</p>
 
-        <h3>What the proficiency levels mean in practice</h3>
-        <p>"Exceeding" means your child is performing well above what is expected for their year level. This is not a cause for complacency: the skills tested in Year 5 are the foundation for Year 7, and Year 7 is the foundation for senior secondary. Maintaining strong skills matters even when results are good.</p>
-        <p>"Strong" means your child is meeting the expected standard with some room above the minimum. This is a solid result and does not necessarily indicate a need for intensive preparation.</p>
-        <p>"Developing" means your child is working towards the expected standard. This is the range where targeted preparation tends to produce the most visible improvement, because the gaps are specific and addressable. See the <Link href="/naplan/bands-explained" style={{ color: "#7F77DD", fontWeight: 600 }}>full bands guide</Link> for a detailed breakdown of each proficiency level.</p>
-        <p>"Needs additional support" means your child is working below the minimum expected level. This warrants a conversation with your child's teacher as well as targeted practice outside school.</p>
+        <h2>What the report shows</h2>
+        <p>Your child's report shows their result as a marker on a scale for each test area, positioned against the proficiency levels, along with the national average for their year level. Some versions also show the middle range of students. It's a snapshot of one test sat in March — a useful one, but one data point, not a verdict. For a plain-English look at what each test measures, see <Link href="/blog/what-naplan-actually-tests" style={BLOG_LINK}>what NAPLAN actually tests</Link>.</p>
 
-        <h2>The National Minimum Standard</h2>
-        <p>The National Minimum Standard (NMS) is the minimum level of literacy and numeracy skill expected for each year level. Students below the NMS are identified as needing additional support. It is important to understand that the NMS is not a pass mark and it is not the target. It is a floor, not a ceiling. A student who meets the NMS is meeting the minimum expectation, not performing well.</p>
-        <p>Parents sometimes receive a result showing their child has "met the National Minimum Standard" and interpret this as a good result. It is a baseline result. If your goal is for your child to be well-prepared for secondary school, meeting the minimum standard in Year 5 is a starting point, not a destination.</p>
+        <h2>What NAPLAN results don't tell you</h2>
+        <p>This is the part most prep companies won't say. The report tells you the level, not the cause. "Developing" in numeracy doesn't tell you whether the problem is fractions, multi-step word problems, or reading the questions too quickly. Two children with identical results can have completely different gaps. The report also can't tell you about effort, confidence, a bad night's sleep, or a child who rushes. Treat it as a flag, not a diagnosis.</p>
 
-        <h2>Looking at the domain breakdown</h2>
-        <p>The most useful part of the NAPLAN results report is the domain breakdown, not the overall summary. A child can have a "Developing" overall result while being "Strong" in Reading and "Needs additional support" in Numeracy. The overall result hides this information. The domain breakdown reveals it.</p>
-        <p>When you receive your child's results, look at each domain separately. Identify which domain has the lowest result. Then, if possible, ask your child's teacher which specific skills within that domain are weakest. The NAPLAN report does not provide skill-level detail, but a teacher who has been working with your child will often have a clearer picture.</p>
+        <h2>What to do for each level — honestly</h2>
+        <ul>
+          <li><strong>Exceeding:</strong> celebrate it, then keep them stretched. Boredom is the risk, not gaps.</li>
+          <li><strong>Strong:</strong> your child is on track. If you do anything, target the one or two areas where the school report or their teacher says they wobble — not a blanket program.</li>
+          <li><strong>Developing:</strong> this is the level where targeted help pays off most. Find the specific gaps and work on those, in short sessions, well before next March. Avoid the panic-buy of generic worksheet packs — practising everything is practising nothing.</li>
+          <li><strong>Needs additional support:</strong> talk to your child's teacher first — they see your child daily and the school may already have support in motion. Then build a simple, specific plan around the actual gaps. Progress at this level comes from precision and consistency, not volume.</li>
+        </ul>
+        <p>Whichever level your child sits at, the year-level hubs walk through preparation in context — <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link>.</p>
 
-        <h2>What to do with the results</h2>
-        <p>First, keep perspective. NAPLAN results are a snapshot of where your child was in March. They are not a prediction of where your child will be in a year, and they are not a measure of your child's intelligence or potential. They are a measure of specific, learnable skills at a specific point in time.</p>
-        <p>Second, use the domain breakdown to focus any preparation. If Numeracy is the weakest domain, that is where preparation time should go. If Language Conventions is strong and Reading is weak, the preparation should reflect that.</p>
-        <p>Third, if your child is in "Needs additional support" in any domain, treat that as a signal to act before the next assessment cycle, not after. The gap between <Link href="/naplan/year-5" style={{ color: "#7F77DD", fontWeight: 600 }}>Year 5</Link> and <Link href="/naplan/year-7" style={{ color: "#7F77DD", fontWeight: 600 }}>Year 7</Link> is two years, which is enough time to close most skill gaps with consistent, targeted practice.</p>
+        <h2>The question the report can't answer — "which gaps?"</h2>
+        <p>Whatever the level, the useful next step is the same: find out precisely where your child stands, skill by skill. That's what ClassUp's free diagnostic does — it maps your child's <Link href="/naplan-year-5-numeracy" style={BLOG_LINK}>numeracy</Link>, reading, and language conventions skills and gives you an honest report: what's solid, what's wobbly, and what to work on first. No inflated promises, no green-tick theatre. If your child is struggling with something, we tell you — because that's the whole point.</p>
+        <InPostCTA />
+
+        <h2>Frequently asked questions</h2>
+        {BLOG_RESULTS_FAQ.map((item) => (
+          <React.Fragment key={item.question}>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </React.Fragment>
+        ))}
+
+        <h2>See exactly where your child stands — free.</h2>
+        <p>An honest, skill-by-skill diagnostic across numeracy, reading and language conventions. About 30 minutes, and the report tells you the truth.</p>
         <InPostCTA />
       </div>
     </BlogLayout>
