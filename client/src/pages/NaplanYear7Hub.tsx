@@ -208,7 +208,7 @@ export default function NaplanYear7Hub() {
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
                 Language Conventions —{" "}
-                <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link> move past the
+                <Link href="/naplan-year-7-language-conventions" style={LINK}>spelling, grammar and punctuation</Link> move past the
                 basics into tenses, clauses and more demanding spelling.
               </span>
             </li>

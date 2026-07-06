@@ -372,6 +372,11 @@ export default function NaplanYear5LanguageConventions() {
                 desc: "What Year 5 NAPLAN reading tests — the three reading skills and the questions that catch children out.",
               },
               {
+                href: "/naplan-year-7-language-conventions",
+                label: "Year 7 language conventions",
+                desc: "Trickier spelling, complex-sentence punctuation, and reported speech — what steps up at Year 7.",
+              },
+              {
                 href: "/how-it-works",
                 label: "How It Works",
                 desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",

@@ -20,6 +20,7 @@ import NaplanYear5LanguageConventions from "./pages/NaplanYear5LanguageConventio
 import NaplanYear7Hub from "./pages/NaplanYear7Hub";
 import NaplanYear7Numeracy from "./pages/NaplanYear7Numeracy";
 import NaplanYear7Reading from "./pages/NaplanYear7Reading";
+import NaplanYear7LanguageConventions from "./pages/NaplanYear7LanguageConventions";
 import NAPLANYear9 from "./pages/NAPLANYear9";
 import { NAPLANWriting } from "./pages/NAPLANDomains";
 import NaplanProficiencyLevels from "./pages/NaplanProficiencyLevels";
@@ -72,6 +73,7 @@ function Router() {
       <Route path="/naplan-year-7" component={NaplanYear7Hub} />
       <Route path="/naplan-year-7-numeracy" component={NaplanYear7Numeracy} />
       <Route path="/naplan-year-7-reading" component={NaplanYear7Reading} />
+      <Route path="/naplan-year-7-language-conventions" component={NaplanYear7LanguageConventions} />
       <Route path="/naplan-year-9" component={NAPLANYear9} />
       <Route path="/naplan/language-conventions">
         <Redirect to="/naplan-year-5-language-conventions" replace />

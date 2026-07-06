@@ -270,7 +270,7 @@ export default function NaplanYear7Reading() {
             Reading is one of four tests in{" "}
             <Link href="/naplan-year-7" style={LINK}>Year 7 NAPLAN</Link>. The others are{" "}
             <Link href="/naplan-year-7-numeracy" style={LINK}>Year 7 numeracy</Link>, Writing, and Language Conventions (
-            <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
+            <Link href="/naplan-year-7-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
             <Link href="/naplan-year-5-reading" style={LINK}>Year 5 reading</Link> to see how the skills step up.
           </p>
         </div>
@@ -380,9 +380,9 @@ export default function NaplanYear7Reading() {
                 desc: "Algebra, ratio and multi-step reasoning — what Year 7 NAPLAN numeracy actually tests.",
               },
               {
-                href: "/naplan-year-5-language-conventions",
-                label: "Language Conventions",
-                desc: "Spelling, grammar and punctuation — what Year 7 students are expected to know.",
+                href: "/naplan-year-7-language-conventions",
+                label: "Year 7 language conventions",
+                desc: "Spelling, grammar and punctuation at Year 7 — harder spelling, complex sentences, and reported speech.",
               },
               {
                 href: "/how-it-works",
