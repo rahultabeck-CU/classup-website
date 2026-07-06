@@ -916,10 +916,10 @@ function NAPLANBasicsSection() {
                 />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-                <Link href="/naplan/year-5" style={naplanLinkStyle}>Year 5 NAPLAN guide →</Link>
-                <Link href="/naplan/year-7" style={naplanLinkStyle}>Year 7 NAPLAN guide →</Link>
-                <Link href="/naplan/numeracy" style={naplanLinkStyle}>Numeracy domain →</Link>
-                <Link href="/naplan/reading" style={naplanLinkStyle}>Reading domain →</Link>
+                <Link href="/naplan-year-5" style={naplanLinkStyle}>Year 5 NAPLAN guide →</Link>
+                <Link href="/naplan-year-7" style={naplanLinkStyle}>Year 7 NAPLAN guide →</Link>
+                <Link href="/naplan-year-5-numeracy" style={naplanLinkStyle}>Numeracy domain →</Link>
+                <Link href="/naplan-year-5-reading" style={naplanLinkStyle}>Reading domain →</Link>
                 <Link href="/naplan/language-conventions" style={naplanLinkStyle}>Language Conventions →</Link>
                 <Link href="/naplan/proficiency-levels-explained" style={naplanLinkStyle}>What NAPLAN results mean →</Link>
               </div>

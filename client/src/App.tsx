@@ -13,17 +13,14 @@ import Coaches from "./pages/Coaches";
 import CoachLuna from "./pages/CoachLuna";
 import CoachLeo from "./pages/CoachLeo";
 import NAPLAN from "./pages/NAPLAN";
-import NAPLANYear5 from "./pages/NAPLANYear5";
 import NaplanYear5Hub from "./pages/NaplanYear5Hub";
 import NaplanYear5Numeracy from "./pages/NaplanYear5Numeracy";
 import NaplanYear5Reading from "./pages/NaplanYear5Reading";
 import NaplanYear7Hub from "./pages/NaplanYear7Hub";
 import NaplanYear7Numeracy from "./pages/NaplanYear7Numeracy";
 import NaplanYear7Reading from "./pages/NaplanYear7Reading";
-import NAPLANYear7 from "./pages/NAPLANYear7";
 import NAPLANYear9 from "./pages/NAPLANYear9";
-import NAPLANNumeracy from "./pages/NAPLANNumeracy";
-import { NAPLANReading, NAPLANLanguageConventions, NAPLANWriting } from "./pages/NAPLANDomains";
+import { NAPLANLanguageConventions, NAPLANWriting } from "./pages/NAPLANDomains";
 import NaplanProficiencyLevels from "./pages/NaplanProficiencyLevels";
 import About from "./pages/About";
 import Methodology from "./pages/Methodology";
@@ -67,21 +64,29 @@ function Router() {
 
       {/* NAPLAN hub */}
       <Route path="/naplan" component={NAPLAN} />
-      <Route path="/naplan/year-5" component={NAPLANYear5} />
       <Route path="/naplan-year-5" component={NaplanYear5Hub} />
       <Route path="/naplan-year-5-numeracy" component={NaplanYear5Numeracy} />
       <Route path="/naplan-year-5-reading" component={NaplanYear5Reading} />
       <Route path="/naplan-year-7" component={NaplanYear7Hub} />
       <Route path="/naplan-year-7-numeracy" component={NaplanYear7Numeracy} />
       <Route path="/naplan-year-7-reading" component={NaplanYear7Reading} />
-      <Route path="/naplan/year-7" component={NAPLANYear7} />
       <Route path="/naplan-year-9" component={NAPLANYear9} />
-      <Route path="/naplan/numeracy" component={NAPLANNumeracy} />
-      <Route path="/naplan/reading" component={NAPLANReading} />
       <Route path="/naplan/language-conventions" component={NAPLANLanguageConventions} />
       <Route path="/naplan/writing" component={NAPLANWriting} />
       <Route path="/naplan/proficiency-levels-explained" component={NaplanProficiencyLevels} />
-      {/* Permanent redirect: retired bands page -> proficiency levels (edge 301 in vercel.json) */}
+      {/* Permanent redirects: legacy slugs → flat grid (edge 301 in vercel.json) */}
+      <Route path="/naplan/year-5">
+        <Redirect to="/naplan-year-5" replace />
+      </Route>
+      <Route path="/naplan/year-7">
+        <Redirect to="/naplan-year-7" replace />
+      </Route>
+      <Route path="/naplan/numeracy">
+        <Redirect to="/naplan-year-5-numeracy" replace />
+      </Route>
+      <Route path="/naplan/reading">
+        <Redirect to="/naplan-year-5-reading" replace />
+      </Route>
       <Route path="/naplan/bands-explained">
         <Redirect to="/naplan/proficiency-levels-explained" replace />
       </Route>

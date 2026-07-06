@@ -251,12 +251,12 @@ export default function NAPLANYear7() {
               <div className="cu-card-large" style={{ padding: 24, marginBottom: 20 }}>
                 <div className="cu-eyebrow mb-3">QUICK LINKS</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  <Link href="/naplan/numeracy" style={sidebarLinkStyle}>Numeracy domain →</Link>
-                  <Link href="/naplan/reading" style={sidebarLinkStyle}>Reading domain →</Link>
+                  <Link href="/naplan-year-5-numeracy" style={sidebarLinkStyle}>Numeracy domain →</Link>
+                  <Link href="/naplan-year-5-reading" style={sidebarLinkStyle}>Reading domain →</Link>
                   <Link href="/naplan/language-conventions" style={sidebarLinkStyle}>Language Conventions →</Link>
                   <Link href="/naplan/writing" style={sidebarLinkStyle}>Writing domain →</Link>
                   <Link href="/naplan/proficiency-levels-explained" style={sidebarLinkStyle}>Proficiency levels →</Link>
-                  <Link href="/naplan/year-5" style={sidebarLinkStyle}>Year 5 guide →</Link>
+                  <Link href="/naplan-year-5" style={sidebarLinkStyle}>Year 5 guide →</Link>
                 </div>
               </div>
               <div style={{ background: "#EEEDFE", borderRadius: 20, padding: 24, marginBottom: 20 }}>

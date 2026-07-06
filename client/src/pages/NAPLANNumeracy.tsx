@@ -240,14 +240,14 @@ export default function NAPLANNumeracy() {
               <div className="cu-card-large" style={{ padding: 24, marginBottom: 20 }}>
                 <div className="cu-eyebrow mb-3">NUMERACY BY YEAR</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  <Link href="/naplan/year-5" style={sidebarLinkStyle}>Year 5 Numeracy →</Link>
-                  <Link href="/naplan/year-7" style={sidebarLinkStyle}>Year 7 Numeracy →</Link>
+                  <Link href="/naplan-year-5-numeracy" style={sidebarLinkStyle}>Year 5 Numeracy →</Link>
+                  <Link href="/naplan-year-7-numeracy" style={sidebarLinkStyle}>Year 7 Numeracy →</Link>
                 </div>
               </div>
               <div className="cu-card-large" style={{ padding: 24, marginBottom: 20 }}>
                 <div className="cu-eyebrow mb-3">OTHER DOMAINS</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                  <Link href="/naplan/reading" style={sidebarLinkStyle}>Reading →</Link>
+                  <Link href="/naplan-year-5-reading" style={sidebarLinkStyle}>Reading →</Link>
                   <Link href="/naplan/language-conventions" style={sidebarLinkStyle}>Language Conventions →</Link>
                   <Link href="/naplan/writing" style={sidebarLinkStyle}>Writing →</Link>
                 </div>

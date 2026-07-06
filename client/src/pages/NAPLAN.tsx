@@ -13,7 +13,7 @@ import { SEO } from "@/components/SEO";
 const NAPLAN_DOMAINS = [
   {
     title: "Numeracy",
-    href: "/naplan/numeracy",
+    href: "/naplan-year-5-numeracy",
     desc: "Number, algebra, measurement, space, statistics, and probability. The largest domain by question count. Non-calculator throughout.",
     color: "#EEEDFE",
     textColor: "#534AB7",
@@ -21,7 +21,7 @@ const NAPLAN_DOMAINS = [
   },
   {
     title: "Reading",
-    href: "/naplan/reading",
+    href: "/naplan-year-5-reading",
     desc: "Locating, integrating, and analysing information across narrative and informational texts. Includes persuasive texts from Year 5.",
     color: "#EAF3DE",
     textColor: "#4A7515",
@@ -185,7 +185,7 @@ export default function NAPLAN() {
             {[
               {
                 year: "Year 5",
-                href: "/naplan/year-5",
+                href: "/naplan-year-5",
                 desc: "First major NAPLAN year. Results are used to identify students who need support before high school. The National Minimum Standard is Band 4. The national average is typically Band 6.",
                 color: "#EEEDFE",
                 textColor: "#534AB7",
@@ -193,7 +193,7 @@ export default function NAPLAN() {
               },
               {
                 year: "Year 7",
-                href: "/naplan/year-7",
+                href: "/naplan-year-7",
                 desc: "First year of high school. Results inform school support programs and can affect subject selection at some schools. The National Minimum Standard is Band 5. The national average is typically Band 7-8.",
                 color: "#EAF3DE",
                 textColor: "#4A7515",
@@ -272,10 +272,10 @@ export default function NAPLAN() {
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 48 }}>
             {[
               { label: "What NAPLAN results mean", href: "/naplan/proficiency-levels-explained" },
-              { label: "Year 5 NAPLAN guide", href: "/naplan/year-5" },
-              { label: "Year 7 NAPLAN guide", href: "/naplan/year-7" },
-              { label: "Numeracy domain", href: "/naplan/numeracy" },
-              { label: "Reading domain", href: "/naplan/reading" },
+              { label: "Year 5 NAPLAN guide", href: "/naplan-year-5" },
+              { label: "Year 7 NAPLAN guide", href: "/naplan-year-7" },
+              { label: "Numeracy domain", href: "/naplan-year-5-numeracy" },
+              { label: "Reading domain", href: "/naplan-year-5-reading" },
               { label: "Language Conventions", href: "/naplan/language-conventions" },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ display: "flex", alignItems: "center", gap: 8, padding: "12px 18px", background: "#FFF", border: "1px solid #E8E4D8", borderRadius: 12, textDecoration: "none", fontSize: 14, fontWeight: 600, color: "#444" }}>

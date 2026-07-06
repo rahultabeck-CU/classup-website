@@ -4,6 +4,26 @@
       "source": "/naplan/bands-explained",
       "destination": "/naplan/proficiency-levels-explained",
       "permanent": true
+    },
+    {
+      "source": "/naplan/year-5",
+      "destination": "/naplan-year-5",
+      "permanent": true
+    },
+    {
+      "source": "/naplan/year-7",
+      "destination": "/naplan-year-7",
+      "permanent": true
+    },
+    {
+      "source": "/naplan/numeracy",
+      "destination": "/naplan-year-5-numeracy",
+      "permanent": true
+    },
+    {
+      "source": "/naplan/reading",
+      "destination": "/naplan-year-5-reading",
+      "permanent": true
     }
   ],
   "rewrites": [

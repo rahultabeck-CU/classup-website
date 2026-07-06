@@ -374,7 +374,7 @@ export default function NaplanYear7Hub() {
               { href: "/blog/year-7-high-school-maths-shock", label: "Year 7 high-school maths shock", desc: "Algebra, ratio and multi-step reasoning arrive fast. What the Year 7 jump looks like." },
               { href: "/blog/what-naplan-actually-tests", label: "What NAPLAN actually tests", desc: "A plain-English look at what each NAPLAN domain is really assessing." },
               { href: "/blog/how-to-read-naplan-results", label: "How to read NAPLAN results", desc: "Make sense of bands and the national standard — and what to do next." },
-              { href: "/naplan/year-7", label: "Full Year 7 NAPLAN test guide", desc: "Timing, bands and sample questions for the Year 7 tests." },
+              { href: "/naplan-year-7", label: "Full Year 7 NAPLAN test guide", desc: "What Year 7 NAPLAN tests and how to prepare honestly." },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
                 <div

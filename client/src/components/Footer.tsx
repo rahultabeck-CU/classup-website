@@ -47,10 +47,10 @@ export function Footer() {
             <div className="cu-eyebrow mb-3">NAPLAN</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <Link href="/naplan" style={linkStyle}>NAPLAN Overview</Link>
-              <Link href="/naplan/year-5" style={linkStyle}>Year 5</Link>
-              <Link href="/naplan/year-7" style={linkStyle}>Year 7</Link>
-              <Link href="/naplan/numeracy" style={linkStyle}>Numeracy</Link>
-              <Link href="/naplan/reading" style={linkStyle}>Reading</Link>
+              <Link href="/naplan-year-5" style={linkStyle}>Year 5</Link>
+              <Link href="/naplan-year-7" style={linkStyle}>Year 7</Link>
+              <Link href="/naplan-year-5-numeracy" style={linkStyle}>Numeracy</Link>
+              <Link href="/naplan-year-5-reading" style={linkStyle}>Reading</Link>
               <Link href="/naplan/language-conventions" style={linkStyle}>Language Conventions</Link>
               <Link href="/naplan/proficiency-levels-explained" style={linkStyle}>Proficiency Levels</Link>
             </div>
@@ -75,8 +75,8 @@ export function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
               <Link href="/naplan-year-5" style={linkStyle}>Year 5 NAPLAN Hub</Link>
               <Link href="/naplan-year-7" style={linkStyle}>Year 7 NAPLAN Hub</Link>
-              <Link href="/naplan/year-5" style={linkStyle}>Year 5 Test Guide</Link>
-              <Link href="/naplan/year-7" style={linkStyle}>Year 7 Test Guide</Link>
+              <Link href="/naplan-year-5" style={linkStyle}>Year 5 Test Guide</Link>
+              <Link href="/naplan-year-7" style={linkStyle}>Year 7 Test Guide</Link>
               <Link href="/naplan/proficiency-levels-explained" style={linkStyle}>Proficiency Levels</Link>
               <Link href="/resources" style={linkStyle}>All Resources</Link>
             </div>

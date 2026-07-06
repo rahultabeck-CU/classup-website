@@ -278,7 +278,7 @@ export default function NaplanYear5Numeracy() {
           <p style={P}>
             Numeracy is one of four tests in{" "}
             <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link>. The others are{" "}
-            <Link href="/naplan/reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
+            <Link href="/naplan-year-5-reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
             <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
           </p>
         </div>

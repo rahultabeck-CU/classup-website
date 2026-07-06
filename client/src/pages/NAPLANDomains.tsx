@@ -19,13 +19,13 @@ const sidebarLinkStyle: React.CSSProperties = {
 
 function DomainSidebar({ current }: { current: string }) {
   const links = [
-    { label: "Numeracy", href: "/naplan/numeracy" },
-    { label: "Reading", href: "/naplan/reading" },
+    { label: "Numeracy", href: "/naplan-year-5-numeracy" },
+    { label: "Reading", href: "/naplan-year-5-reading" },
     { label: "Language Conventions", href: "/naplan/language-conventions" },
     { label: "Writing", href: "/naplan/writing" },
     { label: "Proficiency Levels", href: "/naplan/proficiency-levels-explained" },
-    { label: "Year 5 Guide", href: "/naplan/year-5" },
-    { label: "Year 7 Guide", href: "/naplan/year-7" },
+    { label: "Year 5 Guide", href: "/naplan-year-5" },
+    { label: "Year 7 Guide", href: "/naplan-year-7" },
   ];
   return (
     <div style={{ position: "sticky", top: 100 }}>
