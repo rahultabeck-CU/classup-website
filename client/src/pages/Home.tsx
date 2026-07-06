@@ -5,6 +5,7 @@ import { CoachAvatar, FounderAvatar, FAQAccordion, EmailCapture } from "@/compon
 import { SAMPLE_2 } from "@/lib/classup";
 import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
+import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/schema";
 
 // ============================================================
 // SECTION 2 — HERO
@@ -1280,17 +1281,15 @@ const HOME_SCHEMA = [
     "@type": "WebSite",
     "name": "ClassUp",
     "url": "https://classup.com.au",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ClassUp",
-      "url": "https://classup.com.au"
-    }
+    "publisher": ORGANIZATION_REF
   },
   {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
+    "@id": ORGANIZATION_ID,
     "name": "ClassUp",
     "url": "https://classup.com.au",
+    "logo": "https://classup.com.au/og-image.png",
     "description": "ClassUp is an adaptive NAPLAN preparation tool for Australian students in Years 5 and 7. It provides a free 30-minute diagnostic and adaptive coaching via two AI coaches, Luna and Leo.",
     "parentOrganization": {
       "@type": "Organization",

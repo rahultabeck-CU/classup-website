@@ -4,6 +4,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { SampleQuestionCard, Breadcrumb, FAQAccordion, InPostCTA, FounderAvatar, EmailCapture } from "@/components/ClassUpUI";
 import { DIAGNOSTIC_URL, SAMPLE_4 } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
+import { ORGANIZATION_REF } from "@/lib/schema";
 
 // ============================================================
 // /naplan-year-9 — Full depth at eval bar
@@ -80,11 +81,7 @@ const NAPLAN_Y9_SCHEMA = [
     name: "ClassUp Year 9 NAPLAN Coaching",
     description:
       "Adaptive NAPLAN coaching for Year 9 students. Covers Numeracy, Reading, Language Conventions, and Writing. Starts with a free 30-minute diagnostic. Year 9 is the final NAPLAN test.",
-    provider: {
-      "@type": "EducationalOrganization",
-      name: "ClassUp",
-      url: "https://classup.com.au",
-    },
+    provider: ORGANIZATION_REF,
     educationalLevel: "Year 9",
     hasCourseInstance: {
       "@type": "CourseInstance",

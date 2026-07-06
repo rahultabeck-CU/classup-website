@@ -4,6 +4,7 @@ import { PageLayout } from "@/components/PageLayout";
 import { SampleQuestionCard, Breadcrumb, FAQAccordion, InPostCTA, FounderAvatar, EmailCapture } from "@/components/ClassUpUI";
 import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_6, SAMPLE_8 } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
+import { ORGANIZATION_REF } from "@/lib/schema";
 
 // ============================================================
 // /naplan/year-5 -- Full depth at eval bar
@@ -61,11 +62,7 @@ const NAPLAN_Y5_SCHEMA = [
     "@type": "Course",
     "name": "ClassUp Year 5 NAPLAN Coaching",
     "description": "Adaptive NAPLAN coaching for Year 5 students. Covers Numeracy, Reading, Language Conventions, and Writing. Starts with a free 30-minute diagnostic.",
-    "provider": {
-      "@type": "EducationalOrganization",
-      "name": "ClassUp",
-      "url": "https://classup.com.au"
-    },
+    "provider": ORGANIZATION_REF,
     "educationalLevel": "Year 5",
     "hasCourseInstance": {
       "@type": "CourseInstance",
