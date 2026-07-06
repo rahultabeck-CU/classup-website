@@ -19,6 +19,7 @@ import NaplanYear5Numeracy from "./pages/NaplanYear5Numeracy";
 import NaplanYear5Reading from "./pages/NaplanYear5Reading";
 import NaplanYear7Hub from "./pages/NaplanYear7Hub";
 import NaplanYear7Numeracy from "./pages/NaplanYear7Numeracy";
+import NaplanYear7Reading from "./pages/NaplanYear7Reading";
 import NAPLANYear7 from "./pages/NAPLANYear7";
 import NAPLANYear9 from "./pages/NAPLANYear9";
 import NAPLANNumeracy from "./pages/NAPLANNumeracy";
@@ -72,6 +73,7 @@ function Router() {
       <Route path="/naplan-year-5-reading" component={NaplanYear5Reading} />
       <Route path="/naplan-year-7" component={NaplanYear7Hub} />
       <Route path="/naplan-year-7-numeracy" component={NaplanYear7Numeracy} />
+      <Route path="/naplan-year-7-reading" component={NaplanYear7Reading} />
       <Route path="/naplan/year-7" component={NAPLANYear7} />
       <Route path="/naplan-year-9" component={NAPLANYear9} />
       <Route path="/naplan/numeracy" component={NAPLANNumeracy} />

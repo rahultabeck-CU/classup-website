@@ -193,7 +193,7 @@ export default function NaplanYear7Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan/reading" style={LINK}>Reading</Link> — longer, denser passages, including persuasive and
+                <Link href="/naplan-year-7-reading" style={LINK}>Reading</Link> — longer, denser passages, including persuasive and
                 analytical texts. Your child has to weigh an author's purpose, follow an argument, and connect ideas across
                 paragraphs.
               </span>

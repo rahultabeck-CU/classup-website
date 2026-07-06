@@ -6,68 +6,59 @@ import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
-// /naplan-year-7-numeracy — Year 7 NAPLAN Numeracy domain landing
-// Flat route, consistent with /naplan-year-7 hub pattern.
+// /naplan-year-7-reading — Year 7 NAPLAN Reading domain landing
+// Flat route, consistent with /naplan-year-5-reading pattern.
 // All CTAs route via DIAGNOSTIC_URL (never hardcoded).
 // ============================================================
 
 const PAGE_FAQ = [
   {
-    question: "Is a calculator allowed in Year 7 NAPLAN numeracy?",
+    question: "How long is the Year 7 NAPLAN reading test?",
     answer:
-      "Partly. The test starts with a short non-calculator section, then an on-screen calculator unlocks for the remaining questions. Students can't return to the non-calculator section once the calculator is available.",
+      "65 minutes, sat online — 15 minutes longer than Year 5. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of passages differs between students.",
   },
   {
-    question: "How long is the Year 7 numeracy test?",
+    question: "What kinds of texts are in Year 7 NAPLAN reading?",
     answer:
-      "65 minutes, sat online. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of questions differs between students.",
+      "Imaginative texts (stories, poems), informative texts (factual articles and reports), and persuasive texts (opinion pieces and editorials). Year 7 leans more heavily on persuasive and analytical texts than the primary years.",
   },
   {
-    question: "What maths should a Year 7 child know for NAPLAN?",
+    question: "What reading skills does Year 7 NAPLAN test?",
     answer:
-      "The six curriculum strands — number (fractions, decimals, percentages, ratio), beginning algebra, measurement, space, statistics and probability. The big shifts from Year 5 are algebra and ratio appearing properly, and multi-step reasoning becoming the default.",
+      "Three: locating directly stated information, interpreting (inference, vocabulary, connecting ideas across a longer text), and evaluating (author's purpose, technique, and fact versus opinion). Evaluating carries much more weight at Year 7 than at Year 5.",
   },
   {
-    question: "What are the hardest Year 7 NAPLAN numeracy topics?",
+    question: "What are the hardest Year 7 NAPLAN reading questions?",
     answer:
-      "Teachers and tutors consistently point to non-calculator arithmetic, early algebra, and ratio and rate problems. All three are new or newly demanding at Year 7 — and all three respond well to targeted practice.",
+      "Teachers and tutors consistently point to evaluating persuasive texts, inference in long passages, and fact-versus-opinion questions. All three ask the child to analyse rather than just comprehend — and all three respond well to targeted practice.",
   },
   {
-    question: "How is Year 7 numeracy different from Year 5?",
+    question: "How is Year 7 reading different from Year 5?",
     answer:
-      "It's 15 minutes longer, includes a non-calculator section followed by a calculator section, and introduces algebra, ratio and index notation. The reasoning demand steps up to match the start of high school.",
+      "Longer test (65 minutes), denser and more analytical passages, and a real shift towards evaluating how and why a text is written — not just understanding what it says.",
   },
   {
-    question: "Does ClassUp cover all six numeracy strands?",
+    question: "Does ClassUp use real passages like the actual test?",
     answer:
-      "Yes — the diagnostic samples across Number, Algebra, Measurement, Space, Statistics and Probability, and practice adapts to where your child needs work.",
+      "Yes — the diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
   },
 ];
 
-const STRAND_ROWS = [
+const SKILL_ROWS = [
   {
-    strand: "Number",
-    detail: "Fractions, decimals and percentages used fluently, ratio and rate, index notation, negative numbers",
+    strand: "Locating",
+    detail:
+      "Finding directly stated information in longer, denser texts. Still the most straightforward skill — but the texts it hides in are harder to navigate.",
   },
   {
-    strand: "Algebra",
-    detail: "Proper algebra begins — variables, expressions, solving simple equations, linear patterns and graphs",
+    strand: "Interpreting",
+    detail:
+      "Reading between the lines: inference, working out meaning from context, and connecting ideas across a longer passage. The bulk of Year 7 marks live here.",
   },
   {
-    strand: "Measurement",
-    detail: "Area and perimeter of composite shapes, volume, unit conversions, time and scale",
-  },
-  {
-    strand: "Space",
-    detail: "Angle relationships, transformations, coordinates on the Cartesian plane, 3D objects",
-  },
-  {
-    strand: "Statistics",
-    detail: "Mean, median, mode and range, interpreting real data sets and graphs",
-  },
-  {
-    strand: "Probability",
-    detail: "Sample spaces, assigning probabilities as fractions and decimals, simple experiments",
+    strand: "Evaluating",
+    detail:
+      "Analysing the text itself: the author's purpose, their point of view, the techniques they use to persuade, and distinguishing fact from opinion. This is where Year 7 pulls ahead of Year 5.",
   },
 ];
 
@@ -82,8 +73,8 @@ const SCHEMA = [
       {
         "@type": "ListItem",
         position: 4,
-        name: "Year 7 NAPLAN Numeracy",
-        item: "https://classup.com.au/naplan-year-7-numeracy",
+        name: "Year 7 NAPLAN Reading",
+        item: "https://classup.com.au/naplan-year-7-reading",
       },
     ],
   },
@@ -131,13 +122,13 @@ function PrimaryCTA({ label = "Start the free diagnostic" }: { label?: string })
   );
 }
 
-export default function NaplanYear7Numeracy() {
+export default function NaplanYear7Reading() {
   return (
     <PageLayout>
       <SEO
-        title="Year 7 NAPLAN Numeracy: What's Tested & How to Prepare | ClassUp"
-        description="What Year 7 NAPLAN numeracy actually tests — the calculator and non-calculator sections, the six strands, and how to prepare honestly. Free diagnostic included."
-        canonicalPath="/naplan-year-7-numeracy"
+        title="Year 7 NAPLAN Reading: What's Tested & How to Prepare | ClassUp"
+        description="What Year 7 NAPLAN reading actually tests — the three reading skills, the analytical questions that catch students out, and how to prepare honestly."
+        canonicalPath="/naplan-year-7-reading"
         schemaMarkup={SCHEMA}
       />
 
@@ -150,7 +141,7 @@ export default function NaplanYear7Numeracy() {
                 { label: "Home", href: "/" },
                 { label: "NAPLAN", href: "/naplan" },
                 { label: "Year 7", href: "/naplan-year-7" },
-                { label: "Numeracy", href: null as string | null },
+                { label: "Reading", href: null as string | null },
               ].map((crumb, i, arr) => (
                 <li key={crumb.label} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                   {crumb.href ? (
@@ -166,7 +157,7 @@ export default function NaplanYear7Numeracy() {
             </ol>
           </nav>
 
-          <div className="cu-eyebrow mb-4">YEAR 7 NAPLAN NUMERACY</div>
+          <div className="cu-eyebrow mb-4">YEAR 7 NAPLAN READING</div>
           <h1
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -178,13 +169,13 @@ export default function NaplanYear7Numeracy() {
               maxWidth: 820,
             }}
           >
-            Year 7 NAPLAN Numeracy: what's tested, and how to prepare{" "}
+            Year 7 NAPLAN Reading: what's tested, and how to prepare{" "}
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            Year 7 numeracy is the first NAPLAN maths test of high school — longer, harder, and with a format change most
-            parents don't know about: part of it is done without a calculator. Here's what it covers, where students lose marks,
-            and how to find your child's real gaps before March.
+            Year 7 reading is the first NAPLAN of high school — longer passages, denser texts, and questions that ask your child
+            to analyse, not just understand. Here's what the reading test actually measures, where students lose marks, and how to
+            find your child's real gaps before March.
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
@@ -193,16 +184,16 @@ export default function NaplanYear7Numeracy() {
         </div>
       </section>
 
-      {/* ── WHAT YEAR 7 NUMERACY TESTS ── */}
+      {/* ── WHAT YEAR 7 READING TESTS ── */}
       <section className="cu-section">
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>What Year 7 NAPLAN numeracy actually tests</h2>
+          <h2 style={H2}>What Year 7 NAPLAN reading actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and runs for 65 minutes — noticeably longer than Year 5's. And it comes in two sections:
-            a short non-calculator section first, where your child works everything by hand, then an on-screen calculator unlocks
-            for the rest. Once it unlocks, they can't go back — so those first questions have to stand on mental arithmetic alone.
+            The test is online, adaptive, and runs for 65 minutes — 15 minutes longer than Year 5, because the passages are
+            longer and the thinking is deeper. Your child reads a range of texts — imaginative (stories, poems), informative
+            (factual articles, reports) and persuasive (opinion pieces, editorials) — and answers questions about each.
           </p>
-          <p style={P}>The questions draw on six strands of the Australian curriculum:</p>
+          <p style={P}>Underneath, every question is testing one of three reading skills:</p>
 
           <div style={{ overflowX: "auto", margin: "0 0 24px", maxWidth: 860 }}>
             <table
@@ -231,7 +222,7 @@ export default function NaplanYear7Numeracy() {
                       width: "22%",
                     }}
                   >
-                    Strand
+                    Reading skill
                   </th>
                   <th
                     scope="col"
@@ -249,7 +240,7 @@ export default function NaplanYear7Numeracy() {
                 </tr>
               </thead>
               <tbody>
-                {STRAND_ROWS.map((row, i) => (
+                {SKILL_ROWS.map((row, i) => (
                   <tr key={row.strand} style={{ background: i % 2 === 0 ? "#FFF" : "#FAFAF8" }}>
                     <td
                       style={{
@@ -272,15 +263,15 @@ export default function NaplanYear7Numeracy() {
           </div>
 
           <p style={P}>
-            The step up from Year 5 is real: algebra appears properly for the first time, percentages and ratio become everyday
-            tools, and questions assume the multi-step reasoning high school expects.
+            The step up from Year 5 is analysis. It's no longer enough to understand what a text says — Year 7 asks your child to
+            weigh how it's written and why, especially with persuasive and analytical texts.
           </p>
           <p style={P}>
-            Numeracy is one of four tests in{" "}
+            Reading is one of four tests in{" "}
             <Link href="/naplan-year-7" style={LINK}>Year 7 NAPLAN</Link>. The others are{" "}
-            <Link href="/naplan-year-7-reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
+            <Link href="/naplan-year-7-numeracy" style={LINK}>Year 7 numeracy</Link>, Writing, and Language Conventions (
             <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
-            <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link> to see how the maths steps up.
+            <Link href="/naplan-year-5-reading" style={LINK}>Year 5 reading</Link> to see how the skills step up.
           </p>
         </div>
       </section>
@@ -292,10 +283,11 @@ export default function NaplanYear7Numeracy() {
           <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "The non-calculator section. Students who've grown reliant on a calculator lose easy marks on arithmetic they'd normally sail through — fractions, decimals and percentages by hand.",
-              "Algebra basics. It's new territory. Translating a worded situation into an expression, or solving for an unknown, trips students who've only just met the idea.",
-              "Ratio and rate. \"Best buy\" comparisons, speed and scale problems — conceptually new at Year 7 and heavily tested.",
-              "Multi-step problems. The single most common pattern: solving step one correctly and choosing the answer that matches it, when the question asked for step two.",
+              "Evaluating persuasive texts. \"What is the author trying to make you feel?\" and \"which technique is being used?\" are new, and they catch students who read for content but not for craft.",
+              "Inference in longer passages. The answer is implied, not stated — and in a denser Year 7 text, the evidence is easy to miss or misread.",
+              "Holding a long text together. Questions that need information from the start and the end of a passage. Students answer from the part they remember most recently.",
+              "Fact versus opinion. Persuasive texts blur the line deliberately; distinguishing the author's claims from established facts is a genuine Year 7 skill.",
+              "Reading stamina. 65 minutes of dense text is tiring. Concentration slips in the back half, and accuracy slips with it.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -304,8 +296,8 @@ export default function NaplanYear7Numeracy() {
             ))}
           </ul>
           <p style={P}>
-            NAPLAN's wrong options are built from exactly these mistakes. That's why blind practice is inefficient — a stack of
-            worksheets says 6 out of 10 without telling you which of these walls your child is hitting.
+            NAPLAN's wrong options are built from exactly these mistakes. A stack of comprehension worksheets says 7 out of 10
+            — but not whether the misses were inference, author's purpose, or simply fatigue. Those need different responses.
           </p>
         </div>
       </section>
@@ -314,20 +306,20 @@ export default function NaplanYear7Numeracy() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
-            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 7 numeracy</h2>
+            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 7 reading</h2>
             <p style={{ ...P, marginBottom: 16 }}>
-              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic samples questions across all
-              six strands, pitched so your child feels capable rather than examined — they're adjusting to high school as it is.
-              You get an honest report of where they stand, in plain English.
+              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic uses real passage-and-question
+              sets — the same structure as NAPLAN — across imaginative, informative and persuasive texts, and reads which of the
+              three skills are solid and which are wobbly. You get an honest report in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more of what's wobbly, less of what's already solid. Every question comes with a clear explanation of the
-              method and the trap, so a wrong answer becomes a lesson rather than a red mark.
+              gaps — more evaluating work if analysing an author's craft is the wall, less of what's already strong. Every question
+              comes with a clear explanation of the reasoning and the trap, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
-              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If algebra is a problem, the report
-              says so — early enough in the year to do something about it. No green-tick theatre. See{" "}
+              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If your child understands texts but
+              struggles to analyse them, the report says exactly that — early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -342,10 +334,10 @@ export default function NaplanYear7Numeracy() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Rebuild the by-hand muscle. A few minutes of mental arithmetic — fractions, percentages, times tables — pays off directly in the non-calculator section.",
-              "Ask \"how did you work it out?\" Explaining the method out loud is where reasoning gets built, especially with new algebra ideas.",
-              "Use real life. Discounts and percentages while shopping, ratios in cooking, speed and time on trips. Year 7 maths is everywhere.",
-              "Keep the test small. It's a snapshot in a year full of new things — new school, new teachers, new subjects. A calm child performs closer to their real ability.",
+              "Read widely, including non-fiction. Year 7 tests persuasive and informative texts heavily — news articles, opinion pieces and reports build exactly those muscles, not just novels.",
+              "Ask \"what is the author trying to do?\" Not just what happened — why did they write it this way? That's evaluating, the skill Year 7 leans on hardest.",
+              "Build stamina gently. Longer reads in one sitting help with the 65-minute test. Let your child choose material they enjoy so it doesn't feel like a chore.",
+              "Keep it calm. A child adjusting to high school doesn't need test pressure on top. NAPLAN is a snapshot, not a verdict.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -378,14 +370,14 @@ export default function NaplanYear7Numeracy() {
                 desc: "The full picture of Year 7 NAPLAN — all four tests, preparation, and how ClassUp helps.",
               },
               {
-                href: "/naplan-year-5-numeracy",
-                label: "Year 5 numeracy",
-                desc: "What Year 5 NAPLAN numeracy tests — and how the maths steps up by Year 7.",
+                href: "/naplan-year-5-reading",
+                label: "Year 5 reading",
+                desc: "What Year 5 NAPLAN reading tests — and how the skills step up by Year 7.",
               },
               {
-                href: "/naplan-year-7-reading",
-                label: "Year 7 reading",
-                desc: "Longer passages, persuasive texts and evaluating skills — what the reading test actually tests.",
+                href: "/naplan-year-7-numeracy",
+                label: "Year 7 numeracy",
+                desc: "Algebra, ratio and multi-step reasoning — what Year 7 NAPLAN numeracy actually tests.",
               },
               {
                 href: "/naplan/language-conventions",
@@ -403,9 +395,9 @@ export default function NaplanYear7Numeracy() {
                 desc: "Why targeted practice outperforms generic worksheets for NAPLAN preparation.",
               },
               {
-                href: "/blog/year-7-high-school-maths-shock",
-                label: "Year 7 high-school maths shock",
-                desc: "Algebra, ratio and multi-step reasoning arrive fast. What the Year 7 jump looks like.",
+                href: "/blog/how-to-read-naplan-results",
+                label: "How to read NAPLAN results",
+                desc: "What the four proficiency levels mean — and what to do next.",
               },
               {
                 href: "/blog/what-naplan-actually-tests",
@@ -447,10 +439,10 @@ export default function NaplanYear7Numeracy() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 7 child really stands in maths — free.
+              Find out where your Year 7 child really stands in reading — free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
-              An honest diagnostic across all six numeracy strands, and a report that tells you the truth. About 30 minutes.
+              An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.
             </p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 17, padding: "18px 40px", background: "#7F77DD", color: "#FFF" }}>
               Start the free diagnostic &#8594;

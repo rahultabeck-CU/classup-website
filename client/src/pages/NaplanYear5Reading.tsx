@@ -373,6 +373,11 @@ export default function NaplanYear5Reading() {
                 desc: "What Year 5 NAPLAN numeracy tests — the six strands and the traps that cost marks.",
               },
               {
+                href: "/naplan-year-7-reading",
+                label: "Year 7 reading",
+                desc: "Longer passages, persuasive texts and evaluating skills — what steps up at Year 7.",
+              },
+              {
                 href: "/naplan/language-conventions",
                 label: "Language Conventions",
                 desc: "Spelling, grammar and punctuation — what Year 5 students are expected to know.",
