@@ -131,6 +131,24 @@ export function NAPLANReading() {
 // ============================================================
 // LANGUAGE CONVENTIONS PAGE
 // ============================================================
+
+const LC_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://classup.com.au/" },
+      { "@type": "ListItem", position: 2, name: "NAPLAN", item: "https://classup.com.au/naplan" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Language Conventions",
+        item: "https://classup.com.au/naplan/language-conventions",
+      },
+    ],
+  },
+];
+
 export function NAPLANLanguageConventions() {
   return (
     <PageLayout>
@@ -138,6 +156,7 @@ export function NAPLANLanguageConventions() {
         title="NAPLAN Language Conventions — spelling, grammar, punctuation — ClassUp"
         description="NAPLAN Language Conventions tests spelling, grammar, and punctuation. Here is what Year 5 and Year 7 students are expected to know."
         canonicalPath="/naplan/language-conventions"
+        schemaMarkup={LC_SCHEMA}
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
@@ -193,6 +212,24 @@ export function NAPLANLanguageConventions() {
 // ============================================================
 // WRITING PAGE
 // ============================================================
+
+const WRITING_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://classup.com.au/" },
+      { "@type": "ListItem", position: 2, name: "NAPLAN", item: "https://classup.com.au/naplan" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Writing",
+        item: "https://classup.com.au/naplan/writing",
+      },
+    ],
+  },
+];
+
 export function NAPLANWriting() {
   return (
     <PageLayout>
@@ -200,6 +237,7 @@ export function NAPLANWriting() {
         title="NAPLAN Writing — what markers look for — ClassUp"
         description="NAPLAN Writing is marked on six criteria: audience, text structure, ideas, vocabulary, cohesion, and paragraphing. Here is what each criterion means."
         canonicalPath="/naplan/writing"
+        schemaMarkup={WRITING_SCHEMA}
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
         <div className="container" style={{ maxWidth: 1100 }}>
