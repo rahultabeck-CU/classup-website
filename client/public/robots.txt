@@ -1,40 +1,24 @@
-# ClassUp — robots.txt
-# https://classup.com.au
-
-# Standard crawlers
 User-agent: *
 Allow: /
-Disallow: /404
 
-# Google
-User-agent: Googlebot
-Allow: /
-
-# Google AI / Bard
-User-agent: Google-Extended
-Allow: /
-
-# OpenAI
+# AI search + training crawlers explicitly welcomed
 User-agent: GPTBot
 Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
 User-agent: OAI-SearchBot
 Allow: /
-
-# Anthropic Claude
-User-agent: ClaudeBot
+User-agent: ChatGPT-User
 Allow: /
-
-# Perplexity
 User-agent: PerplexityBot
 Allow: /
-
-# Bing / Microsoft
-User-agent: Bingbot
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Applebot-Extended
 Allow: /
 
-# Sitemap
 Sitemap: https://classup.com.au/sitemap.xml

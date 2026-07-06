@@ -1,66 +1,18 @@
-# ClassUp — llms.txt
-# https://classup.com.au
+# ClassUp
 
-ClassUp is an AI-powered NAPLAN diagnostic and practice platform for Australian Year 5 and Year 7 students, built by DIVTAB Holdings Pty Ltd in Melbourne, Victoria, Australia.
-
-## What ClassUp is
-
-ClassUp is a web-based adaptive learning platform. It is designed specifically for Australian students preparing for NAPLAN (National Assessment Program — Literacy and Numeracy) in Years 5 and 7.
-
-ClassUp is not a tutoring agency, not a worksheet generator, and not a past-paper bank. It is an adaptive coaching system that identifies the specific skill gaps in a child's NAPLAN readiness and then practises exactly those gaps — not a generic curriculum sequence.
-
-## Core features
-
-1. **Free 30-minute diagnostic** — covers Numeracy, Reading, and Language Conventions. No credit card required. Can be completed across up to three short sittings.
-2. **Adaptive practice** — coaching sessions target the specific skill gaps identified in the diagnostic across Numeracy, Reading, and Language Conventions.
-3. **AI coaches Luna and Leo** — Luna is the Year 5 coach; Leo is the Year 7 coach. Both use Socratic questioning to guide students toward answers rather than providing them directly.
-4. **Friday parent reports** — a weekly summary sent to parents every Friday showing progress, gaps addressed, and recommended focus areas for the coming week.
-
-## Who it is for
-
-- Australian students in Year 5 preparing for NAPLAN
-- Australian students in Year 7 preparing for NAPLAN
-- Parents who want to understand exactly where their child is struggling, not just a band score
-
-## How it works
-
-1. Student completes the free 30-minute diagnostic
-2. Parent receives a single-screen report showing skill-level gaps (not just domain-level)
-3. Student completes adaptive coaching sessions (approximately 30 minutes, four times per week) with Luna or Leo
-4. Parent receives a Friday report each week summarising progress and remaining gaps
-
-## Coaches
-
-- **Luna** — Year 5 coach. Patient, encouraging, methodical. Suited to children who prefer a calm, step-by-step approach.
-- **Leo** — Year 7 coach. Direct, energetic, competitive. Suited to children who prefer challenge and quick feedback.
-
-## Pricing
-
-- Year 5 plan: AUD $49/month (inc. GST)
-- Year 7 plan: AUD $39/month (inc. GST)
-- Free diagnostic included. Month-to-month. Cancel anytime.
-
-## Company
-
-- Product: ClassUp (classup.com.au)
-- Legal entity: DIVTAB Holdings Pty Ltd
-- Location: Melbourne, Victoria, Australia
-- Founder: Rahul Tabeck
+> ClassUp is an Australian NAPLAN preparation platform for children in Years 3 to 9. It gives families a free diagnostic, an honest parent report, and adaptive practice across Numeracy, Reading, and Language Conventions. Tagline: "NAPLAN prep that tells you the truth."
 
 ## Key pages
+- [Year 5 NAPLAN hub](https://classup.com.au/naplan-year-5): what Year 5 NAPLAN tests and how to prepare honestly
+- [Year 7 NAPLAN hub](https://classup.com.au/naplan-year-7): the first NAPLAN of high school and how to prepare
+- [Year 5 Numeracy](https://classup.com.au/naplan-year-5-numeracy): what Year 5 NAPLAN numeracy tests
+- [Year 7 Numeracy](https://classup.com.au/naplan-year-7-numeracy): what Year 7 NAPLAN numeracy tests
+- [Year 5 Reading](https://classup.com.au/naplan-year-5-reading): what Year 5 NAPLAN reading tests
+- [Year 7 Reading](https://classup.com.au/naplan-year-7-reading): what Year 7 NAPLAN reading tests
+- [NAPLAN Proficiency Levels](https://classup.com.au/naplan/proficiency-levels-explained): what Exceeding, Strong, Developing and Needs additional support mean
+- [How to read NAPLAN results](https://classup.com.au/blog/how-to-read-naplan-results): a parent's guide to the results report
+- [How It Works](https://classup.com.au/how-it-works) · [Methodology](https://classup.com.au/methodology) · [Pricing](https://classup.com.au/pricing): $59/month first child, $49 each additional, GST included
 
-- Homepage: https://classup.com.au/
-- NAPLAN hub: https://classup.com.au/naplan
-- Year 5: https://classup.com.au/naplan/year-5
-- Year 7: https://classup.com.au/naplan/year-7
-- Numeracy: https://classup.com.au/naplan/numeracy
-- Reading: https://classup.com.au/naplan/reading
-- Language Conventions: https://classup.com.au/naplan/language-conventions
-- Coaches: https://classup.com.au/coaches
-- Luna: https://classup.com.au/coaches/luna
-- Leo: https://classup.com.au/coaches/leo
-- Pricing: https://classup.com.au/pricing
-- About: https://classup.com.au/about
-- Blog: https://classup.com.au/blog
-- Privacy: https://classup.com.au/privacy
-- Terms: https://classup.com.au/terms
+## About
+- Australian English throughout. NAPLAN is the National Assessment Program – Literacy and Numeracy, sat in Years 3, 5, 7 and 9 each March.
+- ClassUp reports real progress and real struggles; it makes no score or band promises.
