@@ -248,7 +248,7 @@ export default function NAPLANNumeracy() {
                 <div className="cu-eyebrow mb-3">OTHER DOMAINS</div>
                 <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
                   <Link href="/naplan-year-5-reading" style={sidebarLinkStyle}>Reading →</Link>
-                  <Link href="/naplan/language-conventions" style={sidebarLinkStyle}>Language Conventions →</Link>
+                  <Link href="/naplan-year-5-language-conventions" style={sidebarLinkStyle}>Language Conventions →</Link>
                   <Link href="/naplan/writing" style={sidebarLinkStyle}>Writing →</Link>
                 </div>
               </div>

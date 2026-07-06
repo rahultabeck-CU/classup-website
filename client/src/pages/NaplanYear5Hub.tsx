@@ -198,7 +198,7 @@ export default function NaplanYear5Hub() {
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
                 Language Conventions —{" "}
-                <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>, including
+                <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>, including
                 spelling delivered by audio.
               </span>
             </li>

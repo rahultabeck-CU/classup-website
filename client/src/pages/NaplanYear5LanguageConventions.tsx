@@ -6,59 +6,54 @@ import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
-// /naplan-year-5-reading — Year 5 NAPLAN Reading domain landing
-// Flat route, consistent with /naplan-year-5-numeracy pattern.
+// /naplan-year-5-language-conventions — Year 5 NAPLAN LC domain landing
+// Flat route, consistent with /naplan-year-5-reading pattern.
 // All CTAs route via DIAGNOSTIC_URL (never hardcoded).
 // ============================================================
 
 const PAGE_FAQ = [
   {
-    question: "How long is the Year 5 NAPLAN reading test?",
+    question: "How is spelling tested in Year 5 NAPLAN?",
     answer:
-      "50 minutes, sat online. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of passages differs between students.",
+      "By audio. A word is read aloud and used in a sentence, and your child types it from memory — there's no multiple choice and no visual hint. It tests recall, which is harder than recognising a correct spelling in a list.",
   },
   {
-    question: "What kinds of texts are in Year 5 NAPLAN reading?",
+    question: "How long is the Year 5 language conventions test?",
     answer:
-      "A mix of imaginative texts (stories), informative texts (factual articles), and persuasive texts (opinion pieces and arguments). The variety is deliberate — different text types demand different reading skills.",
+      "About 45 minutes, sat online. It's adaptive, so the difficulty adjusts to how your child is answering.",
   },
   {
-    question: "What reading skills does Year 5 NAPLAN test?",
+    question: "What does Year 5 NAPLAN language conventions include?",
     answer:
-      "Three: locating directly stated information, interpreting (inference, vocabulary in context, connecting ideas), and evaluating (author's purpose and technique). Most Year 5 marks are decided in the interpreting questions.",
+      "Two parts: spelling (delivered by audio) and grammar and punctuation (word forms, tense, agreement, apostrophes, commas, speech marks and sentence structure).",
   },
   {
-    question: "What are the hardest Year 5 NAPLAN reading questions?",
+    question: "What are the hardest parts of Year 5 language conventions?",
     answer:
-      "Teachers and tutors consistently point to inference questions, vocabulary in context, and author's-purpose questions. All three ask the child to go beyond what's literally written — and all three respond well to targeted practice.",
+      "Teachers and tutors consistently point to audio spelling from memory, apostrophes, homophones, and punctuating direct speech. All are very fixable with targeted, little-and-often practice.",
   },
   {
-    question: "How can I help my child prepare for Year 5 reading?",
+    question: "How can I help my child prepare?",
     answer:
-      "Read with them and talk about it — asking \"why\" and \"how do you know\" builds inference better than any worksheet. Then find their specific gaps and practise those. ClassUp's free diagnostic maps all three reading skills and gives you an honest starting picture.",
+      "Practise spelling by ear (read the word aloud, have them write it), notice apostrophes and homophones in everyday text, and read aloud together. Then target the specific gaps — ClassUp's free diagnostic shows you where they are.",
   },
   {
-    question: "Does ClassUp use real passages like the actual test?",
+    question: "Does ClassUp practise spelling the way NAPLAN tests it?",
     answer:
-      "Yes — the diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
+      "Yes — spelling is practised by audio, the same format as the real test, not as a pick-the-right-word list.",
   },
 ];
 
-const SKILL_ROWS = [
+const PART_ROWS = [
   {
-    strand: "Locating",
+    part: "Spelling",
     detail:
-      "Finding directly stated information — the \"it says so right here\" questions. The easiest skill, and the one most children arrive with.",
+      "Delivered by audio — a word is read aloud and used in a sentence, and your child types it from memory. No multiple choice, no visual hint. This is the harder way to test spelling, and it's exactly how NAPLAN does it.",
   },
   {
-    strand: "Interpreting",
+    part: "Grammar and punctuation",
     detail:
-      "Reading between the lines: making inferences, working out word meanings from context, connecting ideas across paragraphs. This is where Year 5 lives — and where most marks are won and lost.",
-  },
-  {
-    strand: "Evaluating",
-    detail:
-      "Stepping outside the text: why did the author write this, what technique are they using, is this fact or opinion?",
+      "Choosing the correct word form, tense or agreement; fixing or placing punctuation (apostrophes, commas, speech marks); and identifying parts of speech and correct sentence structure.",
   },
 ];
 
@@ -73,8 +68,8 @@ const SCHEMA = [
       {
         "@type": "ListItem",
         position: 4,
-        name: "Year 5 NAPLAN Reading",
-        item: "https://classup.com.au/naplan-year-5-reading",
+        name: "Year 5 NAPLAN Language Conventions",
+        item: "https://classup.com.au/naplan-year-5-language-conventions",
       },
     ],
   },
@@ -122,13 +117,13 @@ function PrimaryCTA({ label = "Start the free diagnostic" }: { label?: string })
   );
 }
 
-export default function NaplanYear5Reading() {
+export default function NaplanYear5LanguageConventions() {
   return (
     <PageLayout>
       <SEO
-        title="Year 5 NAPLAN Reading: What's Tested & How to Prepare | ClassUp"
-        description="What Year 5 NAPLAN reading actually tests — the three reading skills, the question types that catch children out, and how to prepare honestly."
-        canonicalPath="/naplan-year-5-reading"
+        title="Year 5 NAPLAN Language Conventions: Spelling, Grammar & Punctuation | ClassUp"
+        description="What Year 5 NAPLAN language conventions tests — spelling (by audio), grammar and punctuation — where children lose marks, and how to prepare honestly."
+        canonicalPath="/naplan-year-5-language-conventions"
         schemaMarkup={SCHEMA}
       />
 
@@ -141,7 +136,7 @@ export default function NaplanYear5Reading() {
                 { label: "Home", href: "/" },
                 { label: "NAPLAN", href: "/naplan" },
                 { label: "Year 5", href: "/naplan-year-5" },
-                { label: "Reading", href: null as string | null },
+                { label: "Language Conventions", href: null as string | null },
               ].map((crumb, i, arr) => (
                 <li key={crumb.label} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                   {crumb.href ? (
@@ -157,7 +152,7 @@ export default function NaplanYear5Reading() {
             </ol>
           </nav>
 
-          <div className="cu-eyebrow mb-4">YEAR 5 NAPLAN READING</div>
+          <div className="cu-eyebrow mb-4">YEAR 5 NAPLAN LANGUAGE CONVENTIONS</div>
           <h1
             style={{
               fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -169,13 +164,13 @@ export default function NaplanYear5Reading() {
               maxWidth: 820,
             }}
           >
-            Year 5 NAPLAN Reading: what's tested, and how to prepare{" "}
+            Year 5 NAPLAN Language Conventions: what's tested, and how to prepare{" "}
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            By Year 5, reading questions stop asking "what happened?" and start asking "what does it mean?" Here's what the
-            reading test actually measures, where children typically lose marks, and how to find your child's real gaps before
-            March.
+            Language conventions is the quiet mark-winner of NAPLAN — spelling, grammar and punctuation, tested precisely.
+            It's also the one section where a few targeted fixes can lift a result fast. Here's what it covers, where Year 5
+            children slip, and how to find the real gaps before March.
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
@@ -184,15 +179,13 @@ export default function NaplanYear5Reading() {
         </div>
       </section>
 
-      {/* ── WHAT YEAR 5 READING TESTS ── */}
+      {/* ── WHAT YEAR 5 LC TESTS ── */}
       <section className="cu-section">
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>What Year 5 NAPLAN reading actually tests</h2>
+          <h2 style={H2}>What Year 5 NAPLAN language conventions actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and runs for 50 minutes. Your child reads a series of passages — stories, factual
-            articles, and persuasive pieces — and answers questions about each one.
+            The test is online, adaptive, and runs for about 45 minutes. It comes in two parts:
           </p>
-          <p style={P}>Underneath, every question is testing one of three reading skills:</p>
 
           <div style={{ overflowX: "auto", margin: "0 0 24px", maxWidth: 860 }}>
             <table
@@ -218,10 +211,10 @@ export default function NaplanYear5Reading() {
                       fontWeight: 800,
                       color: "#534AB7",
                       borderBottom: "2px solid #7F77DD",
-                      width: "22%",
+                      width: "28%",
                     }}
                   >
-                    Reading skill
+                    Part
                   </th>
                   <th
                     scope="col"
@@ -234,13 +227,13 @@ export default function NaplanYear5Reading() {
                       borderBottom: "2px solid #7F77DD",
                     }}
                   >
-                    What it looks like at Year 5
+                    What it covers
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {SKILL_ROWS.map((row, i) => (
-                  <tr key={row.strand} style={{ background: i % 2 === 0 ? "#FFF" : "#FAFAF8" }}>
+                {PART_ROWS.map((row, i) => (
+                  <tr key={row.part} style={{ background: i % 2 === 0 ? "#FFF" : "#FAFAF8" }}>
                     <td
                       style={{
                         padding: "14px 18px",
@@ -250,7 +243,7 @@ export default function NaplanYear5Reading() {
                         verticalAlign: "top",
                       }}
                     >
-                      {row.strand}
+                      {row.part}
                     </td>
                     <td style={{ padding: "14px 18px", color: "#444", borderBottom: "1px solid #E8E4D8", verticalAlign: "top" }}>
                       {row.detail}
@@ -262,14 +255,15 @@ export default function NaplanYear5Reading() {
           </div>
 
           <p style={P}>
-            The passages themselves step up from Year 3: longer texts, richer vocabulary, and a mix of imaginative, informative
-            and persuasive writing — because reading a story and reading an argument are different skills.
+            The audio spelling format catches a lot of families off guard. Most spelling apps show the word and ask your child
+            to pick the right version — NAPLAN plays the word and expects them to produce it from scratch. That's a genuinely
+            different (and harder) skill, and it's worth practising the way the test actually works.
           </p>
           <p style={P}>
-            Reading is one of four tests in{" "}
+            Language conventions is one of four tests in{" "}
             <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link>. The others are{" "}
-            <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link>, Writing, and Language Conventions (
-            <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
+            <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link>,{" "}
+            <Link href="/naplan-year-5-reading" style={LINK}>Year 5 reading</Link>, and Writing.
           </p>
         </div>
       </section>
@@ -281,11 +275,11 @@ export default function NaplanYear5Reading() {
           <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Inference questions. The answer isn't written anywhere — it has to be worked out. Children who read fluently but literally pick the option that copies words from the text, which is usually the trap.",
-              "Vocabulary in context. \"What does 'reluctant' mean in this sentence?\" Guessing from the word alone instead of the sentence around it.",
-              "Connecting across a text. Questions that need paragraph two and paragraph five held together. Children answer from whichever paragraph they read last.",
-              "Author's purpose and technique. \"Why did the author include this?\" is a new kind of question at Year 5, and it catches children who've only ever been asked \"what happened?\"",
-              "Rushing the passage. Skimming, then answering from memory of the skim. The wrong options are written for exactly this reader.",
+              "Audio spelling from memory. Children who \"recognise\" the right spelling in a list can't always produce it cold. The test rewards recall, not recognition.",
+              "Apostrophes. Possessives versus plurals (\"the dog's bone\" vs \"two dogs\"), and its versus it's. A reliable source of dropped marks.",
+              "Homophones. there / their / they're, to / too / two, your / you're. Easy to know, easy to slip under time pressure.",
+              "Verb tense and agreement. \"The team were\" vs \"the team was\"; keeping tense consistent across a sentence.",
+              "Punctuating direct speech. Where the comma and speech marks go — a specific skill many children have never been taught explicitly.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -294,8 +288,8 @@ export default function NaplanYear5Reading() {
             ))}
           </ul>
           <p style={P}>
-            A stack of comprehension worksheets tells you your child got 7 out of 10 — but not whether the three they missed were
-            inference, vocabulary, or author's purpose. And those need different practice.
+            NAPLAN's wrong options are built from exactly these slips. A spelling list your child aces out loud tells you little
+            about how they'll go typing words cold under time.
           </p>
         </div>
       </section>
@@ -304,20 +298,20 @@ export default function NaplanYear5Reading() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
-            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 reading</h2>
+            <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 language conventions</h2>
             <p style={{ ...P, marginBottom: 16 }}>
-              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic uses real passage-and-question
-              sets — the same structure as NAPLAN itself — and reads which of the three skills are solid and which are wobbly.
-              You get an honest report in plain English.
+              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic covers both parts — audio
+              spelling and grammar and punctuation — pitched so your child feels capable rather than examined. You get an
+              honest report of which skills are solid and which are wobbly, in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more inference work if inference is the wall, less of what's already strong. Every question comes with a
-              clear explanation of the reasoning and the trap, so a wrong answer becomes a lesson.
+              gaps — more apostrophe work if apostrophes are the wall, less of what's already strong. Spelling is practised the
+              way NAPLAN tests it: by audio. Every question comes with a clear explanation, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
-              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If your child reads fluently but struggles
-              to read between the lines, the report says exactly that — early enough in the year to do something about it. See{" "}
+              <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If homophones are the problem, the report
+              says so — early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -332,10 +326,10 @@ export default function NaplanYear5Reading() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Read together, then talk. The single best reading practice is conversation: \"Why do you think she did that?\" \"How do you know?\" — that's inference training in disguise.",
-              "Ask for evidence. When your child answers a question about a book or show, ask \"what makes you say that?\" Pointing to evidence is exactly what NAPLAN rewards.",
-              "Mix the diet. Stories build one muscle; news articles, instructions and opinion pieces build others. Year 5 tests all of them.",
-              "Keep it calm. A child who knows the test is a snapshot, not a verdict, reads more carefully than an anxious one.",
+              "Practise spelling by ear, not by sight. Read a word aloud, use it in a sentence, and have your child write it — that's the NAPLAN format. Testing them on a list they can see is easier than the real thing.",
+              "Hunt apostrophes and homophones in the wild. Point them out on signs, menus and messages. Little-and-often beats a worksheet blitz.",
+              "Read aloud together. Hearing how sentences are built quietly teaches grammar and punctuation without it feeling like study.",
+              "Keep it calm. It's a snapshot, not a verdict. A relaxed child makes fewer careless slips.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -373,14 +367,9 @@ export default function NaplanYear5Reading() {
                 desc: "What Year 5 NAPLAN numeracy tests — the six strands and the traps that cost marks.",
               },
               {
-                href: "/naplan-year-7-reading",
-                label: "Year 7 reading",
-                desc: "Longer passages, persuasive texts and evaluating skills — what steps up at Year 7.",
-              },
-              {
-                href: "/naplan-year-5-language-conventions",
-                label: "Year 5 language conventions",
-                desc: "Spelling, grammar and punctuation — what Year 5 students are expected to know.",
+                href: "/naplan-year-5-reading",
+                label: "Year 5 reading",
+                desc: "What Year 5 NAPLAN reading tests — the three reading skills and the questions that catch children out.",
               },
               {
                 href: "/how-it-works",
@@ -396,11 +385,6 @@ export default function NaplanYear5Reading() {
                 href: "/blog/how-to-read-naplan-results",
                 label: "How to read NAPLAN results",
                 desc: "What the four proficiency levels mean — and what to do next.",
-              },
-              {
-                href: "/blog/help-child-catch-up-reading",
-                label: "Help your child catch up on reading",
-                desc: "Practical ways to build reading skills when your child has fallen behind.",
               },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
@@ -437,10 +421,10 @@ export default function NaplanYear5Reading() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 5 child really stands in reading — free.
+              Find out where your Year 5 child really stands — free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
-              An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.
+              An honest diagnostic across spelling, grammar and punctuation, and a report that tells you the truth. About 30 minutes.
             </p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 17, padding: "18px 40px", background: "#7F77DD", color: "#FFF" }}>
               Start the free diagnostic &#8594;

@@ -279,7 +279,7 @@ export default function NaplanYear7Numeracy() {
             Numeracy is one of four tests in{" "}
             <Link href="/naplan-year-7" style={LINK}>Year 7 NAPLAN</Link>. The others are{" "}
             <Link href="/naplan-year-7-reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
-            <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
+            <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>). Compare with{" "}
             <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 numeracy</Link> to see how the maths steps up.
           </p>
         </div>
@@ -388,7 +388,7 @@ export default function NaplanYear7Numeracy() {
                 desc: "Longer passages, persuasive texts and evaluating skills — what the reading test actually tests.",
               },
               {
-                href: "/naplan/language-conventions",
+                href: "/naplan-year-5-language-conventions",
                 label: "Language Conventions",
                 desc: "Spelling, grammar and punctuation — what Year 7 students are expected to know.",
               },

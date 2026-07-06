@@ -29,7 +29,7 @@ const NAPLAN_DOMAINS = [
   },
   {
     title: "Language Conventions",
-    href: "/naplan/language-conventions",
+    href: "/naplan-year-5-language-conventions",
     desc: "Spelling, grammar, and punctuation. Includes audio dictation in the online test. Spelling is the most commonly underestimated section.",
     color: "#FAEEDA",
     textColor: "#B36B0A",
@@ -276,7 +276,7 @@ export default function NAPLAN() {
               { label: "Year 7 NAPLAN guide", href: "/naplan-year-7" },
               { label: "Numeracy domain", href: "/naplan-year-5-numeracy" },
               { label: "Reading domain", href: "/naplan-year-5-reading" },
-              { label: "Language Conventions", href: "/naplan/language-conventions" },
+              { label: "Language Conventions", href: "/naplan-year-5-language-conventions" },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ display: "flex", alignItems: "center", gap: 8, padding: "12px 18px", background: "#FFF", border: "1px solid #E8E4D8", borderRadius: 12, textDecoration: "none", fontSize: 14, fontWeight: 600, color: "#444" }}>
                 {link.label} →

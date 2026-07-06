@@ -279,7 +279,7 @@ export default function NaplanYear5Numeracy() {
             Numeracy is one of four tests in{" "}
             <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link>. The others are{" "}
             <Link href="/naplan-year-5-reading" style={LINK}>Reading</Link>, Writing, and Language Conventions (
-            <Link href="/naplan/language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
+            <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>).
           </p>
         </div>
       </section>
@@ -391,8 +391,8 @@ export default function NaplanYear5Numeracy() {
                 desc: "What Year 5 NAPLAN reading tests — the three reading skills and the questions that catch children out.",
               },
               {
-                href: "/naplan/language-conventions",
-                label: "Language Conventions",
+                href: "/naplan-year-5-language-conventions",
+                label: "Year 5 language conventions",
                 desc: "Spelling, grammar and punctuation — what Year 5 students are expected to know.",
               },
               {

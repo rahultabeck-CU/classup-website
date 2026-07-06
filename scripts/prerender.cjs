@@ -16,7 +16,7 @@ const ROUTES = [
   '/naplan-year-7',
   '/naplan-year-5-numeracy',
   '/naplan-year-5-reading',
-  '/naplan/language-conventions',
+  '/naplan-year-5-language-conventions',
   '/naplan/writing',
   '/naplan/proficiency-levels-explained',
   '/about',

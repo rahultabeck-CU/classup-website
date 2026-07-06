@@ -21,7 +21,7 @@ function DomainSidebar({ current }: { current: string }) {
   const links = [
     { label: "Numeracy", href: "/naplan-year-5-numeracy" },
     { label: "Reading", href: "/naplan-year-5-reading" },
-    { label: "Language Conventions", href: "/naplan/language-conventions" },
+    { label: "Language Conventions", href: "/naplan-year-5-language-conventions" },
     { label: "Writing", href: "/naplan/writing" },
     { label: "Proficiency Levels", href: "/naplan/proficiency-levels-explained" },
     { label: "Year 5 Guide", href: "/naplan-year-5" },
@@ -143,7 +143,7 @@ const LC_SCHEMA = [
         "@type": "ListItem",
         position: 3,
         name: "Language Conventions",
-        item: "https://classup.com.au/naplan/language-conventions",
+        item: "https://classup.com.au/naplan-year-5-language-conventions",
       },
     ],
   },
@@ -155,7 +155,7 @@ export function NAPLANLanguageConventions() {
       <SEO
         title="NAPLAN Language Conventions — spelling, grammar, punctuation — ClassUp"
         description="NAPLAN Language Conventions tests spelling, grammar, and punctuation. Here is what Year 5 and Year 7 students are expected to know."
-        canonicalPath="/naplan/language-conventions"
+        canonicalPath="/naplan-year-5-language-conventions"
         schemaMarkup={LC_SCHEMA}
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
