@@ -328,7 +328,7 @@ export function BlogPostReadResults() {
           <li><strong>Developing</strong> — your child is working towards the expectations for their year level. Some skills need building.</li>
           <li><strong>Needs additional support</strong> — your child's result suggests they're not yet meeting year-level expectations and would benefit from targeted help.</li>
         </ul>
-        <p>Two things parents often misread. First, "Strong" is not second place — it means your child is where they should be. Second, "Developing" is not failing — it's a signal, arriving early enough in the year to act on.</p>
+        <p>Two things parents often misread. First, "Strong" is not second place — it means your child is where they should be. Second, "Developing" is not failing — it's a signal, arriving early enough in the year to act on. For a full breakdown of each level and how to read the report, see <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>proficiency levels explained</Link>.</p>
 
         <h2>What the report shows</h2>
         <p>Your child's report shows their result as a marker on a scale for each test area, positioned against the proficiency levels, along with the national average for their year level. Some versions also show the middle range of students. It's a snapshot of one test sat in March — a useful one, but one data point, not a verdict. For a plain-English look at what each test measures, see <Link href="/blog/what-naplan-actually-tests" style={BLOG_LINK}>what NAPLAN actually tests</Link>.</p>

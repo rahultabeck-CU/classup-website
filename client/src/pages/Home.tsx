@@ -921,7 +921,7 @@ function NAPLANBasicsSection() {
                 <Link href="/naplan/numeracy" style={naplanLinkStyle}>Numeracy domain →</Link>
                 <Link href="/naplan/reading" style={naplanLinkStyle}>Reading domain →</Link>
                 <Link href="/naplan/language-conventions" style={naplanLinkStyle}>Language Conventions →</Link>
-                <Link href="/naplan/bands-explained" style={naplanLinkStyle}>What NAPLAN bands mean →</Link>
+                <Link href="/naplan/proficiency-levels-explained" style={naplanLinkStyle}>What NAPLAN results mean →</Link>
               </div>
             </div>
           </div>

@@ -255,7 +255,7 @@ export default function NAPLANYear7() {
                   <Link href="/naplan/reading" style={sidebarLinkStyle}>Reading domain →</Link>
                   <Link href="/naplan/language-conventions" style={sidebarLinkStyle}>Language Conventions →</Link>
                   <Link href="/naplan/writing" style={sidebarLinkStyle}>Writing domain →</Link>
-                  <Link href="/naplan/bands-explained" style={sidebarLinkStyle}>Bands explained →</Link>
+                  <Link href="/naplan/proficiency-levels-explained" style={sidebarLinkStyle}>Proficiency levels →</Link>
                   <Link href="/naplan/year-5" style={sidebarLinkStyle}>Year 5 guide →</Link>
                 </div>
               </div>

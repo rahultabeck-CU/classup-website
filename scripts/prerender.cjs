@@ -20,7 +20,7 @@ const ROUTES = [
   '/naplan/reading',
   '/naplan/language-conventions',
   '/naplan/writing',
-  '/naplan/bands-explained',
+  '/naplan/proficiency-levels-explained',
   '/about',
   '/methodology',
   '/how-it-works',

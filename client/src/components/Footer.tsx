@@ -52,7 +52,7 @@ export function Footer() {
               <Link href="/naplan/numeracy" style={linkStyle}>Numeracy</Link>
               <Link href="/naplan/reading" style={linkStyle}>Reading</Link>
               <Link href="/naplan/language-conventions" style={linkStyle}>Language Conventions</Link>
-              <Link href="/naplan/bands-explained" style={linkStyle}>Bands Explained</Link>
+              <Link href="/naplan/proficiency-levels-explained" style={linkStyle}>Proficiency Levels</Link>
             </div>
           </div>
 
@@ -77,7 +77,7 @@ export function Footer() {
               <Link href="/naplan-year-7" style={linkStyle}>Year 7 NAPLAN Hub</Link>
               <Link href="/naplan/year-5" style={linkStyle}>Year 5 Test Guide</Link>
               <Link href="/naplan/year-7" style={linkStyle}>Year 7 Test Guide</Link>
-              <Link href="/naplan/bands-explained" style={linkStyle}>Bands Explained</Link>
+              <Link href="/naplan/proficiency-levels-explained" style={linkStyle}>Proficiency Levels</Link>
               <Link href="/resources" style={linkStyle}>All Resources</Link>
             </div>
           </div>

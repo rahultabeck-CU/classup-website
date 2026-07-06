@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { HelmetProvider } from "react-helmet-async";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Switch, useLocation, Redirect } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 
@@ -22,7 +22,8 @@ import NaplanYear7Numeracy from "./pages/NaplanYear7Numeracy";
 import NAPLANYear7 from "./pages/NAPLANYear7";
 import NAPLANYear9 from "./pages/NAPLANYear9";
 import NAPLANNumeracy from "./pages/NAPLANNumeracy";
-import { NAPLANReading, NAPLANLanguageConventions, NAPLANWriting, NAPLANBandsExplained } from "./pages/NAPLANDomains";
+import { NAPLANReading, NAPLANLanguageConventions, NAPLANWriting } from "./pages/NAPLANDomains";
+import NaplanProficiencyLevels from "./pages/NaplanProficiencyLevels";
 import About from "./pages/About";
 import Methodology from "./pages/Methodology";
 import HowItWorks from "./pages/HowItWorks";
@@ -77,7 +78,11 @@ function Router() {
       <Route path="/naplan/reading" component={NAPLANReading} />
       <Route path="/naplan/language-conventions" component={NAPLANLanguageConventions} />
       <Route path="/naplan/writing" component={NAPLANWriting} />
-      <Route path="/naplan/bands-explained" component={NAPLANBandsExplained} />
+      <Route path="/naplan/proficiency-levels-explained" component={NaplanProficiencyLevels} />
+      {/* Permanent redirect: retired bands page -> proficiency levels (edge 301 in vercel.json) */}
+      <Route path="/naplan/bands-explained">
+        <Redirect to="/naplan/proficiency-levels-explained" replace />
+      </Route>
 
       {/* About / methodology */}
       <Route path="/about" component={About} />

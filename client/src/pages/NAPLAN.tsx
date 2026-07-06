@@ -271,7 +271,7 @@ export default function NAPLAN() {
           <div className="cu-eyebrow mb-4">EXPLORE MORE</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 48 }}>
             {[
-              { label: "What NAPLAN bands mean", href: "/naplan/bands-explained" },
+              { label: "What NAPLAN results mean", href: "/naplan/proficiency-levels-explained" },
               { label: "Year 5 NAPLAN guide", href: "/naplan/year-5" },
               { label: "Year 7 NAPLAN guide", href: "/naplan/year-7" },
               { label: "Numeracy domain", href: "/naplan/numeracy" },

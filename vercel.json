@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/naplan/bands-explained",
+      "destination": "/naplan/proficiency-levels-explained",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

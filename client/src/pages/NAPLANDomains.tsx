@@ -23,7 +23,7 @@ function DomainSidebar({ current }: { current: string }) {
     { label: "Reading", href: "/naplan/reading" },
     { label: "Language Conventions", href: "/naplan/language-conventions" },
     { label: "Writing", href: "/naplan/writing" },
-    { label: "Bands Explained", href: "/naplan/bands-explained" },
+    { label: "Proficiency Levels", href: "/naplan/proficiency-levels-explained" },
     { label: "Year 5 Guide", href: "/naplan/year-5" },
     { label: "Year 7 Guide", href: "/naplan/year-7" },
   ];
@@ -258,80 +258,7 @@ export function NAPLANWriting() {
   );
 }
 
-// ============================================================
-// BANDS EXPLAINED PAGE
-// ============================================================
-export function NAPLANBandsExplained() {
-  return (
-    <PageLayout>
-      <SEO
-        title="NAPLAN bands explained — what the scores mean — ClassUp"
-        description="NAPLAN results are reported on a 10-band scale. Here is what each band means, what the National Minimum Standard is, and how to interpret your child's report."
-        canonicalPath="/naplan/bands-explained"
-      />
-      <section className="cu-section" style={{ paddingTop: 24 }}>
-        <div className="container" style={{ maxWidth: 1100 }}>
-          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "NAPLAN", href: "/naplan" }, { label: "Bands Explained" }]} />
-          <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 48, alignItems: "start" }} className="domain-grid">
-            <div>
-              <div className="cu-eyebrow mb-4">NAPLAN BANDS EXPLAINED</div>
-              <h1 className="cu-h1 mb-4">
-                What NAPLAN bands{" "}
-                <em className="cu-italic-accent">actually mean.</em>
-              </h1>
-              <p className="cu-body-large mb-6">
-                NAPLAN results are reported on a scale of Bands 1 to 10. Here's what each band means, what the national benchmarks are, and what to do if your child's result isn't where you hoped.
-              </p>
-
-              <h2 className="cu-h2-card mb-3">The band scale</h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8, marginBottom: 32 }}>
-                {[
-                  { bands: "Bands 1-2", label: "Well below the National Minimum Standard", color: "#FAEEDA", textColor: "#B36B0A", note: "Students at this level need targeted support. ClassUp's coaching is designed specifically for this." },
-                  { bands: "Band 3-4", label: "At or approaching the National Minimum Standard", color: "#F5F2EC", textColor: "#444", note: "Band 4 is the NMS. Students at Band 3 are approaching it." },
-                  { bands: "Bands 5-6", label: "At or above the national average", color: "#EAF3DE", textColor: "#4A7515", note: "Most Australian students fall in this range." },
-                  { bands: "Bands 7-8", label: "Strong performance", color: "#EEEDFE", textColor: "#534AB7", note: "Above the national average. Students here are well-prepared for the next year level." },
-                  { bands: "Bands 9-10", label: "Exceptional performance", color: "#1A1A1A", textColor: "#FFF", note: "Top performers nationally. Very few students reach Band 10." },
-                ].map((item) => (
-                  <div key={item.bands} style={{ background: item.color, borderRadius: 14, padding: "16px 20px" }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12, marginBottom: 4 }}>
-                      <div style={{ fontSize: 16, fontWeight: 800, color: item.textColor }}>{item.bands}</div>
-                      <div style={{ fontSize: 13, fontWeight: 600, color: item.textColor, textAlign: "right" }}>{item.label}</div>
-                    </div>
-                    <p style={{ fontSize: 13, color: item.textColor, opacity: 0.8, lineHeight: 1.5, margin: 0 }}>{item.note}</p>
-                  </div>
-                ))}
-              </div>
-
-              <h2 className="cu-h2-card mb-3">National Minimum Standards by year level</h2>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginBottom: 32 }} className="nms-grid">
-                {[
-                  { year: "Year 3", nms: "Band 2" },
-                  { year: "Year 5", nms: "Band 4" },
-                  { year: "Year 7", nms: "Band 5" },
-                  { year: "Year 9", nms: "Band 6" },
-                ].map((item) => (
-                  <div key={item.year} style={{ background: "#F5F2EC", borderRadius: 12, padding: "16px", textAlign: "center" }}>
-                    <div style={{ fontSize: 13, color: "#888", marginBottom: 4 }}>{item.year}</div>
-                    <div style={{ fontSize: 20, fontWeight: 800, color: "#1A1A1A" }}>{item.nms}</div>
-                    <div style={{ fontSize: 11, color: "#888" }}>NMS</div>
-                  </div>
-                ))}
-              </div>
-
-              <div style={{ background: "#EEEDFE", borderRadius: 16, padding: "20px 24px", marginBottom: 32 }}>
-                <div className="cu-eyebrow mb-2" style={{ color: "#7F77DD" }}>IMPORTANT CONTEXT</div>
-                <p style={{ fontSize: 14, color: "#26215C", lineHeight: 1.65, margin: 0 }}>
-                  NAPLAN bands are not pass/fail. A child at Band 3 in Year 5 is not "failing", they're approaching the minimum standard. What matters is the specific skills that are missing, not the band number. That's what ClassUp's diagnostic identifies.
-                </p>
-              </div>
-
-              <InPostCTA />
-            </div>
-            <DomainSidebar current="Bands Explained" />
-          </div>
-        </div>
-      </section>
-      <style>{`@media (max-width: 767px) { .domain-grid { grid-template-columns: 1fr !important; } .nms-grid { grid-template-columns: 1fr 1fr !important; } }`}</style>
-    </PageLayout>
-  );
-}
+// The former "NAPLAN Bands Explained" page (10-band system + National Minimum
+// Standard, both retired by ACARA in 2023) has been replaced by the accurate
+// "NAPLAN proficiency levels explained" page — see
+// client/src/pages/NaplanProficiencyLevels.tsx (route /naplan/proficiency-levels-explained).
