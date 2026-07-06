@@ -13,7 +13,7 @@ export function Footer() {
       }}
     >
       <div className="container" style={{ maxWidth: 1100 }}>
-        {/* Footer grid — 6 cols desktop, 2 cols mobile */}
+        {/* Footer grid — 5 cols desktop, 2 cols mobile */}
         <div className="footer-grid" style={{ marginBottom: 40 }}>
           {/* Brand */}
           <div className="footer-brand">
@@ -82,16 +82,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Comparisons */}
-          <div>
-            <div className="cu-eyebrow mb-3">COMPARISONS</div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-              <Link href="/compare/classup-vs-mathletics" style={linkStyle}>ClassUp vs Mathletics</Link>
-              <Link href="/compare/classup-vs-reading-eggs" style={linkStyle}>ClassUp vs Reading Eggs</Link>
-              <Link href="/compare/classup-vs-kumon" style={linkStyle}>ClassUp vs Kumon</Link>
-            </div>
-          </div>
-
           {/* Company */}
           <div>
             <div className="cu-eyebrow mb-3">COMPANY</div>
@@ -122,7 +112,7 @@ export function Footer() {
       <style>{`
         .footer-grid {
           display: grid;
-          grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
           gap: 32px;
         }
         .footer-bottom {
