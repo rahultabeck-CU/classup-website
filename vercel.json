@@ -21,10 +21,15 @@
       "permanent": true
     },
     {
+      "source": "/naplan/reading",
+      "destination": "/naplan-year-5-reading",
+      "permanent": true
+    },
+    {
       "source": "/naplan/language-conventions",
       "destination": "/naplan-year-5-language-conventions",
       "permanent": true
-    },
+    }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
