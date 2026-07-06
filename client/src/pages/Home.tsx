@@ -1277,6 +1277,17 @@ function FinalCTASection() {
 const HOME_SCHEMA = [
   {
     "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ClassUp",
+    "url": "https://classup.com.au",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ClassUp",
+      "url": "https://classup.com.au"
+    }
+  },
+  {
+    "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "ClassUp",
     "url": "https://classup.com.au",

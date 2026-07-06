@@ -6,7 +6,7 @@ import { DIAGNOSTIC_URL, SAMPLE_4 } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
-// /naplan/year-9 -- Full depth at eval bar
+// /naplan-year-9 — Full depth at eval bar
 // Year 9 is the final NAPLAN test: highest stakes, final checkpoint
 // Worry cards. Founder note. Typical week sidebar. Expanded FAQ.
 // ============================================================
@@ -14,43 +14,53 @@ import { SEO } from "@/components/SEO";
 const YEAR9_FAQ = [
   {
     question: "Is Year 9 NAPLAN the last NAPLAN test?",
-    answer: "Yes. Year 9 is the final NAPLAN test in Australia. After Year 9, students move into VCE (Victoria), HSC (NSW), ATAR (WA/SA), or equivalent senior secondary systems. Year 9 NAPLAN is your last formal benchmark before high school specialisation begins.",
+    answer:
+      "Yes. Year 9 is the final NAPLAN test in Australia. After Year 9, students move into VCE (Victoria), HSC (NSW), ATAR (WA/SA), or equivalent senior secondary systems. Year 9 NAPLAN is your last formal benchmark before high school specialisation begins.",
   },
   {
     question: "Do Year 9 NAPLAN results affect university entry?",
-    answer: "Not directly. NAPLAN results are not used for university entry. However, Year 9 NAPLAN performance often predicts performance in senior secondary exams (VCE, HSC, ATAR), which do affect university entry. Strong Year 9 results give you confidence that your child is on track for senior secondary success.",
+    answer:
+      "Not directly. NAPLAN results are not used for university entry. However, Year 9 NAPLAN performance often predicts performance in senior secondary exams (VCE, HSC, ATAR), which do affect university entry. Strong Year 9 results give you confidence that your child is on track for senior secondary success.",
   },
   {
     question: "How is Year 9 NAPLAN different from Year 7?",
-    answer: "Year 9 NAPLAN is the hardest NAPLAN test. The numeracy section includes advanced algebra, trigonometry, and data analysis. The reading texts are longer and more sophisticated. The writing task expects mature argument development and sophisticated vocabulary. The language conventions section tests complex grammatical structures and etymology at a deeper level.",
+    answer:
+      "Year 9 NAPLAN is the hardest NAPLAN test. The numeracy section includes advanced algebra, trigonometry, and data analysis. The reading texts are longer and more sophisticated. The writing task expects mature argument development and sophisticated vocabulary. The language conventions section tests complex grammatical structures and etymology at a deeper level.",
   },
   {
-    question: "What's the national average for Year 9?",
-    answer: "The national average for Year 9 is typically around Band 8. The National Minimum Standard for Year 9 is Band 6. ClassUp's diagnostic tells you exactly where your child sits relative to both benchmarks and what gaps exist before the test.",
+    question: "What proficiency levels do Year 9 students get?",
+    answer:
+      "Since 2023, Year 9 NAPLAN results use four proficiency levels — Exceeding, Strong, Developing, and Needs additional support — not the old band scale. Strong means your child has met the challenging-but-reasonable standard for Year 9. The report shows where they landed in each test area. For a full breakdown of each level, see our proficiency levels explained guide at classup.com.au/naplan/proficiency-levels-explained.",
   },
   {
     question: "My Year 9 child is anxious about NAPLAN. How do I help?",
-    answer: "Anxiety at Year 9 is normal — it's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork: your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep. Knowing they're working on *their* gaps, not random questions, reduces anxiety significantly.",
+    answer:
+      "Anxiety at Year 9 is normal — it's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork: your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep. Knowing they're working on their gaps, not random questions, reduces anxiety significantly.",
   },
   {
     question: "How long does Year 9 NAPLAN preparation take?",
-    answer: "That depends on your child's gaps. ClassUp's diagnostic identifies the specific skills that need work. Some Year 9 students have 2-3 targeted gaps that can be closed in 6-8 weeks of consistent practice. Others benefit from a full term of coaching. The diagnostic tells you which situation you're in and gives you a realistic timeline.",
+    answer:
+      "That depends on your child's gaps. ClassUp's diagnostic identifies the specific skills that need work. Some Year 9 students have 2-3 targeted gaps that can be closed in 6-8 weeks of consistent practice. Others benefit from a full term of coaching. The diagnostic tells you which situation you're in and gives you a realistic timeline.",
   },
   {
     question: "What are the most common gaps in Year 9 Numeracy?",
-    answer: "In our beta cohort, the most common Year 9 numeracy gaps are: algebraic manipulation and solving equations, trigonometry (sine, cosine, tangent), probability and combinatorics, and interpreting statistical data. These are all skills that were introduced in Year 7-8 and are assumed knowledge in Year 9. ClassUp's diagnostic identifies which of these your child is missing.",
+    answer:
+      "Teachers and tutors consistently point to the same Year 9 numeracy gaps: algebraic manipulation and solving equations, trigonometry (sine, cosine, tangent), probability and combinatorics, and interpreting statistical data. These are skills introduced in Years 7–8 and assumed in Year 9. ClassUp's diagnostic identifies which of these your child is missing.",
   },
   {
     question: "Can my child use a calculator in Year 9 NAPLAN?",
-    answer: "The Year 9 Numeracy test is split into two sections: one non-calculator (about 40 minutes) and one with a calculator (about 40 minutes). This is different from Year 5 and Year 7, which are fully non-calculator. ClassUp's numeracy coaching covers both calculator and non-calculator strategies.",
+    answer:
+      "The Year 9 Numeracy test is split into two sections: one non-calculator (about 40 minutes) and one with a calculator (about 40 minutes). This is different from Year 5 and Year 7, which are fully non-calculator. ClassUp's numeracy coaching covers both calculator and non-calculator strategies.",
   },
   {
-    question: "What's the difference between Band 8 and Band 9?",
-    answer: "Both are above the national average and above the National Minimum Standard. Band 9 is the highest band. The difference is in the complexity and multi-step nature of questions a student can answer correctly. Band 9 students can reliably handle complex multi-step problems, sophisticated inference questions, and advanced grammatical analysis. Band 8 students are solid on most content but may struggle with the most challenging questions.",
+    question: "What's the difference between Exceeding and Strong at Year 9?",
+    answer:
+      "Exceeding means your child's result is above what's expected at Year 9. Strong means they have met the challenging-but-reasonable expectations for their year level — a genuinely good result. Both are solid outcomes; the useful next step is understanding which specific skills are strong and which need work. ClassUp's diagnostic maps that at skill level, not just the overall proficiency level.",
   },
   {
     question: "Should my Year 9 child focus on NAPLAN or their school subjects?",
-    answer: "NAPLAN is a 3-hour test. Your child's school subjects are ongoing. The good news: the skills that show up in NAPLAN are the same skills they need for their school subjects. ClassUp's coaching targets the exact gaps that matter for both. Four 30-minute sessions per week is enough to close gaps without derailing school work.",
+    answer:
+      "NAPLAN is a 3-hour test. Your child's school subjects are ongoing. The good news: the skills that show up in NAPLAN are the same skills they need for their school subjects. ClassUp's coaching targets the exact gaps that matter for both. Four 30-minute sessions per week is enough to close gaps without derailing school work.",
   },
 ];
 
@@ -58,77 +68,49 @@ const NAPLAN_Y9_SCHEMA = [
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://classup.com.au/" },
-      { "@type": "ListItem", "position": 2, "name": "NAPLAN", "item": "https://classup.com.au/naplan" },
-      { "@type": "ListItem", "position": 3, "name": "Year 9", "item": "https://classup.com.au/naplan/year-9" }
-    ]
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://classup.com.au/" },
+      { "@type": "ListItem", position: 2, name: "NAPLAN", item: "https://classup.com.au/naplan" },
+      { "@type": "ListItem", position: 3, name: "Year 9", item: "https://classup.com.au/naplan-year-9" },
+    ],
   },
   {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "ClassUp Year 9 NAPLAN Coaching",
-    "description": "Adaptive NAPLAN coaching for Year 9 students. Covers Numeracy, Reading, Language Conventions, and Writing. Starts with a free 30-minute diagnostic. Year 9 is the final NAPLAN test.",
-    "provider": {
+    name: "ClassUp Year 9 NAPLAN Coaching",
+    description:
+      "Adaptive NAPLAN coaching for Year 9 students. Covers Numeracy, Reading, Language Conventions, and Writing. Starts with a free 30-minute diagnostic. Year 9 is the final NAPLAN test.",
+    provider: {
       "@type": "EducationalOrganization",
-      "name": "ClassUp",
-      "url": "https://classup.com.au"
+      name: "ClassUp",
+      url: "https://classup.com.au",
     },
-    "educationalLevel": "Year 9",
-    "hasCourseInstance": {
+    educationalLevel: "Year 9",
+    hasCourseInstance: {
       "@type": "CourseInstance",
-      "courseMode": "online",
-      "courseSchedule": {
+      courseMode: "online",
+      courseSchedule: {
         "@type": "Schedule",
-        "repeatFrequency": "P1W",
-        "repeatCount": 4
-      }
+        repeatFrequency: "P1W",
+        repeatCount: 4,
+      },
     },
-    "offers": {
+    offers: {
       "@type": "Offer",
-      "price": "59",
-      "priceCurrency": "AUD",
-      "billingIncrement": "P1M"
-    }
+      price: "59",
+      priceCurrency: "AUD",
+      billingIncrement: "P1M",
+    },
   },
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does NAPLAN Year 9 test?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NAPLAN Year 9 tests the same four domains as Year 5 and Year 7 (Numeracy, Reading, Language Conventions, Writing) but at the highest difficulty level. Year 9 is the final NAPLAN test. The National Minimum Standard for Year 9 is Band 6. Year 9 results are a final benchmark before senior secondary specialisation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Year 9 NAPLAN harder than Year 7?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Year 9 NAPLAN is the hardest NAPLAN test. The numeracy section includes advanced algebra, trigonometry, and data analysis. The reading passages are longer and more sophisticated. The writing task expects mature argument development. The language conventions section tests complex grammatical structures at a deeper level."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I help my Year 9 child prepare for NAPLAN?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Start with a diagnostic to identify the specific skills your child is missing. ClassUp's free diagnostic covers Numeracy, Reading, and Language Conventions and takes approximately 30 minutes. After the diagnostic, Luna or Leo (ClassUp's Year 9 coaches) work on those exact gaps, four sessions per week."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "When is Year 9 NAPLAN held?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Year 9 NAPLAN is held in May each year across Australia. Check your school's specific dates. Most schools test in the second or third week of May. ClassUp recommends starting preparation 8-10 weeks before the test date."
-        }
-      }
-    ]
-  }
+    mainEntity: YEAR9_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  },
 ];
 
 export default function NAPLANYear9() {
@@ -137,7 +119,7 @@ export default function NAPLANYear9() {
       <SEO
         title="NAPLAN Year 9 prep — ClassUp"
         description="Year 9 NAPLAN is the final NAPLAN test and your last formal benchmark before senior secondary. Here is what is tested and how to prepare."
-        canonicalPath="/naplan/year-9"
+        canonicalPath="/naplan-year-9"
         schemaMarkup={NAPLAN_Y9_SCHEMA}
       />
       <section className="cu-section" style={{ paddingTop: 24 }}>
@@ -152,7 +134,11 @@ export default function NAPLANYear9() {
                 <em className="cu-italic-accent">the final checkpoint.</em>
               </h1>
               <p className="cu-body-large mb-6">
-                Year 9 is the last NAPLAN test. It's also the hardest. The content is more complex, the stakes are higher, and this is your final formal benchmark before senior secondary specialisation begins. Here is what you need to know.
+                Year 9 is the last NAPLAN test. It's also the hardest. The content is more complex, the stakes are higher, and this is your final formal benchmark before senior secondary specialisation begins. Results use four proficiency levels — Exceeding, Strong, Developing, and Needs additional support — not the old band scale. For what each level means, see{" "}
+                <Link href="/naplan/proficiency-levels-explained" style={{ color: "#534AB7", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: 2 }}>
+                  proficiency levels explained
+                </Link>
+                . Here is what you need to know.
               </p>
 
               {/* FOUNDER NOTE */}
