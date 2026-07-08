@@ -50,6 +50,17 @@ export const BLOG_POSTS = [
     excerpt: "NAPLAN reports arrive early Term 3. Here's what the four proficiency levels actually mean, what the report doesn't tell you, and what's genuinely worth doing next.",
   },
   {
+    slug: "naplan-2027-dates",
+    title: "NAPLAN 2027 dates: when the tests are, and what to expect",
+    subtitle: "Wednesday 10 March to Monday 22 March 2027 — dates, format, results, and honest prep",
+    date: "July 2026",
+    readTime: "6 min read",
+    category: "NAPLAN",
+    categoryColor: "#EAF3DE",
+    categoryTextColor: "#4A7515",
+    excerpt: "NAPLAN 2027 runs 10–22 March. Here are the dates for Years 3, 5, 7 and 9, what's tested, when results arrive, and how to prepare your child honestly.",
+  },
+  {
     slug: "luna-vs-leo",
     title: "Luna vs Leo: how to choose",
     subtitle: "A guide for parents helping their child pick a coach",

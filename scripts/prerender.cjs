@@ -30,6 +30,7 @@ const ROUTES = [
   '/blog/what-naplan-actually-tests',
   '/blog/the-problem-with-generic-naplan-prep',
   '/blog/how-to-read-naplan-results',
+  '/blog/naplan-2027-dates',
   '/blog/luna-vs-leo',
   '/blog/naplan-anxiety-what-parents-can-do',
   '/blog/year-5-maths-struggles-term-2',

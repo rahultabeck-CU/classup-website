@@ -65,6 +65,10 @@ function BlogLayout({ post, children }: { post: typeof BLOG_POSTS[0]; children: 
         .blog-body blockquote { border-left: 3px solid #7F77DD; padding-left: 16px; margin: 24px 0; font-style: italic; color: #444; }
         .blog-body ul { margin: 0 0 20px 0; padding-left: 24px; }
         .blog-body ul li { font-size: 15px; color: #333; line-height: 1.8; margin-bottom: 8px; }
+        .blog-body table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.6; margin: 0 0 20px; background: #FFF; border: 1px solid #E8E4D8; border-radius: 12px; overflow: hidden; }
+        .blog-body th { text-align: left; padding: 12px 16px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; color: #534AB7; background: #EEEDFE; border-bottom: 2px solid #7F77DD; }
+        .blog-body td { padding: 12px 16px; color: #333; border-bottom: 1px solid #E8E4D8; vertical-align: top; }
+        .blog-body tr:last-child td { border-bottom: none; }
       `}</style>
     </PageLayout>
   );
@@ -360,6 +364,205 @@ export function BlogPostReadResults() {
 
         <h2>See exactly where your child stands — free.</h2>
         <p>An honest, skill-by-skill diagnostic across numeracy, reading and language conventions. About 30 minutes, and the report tells you the truth.</p>
+        <InPostCTA />
+      </div>
+    </BlogLayout>
+  );
+}
+
+
+// ============================================================
+// POST: NAPLAN 2027 dates (~6 min read)
+// ============================================================
+
+const BLOG_NAPLAN_2027_FAQ = [
+  {
+    question: "When is NAPLAN 2027?",
+    answer:
+      "NAPLAN 2027 runs from Wednesday 10 March to Monday 22 March 2027. Schools sit the tests on different days within that nine-day window.",
+  },
+  {
+    question: "What year levels sit NAPLAN in 2027?",
+    answer: "Students in Years 3, 5, 7 and 9 at participating schools.",
+  },
+  {
+    question: "What does NAPLAN 2027 test?",
+    answer:
+      "Four areas — Writing, Reading, Conventions of Language (spelling, grammar and punctuation), and Numeracy.",
+  },
+  {
+    question: "Is NAPLAN 2027 online?",
+    answer:
+      "Yes, with one exception: Year 3 students do the Writing test on paper. The reading, conventions and numeracy tests are adaptive, adjusting to how your child answers.",
+  },
+  {
+    question: "When will NAPLAN 2027 results come out?",
+    answer:
+      "Based on the usual pattern, schools receive results from around April to June, parents receive the Individual Student Report in early Term 3 (around July), and national results appear on the My School website around August. Your school confirms the exact timing.",
+  },
+  {
+    question: "Can I withdraw my child from NAPLAN?",
+    answer:
+      "Yes — parents can withdraw a child for reasons such as religious beliefs or philosophical objections, using a withdrawal form. Speak to your school.",
+  },
+  {
+    question: "How should I help my child prepare for NAPLAN 2027?",
+    answer:
+      "Keep it low-pressure. Help them get familiar with the online format, and if you want to prepare, find the specific gaps first and practise those, rather than cramming everything. NAPLAN measures skills they're already learning.",
+  },
+];
+
+const BLOG_NAPLAN_2027_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "NAPLAN 2027 dates: when the tests are, and what to expect",
+    description:
+      "NAPLAN 2027 runs 10–22 March. Here are the dates for Years 3, 5, 7 and 9, what's tested, when results arrive, and how to prepare your child honestly.",
+    author: ORGANIZATION_REF,
+    publisher: ORGANIZATION_REF,
+    url: "https://classup.com.au/blog/naplan-2027-dates",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    inLanguage: "en-AU",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: BLOG_NAPLAN_2027_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  },
+];
+
+export function BlogPostNaplan2027Dates() {
+  const post = BLOG_POSTS.find((p) => p.slug === "naplan-2027-dates")!;
+  return (
+    <BlogLayout post={post}>
+      <SEO
+        title="NAPLAN 2027 Dates: When Tests Are Held & What to Expect | ClassUp"
+        description="NAPLAN 2027 runs 10–22 March. Here are the dates for Years 3, 5, 7 and 9, what's tested, when results arrive, and how to prepare your child honestly."
+        canonicalPath="/blog/naplan-2027-dates"
+        schemaMarkup={BLOG_NAPLAN_2027_SCHEMA}
+      />
+      <div className="blog-body">
+        <p>
+          NAPLAN 2027 runs from Wednesday 10 March to Monday 22 March 2027, for students in Years 3, 5, 7 and 9. Here's
+          everything in one place — the dates, what's tested, when results arrive, and how to help your child prepare without
+          overdoing it.
+        </p>
+
+        <h2>When is NAPLAN 2027?</h2>
+        <p>
+          NAPLAN 2027 is held from Wednesday 10 March to Monday 22 March 2027. It's a nine-day window, and schools choose which
+          days within it their students sit each test — so your child won't necessarily sit on the very first day. Your school
+          will share its own timetable closer to March, so keep an eye on the newsletter in Term 1. If your child is away on a
+          scheduled test day, most schools run catch-up tests later in the same window.
+        </p>
+
+        <h2>Which students sit NAPLAN?</h2>
+        <p>
+          Every student in Years 3, 5, 7 and 9 at a participating school is expected to take part. Parents and carers can
+          withdraw a child for reasons such as religious beliefs or philosophical objections — this is done through a withdrawal
+          form, so talk to your school if you're considering it. Some students with disability may be eligible for adjustments or
+          an exemption; again, your school is the place to start that conversation.
+        </p>
+
+        <h2>What NAPLAN 2027 tests</h2>
+        <p>NAPLAN covers four areas:</p>
+        <div style={{ overflowX: "auto" }}>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" style={{ width: "28%" }}>Test</th>
+                <th scope="col">What it covers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Writing</strong></td>
+                <td>One task — a narrative or a persuasive piece — marked against set criteria</td>
+              </tr>
+              <tr>
+                <td><strong>Reading</strong></td>
+                <td>Understanding a range of texts: stories, factual articles and persuasive pieces</td>
+              </tr>
+              <tr>
+                <td><strong>Conventions of Language</strong></td>
+                <td>Spelling (delivered by audio), grammar and punctuation</td>
+              </tr>
+              <tr>
+                <td><strong>Numeracy</strong></td>
+                <td>Number, algebra, measurement, space, statistics and probability</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          NAPLAN has been online since 2022, with one exception: Year 3 students still do the Writing test on paper. Each test
+          runs for roughly 40 to 65 minutes — shorter in the younger years, longer for Years 7 and 9.
+        </p>
+
+        <h2>How the tests run</h2>
+        <p>
+          Schools sit the tests in a set order: Writing first, then Reading, then Conventions of Language, then Numeracy. The
+          reading, conventions and numeracy tests are adaptive (also called "tailored") — the questions adjust to how your child
+          is answering, so a child who's doing well sees harder questions, and a child who's finding it tough sees easier ones.
+          It's worth telling your child this in advance: if the questions start feeling difficult, that's normal and not a sign
+          they're doing badly.
+        </p>
+        <p>
+          One thing specific to Years 7 and 9 numeracy: the test starts with a short non-calculator section, then an on-screen
+          calculator unlocks for the rest — and once it unlocks, they can't go back. The official public demonstration site is a
+          good way for your child to get familiar with the online format, the tools, and how the questions work before the day.
+        </p>
+
+        <h2>When will NAPLAN 2027 results come out?</h2>
+        <p>
+          Results are released in stages. Based on the usual pattern, schools receive preliminary results from around April and
+          full results around June, and parents and carers receive their child's Individual Student Report through the school in
+          early Term 3 — around July. National results are usually published on the My School website around August. (Your school
+          confirms the exact timing.)
+        </p>
+        <p>
+          Results come as one of four proficiency levels for each test — Exceeding, Strong, Developing, or Needs additional
+          support. If you'd like to understand what those mean before they land, we've explained them plainly in our guide to the{" "}
+          <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>NAPLAN proficiency levels</Link>, and walked through
+          how to read the report in{" "}
+          <Link href="/blog/how-to-read-naplan-results" style={BLOG_LINK}>how to read your child's NAPLAN results</Link>.
+        </p>
+
+        <h2>How to prepare for NAPLAN 2027 (without overdoing it)</h2>
+        <p>
+          Here's the honest version, and it's backed by the education authorities themselves: excessive preparation or the use of
+          coaching providers is not recommended. NAPLAN assesses skills your child is already learning at school — it isn't a test
+          you cram for. The most useful preparation is calm familiarity with the format, and, if there are genuine gaps, some
+          targeted practice on those specific areas rather than drilling everything.
+        </p>
+        <p>
+          If you do want to prepare, the sensible order is: find out where your child actually stands first, then practise the
+          specific things that need work. That's exactly what ClassUp's free diagnostic is for — it maps your child's numeracy,
+          reading and language conventions skills and gives you an honest picture of what's solid and what's wobbly, well before
+          March. For year-level context, see our <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and{" "}
+          <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link> guides.
+        </p>
+        <InPostCTA />
+
+        <h2>Frequently asked questions</h2>
+        {BLOG_NAPLAN_2027_FAQ.map((item) => (
+          <React.Fragment key={item.question}>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </React.Fragment>
+        ))}
+
+        <h2>See where your child stands before March — free.</h2>
+        <p>
+          An honest diagnostic across numeracy, reading and language conventions, and a report that tells you the truth. About 30
+          minutes.
+        </p>
         <InPostCTA />
       </div>
     </BlogLayout>

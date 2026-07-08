@@ -33,6 +33,7 @@ import {
   BlogPostWhatNAPLANTests,
   BlogPostGenericPrep,
   BlogPostReadResults,
+  BlogPostNaplan2027Dates,
   BlogPostLunaVsLeo,
   BlogPostNAPLANAnxiety,
   BlogPostYear5MathsTerm2,
@@ -108,6 +109,7 @@ function Router() {
       <Route path="/blog/what-naplan-actually-tests" component={BlogPostWhatNAPLANTests} />
       <Route path="/blog/the-problem-with-generic-naplan-prep" component={BlogPostGenericPrep} />
       <Route path="/blog/how-to-read-naplan-results" component={BlogPostReadResults} />
+      <Route path="/blog/naplan-2027-dates" component={BlogPostNaplan2027Dates} />
       <Route path="/blog/luna-vs-leo" component={BlogPostLunaVsLeo} />
       <Route path="/blog/naplan-anxiety-what-parents-can-do" component={BlogPostNAPLANAnxiety} />
       <Route path="/blog/year-5-maths-struggles-term-2" component={BlogPostYear5MathsTerm2} />
