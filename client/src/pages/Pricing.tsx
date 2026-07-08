@@ -21,7 +21,7 @@ const PRICING_FAQ = [
   },
   {
     question: "Is there a family discount?",
-    answer: "If you have children in both Year 5 and Year 7, email us at hello@classup.com.au. We will set up a family plan at a reduced rate.",
+    answer: "If you have children in both Year 5 and Year 7, email us at rahul@classup.com.au. We will set up a family plan at a reduced rate.",
   },
   {
     question: "What payment methods do you accept?",
@@ -68,20 +68,21 @@ export default function Pricing() {
             The diagnostic is always free. Coaching is $59/month. No lock-in. Cancel anytime. Every feature we build is included.
           </p>
 
-          {/* Single Plan Card */}
-          <div style={{ maxWidth: 560, margin: "0 auto 48px" }}>
-            <div className="cu-card-large" style={{ padding: "48px", border: "2px solid #7F77DD" }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 28 }}>
+          {/* Two Pricing Cards */}
+          <div className="pricing-cards" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, alignItems: "stretch", marginBottom: 20 }}>
+            {/* Card 1 — First child */}
+            <div className="cu-card-large" style={{ padding: "40px", border: "2px solid #7F77DD", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
                 <div>
-                  <div className="cu-eyebrow mb-2">YEAR 5 AND YEAR 7</div>
-                  <div style={{ fontSize: 56, fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1 }}>$59</div>
+                  <div className="cu-eyebrow mb-2">FIRST CHILD</div>
+                  <div style={{ fontSize: 52, fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1 }}>$59</div>
                   <div style={{ fontSize: 15, color: "#555", marginTop: 6, fontWeight: 600 }}>per month</div>
-                  <div style={{ fontSize: 14, color: "#888", marginTop: 2 }}>cancel anytime, no lock-in</div>
+                  <div style={{ fontSize: 14, color: "#888", marginTop: 2 }}>Includes GST. Month-to-month. Cancel anytime.</div>
                 </div>
-                <span style={{ background: "#EEEDFE", color: "#534AB7", fontSize: 11, fontWeight: 700, padding: "6px 12px", borderRadius: 999 }}>ONE PLAN</span>
+                <span style={{ background: "#EEEDFE", color: "#534AB7", fontSize: 11, fontWeight: 700, padding: "6px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>ONE PLAN</span>
               </div>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
                 {[
                   "Free diagnostic included (no credit card)",
                   "Year 5 and Year 7 NAPLAN question banks",
@@ -101,12 +102,56 @@ export default function Pricing() {
                 ))}
               </div>
 
-              <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0" }}>
+              <div style={{ background: "#EEEDFE", borderRadius: 12, padding: "12px 16px", marginBottom: 20 }}>
+                <span style={{ fontSize: 13, color: "#534AB7", fontWeight: 600 }}>
+                  Introductory offer: use code FOUNDERS for $29/month for your first 6 months.
+                </span>
+              </div>
+
+              <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
+                Start free diagnostic &#8594;
+              </a>
+              <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
+            </div>
+
+            {/* Card 2 — Additional child */}
+            <div className="cu-card-large" style={{ padding: "40px", border: "1px solid #E8E4D8", display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
+                <div>
+                  <div className="cu-eyebrow mb-2">ADDITIONAL CHILD</div>
+                  <div style={{ fontSize: 52, fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1 }}>$49</div>
+                  <div style={{ fontSize: 15, color: "#555", marginTop: 6, fontWeight: 600 }}>per month</div>
+                  <div style={{ fontSize: 14, color: "#888", marginTop: 2 }}>Per additional child on the same account.</div>
+                </div>
+                <span style={{ background: "#EAF3DE", color: "#4A7515", fontSize: 11, fontWeight: 700, padding: "6px 12px", borderRadius: 999, whiteSpace: "nowrap" }}>PER CHILD</span>
+              </div>
+
+              <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
+                {[
+                  "Everything in the first child plan",
+                  "Separate coach selection",
+                  "Separate progress reports",
+                  "Shared parent dashboard",
+                ].map((feature) => (
+                  <div key={feature} style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                    <div style={{ width: 20, height: 20, borderRadius: "50%", background: "#EAF3DE", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ fontSize: 12, color: "#4A7515" }}>&#10003;</span>
+                    </div>
+                    <span style={{ fontSize: 15, color: "#333" }}>{feature}</span>
+                  </div>
+                ))}
+              </div>
+
+              <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
                 Start free diagnostic &#8594;
               </a>
               <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
             </div>
           </div>
+
+          <p style={{ fontSize: 14, color: "#888", textAlign: "center", maxWidth: 560, margin: "0 auto 48px" }}>
+            Cancel in one tap from your account. No phone calls. No retention scripts. No guilt.
+          </p>
 
           {/* Roadmap teaser */}
           <div className="cu-card-large" style={{ padding: "32px 40px", marginBottom: 48, borderLeft: "4px solid #7F77DD" }}>
@@ -207,6 +252,7 @@ export default function Pricing() {
       <style>{`
         @media (max-width: 767px) {
           .roadmap-grid { grid-template-columns: 1fr !important; }
+          .pricing-cards { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </PageLayout>

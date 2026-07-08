@@ -100,7 +100,7 @@ export function Contact() {
             <div>
               <div className="cu-card-large" style={{ padding: 24, marginBottom: 16 }}>
                 <div className="cu-eyebrow mb-3">EMAIL</div>
-                <a href="mailto:hello@classup.com.au" style={{ fontSize: 16, fontWeight: 700, color: "#7F77DD", textDecoration: "none" }}>hello@classup.com.au</a>
+                <a href="mailto:rahul@classup.com.au" style={{ fontSize: 16, fontWeight: 700, color: "#7F77DD", textDecoration: "none" }}>rahul@classup.com.au</a>
                 <p style={{ fontSize: 13, color: "#888", marginTop: 4 }}>We reply within 24 hours on business days.</p>
               </div>
               <div className="cu-card-large" style={{ padding: 24, marginBottom: 16 }}>
@@ -148,7 +148,7 @@ export function Privacy() {
             {[
               {
                 title: "Who we are",
-                body: "ClassUp is a product of DIVTAB Holdings Pty Ltd, an Australian company based in Melbourne, Victoria. Our ABN is available on request. Contact us at hello@classup.com.au.",
+                body: "ClassUp is a product of DIVTAB Holdings Pty Ltd, an Australian company based in Melbourne, Victoria. Our ABN is available on request. Contact us at rahul@classup.com.au.",
               },
               {
                 title: "What data we collect",
@@ -164,7 +164,7 @@ export function Privacy() {
               },
               {
                 title: "How your child's data is processed by AI",
-                body: "When your child interacts with Luna or Leo, their answers and questions are sent to our AI processing partner so the coach can generate a response. We have configured this in three specific ways to protect your child: (1) We do not allow our AI partner to retain or use your child's data to train their AI models. Inputs are processed and discarded after the response is generated. (2) We never send identifying information to the AI partner. Your child's name, school, age, location, and account details are kept on our Australian servers and never leave Australia. Only the practice question content and your child's answer are sent for processing. (3) We do not use your child's practice history for any purpose other than improving their next coaching session. We do not analyse it for advertising. We do not sell it. We do not share it with schools, ACARA, or any third party. If you have questions about how we process your child's data, email hello@classup.com.au.",
+                body: "When your child interacts with Luna or Leo, their answers and questions are sent to our AI processing partner so the coach can generate a response. We have configured this in three specific ways to protect your child: (1) We do not allow our AI partner to retain or use your child's data to train their AI models. Inputs are processed and discarded after the response is generated. (2) We never send identifying information to the AI partner. Your child's name, school, age, location, and account details are kept on our Australian servers and never leave Australia. Only the practice question content and your child's answer are sent for processing. (3) We do not use your child's practice history for any purpose other than improving their next coaching session. We do not analyse it for advertising. We do not sell it. We do not share it with schools, ACARA, or any third party. If you have questions about how we process your child's data, email rahul@classup.com.au.",
               },
               {
                 title: "Children's privacy",
@@ -172,7 +172,7 @@ export function Privacy() {
               },
               {
                 title: "Your rights",
-                body: "You have the right to: access all data we hold about you and your child, correct inaccurate data, request deletion of your data, and withdraw consent at any time. To exercise these rights, email hello@classup.com.au.",
+                body: "You have the right to: access all data we hold about you and your child, correct inaccurate data, request deletion of your data, and withdraw consent at any time. To exercise these rights, email rahul@classup.com.au.",
               },
               {
                 title: "Cookies",
@@ -244,7 +244,7 @@ export function Terms() {
               },
               {
                 title: "Contact",
-                body: "Questions about these terms? Email hello@classup.com.au.",
+                body: "Questions about these terms? Email rahul@classup.com.au.",
               },
             ].map((section) => (
               <div key={section.title}>

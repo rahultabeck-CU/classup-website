@@ -21,7 +21,7 @@ const COACHES_FAQ = [
   },
   {
     question: "What if my child doesn't like either coach?",
-    answer: "That's useful information. Tell us. We're in beta with a small group of families and we take feedback seriously. If neither coach is landing, we want to know why. Email us at hello@classup.com.au. We read every message.",
+    answer: "That's useful information. Tell us. We're in beta with a small group of families and we take feedback seriously. If neither coach is landing, we want to know why. Email us at rahul@classup.com.au. We read every message.",
   },
   {
     question: "How long is a coaching session?",

@@ -79,30 +79,26 @@ export default function About() {
                 <p style={{ fontSize: 14, color: "#444", fontStyle: "italic", borderLeft: "3px solid #7F77DD", paddingLeft: 16, marginBottom: 16 }}>
                   "If it isn't good enough for Kavya, it doesn't ship. That's the only product principle that matters."
                 </p>
-                <p style={{ fontSize: 14, color: "#888" }}> - Rahul Tabeck, CEO · Melbourne, 2025
+                <p style={{ fontSize: 14, color: "#888" }}> - Rahul Tabeck, CEO · Melbourne, 2026
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Content team note */}
+          {/* Content note */}
           <div className="cu-card-large" style={{ padding: "40px", marginBottom: 48, background: "#F5F2EC" }}>
-            <div className="cu-eyebrow mb-3">THE CONTENT TEAM</div>
-            <h2 className="cu-h2-card mb-4">Every question is reviewed by Australian educators against ACARA standards.</h2>
+            <div className="cu-eyebrow mb-3">THE CONTENT</div>
+            <h2 className="cu-h2-card mb-4">Built to the Australian curriculum, with an explanation for every question.</h2>
             <p className="cu-body-card mb-4">
-              Every common mistake explanation in our question bank is reviewed by Australian educators
-              against ACARA standards. Our content team in Melbourne develops the explanations; Australian
-              educators who have taught Year 5 and Year 7 in real classrooms then review and refine them
-              based on what children actually say when they get these questions wrong.
-            </p>
-            <p className="cu-body-card mb-4">
-              We are a small team. We don't have a large marketing department. We have a small group of
-              educators who care about getting the explanations right, and a small group of parents who care
-              about getting the product right. That's the whole team.
+              Our question bank is built to align with the ACARA curriculum for Years 5 and 7, across Numeracy,
+              Reading and Language Conventions. Every question carries a clear, worked explanation — not just the
+              right answer, but why the common wrong answers are tempting — so a mistake becomes a lesson.
             </p>
             <p className="cu-body-card">
-              If you want to contribute to the question bank, as an educator, a tutor, or a parent
-              who has spotted a gap, email us at <a href="mailto:hello@classup.com.au" style={{ color: "#7F77DD" }}>hello@classup.com.au</a>.
+              We're a small team, and we care about getting the content right. Every question is checked for
+              accuracy and curriculum alignment before it reaches your child. If you're an educator, tutor or
+              parent and you spot something that could be better, we want to hear about it — email us at{" "}
+              <a href="mailto:rahul@classup.com.au" style={{ color: "#7F77DD" }}>rahul@classup.com.au</a>.
               We read every message.
             </p>
           </div>
@@ -111,12 +107,11 @@ export default function About() {
           <div className="cu-eyebrow mb-4">THE FACTS</div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20, marginBottom: 48 }} className="facts-grid">
             {[
-              { label: "Founded", value: "2025", sub: "Melbourne, Victoria, Australia" },
+              { label: "Founded", value: "2026", sub: "Melbourne, Victoria, Australia" },
               { label: "Entity", value: "DIVTAB Holdings Pty Ltd", sub: "Australian company, ABN registered" },
               { label: "Data hosting", value: "Australia", sub: "All data stored in Australian data centres" },
               { label: "Year levels", value: "Year 5 + Year 7", sub: "Year 3 and Year 9 on roadmap" },
               { label: "Domains", value: "3 of 4", sub: "Numeracy, Reading, Language Conventions. Writing in v1.1." },
-              { label: "Beta status", value: "10 families", sub: "Founders cohort. Open to new families now." },
             ].map((fact) => (
               <div key={fact.label} style={{ background: "#FFF", border: "1px solid #E8E4D8", borderRadius: 16, padding: "20px 24px" }}>
                 <div style={{ fontSize: 11, fontWeight: 700, color: "#888", textTransform: "uppercase", letterSpacing: 1, marginBottom: 4 }}>{fact.label}</div>
@@ -181,7 +176,7 @@ export default function About() {
             <div className="cu-eyebrow mb-4">GET IN TOUCH</div>
             <h2 className="cu-h2 mb-4">Questions? We read every email.</h2>
             <p style={{ fontSize: 15, color: "#444", marginBottom: 28 }}>
-              hello@classup.com.au · We reply within 24 hours on business days.
+              rahul@classup.com.au · We reply within 24 hours on business days.
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 15, padding: "14px 28px" }}>

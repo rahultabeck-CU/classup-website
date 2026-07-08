@@ -52,7 +52,7 @@ const NAPLAN_FAQ = [
   },
   {
     question: "Is NAPLAN pass or fail?",
-    answer: "No. NAPLAN is not pass or fail. Results are reported on a 10-band scale. The National Minimum Standard (NMS) is the benchmark below which students may need additional support. Meeting the NMS is not 'passing' -- it's the minimum. Most students score well above it.",
+    answer: "No. NAPLAN is not pass or fail. Since 2023, results are reported as one of four proficiency levels — Exceeding, Strong, Developing, or Needs additional support. These describe where a child sits against the expected level for their year, not a pass mark. Most children sit in the Strong or Developing levels.",
   },
   {
     question: "Does NAPLAN affect my child's school record?",
@@ -67,8 +67,8 @@ const NAPLAN_FAQ = [
     answer: "Since 2023, NAPLAN has been conducted online using an adaptive format. This means the questions get harder or easier based on your child's responses. Two children in the same class may see very different questions. The adaptive format is more accurate than a fixed paper test -- it can measure a wider range of ability levels.",
   },
   {
-    question: "What is the National Minimum Standard?",
-    answer: "The National Minimum Standard (NMS) is the benchmark set by ACARA below which students are considered to need additional support. The NMS is different for each year level. For Year 5, the NMS is Band 4. For Year 7, it's Band 5. Most students score well above the NMS -- the national average is typically 2-3 bands above it.",
+    question: "What are the proficiency levels?",
+    answer: "Since 2023, ACARA reports NAPLAN results as one of four proficiency levels: Exceeding, Strong, Developing, or Needs additional support. This replaced the old ten-band scale and the old minimum-standard benchmark, which have both been retired. 'Strong' and 'Exceeding' indicate a child is meeting or exceeding the expected level for their year; 'Developing' and 'Needs additional support' indicate where extra help may be useful.",
   },
 ];
 
@@ -122,10 +122,10 @@ const NAPLAN_HUB_SCHEMA = [
       },
       {
         "@type": "Question",
-        "name": "What is the NAPLAN band scale?",
+        "name": "How are NAPLAN results reported?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "NAPLAN results are reported on a 10-band scale. Each year level has a National Minimum Standard (NMS). For Year 5 the NMS is Band 4; for Year 7 it is Band 5. Results above the NMS are reported as bands above the minimum."
+          "text": "Since 2023, NAPLAN results are reported as one of four proficiency levels: Exceeding, Strong, Developing, or Needs additional support. This replaced the old ten-band scale and the old minimum-standard benchmark. The levels describe where a child sits against the expected level for their year."
         }
       },
       {
@@ -168,7 +168,7 @@ export default function NAPLAN() {
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 16 }} className="not-grid">
               {[
                 { title: "Not an IQ test", body: "NAPLAN tests specific literacy and numeracy skills. It does not measure intelligence, creativity, or potential. A child can score below the national average in NAPLAN and be exceptionally capable in other ways.", color: "#FAEEDA", textColor: "#B36B0A" },
-                { title: "Not a school report", body: "NAPLAN is a national standardised test. It measures your child's skills relative to the national average, not relative to their class. A child in a high-performing school might score Band 7 and still be below their class average.", color: "#EEEDFE", textColor: "#534AB7" },
+                { title: "Not a school report", body: "NAPLAN is a national standardised test. It measures your child's skills against the expected level for their year, not relative to their class. A child in a high-performing school might reach the Strong or Exceeding level and still sit below their class average.", color: "#EEEDFE", textColor: "#534AB7" },
                 { title: "Not a verdict", body: "NAPLAN is a snapshot. It measures where your child is on a specific set of skills on a specific day. It does not predict their future academic performance. It does not determine their worth. It is useful data, not a judgment.", color: "#EAF3DE", textColor: "#4A7515" },
               ].map((item) => (
                 <div key={item.title} style={{ background: item.color, borderRadius: 14, padding: "18px 20px" }}>
@@ -186,7 +186,7 @@ export default function NAPLAN() {
               {
                 year: "Year 5",
                 href: "/naplan-year-5",
-                desc: "First major NAPLAN year. Results are used to identify students who need support before high school. The National Minimum Standard is Band 4. The national average is typically Band 6.",
+                desc: "The first NAPLAN year most parents pay close attention to. Results help identify where a child needs support before high school. Results are reported as four proficiency levels — Exceeding, Strong, Developing, or Needs additional support.",
                 color: "#EEEDFE",
                 textColor: "#534AB7",
                 detail: "Numeracy, Reading, Language Conventions, Writing",
@@ -194,20 +194,20 @@ export default function NAPLAN() {
               {
                 year: "Year 7",
                 href: "/naplan-year-7",
-                desc: "First year of high school. Results inform school support programs and can affect subject selection at some schools. The National Minimum Standard is Band 5. The national average is typically Band 7-8.",
+                desc: "The first NAPLAN of high school, with a real step up in difficulty. Results are reported as four proficiency levels — Exceeding, Strong, Developing, or Needs additional support — and give a snapshot as secondary school begins.",
                 color: "#EAF3DE",
                 textColor: "#4A7515",
                 detail: "Numeracy, Reading, Language Conventions, Writing",
               },
             ].map((item) => (
-              <Link key={item.year} href={item.href} style={{ textDecoration: "none" }}>
-                <div style={{ background: item.color, borderRadius: 20, padding: "28px 32px", cursor: "pointer", transition: "transform 0.15s ease", height: "100%" }}
+              <Link key={item.year} href={item.href} style={{ textDecoration: "none", display: "flex" }}>
+                <div style={{ background: item.color, borderRadius: 20, padding: "28px 32px", cursor: "pointer", transition: "transform 0.15s ease", height: "100%", width: "100%", display: "flex", flexDirection: "column" }}
                   onMouseEnter={e => (e.currentTarget.style.transform = "translateY(-2px)")}
                   onMouseLeave={e => (e.currentTarget.style.transform = "none")}
                 >
                   <div style={{ fontSize: 28, fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", marginBottom: 8 }}>{item.year}</div>
                   <p style={{ fontSize: 14, color: item.textColor, lineHeight: 1.6, marginBottom: 12 }}>{item.desc}</p>
-                  <div style={{ fontSize: 12, color: item.textColor, opacity: 0.7, marginBottom: 12 }}>{item.detail}</div>
+                  <div style={{ fontSize: 12, color: item.textColor, opacity: 0.7, marginBottom: 12, marginTop: "auto" }}>{item.detail}</div>
                   <div style={{ fontSize: 13, fontWeight: 700, color: item.textColor }}>Full guide →</div>
                 </div>
               </Link>
@@ -247,7 +247,7 @@ export default function NAPLAN() {
               {[
                 { label: "When is NAPLAN?", value: "March each year", sub: "Typically the second or third week of March. Online, adaptive format since 2023." },
                 { label: "How long is it?", value: "4 sessions", sub: "Writing, Reading, Language Conventions, Numeracy. Each 42-50 minutes." },
-                { label: "What are bands?", value: "Bands 1-10", sub: "Results are reported on a 10-band scale. Year 5 typically spans bands 3-8. Year 7 spans bands 4-9." },
+                { label: "How are results reported?", value: "Four levels", sub: "Since 2023, results come as one of four proficiency levels: Exceeding, Strong, Developing, or Needs additional support." },
                 { label: "Is it pass/fail?", value: "No", sub: "NAPLAN is not pass or fail. It reports where your child sits relative to the national average and expected level." },
                 { label: "Does it count?", value: "Depends on school", sub: "NAPLAN results can affect support programs and subject selection at some schools. Check with your school." },
                 { label: "Can you prepare?", value: "Yes, specifically", sub: "Generic practice helps. Targeted practice on your child's specific gaps helps more. That's what ClassUp does." },

@@ -41,7 +41,7 @@ export function FoundersBanner() {
             FOUNDERS
           </span>
           <span style={{ fontSize: 13, color: "#CCC" }}>
-            We're in beta with 10 families. Use code{" "}
+            Introductory offer: use code{" "}
             <button
               onClick={handleCopy}
               style={{
