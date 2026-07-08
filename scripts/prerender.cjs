@@ -5,7 +5,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-// Routes to pre-render (37 total)
+// Routes to pre-render (39 total)
 const ROUTES = [
   '/',
   '/coaches',
@@ -31,6 +31,7 @@ const ROUTES = [
   '/blog/the-problem-with-generic-naplan-prep',
   '/blog/how-to-read-naplan-results',
   '/blog/naplan-2027-dates',
+  '/blog/free-naplan-practice',
   '/blog/luna-vs-leo',
   '/blog/naplan-anxiety-what-parents-can-do',
   '/blog/year-5-maths-struggles-term-2',

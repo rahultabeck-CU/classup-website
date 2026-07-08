@@ -61,6 +61,17 @@ export const BLOG_POSTS = [
     excerpt: "NAPLAN 2027 runs 10–22 March. Here are the dates for Years 3, 5, 7 and 9, what's tested, when results arrive, and how to prepare your child honestly.",
   },
   {
+    slug: "free-naplan-practice",
+    title: "Free NAPLAN practice: what's actually useful (and what isn't)",
+    subtitle: "The official resources worth using, what to skip, and why more questions isn't the answer",
+    date: "July 2026",
+    readTime: "7 min read",
+    category: "NAPLAN",
+    categoryColor: "#EAF3DE",
+    categoryTextColor: "#4A7515",
+    excerpt: "An honest guide to free NAPLAN practice — the official resources worth using, what to skip, and why more practice questions isn't the answer.",
+  },
+  {
     slug: "luna-vs-leo",
     title: "Luna vs Leo: how to choose",
     subtitle: "A guide for parents helping their child pick a coach",

@@ -571,6 +571,198 @@ export function BlogPostNaplan2027Dates() {
 
 
 // ============================================================
+// POST: Free NAPLAN practice (~7 min read)
+// ============================================================
+
+const BLOG_FREE_PRACTICE_FAQ = [
+  {
+    question: "Is there free official NAPLAN practice?",
+    answer:
+      "Yes. The two official free resources are the NAP public demonstration site (the real online test interface, for format familiarity) and ACARA's 2012–2016 past papers (free to download, with answers).",
+  },
+  {
+    question: "Where can I find free NAPLAN past papers?",
+    answer:
+      "ACARA publishes the 2012–2016 test papers for Years 3, 5, 7 and 9, free with answer keys. Note they're paper-based and pre-date the current online, adaptive test, so they're best for content review rather than a realistic simulation. Tests after 2016 aren't released.",
+  },
+  {
+    question: "Are NAPLAN past papers still useful?",
+    answer:
+      "For content and spotting weak areas, yes. For getting used to the actual test-day experience, less so — they don't reflect the current online, adaptive format. Pair them with the NAP demonstration site for the format side.",
+  },
+  {
+    question: "How much NAPLAN practice does my child need?",
+    answer:
+      "Not a lot. A couple of familiarity sessions on the demo site, some focused practice on genuine weak areas, and understanding over repetition. Authorities advise against excessive drilling — it tends to raise stress more than results.",
+  },
+  {
+    question: "Is ClassUp's diagnostic really free?",
+    answer:
+      "Yes — the diagnostic and your first honest report are free. It shows where your child stands across numeracy, reading and language conventions before you decide anything.",
+  },
+  {
+    question: "What's the best free way to prepare for NAPLAN?",
+    answer:
+      "Use the NAP demonstration site for format familiarity, then find your child's real gaps and practise those specifically — rather than drilling every topic equally.",
+  },
+];
+
+const BLOG_FREE_PRACTICE_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Free NAPLAN practice: what's actually useful (and what isn't)",
+    description:
+      "An honest guide to free NAPLAN practice — the official resources worth using, what to skip, and why more practice questions isn't the answer.",
+    author: ORGANIZATION_REF,
+    publisher: ORGANIZATION_REF,
+    url: "https://classup.com.au/blog/free-naplan-practice",
+    datePublished: "2026-07-08",
+    dateModified: "2026-07-08",
+    inLanguage: "en-AU",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: BLOG_FREE_PRACTICE_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  },
+];
+
+export function BlogPostFreeNaplanPractice() {
+  const post = BLOG_POSTS.find((p) => p.slug === "free-naplan-practice")!;
+  return (
+    <BlogLayout post={post}>
+      <SEO
+        title="Free NAPLAN Practice: What's Actually Useful (and What Isn't) | ClassUp"
+        description="An honest guide to free NAPLAN practice — the official resources worth using, what to skip, and why more practice questions isn't the answer."
+        canonicalPath="/blog/free-naplan-practice"
+        schemaMarkup={BLOG_FREE_PRACTICE_SCHEMA}
+      />
+      <div className="blog-body">
+        <p>
+          Search "free NAPLAN practice" and you'll drown in worksheets, past papers and "free" mock tests. A lot of it isn't very
+          useful. Here's the honest guide — the genuinely worthwhile free resources, what to skip, and why the number of practice
+          questions matters far less than knowing which skills to work on.
+        </p>
+
+        <h2>The genuinely useful free resources (both official)</h2>
+        <p>There are two free resources actually worth your time, and both come straight from the people who run NAPLAN.</p>
+        <p>
+          The{" "}
+          <a
+            href="https://www.nap.edu.au/naplan/public-demonstration-site"
+            target="_blank"
+            rel="noopener"
+            style={BLOG_LINK}
+          >
+            NAP public demonstration site
+          </a>{" "}
+          is the closest thing to a dress rehearsal. It's the real online test interface — the same system your child uses on the
+          day — with sample questions across all four areas and the on-screen tools (calculator, ruler, and so on). No login,
+          completely free. Its best use is familiarity: a child who's seen the format is a calmer child on test day. What it won't
+          do is mark your child or tell you how they went — it's a walk-through, not an assessment.
+        </p>
+        <p>
+          <a
+            href="https://www.acara.edu.au/assessment/naplan/naplan-2012-2016-test-papers"
+            target="_blank"
+            rel="noopener"
+            style={BLOG_LINK}
+          >
+            ACARA's 2012–2016 past papers
+          </a>{" "}
+          are the other one — full paper tests for Years 3, 5, 7 and 9, free to download, with answer keys. They're good for
+          content familiarity and spotting weak areas. One honest caveat: they're paper-based and pre-date the current online,
+          adaptive test and the current curriculum, so treat them as content review rather than a realistic test-day simulation.
+          ACARA doesn't release the tests sat after 2016.
+        </p>
+
+        <h2>What to be wary of</h2>
+        <p>Beyond those two, "free NAPLAN practice" gets murkier. A few things worth a raised eyebrow:</p>
+        <ul>
+          <li>
+            <strong>"Free" mock tests that are really a sign-up funnel.</strong> Plenty of sites offer a free test as a hook into
+            a paid product. That's fine if you know that going in — just don't expect the free part to be the whole picture.
+          </li>
+          <li>
+            <strong>Generic worksheet packs.</strong> Endless questions with no explanation. Your child gets six out of ten, and
+            you learn nothing about which four they missed or why.
+          </li>
+          <li>
+            <strong>Anything promising score jumps or "band improvements".</strong> No honest resource can promise a specific
+            result — and a promise like that is a reason to be more sceptical, not less.
+          </li>
+        </ul>
+
+        <h2>Why more questions isn't the answer</h2>
+        <p>
+          Here's the point most practice resources won't make, because it doesn't sell more worksheets: practising blind is
+          inefficient. A pile of questions gives you a score, not a diagnosis. Two children who both score six out of ten can have
+          completely different gaps — one wobbles on fractions, the other on multi-step reading. Drilling everything equally
+          wastes the very time you're trying to use well.
+        </p>
+        <p>
+          The education authorities make a similar point: excessive coaching and heavy drilling aren't recommended, and tend to
+          raise anxiety more than anything else. What actually helps is understanding over repetition — a child who understands why
+          an answer is right will outperform one who's memorised hundreds of questions without knowing why.
+        </p>
+
+        <h2>A sensible free NAPLAN practice plan</h2>
+        <p>You don't need much. A balanced approach beats a marathon:</p>
+        <ul>
+          <li>A few weeks out: one or two sessions on the NAP demonstration site, just for format familiarity.</li>
+          <li>Then: work out where the real gaps are, and focus there — not on everything.</li>
+          <li>Throughout: talk through the questions that tripped your child up. The "why" matters far more than the number right.</li>
+          <li>The final week: keep it light. Rest does more than another worksheet.</li>
+        </ul>
+        <p>
+          For the dates to plan around, see{" "}
+          <Link href="/blog/naplan-2027-dates" style={BLOG_LINK}>NAPLAN 2027 dates</Link>. And once results arrive, our guides to{" "}
+          <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>NAPLAN proficiency levels</Link> and{" "}
+          <Link href="/blog/how-to-read-naplan-results" style={BLOG_LINK}>how to read your child's NAPLAN results</Link> walk
+          through what they mean.
+        </p>
+
+        <h2>Where ClassUp fits (and we'll be straight about it)</h2>
+        <p>
+          This is where we come in, so here's the honest version. ClassUp's diagnostic is free — and unlike a worksheet, it
+          doesn't just hand you a score. It tells you which specific skills are solid and which are wobbly across numeracy, reading
+          and language conventions, in plain English. From there, practice targets the gaps that matter, with a clear explanation
+          for every question so a wrong answer becomes a lesson. For year-level context, see our{" "}
+          <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and{" "}
+          <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link> guides.
+        </p>
+        <p>
+          No score promises, no green-tick theatre. If your child is struggling with something, the report says so — which is the
+          whole point of it.
+        </p>
+        <InPostCTA />
+
+        <h2>Frequently asked questions</h2>
+        {BLOG_FREE_PRACTICE_FAQ.map((item) => (
+          <React.Fragment key={item.question}>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </React.Fragment>
+        ))}
+
+        <h2>Find your child's real gaps — free.</h2>
+        <p>
+          An honest diagnostic across numeracy, reading and language conventions, and a report that tells you the truth, not just
+          a score. About 30 minutes.
+        </p>
+        <InPostCTA />
+      </div>
+    </BlogLayout>
+  );
+}
+
+
+// ============================================================
 // POST 5: Luna vs Leo (~660 words)
 // ============================================================
 
