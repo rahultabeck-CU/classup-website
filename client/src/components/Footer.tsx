@@ -40,9 +40,20 @@ export function Footer() {
             <p style={{ fontSize: 12, color: "#888", margin: 0 }}>
               Built in Melbourne by Australian parents.
             </p>
-            <p style={{ fontSize: 12, color: "#AAA", margin: "8px 0 0", fontWeight: 600 }}>
+            <span
+              style={{
+                display: "inline-block",
+                marginTop: 12,
+                background: "#EEEDFE",
+                color: "#534AB7",
+                fontSize: 13,
+                fontWeight: 700,
+                borderRadius: 999,
+                padding: "5px 14px",
+              }}
+            >
               ClassUp {CLASSUP_VERSION}
-            </p>
+            </span>
           </div>
 
           {/* NAPLAN */}

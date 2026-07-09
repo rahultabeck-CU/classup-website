@@ -8,6 +8,13 @@ export const FOUNDERS_CODE = "FOUNDERS";
 // Single source of truth for the displayed product version (footer + roadmap).
 export const CLASSUP_VERSION = "v1.8";
 
+// Soft milestone versions per roadmap stage (labels, not hard release promises).
+export const STAGE_VERSIONS = {
+  live: "v1.8",
+  next: "v1.9",
+  horizon: "v2.0",
+} as const;
+
 export interface SampleQuestion {
   id: string;
   acara?: string;

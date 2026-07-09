@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
-import { DIAGNOSTIC_URL, CLASSUP_VERSION } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CLASSUP_VERSION, STAGE_VERSIONS } from "@/lib/classup";
 import { ORGANIZATION_REF } from "@/lib/schema";
 import { SEO } from "@/components/SEO";
 
@@ -20,6 +20,7 @@ interface Stage {
   eyebrow: string;
   heading: string;
   timeline: string;
+  milestone: string;
   intro: string;
   pill: string;
   items: { title: string; body: string }[];
@@ -31,7 +32,8 @@ const STAGES: Stage[] = [
     eyebrow: "LIVE TODAY",
     heading: "Here now",
     timeline: "Live today",
-    intro: "The things your child can use today. This isn't a promise — it's what's already live.",
+    milestone: `${STAGE_VERSIONS.live} · available now`,
+    intro: "The things your child can use today. This isn't a promise. It's what's already live.",
     pill: "Live",
     items: [
       { title: "Free skill diagnostic", body: "An honest, skill-by-skill picture of where your child stands across Numeracy, Reading and Language Conventions." },
@@ -50,12 +52,13 @@ const STAGES: Stage[] = [
     eyebrow: "IN PROGRESS",
     heading: "Building next",
     timeline: "Target: the next 3–4 months",
-    intro: "What we're actively working on. We'd rather ship these right than rush them to hit a date — but they're in progress, not just ideas.",
+    milestone: `coming in ${STAGE_VERSIONS.next}`,
+    intro: "What we're actively working on. We'd rather ship these right than rush them to hit a date, but they're in progress, not just ideas.",
     pill: "Building",
     items: [
       { title: "Voice coaching", body: "Talking through problems out loud with Luna or Leo, not just tapping answers." },
       { title: "Writing support", body: "Help with the one NAPLAN domain that's hardest to practise alone." },
-      { title: "Be the Teacher", body: "After your child masters a skill, they get to spot another student's mistake (\u201cAlex answered 7 out of 12 — what went wrong?\u201d). Explaining an error is how mastery locks in." },
+      { title: "Be the Teacher", body: "After your child masters a skill, they get to spot another student's mistake (\u201cAlex answered 7 out of 12. What went wrong?\u201d). Explaining an error is how mastery locks in." },
       { title: "Direct sign-up", body: "Start practising straight away, with a short skill-check that tailors the first session (diagnostic optional, not required)." },
       { title: "Remembers how your child likes to work", body: "Practice mode and preferences that carry across every session." },
     ],
@@ -65,6 +68,7 @@ const STAGES: Stage[] = [
     eyebrow: "EXPLORING",
     heading: "On the horizon",
     timeline: "Target: 4–6 months out",
+    milestone: `planned for ${STAGE_VERSIONS.horizon}`,
     intro: "Where we're headed. The bigger ideas we're exploring, so you can see we're thinking well beyond this year.",
     pill: "Exploring",
     items: [
@@ -77,7 +81,7 @@ const STAGES: Stage[] = [
   },
 ];
 
-// Per-tier card styling — visual weight decreases into the future.
+// Per-tier card styling; visual weight decreases into the future.
 const TIER_STYLES: Record<StageTier, {
   card: React.CSSProperties;
   title: React.CSSProperties;
@@ -139,7 +143,7 @@ const ROADMAP_SCHEMA = [
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Our Commitment: ClassUp Keeps Getting Better",
-    "description": "ClassUp keeps improving — new features, real upgrades — and we never charge extra for them. One honest price, a product that grows with your child.",
+    "description": "ClassUp keeps improving with new features and real upgrades, and we never charge extra for them. One honest price, a product that grows with your child.",
     "url": "https://classup.com.au/roadmap",
     "publisher": ORGANIZATION_REF,
   },
@@ -172,19 +176,23 @@ function StageSection({ stage }: { stage: Stage }) {
       >
         {stage.heading}
       </h2>
-      <span
-        style={{
-          display: "inline-block",
-          fontSize: 12,
-          fontWeight: 700,
-          borderRadius: 999,
-          padding: "4px 14px",
-          marginBottom: 16,
-          ...s.pill,
-        }}
-      >
-        {stage.timeline}
-      </span>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap", marginBottom: 16 }}>
+        <span
+          style={{
+            display: "inline-block",
+            fontSize: 12,
+            fontWeight: 700,
+            borderRadius: 999,
+            padding: "4px 14px",
+            ...s.pill,
+          }}
+        >
+          {stage.timeline}
+        </span>
+        <span style={{ fontSize: 12, fontWeight: 600, letterSpacing: 0.2, ...s.eyebrow }}>
+          {stage.milestone}
+        </span>
+      </div>
       <p style={{ fontSize: 16, color: "#555", lineHeight: 1.7, maxWidth: 640, marginBottom: 28 }}>
         {stage.intro}
       </p>
@@ -222,7 +230,7 @@ export default function Roadmap() {
     <PageLayout>
       <SEO
         title="Our Commitment: ClassUp Keeps Getting Better | ClassUp"
-        description="ClassUp keeps improving — new features, real upgrades — and we never charge extra for them. One honest price, a product that grows with your child. See what's here and what's coming."
+        description="ClassUp keeps improving with new features and real upgrades, and we never charge extra for them. One honest price, a product that grows with your child. See what's here and what's coming."
         canonicalPath="/roadmap"
         schemaMarkup={ROADMAP_SCHEMA}
       />
@@ -255,8 +263,20 @@ export default function Roadmap() {
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px", background: "#7F77DD", alignSelf: "flex-start" }}>
                 Start the free diagnostic &#8594;
               </a>
-              <div style={{ marginTop: "auto", paddingTop: 32, fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.4)" }}>
-                ClassUp {CLASSUP_VERSION}
+              <div style={{ marginTop: "auto", paddingTop: 32 }}>
+                <span
+                  style={{
+                    display: "inline-block",
+                    background: "#EEEDFE",
+                    color: "#534AB7",
+                    fontSize: 14,
+                    fontWeight: 700,
+                    borderRadius: 999,
+                    padding: "7px 18px",
+                  }}
+                >
+                  ClassUp {CLASSUP_VERSION}
+                </span>
               </div>
             </div>
 
@@ -309,7 +329,7 @@ export default function Roadmap() {
           ))}
           <p style={{ fontSize: 13, color: "#999", lineHeight: 1.7, textAlign: "center", maxWidth: 620, margin: "8px auto 0" }}>
             These are our current targets, not fixed promises. We'd rather ship things right than rush them to hit a
-            date — but we're always building.
+            date, but we're always building.
           </p>
         </div>
       </section>
@@ -334,7 +354,7 @@ export default function Roadmap() {
           </h2>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.72)", lineHeight: 1.8, margin: 0 }}>
             Because choosing a subscription for your child is an act of trust, and trust runs both ways. We want you
-            to know that when you back ClassUp, you're not buying a static product — you're backing a team that
+            to know that when you back ClassUp, you're not buying a static product. You're backing a team that
             shows up, keeps building, and keeps its promises. We're here for the long run, alongside you and your
             child.
           </p>
