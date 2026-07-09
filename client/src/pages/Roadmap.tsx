@@ -247,15 +247,8 @@ export default function Roadmap() {
             We keep making ClassUp better.{" "}
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>We never charge you extra for it.</em>
           </h1>
-          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, maxWidth: 660, marginBottom: 20 }}>
-            Think about your phone. Every few months it gets new features, better tools, small improvements that
-            just show up one morning — and you don't pay a cent more for them. Your car does it now too. That's
-            how good software should work: you buy in once, and it keeps getting better around you.
-          </p>
           <p style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, maxWidth: 660, marginBottom: 32 }}>
-            That's the promise we're making to you. Your subscription today isn't the finished product — it's the
-            beginning of one. As ClassUp grows, everything we build lands in your account automatically. Same
-            price. More value. Every time.
+            Like your phone. New features just show up — same price, every time.
           </p>
           <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px", background: "#7F77DD" }}>
             Start the free diagnostic &#8594;
@@ -279,16 +272,11 @@ export default function Roadmap() {
           >
             One price. Everything we ship.
           </h2>
-          <p style={{ fontSize: 17, color: "#444", lineHeight: 1.8, maxWidth: 680, margin: "0 auto 20px" }}>
-            Here's the honest version of how a lot of education products work: they charge you for the basic
-            version, then charge you again for the "premium" features, then again for the next tier. New feature,
-            new invoice.
+          <p style={{ fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1.3, maxWidth: 680, margin: "0 auto 12px" }}>
+            $59 first child · $49 each additional child.
           </p>
           <p style={{ fontSize: 17, color: "#444", lineHeight: 1.8, maxWidth: 680, margin: "0 auto 32px" }}>
-            We don't do that. ClassUp is <strong style={{ color: "#1A1A1A" }}>$59 a month for your first child and
-            $49 for each additional child</strong> — and that's it. Every feature we add, every improvement we make,
-            every new tool for your child arrives at no extra cost, for as long as you're with us. We'd rather earn
-            your trust by getting better than by charging you more.
+            Every new feature included — forever. No upsells, no new tiers, no new invoice.
           </p>
           <div
             style={{
