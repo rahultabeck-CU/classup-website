@@ -19,6 +19,7 @@ interface Stage {
   tier: StageTier;
   eyebrow: string;
   heading: string;
+  timeline: string;
   intro: string;
   pill: string;
   items: { title: string; body: string }[];
@@ -29,38 +30,49 @@ const STAGES: Stage[] = [
     tier: "now",
     eyebrow: "LIVE TODAY",
     heading: "Here now",
+    timeline: "Live today",
     intro: "The things your child can use today. This isn't a promise — it's what's already live.",
     pill: "Live",
     items: [
-      { title: "Free diagnostic", body: "An honest, skill-by-skill picture of where your child stands, across Numeracy, Reading and Language Conventions." },
-      { title: "Adaptive practice", body: "Questions that adjust to your child's actual gaps, with a clear explanation for every one." },
-      { title: "Honest parent reports", body: "Real progress and real struggles, in plain English. No green-tick theatre." },
-      { title: "Luna and Leo", body: "Two coaches your child chooses between, who explain and encourage in language they understand." },
+      { title: "Free skill diagnostic", body: "An honest, skill-by-skill picture of where your child stands across Numeracy, Reading and Language Conventions." },
+      { title: "Adaptive practice", body: "Questions that adjust to your child's actual gaps, getting easier or harder based on how they answer." },
+      { title: "An explanation for every question", body: "Not just the right answer, but why the tempting wrong answers are wrong. A mistake becomes a lesson." },
+      { title: "Audio-dictation spelling", body: "Spelling practised the way NAPLAN actually tests it: read aloud, typed from memory." },
+      { title: "Honest parent reports", body: "Real progress and real struggles, in plain English, every week. No green-tick theatre." },
+      { title: "Luna and Leo", body: "Two coaches your child chooses between, one calm and methodical, one direct and energetic." },
+      { title: "Encouragement that lands", body: "Your child's coach checks in and celebrates real effort through each session, not empty confetti." },
       { title: "Years 5 and 7", body: "Full coverage across all three domains for the two key NAPLAN years." },
+      { title: "Cancel in one tap", body: "No phone calls, no retention scripts, no guilt." },
     ],
   },
   {
     tier: "next",
     eyebrow: "IN PROGRESS",
     heading: "Building next",
-    intro: "What we're actively working on. We won't put dates on these, because we'd rather ship them right than ship them fast — but they're in progress, not just ideas.",
+    timeline: "Target: the next 3–4 months",
+    intro: "What we're actively working on. We'd rather ship these right than rush them to hit a date — but they're in progress, not just ideas.",
     pill: "Building",
     items: [
       { title: "Voice coaching", body: "Talking through problems out loud with Luna or Leo, not just tapping answers." },
       { title: "Writing support", body: "Help with the one NAPLAN domain that's hardest to practise alone." },
-      { title: "More year levels", body: "Extending our honest approach to Years 3 and 9." },
+      { title: "Be the Teacher", body: "After your child masters a skill, they get to spot another student's mistake (\u201cAlex answered 7 out of 12 — what went wrong?\u201d). Explaining an error is how mastery locks in." },
+      { title: "Direct sign-up", body: "Start practising straight away, with a short skill-check that tailors the first session (diagnostic optional, not required)." },
+      { title: "Remembers how your child likes to work", body: "Practice mode and preferences that carry across every session." },
     ],
   },
   {
     tier: "horizon",
     eyebrow: "EXPLORING",
     heading: "On the horizon",
+    timeline: "Target: 4–6 months out",
     intro: "Where we're headed. The bigger ideas we're exploring, so you can see we're thinking well beyond this year.",
     pill: "Exploring",
     items: [
-      { title: "Deeper personalisation", body: "Practice that understands your child's learning patterns more closely over time." },
-      { title: "Progress over the years", body: "Seeing how your child grows across multiple NAPLAN cycles, not just one." },
-      { title: "Learning by teaching", body: "A \u201cteach it back\u201d mode, because explaining an idea is how children truly master it." },
+      { title: "Years 3 and 9", body: "Extending our honest approach to every NAPLAN year level." },
+      { title: "Deeper personalisation", body: "Practice that understands your child's learning patterns more closely the more they use it." },
+      { title: "Progress across the years", body: "See how your child grows across multiple NAPLAN cycles, not just one snapshot." },
+      { title: "Ask your coach anything", body: "A built-in helper your child can ask for a hint or a nudge, in their own words." },
+      { title: "A moment to be proud of", body: "Share your child's genuine breakthroughs with them, the honest way." },
     ],
   },
 ];
@@ -160,6 +172,19 @@ function StageSection({ stage }: { stage: Stage }) {
       >
         {stage.heading}
       </h2>
+      <span
+        style={{
+          display: "inline-block",
+          fontSize: 12,
+          fontWeight: 700,
+          borderRadius: 999,
+          padding: "4px 14px",
+          marginBottom: 16,
+          ...s.pill,
+        }}
+      >
+        {stage.timeline}
+      </span>
       <p style={{ fontSize: 16, color: "#555", lineHeight: 1.7, maxWidth: 640, marginBottom: 28 }}>
         {stage.intro}
       </p>
@@ -290,6 +315,10 @@ export default function Roadmap() {
           {STAGES.map((stage) => (
             <StageSection key={stage.tier} stage={stage} />
           ))}
+          <p style={{ fontSize: 13, color: "#999", lineHeight: 1.7, textAlign: "center", maxWidth: 620, margin: "8px auto 0" }}>
+            These are our current targets, not fixed promises. We'd rather ship things right than rush them to hit a
+            date — but we're always building.
+          </p>
         </div>
       </section>
 
