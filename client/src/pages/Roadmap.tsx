@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CLASSUP_VERSION } from "@/lib/classup";
 import { ORGANIZATION_REF } from "@/lib/schema";
 import { SEO } from "@/components/SEO";
 
@@ -227,72 +227,76 @@ export default function Roadmap() {
         schemaMarkup={ROADMAP_SCHEMA}
       />
 
-      {/* ── HERO ── */}
-      <section style={{ background: "#1A1A1A", padding: "80px 0 72px" }}>
-        <div className="container" style={{ maxWidth: 900 }}>
-          <div style={{ fontSize: 11, fontWeight: 700, color: "#7F77DD", textTransform: "uppercase", letterSpacing: 2, marginBottom: 22 }}>
-            OUR COMMITMENT
-          </div>
-          <h1
-            style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontSize: "clamp(36px, 5.5vw, 66px)",
-              fontWeight: 800,
-              color: "#FFFFFF",
-              lineHeight: 1.08,
-              marginBottom: 28,
-              maxWidth: 820,
-            }}
-          >
-            We keep making ClassUp better.{" "}
-            <em style={{ fontStyle: "italic", color: "#7F77DD" }}>We never charge you extra for it.</em>
-          </h1>
-          <p style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", lineHeight: 1.75, maxWidth: 660, marginBottom: 32 }}>
-            Like your phone. New features just show up — same price, every time.
-          </p>
-          <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px", background: "#7F77DD" }}>
-            Start the free diagnostic &#8594;
-          </a>
-        </div>
-      </section>
+      {/* ── TOP: COMMITMENT + ONE PRICE (side-by-side on desktop) ── */}
+      <section className="cu-section" style={{ paddingTop: 40 }}>
+        <div className="container" style={{ maxWidth: 1120 }}>
+          <div className="roadmap-top-grid">
+            {/* Commitment panel */}
+            <div style={{ background: "#1A1A1A", borderRadius: 24, padding: "44px 44px", display: "flex", flexDirection: "column" }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: "#7F77DD", textTransform: "uppercase", letterSpacing: 2, marginBottom: 20 }}>
+                OUR COMMITMENT
+              </div>
+              <h1
+                style={{
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  fontSize: "clamp(30px, 3.6vw, 46px)",
+                  fontWeight: 800,
+                  color: "#FFFFFF",
+                  lineHeight: 1.1,
+                  marginBottom: 20,
+                }}
+              >
+                We keep making ClassUp better.{" "}
+                <em style={{ fontStyle: "italic", color: "#7F77DD" }}>We never charge you extra for it.</em>
+              </h1>
+              <p style={{ fontSize: 18, color: "rgba(255,255,255,0.7)", lineHeight: 1.7, marginBottom: 28 }}>
+                Like your phone: new features just show up, same price, every time.
+              </p>
+              <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px", background: "#7F77DD", alignSelf: "flex-start" }}>
+                Start the free diagnostic &#8594;
+              </a>
+              <div style={{ marginTop: "auto", paddingTop: 32, fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.4)" }}>
+                ClassUp {CLASSUP_VERSION}
+              </div>
+            </div>
 
-      {/* ── ONE PRICE — emotional centre ── */}
-      <section style={{ background: "#F5F2EC", padding: "72px 0" }}>
-        <div className="container" style={{ maxWidth: 820, textAlign: "center" }}>
-          <div className="cu-eyebrow mb-4" style={{ justifyContent: "center" }}>ONE HONEST PRICE</div>
-          <h2
-            style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
-              fontSize: "clamp(30px, 4.5vw, 48px)",
-              fontWeight: 800,
-              color: "#1A1A1A",
-              lineHeight: 1.12,
-              marginBottom: 24,
-            }}
-          >
-            One price. Everything we ship.
-          </h2>
-          <p style={{ fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1.3, maxWidth: 680, margin: "0 auto 12px" }}>
-            $59 first child · $49 each additional child.
-          </p>
-          <p style={{ fontSize: 17, color: "#444", lineHeight: 1.8, maxWidth: 680, margin: "0 auto 32px" }}>
-            Every new feature included — forever. No upsells, no new tiers, no new invoice.
-          </p>
-          <div
-            style={{
-              background: "#EEEDFE",
-              border: "1px solid #D9D5F5",
-              borderRadius: 16,
-              padding: "22px 28px",
-              maxWidth: 640,
-              margin: "0 auto",
-            }}
-          >
-            <p style={{ fontSize: 16, color: "#534AB7", lineHeight: 1.7, margin: 0, fontWeight: 500 }}>
-              And if you join us early, it costs even less to start: use the code{" "}
-              <strong style={{ fontWeight: 800 }}>FOUNDERS</strong> for $29 a month for your first six months. Our
-              way of saying thank you to the families who back us before everyone else does.
-            </p>
+            {/* One price panel */}
+            <div style={{ background: "#F5F2EC", borderRadius: 24, padding: "44px 44px", display: "flex", flexDirection: "column" }}>
+              <div className="cu-eyebrow mb-4">ONE HONEST PRICE</div>
+              <h2
+                style={{
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  fontSize: "clamp(26px, 3vw, 38px)",
+                  fontWeight: 800,
+                  color: "#1A1A1A",
+                  lineHeight: 1.12,
+                  marginBottom: 20,
+                }}
+              >
+                One price. Everything we ship.
+              </h2>
+              <p style={{ fontSize: "clamp(20px, 3vw, 26px)", fontWeight: 800, color: "#1A1A1A", fontFamily: "'Plus Jakarta Sans', sans-serif", lineHeight: 1.3, margin: "0 0 12px" }}>
+                $59 a month.
+              </p>
+              <p style={{ fontSize: 17, color: "#444", lineHeight: 1.8, margin: "0 0 28px" }}>
+                Every new feature included, forever. No upsells, no new tiers, no new invoice.
+              </p>
+              <div
+                style={{
+                  background: "#EEEDFE",
+                  border: "1px solid #D9D5F5",
+                  borderRadius: 16,
+                  padding: "20px 24px",
+                  marginTop: "auto",
+                }}
+              >
+                <p style={{ fontSize: 16, color: "#534AB7", lineHeight: 1.7, margin: 0, fontWeight: 500 }}>
+                  And if you join us early, it costs even less to start: use the code{" "}
+                  <strong style={{ fontWeight: 800 }}>FOUNDERS</strong> for $29 a month for your first six months. Our
+                  way of saying thank you to the families who back us before everyone else does.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -356,11 +360,20 @@ export default function Roadmap() {
       </section>
 
       <style>{`
+        .roadmap-top-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 24px;
+          align-items: stretch;
+        }
         .roadmap-card-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 20px;
           align-items: stretch;
+        }
+        @media (max-width: 860px) {
+          .roadmap-top-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 900px) {
           .roadmap-card-grid { grid-template-columns: 1fr 1fr; }

@@ -5,6 +5,9 @@ export const APP_URL = import.meta.env.VITE_APP_URL ?? "https://app.classup.com.
 export const DIAGNOSTIC_URL = `${APP_URL}/auth/sign-up?intent=diagnostic`;
 export const FOUNDERS_CODE = "FOUNDERS";
 
+// Single source of truth for the displayed product version (footer + roadmap).
+export const CLASSUP_VERSION = "v1.8";
+
 export interface SampleQuestion {
   id: string;
   acara?: string;

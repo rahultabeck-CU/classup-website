@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "wouter";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CLASSUP_VERSION } from "@/lib/classup";
 
 export function Footer() {
   return (
@@ -39,6 +39,9 @@ export function Footer() {
             </p>
             <p style={{ fontSize: 12, color: "#888", margin: 0 }}>
               Built in Melbourne by Australian parents.
+            </p>
+            <p style={{ fontSize: 12, color: "#AAA", margin: "8px 0 0", fontWeight: 600 }}>
+              ClassUp {CLASSUP_VERSION}
             </p>
           </div>
 
