@@ -5,6 +5,34 @@ import { CoachAvatar, FounderAvatar, EmailCapture, FAQAccordion, SampleQuestionC
 import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_7 } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
+// Left-column identity stack for a coach card — avatar, name, traits and
+// profile link all centred on one axis. Flex centring is required because
+// CoachAvatar is a fixed-width block that text-align alone can't centre.
+function CoachIdentity({
+  coach,
+  name,
+  traits,
+  href,
+  accent,
+}: {
+  coach: "luna" | "leo";
+  name: string;
+  traits: string;
+  href: string;
+  accent: string;
+}) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+      <CoachAvatar coach={coach} size={96} />
+      <div style={{ marginTop: 10, fontSize: 18, fontWeight: 800, color: "#1A1A1A" }}>{name}</div>
+      <div style={{ fontSize: 12, color: accent, fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>{traits}</div>
+      <Link href={href} style={{ fontSize: 12, color: accent, textDecoration: "none", display: "block", marginTop: 6 }}>
+        Full profile →
+      </Link>
+    </div>
+  );
+}
+
 // ============================================================
 // /coaches -- Full narrative depth at eval bar
 // Sunday afternoon scene. Lean-forward moment. Founder voice spine.
@@ -94,14 +122,7 @@ export default function Coaches() {
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 900 }}>
           <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "start", marginBottom: 48 }} className="coach-grid">
-            <div style={{ textAlign: "center" }}>
-              <CoachAvatar coach="luna" size={96} />
-              <div style={{ marginTop: 10, fontSize: 18, fontWeight: 800, color: "#1A1A1A" }}>Luna</div>
-              <div style={{ fontSize: 12, color: "#7F77DD", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>Calm · Methodical</div>
-              <Link href="/coaches/luna" style={{ fontSize: 12, color: "#7F77DD", textDecoration: "none", display: "block", marginTop: 6 }}>
-                Full profile →
-              </Link>
-            </div>
+            <CoachIdentity coach="luna" name="Luna" traits="Calm · Methodical" href="/coaches/luna" accent="#7F77DD" />
             <div>
               <div className="cu-eyebrow mb-3">MEET LUNA</div>
               <p className="cu-body-card mb-4">
@@ -129,14 +150,7 @@ export default function Coaches() {
 
           {/* MEET LEO */}
           <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "start" }} className="coach-grid">
-            <div style={{ textAlign: "center" }}>
-              <CoachAvatar coach="leo" size={96} />
-              <div style={{ marginTop: 10, fontSize: 18, fontWeight: 800, color: "#1A1A1A" }}>Leo</div>
-              <div style={{ fontSize: 12, color: "#639922", fontWeight: 600, textTransform: "uppercase", letterSpacing: 1 }}>Direct · Fast</div>
-              <Link href="/coaches/leo" style={{ fontSize: 12, color: "#639922", textDecoration: "none", display: "block", marginTop: 6 }}>
-                Full profile →
-              </Link>
-            </div>
+            <CoachIdentity coach="leo" name="Leo" traits="Direct · Fast" href="/coaches/leo" accent="#639922" />
             <div>
               <div className="cu-eyebrow mb-3">MEET LEO</div>
               <p className="cu-body-card mb-4">
