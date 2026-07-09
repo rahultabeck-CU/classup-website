@@ -49,7 +49,7 @@ export default function HowItWorks() {
   return (
     <PageLayout>
       <SEO
-        title="How ClassUp works — free diagnostic, adaptive coaching, weekly report"
+        title="How ClassUp works, free diagnostic, adaptive coaching, weekly report"
         description="ClassUp starts with a free 30-minute diagnostic that maps your child's exact gaps. Then Luna or Leo works on those gaps every session, four times a week."
         canonicalPath="/how-it-works"
       />

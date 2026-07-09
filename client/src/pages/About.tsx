@@ -14,7 +14,7 @@ export default function About() {
   return (
     <PageLayout>
       <SEO
-        title="About ClassUp — built by a parent, for our own kids"
+        title="About ClassUp: built by a parent, for our own kids"
         description="ClassUp was built by Rahul Tabeck after his daughter Kavya said 'Dad, you explain it like it's obvious. It's not obvious to me.' Here is the full story."
         canonicalPath="/about"
       />
@@ -91,13 +91,13 @@ export default function About() {
             <h2 className="cu-h2-card mb-4">Built to the Australian curriculum, with an explanation for every question.</h2>
             <p className="cu-body-card mb-4">
               Our question bank is built to align with the ACARA curriculum for Years 5 and 7, across Numeracy,
-              Reading and Language Conventions. Every question carries a clear, worked explanation — not just the
-              right answer, but why the common wrong answers are tempting — so a mistake becomes a lesson.
+              Reading and Language Conventions. Every question carries a clear, worked explanation, not just the
+              right answer, but why the common wrong answers are tempting, so a mistake becomes a lesson.
             </p>
             <p className="cu-body-card">
               We're a small team, and we care about getting the content right. Every question is checked for
               accuracy and curriculum alignment before it reaches your child. If you're an educator, tutor or
-              parent and you spot something that could be better, we want to hear about it — email us at{" "}
+              parent and you spot something that could be better, we want to hear about it, email us at{" "}
               <a href="mailto:rahul@classup.com.au" style={{ color: "#7F77DD" }}>rahul@classup.com.au</a>.
               We read every message.
             </p>

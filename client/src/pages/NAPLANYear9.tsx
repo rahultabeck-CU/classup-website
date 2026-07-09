@@ -31,12 +31,12 @@ const YEAR9_FAQ = [
   {
     question: "What proficiency levels do Year 9 students get?",
     answer:
-      "Since 2023, Year 9 NAPLAN results use four proficiency levels — Exceeding, Strong, Developing, and Needs additional support — not the old band scale. Strong means your child has met the challenging-but-reasonable standard for Year 9. The report shows where they landed in each test area. For a full breakdown of each level, see our proficiency levels explained guide at classup.com.au/naplan/proficiency-levels-explained.",
+      "Since 2023, Year 9 NAPLAN results use four proficiency levels, Exceeding, Strong, Developing, and Needs additional support, not the old band scale. Strong means your child has met the challenging-but-reasonable standard for Year 9. The report shows where they landed in each test area. For a full breakdown of each level, see our proficiency levels explained guide at classup.com.au/naplan/proficiency-levels-explained.",
   },
   {
     question: "My Year 9 child is anxious about NAPLAN. How do I help?",
     answer:
-      "Anxiety at Year 9 is normal — it's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork: your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep. Knowing they're working on their gaps, not random questions, reduces anxiety significantly.",
+      "Anxiety at Year 9 is normal. It's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork: your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep. Knowing they're working on their gaps, not random questions, reduces anxiety significantly.",
   },
   {
     question: "How long does Year 9 NAPLAN preparation take?",
@@ -56,7 +56,7 @@ const YEAR9_FAQ = [
   {
     question: "What's the difference between Exceeding and Strong at Year 9?",
     answer:
-      "Exceeding means your child's result is above what's expected at Year 9. Strong means they have met the challenging-but-reasonable expectations for their year level — a genuinely good result. Both are solid outcomes; the useful next step is understanding which specific skills are strong and which need work. ClassUp's diagnostic maps that at skill level, not just the overall proficiency level.",
+      "Exceeding means your child's result is above what's expected at Year 9. Strong means they have met the challenging-but-reasonable expectations for their year level, a genuinely good result. Both are solid outcomes; the useful next step is understanding which specific skills are strong and which need work. ClassUp's diagnostic maps that at skill level, not just the overall proficiency level.",
   },
   {
     question: "Should my Year 9 child focus on NAPLAN or their school subjects?",
@@ -114,7 +114,7 @@ export default function NAPLANYear9() {
   return (
     <PageLayout>
       <SEO
-        title="NAPLAN Year 9 prep — ClassUp"
+        title="NAPLAN Year 9 prep | ClassUp"
         description="Year 9 NAPLAN is the final NAPLAN test and your last formal benchmark before senior secondary. Here is what is tested and how to prepare."
         canonicalPath="/naplan-year-9"
         schemaMarkup={NAPLAN_Y9_SCHEMA}
@@ -131,7 +131,7 @@ export default function NAPLANYear9() {
                 <em className="cu-italic-accent">the final checkpoint.</em>
               </h1>
               <p className="cu-body-large mb-6">
-                Year 9 is the last NAPLAN test. It's also the hardest. The content is more complex, the stakes are higher, and this is your final formal benchmark before senior secondary specialisation begins. Results use four proficiency levels — Exceeding, Strong, Developing, and Needs additional support — not the old band scale. For what each level means, see{" "}
+                Year 9 is the last NAPLAN test. It's also the hardest. The content is more complex, the stakes are higher, and this is your final formal benchmark before senior secondary specialisation begins. Results use four proficiency levels, Exceeding, Strong, Developing, and Needs additional support, not the old band scale. For what each level means, see{" "}
                 <Link href="/naplan/proficiency-levels-explained" style={{ color: "#534AB7", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: 2 }}>
                   proficiency levels explained
                 </Link>
@@ -142,7 +142,7 @@ export default function NAPLANYear9() {
               <div className="cu-card-large" style={{ padding: "24px 28px", marginBottom: 32, borderLeft: "3px solid #7F77DD" }}>
                 <div className="cu-eyebrow mb-3" style={{ color: "#7F77DD" }}>FOUNDER NOTE</div>
                 <p style={{ fontSize: 15, fontStyle: "italic", color: "#2A2A2A", lineHeight: 1.8, marginBottom: 16 }}>
-                  "Year 9 is different. It's the last one. Parents start asking: 'Is my child on track for senior secondary?' Teachers are thinking about streaming and subject selection. Students feel the weight of it — this is the final checkpoint before things get real.
+                  "Year 9 is different. It's the last one. Parents start asking: 'Is my child on track for senior secondary?' Teachers are thinking about streaming and subject selection. Students feel the weight of it. This is the final checkpoint before things get real.
                 </p>
                 <p style={{ fontSize: 15, fontStyle: "italic", color: "#2A2A2A", lineHeight: 1.8, marginBottom: 16 }}>
                   That's exactly why the diagnostic matters. You don't want to guess about your child's readiness. You want to know. And if there are gaps, you want to close them now, not in Year 10 when they're juggling five subjects and trying to figure out which ones they want to specialise in.
@@ -182,15 +182,15 @@ export default function NAPLANYear9() {
                 {[
                   {
                     worry: "Year 9 is the final test. If my child doesn't do well, is it too late?",
-                    answer: "Year 9 NAPLAN is a snapshot, not a prediction. A lower Year 9 result tells you your child has gaps that need closing before senior secondary. That's useful information. ClassUp's diagnostic identifies those gaps. Four weeks of focused coaching closes most of them. It's not too late — it's exactly the right time to know.",
+                    answer: "Year 9 NAPLAN is a snapshot, not a prediction. A lower Year 9 result tells you your child has gaps that need closing before senior secondary. That's useful information. ClassUp's diagnostic identifies those gaps. Four weeks of focused coaching closes most of them. It's not too late. It's exactly the right time to know.",
                   },
                   {
                     worry: "My child is strong in Year 8 but anxious about Year 9. Is that normal?",
-                    answer: "Yes. Year 9 anxiety is normal — it's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork. Your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep.",
+                    answer: "Yes. Year 9 anxiety is normal. It's the final checkpoint. The best antidote is clarity. ClassUp's diagnostic removes the guesswork. Your child sees exactly what they're good at and what needs work. Focused practice on real gaps builds confidence faster than generic test prep.",
                   },
                   {
                     worry: "My Year 9 child is juggling school subjects and extracurriculars. Is there time for NAPLAN prep?",
-                    answer: "Yes. ClassUp is four 30-minute sessions per week. That's 2 hours per week. It's less time than most extracurriculars. And because the coaching targets your child's exact gaps, the practice is efficient — no wasted time on things they already know.",
+                    answer: "Yes. ClassUp is four 30-minute sessions per week. That's 2 hours per week. It's less time than most extracurriculars. And because the coaching targets your child's exact gaps, the practice is efficient, no wasted time on things they already know.",
                   },
                 ].map((item, idx) => (
                   <div key={idx} style={{ padding: "20px 24px", borderRadius: 12, backgroundColor: "#F5F2EC", borderLeft: "3px solid #7F77DD" }}>

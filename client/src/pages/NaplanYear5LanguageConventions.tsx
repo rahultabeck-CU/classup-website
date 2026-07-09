@@ -15,7 +15,7 @@ const PAGE_FAQ = [
   {
     question: "How is spelling tested in Year 5 NAPLAN?",
     answer:
-      "By audio. A word is read aloud and used in a sentence, and your child types it from memory — there's no multiple choice and no visual hint. It tests recall, which is harder than recognising a correct spelling in a list.",
+      "By audio. A word is read aloud and used in a sentence, and your child types it from memory. There's no multiple choice and no visual hint. It tests recall, which is harder than recognising a correct spelling in a list.",
   },
   {
     question: "How long is the Year 5 language conventions test?",
@@ -35,12 +35,12 @@ const PAGE_FAQ = [
   {
     question: "How can I help my child prepare?",
     answer:
-      "Practise spelling by ear (read the word aloud, have them write it), notice apostrophes and homophones in everyday text, and read aloud together. Then target the specific gaps — ClassUp's free diagnostic shows you where they are.",
+      "Practise spelling by ear (read the word aloud, have them write it), notice apostrophes and homophones in everyday text, and read aloud together. Then target the specific gaps | ClassUp's free diagnostic shows you where they are.",
   },
   {
     question: "Does ClassUp practise spelling the way NAPLAN tests it?",
     answer:
-      "Yes — spelling is practised by audio, the same format as the real test, not as a pick-the-right-word list.",
+      "Yes, spelling is practised by audio, the same format as the real test, not as a pick-the-right-word list.",
   },
 ];
 
@@ -48,7 +48,7 @@ const PART_ROWS = [
   {
     part: "Spelling",
     detail:
-      "Delivered by audio — a word is read aloud and used in a sentence, and your child types it from memory. No multiple choice, no visual hint. This is the harder way to test spelling, and it's exactly how NAPLAN does it.",
+      "Delivered by audio: a word is read aloud and used in a sentence, and your child types it from memory. No multiple choice, no visual hint. This is the harder way to test spelling, and it's exactly how NAPLAN does it.",
   },
   {
     part: "Grammar and punctuation",
@@ -122,7 +122,7 @@ export default function NaplanYear5LanguageConventions() {
     <PageLayout>
       <SEO
         title="Year 5 NAPLAN Language Conventions: Spelling, Grammar & Punctuation | ClassUp"
-        description="What Year 5 NAPLAN language conventions tests — spelling (by audio), grammar and punctuation — where children lose marks, and how to prepare honestly."
+        description="What Year 5 NAPLAN language conventions tests, spelling (by audio), grammar and punctuation, where children lose marks, and how to prepare honestly."
         canonicalPath="/naplan-year-5-language-conventions"
         schemaMarkup={SCHEMA}
       />
@@ -168,7 +168,7 @@ export default function NaplanYear5LanguageConventions() {
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            Language conventions is the quiet mark-winner of NAPLAN — spelling, grammar and punctuation, tested precisely.
+            Language conventions is the quiet mark-winner of NAPLAN, spelling, grammar and punctuation, tested precisely.
             It's also the one section where a few targeted fixes can lift a result fast. Here's what it covers, where Year 5
             children slip, and how to find the real gaps before March.
           </p>
@@ -256,7 +256,7 @@ export default function NaplanYear5LanguageConventions() {
 
           <p style={P}>
             The audio spelling format catches a lot of families off guard. Most spelling apps show the word and ask your child
-            to pick the right version — NAPLAN plays the word and expects them to produce it from scratch. That's a genuinely
+            to pick the right version, NAPLAN plays the word and expects them to produce it from scratch. That's a genuinely
             different (and harder) skill, and it's worth practising the way the test actually works.
           </p>
           <p style={P}>
@@ -277,9 +277,9 @@ export default function NaplanYear5LanguageConventions() {
             {[
               "Audio spelling from memory. Children who \"recognise\" the right spelling in a list can't always produce it cold. The test rewards recall, not recognition.",
               "Apostrophes. Possessives versus plurals (\"the dog's bone\" vs \"two dogs\"), and its versus it's. A reliable source of dropped marks.",
-              "Homophones. there / their / they're, to / too / two, your / you're. Easy to know, easy to slip under time pressure.",
+              "Homophones: there / their / they're, to / too / two, your / you're. Easy to know, easy to slip under time pressure.",
               "Verb tense and agreement. \"The team were\" vs \"the team was\"; keeping tense consistent across a sentence.",
-              "Punctuating direct speech. Where the comma and speech marks go — a specific skill many children have never been taught explicitly.",
+              "Punctuating direct speech. Where the comma and speech marks go. A specific skill many children have never been taught explicitly.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -300,18 +300,18 @@ export default function NaplanYear5LanguageConventions() {
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
             <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 language conventions</h2>
             <p style={{ ...P, marginBottom: 16 }}>
-              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic covers both parts — audio
-              spelling and grammar and punctuation — pitched so your child feels capable rather than examined. You get an
+              <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic covers both parts, audio
+              spelling and grammar and punctuation, pitched so your child feels capable rather than examined. You get an
               honest report of which skills are solid and which are wobbly, in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more apostrophe work if apostrophes are the wall, less of what's already strong. Spelling is practised the
+              gaps, more apostrophe work if apostrophes are the wall, less of what's already strong. Spelling is practised the
               way NAPLAN tests it: by audio. Every question comes with a clear explanation, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
               <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If homophones are the problem, the report
-              says so — early enough in the year to do something about it. See{" "}
+              says so, early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -326,7 +326,7 @@ export default function NaplanYear5LanguageConventions() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Practise spelling by ear, not by sight. Read a word aloud, use it in a sentence, and have your child write it — that's the NAPLAN format. Testing them on a list they can see is easier than the real thing.",
+              "Practise spelling by ear, not by sight. Read a word aloud, use it in a sentence, and have your child write it. That's the NAPLAN format. Testing them on a list they can see is easier than the real thing.",
               "Hunt apostrophes and homophones in the wild. Point them out on signs, menus and messages. Little-and-often beats a worksheet blitz.",
               "Read aloud together. Hearing how sentences are built quietly teaches grammar and punctuation without it feeling like study.",
               "Keep it calm. It's a snapshot, not a verdict. A relaxed child makes fewer careless slips.",
@@ -359,27 +359,27 @@ export default function NaplanYear5LanguageConventions() {
               {
                 href: "/naplan-year-5",
                 label: "Year 5 NAPLAN",
-                desc: "The full picture of Year 5 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                desc: "The full picture of Year 5 NAPLAN, all four tests, preparation, and how ClassUp helps.",
               },
               {
                 href: "/naplan-year-5-numeracy",
                 label: "Year 5 numeracy",
-                desc: "What Year 5 NAPLAN numeracy tests — the six strands and the traps that cost marks.",
+                desc: "What Year 5 NAPLAN numeracy tests: the six strands and the traps that cost marks.",
               },
               {
                 href: "/naplan-year-5-reading",
                 label: "Year 5 reading",
-                desc: "What Year 5 NAPLAN reading tests — the three reading skills and the questions that catch children out.",
+                desc: "What Year 5 NAPLAN reading tests: the three reading skills and the questions that catch children out.",
               },
               {
                 href: "/naplan-year-7-language-conventions",
                 label: "Year 7 language conventions",
-                desc: "Trickier spelling, complex-sentence punctuation, and reported speech — what steps up at Year 7.",
+                desc: "Trickier spelling, complex-sentence punctuation, and reported speech, what steps up at Year 7.",
               },
               {
                 href: "/how-it-works",
                 label: "How It Works",
-                desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",
+                desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end.",
               },
               {
                 href: "/methodology",
@@ -389,7 +389,7 @@ export default function NaplanYear5LanguageConventions() {
               {
                 href: "/blog/how-to-read-naplan-results",
                 label: "How to read NAPLAN results",
-                desc: "What the four proficiency levels mean — and what to do next.",
+                desc: "What the four proficiency levels mean, and what to do next.",
               },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
@@ -426,7 +426,7 @@ export default function NaplanYear5LanguageConventions() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 5 child really stands — free.
+              Find out where your Year 5 child really stands, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest diagnostic across spelling, grammar and punctuation, and a report that tells you the truth. About 30 minutes.

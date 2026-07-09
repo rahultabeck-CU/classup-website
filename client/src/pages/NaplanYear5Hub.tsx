@@ -26,7 +26,7 @@ const HUB_FAQ = [
   {
     question: "How can I help my Year 5 child prepare for NAPLAN?",
     answer:
-      "Start by understanding where they actually stand, rather than drilling random questions. Practise the specific areas that need work, keep sessions short and calm, and remember NAPLAN measures progress — it isn't pass or fail. ClassUp's free diagnostic gives you that starting picture.",
+      "Start by understanding where they actually stand, rather than drilling random questions. Practise the specific areas that need work, keep sessions short and calm, and remember NAPLAN measures progress, it isn't pass or fail. ClassUp's free diagnostic gives you that starting picture.",
   },
   {
     question: "Is NAPLAN practice necessary?",
@@ -36,7 +36,7 @@ const HUB_FAQ = [
   {
     question: "Which subjects does ClassUp cover for Year 5?",
     answer:
-      "ClassUp's diagnostic and practice currently cover Numeracy, Reading, and Language Conventions — the areas where targeted practice makes the most difference.",
+      "ClassUp's diagnostic and practice currently cover Numeracy, Reading, and Language Conventions: the areas where targeted practice makes the most difference.",
   },
   {
     question: "How much does ClassUp cost?",
@@ -155,7 +155,7 @@ export default function NaplanYear5Hub() {
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>tells you the truth.</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 680, marginBottom: 32 }}>
-            A free diagnostic shows you exactly where your Year 5 child stands — the strengths and the gaps — then targeted
+            A free diagnostic shows you exactly where your Year 5 child stands, the strengths and the gaps, then targeted
             practice helps them build on it. No inflated promises. Just an honest picture and a clear next step.
           </p>
           <PrimaryCTA />
@@ -176,7 +176,7 @@ export default function NaplanYear5Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 Numeracy</Link> — number, algebra, measurement, space,
+                <Link href="/naplan-year-5-numeracy" style={LINK}>Year 5 Numeracy</Link>: number, algebra, measurement, space,
                 statistics and probability. By Year 5 this steps up: fractions, decimals, multi-step problems and reasoning,
                 not just arithmetic.
               </span>
@@ -184,28 +184,28 @@ export default function NaplanYear5Hub() {
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                <Link href="/naplan-year-5-reading" style={LINK}>Reading</Link> — longer and more varied passages than Year 3,
+                <Link href="/naplan-year-5-reading" style={LINK}>Reading</Link>: longer and more varied passages than Year 3,
                 testing whether your child can locate information, connect ideas across a text, and read between the lines.
               </span>
             </li>
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                Writing — one writing task, marked against a set of criteria.
+                Writing: one writing task, marked against a set of criteria.
               </span>
             </li>
             <li style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
               <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
               <span style={{ fontSize: 16, color: "#444", lineHeight: 1.7 }}>
-                Language Conventions —{" "}
+                Language Conventions:{" "}
                 <Link href="/naplan-year-5-language-conventions" style={LINK}>spelling, grammar and punctuation</Link>, including
                 spelling delivered by audio.
               </span>
             </li>
           </ul>
           <p style={P}>
-            NAPLAN is adaptive: the questions a child sees adjust to how they're answering. It isn't a pass-or-fail exam —
-            it's a snapshot of where literacy and numeracy skills sit against the national standard. The most useful thing
+            NAPLAN is adaptive: the questions a child sees adjust to how they're answering. It isn't a pass-or-fail exam.
+            It's a snapshot of where literacy and numeracy skills sit against the national standard. The most useful thing
             you can do as a parent isn't to cram. It's to understand where your child actually is, and help where it counts.
           </p>
         </div>
@@ -220,7 +220,7 @@ export default function NaplanYear5Hub() {
             no real idea what stuck, and the gaps that matter stay hidden.
           </p>
           <p style={P}>
-            Even education authorities caution against excessive coaching — and they're right that drilling for its own sake
+            Even education authorities caution against excessive coaching, and they're right that drilling for its own sake
             doesn't help. But there's a difference between cramming and understanding. A worksheet can't tell you that your
             child has fractions sorted but loses marks on multi-step word problems, or reads fluently but misses inference
             questions. Without that, you're practising blind.
@@ -244,17 +244,17 @@ export default function NaplanYear5Hub() {
               {
                 n: "1",
                 title: "A free diagnostic",
-                body: "Your child works through a short, friendly diagnostic across Numeracy, Reading and Language Conventions. It's designed to feel achievable, not like an exam — the point is to read their skills, not rattle them.",
+                body: "Your child works through a short, friendly diagnostic across Numeracy, Reading and Language Conventions. It's designed to feel achievable, not like an exam: the point is to read their skills, not rattle them.",
               },
               {
                 n: "2",
                 title: "An honest parent report",
-                body: "You get a plain-English report on where your child stands: what they've got, what's wobbly, and what to focus on. Real progress and real struggles — written for a parent, not a teacher.",
+                body: "You get a plain-English report on where your child stands: what they've got, what's wobbly, and what to focus on. Real progress and real struggles, written for a parent, not a teacher.",
               },
               {
                 n: "3",
                 title: "Practice that adapts",
-                body: "From there, your child practises with a coach that adjusts to how they're going — leaning into the areas that need work, easing off the ones that don't. Each question comes with a clear explanation, so practice actually teaches rather than just tests.",
+                body: "From there, your child practises with a coach that adjusts to how they're going, leaning into the areas that need work, easing off the ones that don't. Each question comes with a clear explanation, so practice actually teaches rather than just tests.",
               },
             ].map((step) => (
               <div key={step.n} style={{ background: "#EEEDFE", borderRadius: 16, padding: "24px 26px", borderTop: "3px solid #7F77DD" }}>
@@ -299,7 +299,7 @@ export default function NaplanYear5Hub() {
               you keep paying. Green ticks everywhere. Everything's "great."
             </p>
             <p style={{ ...P, marginBottom: 0 }}>
-              ClassUp doesn't do that. If your child is struggling with something, we tell you — clearly, and early enough to
+              ClassUp doesn't do that. If your child is struggling with something, we tell you, clearly, and early enough to
               do something about it. If they're tracking well, we tell you that too. The honesty is the product. It's the whole
               reason we built it, and it's the thing you can't get from a worksheet pack.
             </p>
@@ -312,7 +312,7 @@ export default function NaplanYear5Hub() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>A coach your child will actually like</h2>
           <p style={P}>
-            Your child practises alongside one of two coaches —{" "}
+            Your child practises alongside one of two coaches:{" "}
             <Link href="/coaches/luna" style={LINK}>Luna</Link>, who's calm and encouraging, or{" "}
             <Link href="/coaches/leo" style={LINK}>Leo</Link>, who's direct and full of energy. They pick the one that suits
             them. The coach explains, nudges and keeps things moving, in language a Year 5 child gets.
@@ -330,7 +330,7 @@ export default function NaplanYear5Hub() {
           <p style={P}>
             By Year 5, the curriculum has quietly shifted up a gear. Maths moves into fractions, decimals and multi-step
             reasoning. Reading passages get longer and ask harder questions. Spelling and grammar expectations climb. Plenty of
-            children who sailed through Year 3 hit a few walls in Year 5 — and that's normal.
+            children who sailed through Year 3 hit a few walls in Year 5, and that's normal.
           </p>
           <p style={P}>
             You don't need to know where the gaps are. That's what the diagnostic is for. Twenty minutes in, you'll have a
@@ -358,10 +358,10 @@ export default function NaplanYear5Hub() {
           <h2 style={{ ...H2, fontSize: "clamp(22px, 3vw, 32px)" }}>Related guides and resources</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 16, marginTop: 24 }} className="links-grid">
             {[
-              { href: "/how-it-works", label: "How It Works", desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end." },
+              { href: "/how-it-works", label: "How It Works", desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end." },
               { href: "/methodology", label: "Methodology", desc: "Why targeted practice outperforms generic worksheets for NAPLAN preparation." },
               { href: "/blog/what-naplan-actually-tests", label: "What NAPLAN actually tests", desc: "A plain-English look at what each NAPLAN domain is really assessing." },
-              { href: "/blog/how-to-read-naplan-results", label: "How to read NAPLAN results", desc: "Make sense of bands and the national standard — and what to do next." },
+              { href: "/blog/how-to-read-naplan-results", label: "How to read NAPLAN results", desc: "Make sense of bands and the national standard, and what to do next." },
             ].map((link) => (
               <Link key={link.href} href={link.href} style={{ textDecoration: "none" }}>
                 <div
@@ -397,7 +397,7 @@ export default function NaplanYear5Hub() {
                 marginRight: "auto",
               }}
             >
-              See where your Year 5 child really stands — free.
+              See where your Year 5 child really stands, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               No card games, no inflated promises. Just an honest diagnostic and a report you can trust, in about 30 minutes.

@@ -526,7 +526,7 @@ function FounderSection() {
             <div className="founder-photo" style={{ position: "relative", minHeight: 420, background: "#E8E4F8" }}>
               <img
                 src="/images/classup-founder-family.webp"
-                alt="Rahul Tabeck, ClassUp founder, with his daughter Kavya and family — the reason ClassUp exists"
+                alt="Rahul Tabeck, ClassUp founder, with his daughter Kavya and family, the reason ClassUp exists"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -1391,7 +1391,7 @@ export default function Home() {
   return (
     <PageLayout>
       <SEO
-        title="ClassUp — NAPLAN prep that tells you the truth"
+        title="ClassUp, NAPLAN prep that tells you the truth"
         description="A free 30-minute diagnostic that shows exactly where your child stands, then a coach who works on those exact gaps every session. For Year 5 and Year 7 Australian families."
         canonicalPath="/"
         schemaMarkup={HOME_SCHEMA}

@@ -13,7 +13,7 @@ export default function Methodology() {
   return (
     <PageLayout>
       <SEO
-        title="ClassUp's methodology — spaced retrieval, error analysis, adaptive practice"
+        title="ClassUp's methodology, spaced retrieval, error analysis, adaptive practice"
         description="ClassUp is built on three principles: identify the exact mistake, practise the same skill differently, and space repetitions over time. Here is the research behind each one."
         canonicalPath="/methodology"
       />

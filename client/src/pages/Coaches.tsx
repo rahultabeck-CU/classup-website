@@ -65,7 +65,7 @@ export default function Coaches() {
   return (
     <PageLayout>
       <SEO
-        title="Luna and Leo — ClassUp's NAPLAN coaches"
+        title="Luna and Leo | ClassUp's NAPLAN coaches"
         description="Meet Luna (Year 5) and Leo (Year 7), ClassUp's two adaptive coaches. Each one specialises in a different year level and adjusts every question based on what your child got wrong."
         canonicalPath="/coaches"
       />
@@ -258,7 +258,7 @@ export default function Coaches() {
               <p className="cu-body-card mb-4">
                 Both coaches are honest. Both are rigorous. Neither will tell a child they are doing well
                 when they are not. Neither will skip the explanation to keep the session moving. The
-                difference is not quality. it is relationship.
+                difference is not quality. It is relationship.
               </p>
               <p className="cu-body-card">
                 We are planning a third coach for v1.2. We will announce when it is ready. For now: try both.

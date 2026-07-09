@@ -52,7 +52,7 @@ const NAPLAN_FAQ = [
   },
   {
     question: "Is NAPLAN pass or fail?",
-    answer: "No. NAPLAN is not pass or fail. Since 2023, results are reported as one of four proficiency levels — Exceeding, Strong, Developing, or Needs additional support. These describe where a child sits against the expected level for their year, not a pass mark. Most children sit in the Strong or Developing levels.",
+    answer: "No. NAPLAN is not pass or fail. Since 2023, results are reported as one of four proficiency levels: Exceeding, Strong, Developing, or Needs additional support. These describe where a child sits against the expected level for their year, not a pass mark. Most children sit in the Strong or Developing levels.",
   },
   {
     question: "Does NAPLAN affect my child's school record?",
@@ -143,7 +143,7 @@ export default function NAPLAN() {
   return (
     <PageLayout>
       <SEO
-        title="What NAPLAN actually tests — ClassUp"
+        title="What NAPLAN actually tests | ClassUp"
         description="NAPLAN is Australia's national literacy and numeracy assessment for Years 3, 5, 7, and 9. Here is what it tests, what it does not test, and what the results mean."
         canonicalPath="/naplan"
       
@@ -186,7 +186,7 @@ export default function NAPLAN() {
               {
                 year: "Year 5",
                 href: "/naplan-year-5",
-                desc: "The first NAPLAN year most parents pay close attention to. Results help identify where a child needs support before high school. Results are reported as four proficiency levels — Exceeding, Strong, Developing, or Needs additional support.",
+                desc: "The first NAPLAN year most parents pay close attention to. Results help identify where a child needs support before high school. Results are reported as four proficiency levels: Exceeding, Strong, Developing, or Needs additional support.",
                 color: "#EEEDFE",
                 textColor: "#534AB7",
                 detail: "Numeracy, Reading, Language Conventions, Writing",
@@ -194,7 +194,7 @@ export default function NAPLAN() {
               {
                 year: "Year 7",
                 href: "/naplan-year-7",
-                desc: "The first NAPLAN of high school, with a real step up in difficulty. Results are reported as four proficiency levels — Exceeding, Strong, Developing, or Needs additional support — and give a snapshot as secondary school begins.",
+                desc: "The first NAPLAN of high school, with a real step up in difficulty. Results are reported as four proficiency levels, Exceeding, Strong, Developing, or Needs additional support, and give a snapshot as secondary school begins.",
                 color: "#EAF3DE",
                 textColor: "#4A7515",
                 detail: "Numeracy, Reading, Language Conventions, Writing",

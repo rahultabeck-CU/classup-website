@@ -35,6 +35,7 @@ import {
   BlogPostReadResults,
   BlogPostNaplan2027Dates,
   BlogPostFreeNaplanPractice,
+  BlogPostNaplanAnxietyHelpingYourChild,
   BlogPostLunaVsLeo,
   BlogPostNAPLANAnxiety,
   BlogPostYear5MathsTerm2,
@@ -112,6 +113,7 @@ function Router() {
       <Route path="/blog/how-to-read-naplan-results" component={BlogPostReadResults} />
       <Route path="/blog/naplan-2027-dates" component={BlogPostNaplan2027Dates} />
       <Route path="/blog/free-naplan-practice" component={BlogPostFreeNaplanPractice} />
+      <Route path="/blog/naplan-anxiety-helping-your-child" component={BlogPostNaplanAnxietyHelpingYourChild} />
       <Route path="/blog/luna-vs-leo" component={BlogPostLunaVsLeo} />
       <Route path="/blog/naplan-anxiety-what-parents-can-do" component={BlogPostNAPLANAnxiety} />
       <Route path="/blog/year-5-maths-struggles-term-2" component={BlogPostYear5MathsTerm2} />

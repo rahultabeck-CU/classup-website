@@ -25,12 +25,12 @@ const PAGE_FAQ = [
   {
     question: "What maths should a Year 7 child know for NAPLAN?",
     answer:
-      "The six curriculum strands — number (fractions, decimals, percentages, ratio), beginning algebra, measurement, space, statistics and probability. The big shifts from Year 5 are algebra and ratio appearing properly, and multi-step reasoning becoming the default.",
+      "The six curriculum strands, number (fractions, decimals, percentages, ratio), beginning algebra, measurement, space, statistics and probability. The big shifts from Year 5 are algebra and ratio appearing properly, and multi-step reasoning becoming the default.",
   },
   {
     question: "What are the hardest Year 7 NAPLAN numeracy topics?",
     answer:
-      "Teachers and tutors consistently point to non-calculator arithmetic, early algebra, and ratio and rate problems. All three are new or newly demanding at Year 7 — and all three respond well to targeted practice.",
+      "Teachers and tutors consistently point to non-calculator arithmetic, early algebra, and ratio and rate problems. All three are new or newly demanding at Year 7, and all three respond well to targeted practice.",
   },
   {
     question: "How is Year 7 numeracy different from Year 5?",
@@ -40,7 +40,7 @@ const PAGE_FAQ = [
   {
     question: "Does ClassUp cover all six numeracy strands?",
     answer:
-      "Yes — the diagnostic samples across Number, Algebra, Measurement, Space, Statistics and Probability, and practice adapts to where your child needs work.",
+      "Yes. The diagnostic samples across Number, Algebra, Measurement, Space, Statistics and Probability, and practice adapts to where your child needs work.",
   },
 ];
 
@@ -51,7 +51,7 @@ const STRAND_ROWS = [
   },
   {
     strand: "Algebra",
-    detail: "Proper algebra begins — variables, expressions, solving simple equations, linear patterns and graphs",
+    detail: "Proper algebra begins, variables, expressions, solving simple equations, linear patterns and graphs",
   },
   {
     strand: "Measurement",
@@ -136,7 +136,7 @@ export default function NaplanYear7Numeracy() {
     <PageLayout>
       <SEO
         title="Year 7 NAPLAN Numeracy: What's Tested & How to Prepare | ClassUp"
-        description="What Year 7 NAPLAN numeracy actually tests — the calculator and non-calculator sections, the six strands, and how to prepare honestly. Free diagnostic included."
+        description="What Year 7 NAPLAN numeracy actually tests: the calculator and non-calculator sections, the six strands, and how to prepare honestly. Free diagnostic included."
         canonicalPath="/naplan-year-7-numeracy"
         schemaMarkup={SCHEMA}
       />
@@ -182,7 +182,7 @@ export default function NaplanYear7Numeracy() {
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            Year 7 numeracy is the first NAPLAN maths test of high school — longer, harder, and with a format change most
+            Year 7 numeracy is the first NAPLAN maths test of high school, longer, harder, and with a format change most
             parents don't know about: part of it is done without a calculator. Here's what it covers, where students lose marks,
             and how to find your child's real gaps before March.
           </p>
@@ -198,9 +198,9 @@ export default function NaplanYear7Numeracy() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>What Year 7 NAPLAN numeracy actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and runs for 65 minutes — noticeably longer than Year 5's. And it comes in two sections:
+            The test is online, adaptive, and runs for 65 minutes, noticeably longer than Year 5's. And it comes in two sections:
             a short non-calculator section first, where your child works everything by hand, then an on-screen calculator unlocks
-            for the rest. Once it unlocks, they can't go back — so those first questions have to stand on mental arithmetic alone.
+            for the rest. Once it unlocks, they can't go back, so those first questions have to stand on mental arithmetic alone.
           </p>
           <p style={P}>The questions draw on six strands of the Australian curriculum:</p>
 
@@ -292,9 +292,9 @@ export default function NaplanYear7Numeracy() {
           <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "The non-calculator section. Students who've grown reliant on a calculator lose easy marks on arithmetic they'd normally sail through — fractions, decimals and percentages by hand.",
+              "The non-calculator section. Students who've grown reliant on a calculator lose easy marks on arithmetic they'd normally sail through, fractions, decimals and percentages by hand.",
               "Algebra basics. It's new territory. Translating a worded situation into an expression, or solving for an unknown, trips students who've only just met the idea.",
-              "Ratio and rate. \"Best buy\" comparisons, speed and scale problems — conceptually new at Year 7 and heavily tested.",
+              "Ratio and rate. \"Best buy\" comparisons, speed and scale problems, conceptually new at Year 7 and heavily tested.",
               "Multi-step problems. The single most common pattern: solving step one correctly and choosing the answer that matches it, when the question asked for step two.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
@@ -304,7 +304,7 @@ export default function NaplanYear7Numeracy() {
             ))}
           </ul>
           <p style={P}>
-            NAPLAN's wrong options are built from exactly these mistakes. That's why blind practice is inefficient — a stack of
+            NAPLAN's wrong options are built from exactly these mistakes. That's why blind practice is inefficient: a stack of
             worksheets says 6 out of 10 without telling you which of these walls your child is hitting.
           </p>
         </div>
@@ -317,17 +317,17 @@ export default function NaplanYear7Numeracy() {
             <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 7 numeracy</h2>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic samples questions across all
-              six strands, pitched so your child feels capable rather than examined — they're adjusting to high school as it is.
+              six strands, pitched so your child feels capable rather than examined. They're adjusting to high school as it is.
               You get an honest report of where they stand, in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more of what's wobbly, less of what's already solid. Every question comes with a clear explanation of the
+              gaps, more of what's wobbly, less of what's already solid. Every question comes with a clear explanation of the
               method and the trap, so a wrong answer becomes a lesson rather than a red mark.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
               <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If algebra is a problem, the report
-              says so — early enough in the year to do something about it. No green-tick theatre. See{" "}
+              says so, early enough in the year to do something about it. No green-tick theatre. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -342,10 +342,10 @@ export default function NaplanYear7Numeracy() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Rebuild the by-hand muscle. A few minutes of mental arithmetic — fractions, percentages, times tables — pays off directly in the non-calculator section.",
+              "Rebuild the by-hand muscle. A few minutes of mental arithmetic, fractions, percentages, times tables, pays off directly in the non-calculator section.",
               "Ask \"how did you work it out?\" Explaining the method out loud is where reasoning gets built, especially with new algebra ideas.",
               "Use real life. Discounts and percentages while shopping, ratios in cooking, speed and time on trips. Year 7 maths is everywhere.",
-              "Keep the test small. It's a snapshot in a year full of new things — new school, new teachers, new subjects. A calm child performs closer to their real ability.",
+              "Keep the test small. It's a snapshot in a year full of new things, new school, new teachers, new subjects. A calm child performs closer to their real ability.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -375,27 +375,27 @@ export default function NaplanYear7Numeracy() {
               {
                 href: "/naplan-year-7",
                 label: "Year 7 NAPLAN",
-                desc: "The full picture of Year 7 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                desc: "The full picture of Year 7 NAPLAN, all four tests, preparation, and how ClassUp helps.",
               },
               {
                 href: "/naplan-year-5-numeracy",
                 label: "Year 5 numeracy",
-                desc: "What Year 5 NAPLAN numeracy tests — and how the maths steps up by Year 7.",
+                desc: "What Year 5 NAPLAN numeracy tests, and how the maths steps up by Year 7.",
               },
               {
                 href: "/naplan-year-7-reading",
                 label: "Year 7 reading",
-                desc: "Longer passages, persuasive texts and evaluating skills — what the reading test actually tests.",
+                desc: "Longer passages, persuasive texts and evaluating skills, what the reading test actually tests.",
               },
               {
                 href: "/naplan-year-7-language-conventions",
                 label: "Year 7 language conventions",
-                desc: "Spelling, grammar and punctuation at Year 7 — harder spelling, complex sentences, and reported speech.",
+                desc: "Spelling, grammar and punctuation at Year 7, harder spelling, complex sentences, and reported speech.",
               },
               {
                 href: "/how-it-works",
                 label: "How It Works",
-                desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",
+                desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end.",
               },
               {
                 href: "/methodology",
@@ -447,7 +447,7 @@ export default function NaplanYear7Numeracy() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 7 child really stands in maths — free.
+              Find out where your Year 7 child really stands in maths, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest diagnostic across all six numeracy strands, and a report that tells you the truth. About 30 minutes.

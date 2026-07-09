@@ -20,7 +20,7 @@ const PAGE_FAQ = [
   {
     question: "What kinds of texts are in Year 5 NAPLAN reading?",
     answer:
-      "A mix of imaginative texts (stories), informative texts (factual articles), and persuasive texts (opinion pieces and arguments). The variety is deliberate — different text types demand different reading skills.",
+      "A mix of imaginative texts (stories), informative texts (factual articles), and persuasive texts (opinion pieces and arguments). The variety is deliberate, different text types demand different reading skills.",
   },
   {
     question: "What reading skills does Year 5 NAPLAN test?",
@@ -30,17 +30,17 @@ const PAGE_FAQ = [
   {
     question: "What are the hardest Year 5 NAPLAN reading questions?",
     answer:
-      "Teachers and tutors consistently point to inference questions, vocabulary in context, and author's-purpose questions. All three ask the child to go beyond what's literally written — and all three respond well to targeted practice.",
+      "Teachers and tutors consistently point to inference questions, vocabulary in context, and author's-purpose questions. All three ask the child to go beyond what's literally written, and all three respond well to targeted practice.",
   },
   {
     question: "How can I help my child prepare for Year 5 reading?",
     answer:
-      "Read with them and talk about it — asking \"why\" and \"how do you know\" builds inference better than any worksheet. Then find their specific gaps and practise those. ClassUp's free diagnostic maps all three reading skills and gives you an honest starting picture.",
+      "Read with them and talk about it, asking \"why\" and \"how do you know\" builds inference better than any worksheet. Then find their specific gaps and practise those. ClassUp's free diagnostic maps all three reading skills and gives you an honest starting picture.",
   },
   {
     question: "Does ClassUp use real passages like the actual test?",
     answer:
-      "Yes — the diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
+      "Yes. The diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
   },
 ];
 
@@ -48,12 +48,12 @@ const SKILL_ROWS = [
   {
     strand: "Locating",
     detail:
-      "Finding directly stated information — the \"it says so right here\" questions. The easiest skill, and the one most children arrive with.",
+      "Finding directly stated information: the \"it says so right here\" questions. The easiest skill, and the one most children arrive with.",
   },
   {
     strand: "Interpreting",
     detail:
-      "Reading between the lines: making inferences, working out word meanings from context, connecting ideas across paragraphs. This is where Year 5 lives — and where most marks are won and lost.",
+      "Reading between the lines: making inferences, working out word meanings from context, connecting ideas across paragraphs. This is where Year 5 lives, and where most marks are won and lost.",
   },
   {
     strand: "Evaluating",
@@ -127,7 +127,7 @@ export default function NaplanYear5Reading() {
     <PageLayout>
       <SEO
         title="Year 5 NAPLAN Reading: What's Tested & How to Prepare | ClassUp"
-        description="What Year 5 NAPLAN reading actually tests — the three reading skills, the question types that catch children out, and how to prepare honestly."
+        description="What Year 5 NAPLAN reading actually tests: the three reading skills, the question types that catch children out, and how to prepare honestly."
         canonicalPath="/naplan-year-5-reading"
         schemaMarkup={SCHEMA}
       />
@@ -189,8 +189,8 @@ export default function NaplanYear5Reading() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>What Year 5 NAPLAN reading actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and runs for 50 minutes. Your child reads a series of passages — stories, factual
-            articles, and persuasive pieces — and answers questions about each one.
+            The test is online, adaptive, and runs for 50 minutes. Your child reads a series of passages, stories, factual
+            articles, and persuasive pieces, and answers questions about each one.
           </p>
           <p style={P}>Underneath, every question is testing one of three reading skills:</p>
 
@@ -263,7 +263,7 @@ export default function NaplanYear5Reading() {
 
           <p style={P}>
             The passages themselves step up from Year 3: longer texts, richer vocabulary, and a mix of imaginative, informative
-            and persuasive writing — because reading a story and reading an argument are different skills.
+            and persuasive writing, because reading a story and reading an argument are different skills.
           </p>
           <p style={P}>
             Reading is one of four tests in{" "}
@@ -281,7 +281,7 @@ export default function NaplanYear5Reading() {
           <p style={{ ...P, marginBottom: 14 }}>Teachers and tutors see the same patterns every year:</p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Inference questions. The answer isn't written anywhere — it has to be worked out. Children who read fluently but literally pick the option that copies words from the text, which is usually the trap.",
+              "Inference questions. The answer isn't written anywhere, it has to be worked out. Children who read fluently but literally pick the option that copies words from the text, which is usually the trap.",
               "Vocabulary in context. \"What does 'reluctant' mean in this sentence?\" Guessing from the word alone instead of the sentence around it.",
               "Connecting across a text. Questions that need paragraph two and paragraph five held together. Children answer from whichever paragraph they read last.",
               "Author's purpose and technique. \"Why did the author include this?\" is a new kind of question at Year 5, and it catches children who've only ever been asked \"what happened?\"",
@@ -294,7 +294,7 @@ export default function NaplanYear5Reading() {
             ))}
           </ul>
           <p style={P}>
-            A stack of comprehension worksheets tells you your child got 7 out of 10 — but not whether the three they missed were
+            A stack of comprehension worksheets tells you your child got 7 out of 10, but not whether the three they missed were
             inference, vocabulary, or author's purpose. And those need different practice.
           </p>
         </div>
@@ -307,17 +307,17 @@ export default function NaplanYear5Reading() {
             <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 5 reading</h2>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic uses real passage-and-question
-              sets — the same structure as NAPLAN itself — and reads which of the three skills are solid and which are wobbly.
+              sets, the same structure as NAPLAN itself, and reads which of the three skills are solid and which are wobbly.
               You get an honest report in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more inference work if inference is the wall, less of what's already strong. Every question comes with a
+              gaps, more inference work if inference is the wall, less of what's already strong. Every question comes with a
               clear explanation of the reasoning and the trap, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
               <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If your child reads fluently but struggles
-              to read between the lines, the report says exactly that — early enough in the year to do something about it. See{" "}
+              to read between the lines, the report says exactly that, early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -332,7 +332,7 @@ export default function NaplanYear5Reading() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Read together, then talk. The single best reading practice is conversation: \"Why do you think she did that?\" \"How do you know?\" — that's inference training in disguise.",
+              "Read together, then talk. The single best reading practice is conversation: \"Why do you think she did that?\" \"How do you know?\". That's inference training in disguise.",
               "Ask for evidence. When your child answers a question about a book or show, ask \"what makes you say that?\" Pointing to evidence is exactly what NAPLAN rewards.",
               "Mix the diet. Stories build one muscle; news articles, instructions and opinion pieces build others. Year 5 tests all of them.",
               "Keep it calm. A child who knows the test is a snapshot, not a verdict, reads more carefully than an anxious one.",
@@ -365,27 +365,27 @@ export default function NaplanYear5Reading() {
               {
                 href: "/naplan-year-5",
                 label: "Year 5 NAPLAN",
-                desc: "The full picture of Year 5 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                desc: "The full picture of Year 5 NAPLAN, all four tests, preparation, and how ClassUp helps.",
               },
               {
                 href: "/naplan-year-5-numeracy",
                 label: "Year 5 numeracy",
-                desc: "What Year 5 NAPLAN numeracy tests — the six strands and the traps that cost marks.",
+                desc: "What Year 5 NAPLAN numeracy tests: the six strands and the traps that cost marks.",
               },
               {
                 href: "/naplan-year-7-reading",
                 label: "Year 7 reading",
-                desc: "Longer passages, persuasive texts and evaluating skills — what steps up at Year 7.",
+                desc: "Longer passages, persuasive texts and evaluating skills, what steps up at Year 7.",
               },
               {
                 href: "/naplan-year-5-language-conventions",
                 label: "Year 5 language conventions",
-                desc: "Spelling, grammar and punctuation — what Year 5 students are expected to know.",
+                desc: "Spelling, grammar and punctuation, what Year 5 students are expected to know.",
               },
               {
                 href: "/how-it-works",
                 label: "How It Works",
-                desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",
+                desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end.",
               },
               {
                 href: "/methodology",
@@ -395,7 +395,7 @@ export default function NaplanYear5Reading() {
               {
                 href: "/blog/how-to-read-naplan-results",
                 label: "How to read NAPLAN results",
-                desc: "What the four proficiency levels mean — and what to do next.",
+                desc: "What the four proficiency levels mean, and what to do next.",
               },
               {
                 href: "/blog/help-child-catch-up-reading",
@@ -437,7 +437,7 @@ export default function NaplanYear5Reading() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 5 child really stands in reading — free.
+              Find out where your Year 5 child really stands in reading, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.

@@ -37,7 +37,7 @@ export default function CoachLeo() {
   return (
     <PageLayout>
       <SEO
-        title="Leo — ClassUp's Year 7 NAPLAN coach"
+        title="Leo | ClassUp's Year 7 NAPLAN coach"
         description="Leo is ClassUp's Year 7 coach. He specialises in numeracy and writing, and adjusts every question based on what your child got wrong."
         canonicalPath="/coaches/leo"
       />

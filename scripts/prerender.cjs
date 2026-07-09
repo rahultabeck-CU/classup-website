@@ -32,6 +32,7 @@ const ROUTES = [
   '/blog/how-to-read-naplan-results',
   '/blog/naplan-2027-dates',
   '/blog/free-naplan-practice',
+  '/blog/naplan-anxiety-helping-your-child',
   '/blog/luna-vs-leo',
   '/blog/naplan-anxiety-what-parents-can-do',
   '/blog/year-5-maths-struggles-term-2',

@@ -322,7 +322,7 @@ export function AskLunaButton() {
         },
         duration: 6000,
       })}
-      aria-label="Ask Luna — coaching assistant"
+      aria-label="Ask Luna, coaching assistant"
     >
       <span style={{ fontSize: 16 }}>💬</span>
       Ask Luna

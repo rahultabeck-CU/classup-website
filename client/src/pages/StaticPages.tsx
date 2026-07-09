@@ -114,8 +114,8 @@ export function Contact() {
               <div className="cu-card-large" style={{ padding: 24 }}>
                 <div className="cu-eyebrow mb-3">RESPONSE TIME</div>
                 <p style={{ fontSize: 14, color: "#444", lineHeight: 1.6, margin: 0 }}>
-                  Monday – Friday: within 24 hours<br />
-                  Saturday – Sunday: within 48 hours
+                  Monday to Friday: within 24 hours<br />
+                  Saturday to Sunday: within 48 hours
                 </p>
               </div>
             </div>
@@ -134,7 +134,7 @@ export function Privacy() {
   return (
     <PageLayout>
       <SEO
-        title="Privacy policy — ClassUp"
+        title="Privacy policy | ClassUp"
         description="ClassUp's privacy policy. How we collect, use, and protect your data and your child's data."
         canonicalPath="/privacy"
       />
@@ -202,7 +202,7 @@ export function Terms() {
   return (
     <PageLayout>
       <SEO
-        title="Terms of service — ClassUp"
+        title="Terms of service | ClassUp"
         description="ClassUp's terms of service. Your rights and responsibilities as a ClassUp subscriber."
         canonicalPath="/terms"
       />
@@ -266,7 +266,7 @@ export function Resources() {
   return (
     <PageLayout>
       <SEO
-        title="Free NAPLAN resources for parents — ClassUp"
+        title="Free NAPLAN resources for parents | ClassUp"
         description="Free guides, checklists, and practice tools for Australian families preparing for NAPLAN Year 5 and Year 7."
         canonicalPath="/resources"
       />

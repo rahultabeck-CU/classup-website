@@ -15,7 +15,7 @@ const PAGE_FAQ = [
   {
     question: "How long is the Year 7 NAPLAN reading test?",
     answer:
-      "65 minutes, sat online — 15 minutes longer than Year 5. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of passages differs between students.",
+      "65 minutes, sat online, 15 minutes longer than Year 5. It's adaptive, so the difficulty adjusts to how your child is answering, and the exact mix of passages differs between students.",
   },
   {
     question: "What kinds of texts are in Year 7 NAPLAN reading?",
@@ -30,17 +30,17 @@ const PAGE_FAQ = [
   {
     question: "What are the hardest Year 7 NAPLAN reading questions?",
     answer:
-      "Teachers and tutors consistently point to evaluating persuasive texts, inference in long passages, and fact-versus-opinion questions. All three ask the child to analyse rather than just comprehend — and all three respond well to targeted practice.",
+      "Teachers and tutors consistently point to evaluating persuasive texts, inference in long passages, and fact-versus-opinion questions. All three ask the child to analyse rather than just comprehend, and all three respond well to targeted practice.",
   },
   {
     question: "How is Year 7 reading different from Year 5?",
     answer:
-      "Longer test (65 minutes), denser and more analytical passages, and a real shift towards evaluating how and why a text is written — not just understanding what it says.",
+      "Longer test (65 minutes), denser and more analytical passages, and a real shift towards evaluating how and why a text is written, not just understanding what it says.",
   },
   {
     question: "Does ClassUp use real passages like the actual test?",
     answer:
-      "Yes — the diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
+      "Yes. The diagnostic and practice use passage-and-question sets in the same structure as NAPLAN, across imaginative, informative and persuasive text types.",
   },
 ];
 
@@ -48,7 +48,7 @@ const SKILL_ROWS = [
   {
     strand: "Locating",
     detail:
-      "Finding directly stated information in longer, denser texts. Still the most straightforward skill — but the texts it hides in are harder to navigate.",
+      "Finding directly stated information in longer, denser texts. Still the most straightforward skill, but the texts it hides in are harder to navigate.",
   },
   {
     strand: "Interpreting",
@@ -127,7 +127,7 @@ export default function NaplanYear7Reading() {
     <PageLayout>
       <SEO
         title="Year 7 NAPLAN Reading: What's Tested & How to Prepare | ClassUp"
-        description="What Year 7 NAPLAN reading actually tests — the three reading skills, the analytical questions that catch students out, and how to prepare honestly."
+        description="What Year 7 NAPLAN reading actually tests: the three reading skills, the analytical questions that catch students out, and how to prepare honestly."
         canonicalPath="/naplan-year-7-reading"
         schemaMarkup={SCHEMA}
       />
@@ -173,7 +173,7 @@ export default function NaplanYear7Reading() {
             <em style={{ fontStyle: "italic", color: "#7F77DD" }}>honestly</em>
           </h1>
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
-            Year 7 reading is the first NAPLAN of high school — longer passages, denser texts, and questions that ask your child
+            Year 7 reading is the first NAPLAN of high school, longer passages, denser texts, and questions that ask your child
             to analyse, not just understand. Here's what the reading test actually measures, where students lose marks, and how to
             find your child's real gaps before March.
           </p>
@@ -189,9 +189,9 @@ export default function NaplanYear7Reading() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>What Year 7 NAPLAN reading actually tests</h2>
           <p style={P}>
-            The test is online, adaptive, and runs for 65 minutes — 15 minutes longer than Year 5, because the passages are
-            longer and the thinking is deeper. Your child reads a range of texts — imaginative (stories, poems), informative
-            (factual articles, reports) and persuasive (opinion pieces, editorials) — and answers questions about each.
+            The test is online, adaptive, and runs for 65 minutes, 15 minutes longer than Year 5, because the passages are
+            longer and the thinking is deeper. Your child reads a range of texts, imaginative (stories, poems), informative
+            (factual articles, reports) and persuasive (opinion pieces, editorials), and answers questions about each.
           </p>
           <p style={P}>Underneath, every question is testing one of three reading skills:</p>
 
@@ -263,7 +263,7 @@ export default function NaplanYear7Reading() {
           </div>
 
           <p style={P}>
-            The step up from Year 5 is analysis. It's no longer enough to understand what a text says — Year 7 asks your child to
+            The step up from Year 5 is analysis. It's no longer enough to understand what a text says, Year 7 asks your child to
             weigh how it's written and why, especially with persuasive and analytical texts.
           </p>
           <p style={P}>
@@ -284,7 +284,7 @@ export default function NaplanYear7Reading() {
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
               "Evaluating persuasive texts. \"What is the author trying to make you feel?\" and \"which technique is being used?\" are new, and they catch students who read for content but not for craft.",
-              "Inference in longer passages. The answer is implied, not stated — and in a denser Year 7 text, the evidence is easy to miss or misread.",
+              "Inference in longer passages. The answer is implied, not stated, and in a denser Year 7 text, the evidence is easy to miss or misread.",
               "Holding a long text together. Questions that need information from the start and the end of a passage. Students answer from the part they remember most recently.",
               "Fact versus opinion. Persuasive texts blur the line deliberately; distinguishing the author's claims from established facts is a genuine Year 7 skill.",
               "Reading stamina. 65 minutes of dense text is tiring. Concentration slips in the back half, and accuracy slips with it.",
@@ -297,7 +297,7 @@ export default function NaplanYear7Reading() {
           </ul>
           <p style={P}>
             NAPLAN's wrong options are built from exactly these mistakes. A stack of comprehension worksheets says 7 out of 10
-            — but not whether the misses were inference, author's purpose, or simply fatigue. Those need different responses.
+           , but not whether the misses were inference, author's purpose, or simply fatigue. Those need different responses.
           </p>
         </div>
       </section>
@@ -309,17 +309,17 @@ export default function NaplanYear7Reading() {
             <h2 style={{ ...H2, marginBottom: 16 }}>How ClassUp approaches Year 7 reading</h2>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Diagnose first.</strong> The free diagnostic uses real passage-and-question
-              sets — the same structure as NAPLAN — across imaginative, informative and persuasive texts, and reads which of the
+              sets, the same structure as NAPLAN, across imaginative, informative and persuasive texts, and reads which of the
               three skills are solid and which are wobbly. You get an honest report in plain English.
             </p>
             <p style={{ ...P, marginBottom: 16 }}>
               <strong style={{ color: "#1A1A1A" }}>Then practise what matters.</strong> Practice adapts to your child's actual
-              gaps — more evaluating work if analysing an author's craft is the wall, less of what's already strong. Every question
+              gaps, more evaluating work if analysing an author's craft is the wall, less of what's already strong. Every question
               comes with a clear explanation of the reasoning and the trap, so a wrong answer becomes a lesson.
             </p>
             <p style={{ ...P, marginBottom: 24 }}>
               <strong style={{ color: "#1A1A1A" }}>And we tell you the truth.</strong> If your child understands texts but
-              struggles to analyse them, the report says exactly that — early enough in the year to do something about it. See{" "}
+              struggles to analyse them, the report says exactly that, early enough in the year to do something about it. See{" "}
               <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
               <Link href="/methodology" style={LINK}>methodology</Link>.
             </p>
@@ -334,8 +334,8 @@ export default function NaplanYear7Reading() {
           <h2 style={H2}>How parents can help at home (without drilling)</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Read widely, including non-fiction. Year 7 tests persuasive and informative texts heavily — news articles, opinion pieces and reports build exactly those muscles, not just novels.",
-              "Ask \"what is the author trying to do?\" Not just what happened — why did they write it this way? That's evaluating, the skill Year 7 leans on hardest.",
+              "Read widely, including non-fiction. Year 7 tests persuasive and informative texts heavily, news articles, opinion pieces and reports build exactly those muscles, not just novels.",
+              "Ask \"what is the author trying to do?\" Not just what happened, why did they write it this way? That's evaluating, the skill Year 7 leans on hardest.",
               "Build stamina gently. Longer reads in one sitting help with the 65-minute test. Let your child choose material they enjoy so it doesn't feel like a chore.",
               "Keep it calm. A child adjusting to high school doesn't need test pressure on top. NAPLAN is a snapshot, not a verdict.",
             ].map((item) => (
@@ -367,27 +367,27 @@ export default function NaplanYear7Reading() {
               {
                 href: "/naplan-year-7",
                 label: "Year 7 NAPLAN",
-                desc: "The full picture of Year 7 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                desc: "The full picture of Year 7 NAPLAN, all four tests, preparation, and how ClassUp helps.",
               },
               {
                 href: "/naplan-year-5-reading",
                 label: "Year 5 reading",
-                desc: "What Year 5 NAPLAN reading tests — and how the skills step up by Year 7.",
+                desc: "What Year 5 NAPLAN reading tests, and how the skills step up by Year 7.",
               },
               {
                 href: "/naplan-year-7-numeracy",
                 label: "Year 7 numeracy",
-                desc: "Algebra, ratio and multi-step reasoning — what Year 7 NAPLAN numeracy actually tests.",
+                desc: "Algebra, ratio and multi-step reasoning: what Year 7 NAPLAN numeracy actually tests.",
               },
               {
                 href: "/naplan-year-7-language-conventions",
                 label: "Year 7 language conventions",
-                desc: "Spelling, grammar and punctuation at Year 7 — harder spelling, complex sentences, and reported speech.",
+                desc: "Spelling, grammar and punctuation at Year 7, harder spelling, complex sentences, and reported speech.",
               },
               {
                 href: "/how-it-works",
                 label: "How It Works",
-                desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",
+                desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end.",
               },
               {
                 href: "/methodology",
@@ -397,7 +397,7 @@ export default function NaplanYear7Reading() {
               {
                 href: "/blog/how-to-read-naplan-results",
                 label: "How to read NAPLAN results",
-                desc: "What the four proficiency levels mean — and what to do next.",
+                desc: "What the four proficiency levels mean, and what to do next.",
               },
               {
                 href: "/blog/what-naplan-actually-tests",
@@ -439,7 +439,7 @@ export default function NaplanYear7Reading() {
                 marginRight: "auto",
               }}
             >
-              Find out where your Year 7 child really stands in reading — free.
+              Find out where your Year 7 child really stands in reading, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.

@@ -59,7 +59,7 @@ export function NAPLANReading() {
   return (
     <PageLayout>
       <SEO
-        title="NAPLAN Reading — what is tested and how to improve — ClassUp"
+        title="NAPLAN Reading: what is tested and how to improve | ClassUp"
         description="NAPLAN Reading tests a student's ability to understand and interpret written texts. Here is what the test covers, common mistakes, and how ClassUp's coaches address them."
         canonicalPath="/naplan/reading"
       />
@@ -153,7 +153,7 @@ export function NAPLANLanguageConventions() {
   return (
     <PageLayout>
       <SEO
-        title="NAPLAN Language Conventions — spelling, grammar, punctuation — ClassUp"
+        title="NAPLAN Language Conventions: spelling, grammar, punctuation | ClassUp"
         description="NAPLAN Language Conventions tests spelling, grammar, and punctuation. Here is what Year 5 and Year 7 students are expected to know."
         canonicalPath="/naplan-year-5-language-conventions"
         schemaMarkup={LC_SCHEMA}
@@ -234,7 +234,7 @@ export function NAPLANWriting() {
   return (
     <PageLayout>
       <SEO
-        title="NAPLAN Writing — what markers look for — ClassUp"
+        title="NAPLAN Writing: what markers look for | ClassUp"
         description="NAPLAN Writing is marked on six criteria: audience, text structure, ideas, vocabulary, cohesion, and paragraphing. Here is what each criterion means."
         canonicalPath="/naplan/writing"
         schemaMarkup={WRITING_SCHEMA}

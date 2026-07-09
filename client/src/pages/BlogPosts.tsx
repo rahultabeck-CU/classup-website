@@ -262,7 +262,7 @@ const BLOG_RESULTS_FAQ = [
   {
     question: "When do NAPLAN results come out?",
     answer:
-      "In stages. Schools receive preliminary results from late April and full results around June. Individual Student Reports reach parents through schools in early Term 3 — around July.",
+      "In stages. Schools receive preliminary results from late April and full results around June. Individual Student Reports reach parents through schools in early Term 3, around July.",
   },
   {
     question: "What replaced NAPLAN bands?",
@@ -272,7 +272,7 @@ const BLOG_RESULTS_FAQ = [
   {
     question: "Is \"Developing\" a bad NAPLAN result?",
     answer:
-      "It's not failing — it means your child is still working towards year-level expectations. It's best read as an early, useful signal: there are specific skills to build, and there's most of a school year to build them.",
+      "It's not failing: it means your child is still working towards year-level expectations. It's best read as an early, useful signal: there are specific skills to build, and there's most of a school year to build them.",
   },
   {
     question: "Do NAPLAN results affect my child's future?",
@@ -282,7 +282,7 @@ const BLOG_RESULTS_FAQ = [
   {
     question: "How do I find out which specific skills my child needs help with?",
     answer:
-      "The NAPLAN report won't tell you — it shows levels, not causes. A skill-by-skill diagnostic (like ClassUp's free one) or a conversation with your child's teacher will get you to the specifics.",
+      "The NAPLAN report won't tell you: it shows levels, not causes. A skill-by-skill diagnostic (like ClassUp's free one) or a conversation with your child's teacher will get you to the specifics.",
   },
 ];
 
@@ -290,7 +290,7 @@ const BLOG_RESULTS_SCHEMA = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "How to read your child's NAPLAN results — a parent's honest guide",
+    "headline": "How to read your child's NAPLAN results: a parent's honest guide",
     "description": "What the four NAPLAN proficiency levels actually mean, what the report doesn't tell you, and what's genuinely worth doing next.",
     "author": ORGANIZATION_REF,
     "publisher": ORGANIZATION_REF,
@@ -318,7 +318,7 @@ export function BlogPostReadResults() {
     <BlogLayout post={post}>
       <SEO
         title="How to Read Your Child's NAPLAN Results (2026 Guide) | ClassUp"
-        description="NAPLAN reports arrive early Term 3. What Exceeding, Strong, Developing and Needs additional support actually mean — and what to do next, honestly."
+        description="NAPLAN reports arrive early Term 3. What Exceeding, Strong, Developing and Needs additional support actually mean, and what to do next, honestly."
         canonicalPath="/blog/how-to-read-naplan-results"
         schemaMarkup={BLOG_RESULTS_SCHEMA}
       />
@@ -326,32 +326,32 @@ export function BlogPostReadResults() {
         <p>Individual Student Reports arrive through schools in early Term 3, and for many parents they raise more questions than they answer. Here's what the report actually says, what it doesn't, and what's genuinely worth doing next.</p>
 
         <h2>The four proficiency levels (there are no more "bands")</h2>
-        <p>Since 2023, NAPLAN results use four proficiency levels instead of the old ten bands. Each of your child's tests — Numeracy, Reading, Writing, and Conventions of Language — gets one of:</p>
+        <p>Since 2023, NAPLAN results use four proficiency levels instead of the old ten bands. Each of your child's tests, Numeracy, Reading, Writing, and Conventions of Language, gets one of:</p>
         <ul>
-          <li><strong>Exceeding</strong> — your child's result is well above what's expected at their year level.</li>
-          <li><strong>Strong</strong> — your child's result meets the challenging-but-reasonable expectations for their year level. This is a good result.</li>
-          <li><strong>Developing</strong> — your child is working towards the expectations for their year level. Some skills need building.</li>
-          <li><strong>Needs additional support</strong> — your child's result suggests they're not yet meeting year-level expectations and would benefit from targeted help.</li>
+          <li><strong>Exceeding</strong>, your child's result is well above what's expected at their year level.</li>
+          <li><strong>Strong</strong>, your child's result meets the challenging-but-reasonable expectations for their year level. This is a good result.</li>
+          <li><strong>Developing</strong>, your child is working towards the expectations for their year level. Some skills need building.</li>
+          <li><strong>Needs additional support</strong>, your child's result suggests they're not yet meeting year-level expectations and would benefit from targeted help.</li>
         </ul>
-        <p>Two things parents often misread. First, "Strong" is not second place — it means your child is where they should be. Second, "Developing" is not failing — it's a signal, arriving early enough in the year to act on. For a full breakdown of each level and how to read the report, see <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>proficiency levels explained</Link>.</p>
+        <p>Two things parents often misread. First, "Strong" is not second place: it means your child is where they should be. Second, "Developing" is not failing: it's a signal, arriving early enough in the year to act on. For a full breakdown of each level and how to read the report, see <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>proficiency levels explained</Link>.</p>
 
         <h2>What the report shows</h2>
-        <p>Your child's report shows their result as a marker on a scale for each test area, positioned against the proficiency levels, along with the national average for their year level. Some versions also show the middle range of students. It's a snapshot of one test sat in March — a useful one, but one data point, not a verdict. For a plain-English look at what each test measures, see <Link href="/blog/what-naplan-actually-tests" style={BLOG_LINK}>what NAPLAN actually tests</Link>.</p>
+        <p>Your child's report shows their result as a marker on a scale for each test area, positioned against the proficiency levels, along with the national average for their year level. Some versions also show the middle range of students. It's a snapshot of one test sat in March: a useful one, but one data point, not a verdict. For a plain-English look at what each test measures, see <Link href="/blog/what-naplan-actually-tests" style={BLOG_LINK}>what NAPLAN actually tests</Link>.</p>
 
         <h2>What NAPLAN results don't tell you</h2>
         <p>This is the part most prep companies won't say. The report tells you the level, not the cause. "Developing" in numeracy doesn't tell you whether the problem is fractions, multi-step word problems, or reading the questions too quickly. Two children with identical results can have completely different gaps. The report also can't tell you about effort, confidence, a bad night's sleep, or a child who rushes. Treat it as a flag, not a diagnosis.</p>
 
-        <h2>What to do for each level — honestly</h2>
+        <h2>What to do for each level, honestly</h2>
         <ul>
           <li><strong>Exceeding:</strong> celebrate it, then keep them stretched. Boredom is the risk, not gaps.</li>
-          <li><strong>Strong:</strong> your child is on track. If you do anything, target the one or two areas where the school report or their teacher says they wobble — not a blanket program.</li>
-          <li><strong>Developing:</strong> this is the level where targeted help pays off most. Find the specific gaps and work on those, in short sessions, well before next March. Avoid the panic-buy of generic worksheet packs — practising everything is practising nothing.</li>
-          <li><strong>Needs additional support:</strong> talk to your child's teacher first — they see your child daily and the school may already have support in motion. Then build a simple, specific plan around the actual gaps. Progress at this level comes from precision and consistency, not volume.</li>
+          <li><strong>Strong:</strong> your child is on track. If you do anything, target the one or two areas where the school report or their teacher says they wobble, not a blanket program.</li>
+          <li><strong>Developing:</strong> this is the level where targeted help pays off most. Find the specific gaps and work on those, in short sessions, well before next March. Avoid the panic-buy of generic worksheet packs, practising everything is practising nothing.</li>
+          <li><strong>Needs additional support:</strong> talk to your child's teacher first. They see your child daily and the school may already have support in motion. Then build a simple, specific plan around the actual gaps. Progress at this level comes from precision and consistency, not volume.</li>
         </ul>
-        <p>Whichever level your child sits at, the year-level hubs walk through preparation in context — <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link>.</p>
+        <p>Whichever level your child sits at, the year-level hubs walk through preparation in context, <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link>.</p>
 
-        <h2>The question the report can't answer — "which gaps?"</h2>
-        <p>Whatever the level, the useful next step is the same: find out precisely where your child stands, skill by skill. That's what ClassUp's free diagnostic does — it maps your child's <Link href="/naplan-year-5-numeracy" style={BLOG_LINK}>numeracy</Link>, reading, and language conventions skills and gives you an honest report: what's solid, what's wobbly, and what to work on first. No inflated promises, no green-tick theatre. If your child is struggling with something, we tell you — because that's the whole point.</p>
+        <h2>The question the report can't answer, "which gaps?"</h2>
+        <p>Whatever the level, the useful next step is the same: find out precisely where your child stands, skill by skill. That's what ClassUp's free diagnostic does, it maps your child's <Link href="/naplan-year-5-numeracy" style={BLOG_LINK}>numeracy</Link>, reading, and language conventions skills and gives you an honest report: what's solid, what's wobbly, and what to work on first. No inflated promises, no green-tick theatre. If your child is struggling with something, we tell you, because that's the whole point.</p>
         <InPostCTA />
 
         <h2>Frequently asked questions</h2>
@@ -362,7 +362,7 @@ export function BlogPostReadResults() {
           </React.Fragment>
         ))}
 
-        <h2>See exactly where your child stands — free.</h2>
+        <h2>See exactly where your child stands, free.</h2>
         <p>An honest, skill-by-skill diagnostic across numeracy, reading and language conventions. About 30 minutes, and the report tells you the truth.</p>
         <InPostCTA />
       </div>
@@ -388,7 +388,7 @@ const BLOG_NAPLAN_2027_FAQ = [
   {
     question: "What does NAPLAN 2027 test?",
     answer:
-      "Four areas — Writing, Reading, Conventions of Language (spelling, grammar and punctuation), and Numeracy.",
+      "Four areas, Writing, Reading, Conventions of Language (spelling, grammar and punctuation), and Numeracy.",
   },
   {
     question: "Is NAPLAN 2027 online?",
@@ -403,7 +403,7 @@ const BLOG_NAPLAN_2027_FAQ = [
   {
     question: "Can I withdraw my child from NAPLAN?",
     answer:
-      "Yes — parents can withdraw a child for reasons such as religious beliefs or philosophical objections, using a withdrawal form. Speak to your school.",
+      "Yes, parents can withdraw a child for reasons such as religious beliefs or philosophical objections, using a withdrawal form. Speak to your school.",
   },
   {
     question: "How should I help my child prepare for NAPLAN 2027?",
@@ -450,14 +450,14 @@ export function BlogPostNaplan2027Dates() {
       <div className="blog-body">
         <p>
           NAPLAN 2027 runs from Wednesday 10 March to Monday 22 March 2027, for students in Years 3, 5, 7 and 9. Here's
-          everything in one place — the dates, what's tested, when results arrive, and how to help your child prepare without
+          everything in one place: the dates, what's tested, when results arrive, and how to help your child prepare without
           overdoing it.
         </p>
 
         <h2>When is NAPLAN 2027?</h2>
         <p>
           NAPLAN 2027 is held from Wednesday 10 March to Monday 22 March 2027. It's a nine-day window, and schools choose which
-          days within it their students sit each test — so your child won't necessarily sit on the very first day. Your school
+          days within it their students sit each test, so your child won't necessarily sit on the very first day. Your school
           will share its own timetable closer to March, so keep an eye on the newsletter in Term 1. If your child is away on a
           scheduled test day, most schools run catch-up tests later in the same window.
         </p>
@@ -465,7 +465,7 @@ export function BlogPostNaplan2027Dates() {
         <h2>Which students sit NAPLAN?</h2>
         <p>
           Every student in Years 3, 5, 7 and 9 at a participating school is expected to take part. Parents and carers can
-          withdraw a child for reasons such as religious beliefs or philosophical objections — this is done through a withdrawal
+          withdraw a child for reasons such as religious beliefs or philosophical objections. This is done through a withdrawal
           form, so talk to your school if you're considering it. Some students with disability may be eligible for adjustments or
           an exemption; again, your school is the place to start that conversation.
         </p>
@@ -483,7 +483,7 @@ export function BlogPostNaplan2027Dates() {
             <tbody>
               <tr>
                 <td><strong>Writing</strong></td>
-                <td>One task — a narrative or a persuasive piece — marked against set criteria</td>
+                <td>One task, a narrative or a persuasive piece, marked against set criteria</td>
               </tr>
               <tr>
                 <td><strong>Reading</strong></td>
@@ -502,20 +502,20 @@ export function BlogPostNaplan2027Dates() {
         </div>
         <p>
           NAPLAN has been online since 2022, with one exception: Year 3 students still do the Writing test on paper. Each test
-          runs for roughly 40 to 65 minutes — shorter in the younger years, longer for Years 7 and 9.
+          runs for roughly 40 to 65 minutes, shorter in the younger years, longer for Years 7 and 9.
         </p>
 
         <h2>How the tests run</h2>
         <p>
           Schools sit the tests in a set order: Writing first, then Reading, then Conventions of Language, then Numeracy. The
-          reading, conventions and numeracy tests are adaptive (also called "tailored") — the questions adjust to how your child
+          reading, conventions and numeracy tests are adaptive (also called "tailored"): the questions adjust to how your child
           is answering, so a child who's doing well sees harder questions, and a child who's finding it tough sees easier ones.
           It's worth telling your child this in advance: if the questions start feeling difficult, that's normal and not a sign
           they're doing badly.
         </p>
         <p>
           One thing specific to Years 7 and 9 numeracy: the test starts with a short non-calculator section, then an on-screen
-          calculator unlocks for the rest — and once it unlocks, they can't go back. The official public demonstration site is a
+          calculator unlocks for the rest, and once it unlocks, they can't go back. The official public demonstration site is a
           good way for your child to get familiar with the online format, the tools, and how the questions work before the day.
         </p>
 
@@ -523,11 +523,11 @@ export function BlogPostNaplan2027Dates() {
         <p>
           Results are released in stages. Based on the usual pattern, schools receive preliminary results from around April and
           full results around June, and parents and carers receive their child's Individual Student Report through the school in
-          early Term 3 — around July. National results are usually published on the My School website around August. (Your school
+          early Term 3, around July. National results are usually published on the My School website around August. (Your school
           confirms the exact timing.)
         </p>
         <p>
-          Results come as one of four proficiency levels for each test — Exceeding, Strong, Developing, or Needs additional
+          Results come as one of four proficiency levels for each test, Exceeding, Strong, Developing, or Needs additional
           support. If you'd like to understand what those mean before they land, we've explained them plainly in our guide to the{" "}
           <Link href="/naplan/proficiency-levels-explained" style={BLOG_LINK}>NAPLAN proficiency levels</Link>, and walked through
           how to read the report in{" "}
@@ -537,13 +537,13 @@ export function BlogPostNaplan2027Dates() {
         <h2>How to prepare for NAPLAN 2027 (without overdoing it)</h2>
         <p>
           Here's the honest version, and it's backed by the education authorities themselves: excessive preparation or the use of
-          coaching providers is not recommended. NAPLAN assesses skills your child is already learning at school — it isn't a test
+          coaching providers is not recommended. NAPLAN assesses skills your child is already learning at school, it isn't a test
           you cram for. The most useful preparation is calm familiarity with the format, and, if there are genuine gaps, some
           targeted practice on those specific areas rather than drilling everything.
         </p>
         <p>
           If you do want to prepare, the sensible order is: find out where your child actually stands first, then practise the
-          specific things that need work. That's exactly what ClassUp's free diagnostic is for — it maps your child's numeracy,
+          specific things that need work. That's exactly what ClassUp's free diagnostic is for, it maps your child's numeracy,
           reading and language conventions skills and gives you an honest picture of what's solid and what's wobbly, well before
           March. For year-level context, see our <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and{" "}
           <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link> guides.
@@ -558,7 +558,7 @@ export function BlogPostNaplan2027Dates() {
           </React.Fragment>
         ))}
 
-        <h2>See where your child stands before March — free.</h2>
+        <h2>See where your child stands before March, free.</h2>
         <p>
           An honest diagnostic across numeracy, reading and language conventions, and a report that tells you the truth. About 30
           minutes.
@@ -588,22 +588,22 @@ const BLOG_FREE_PRACTICE_FAQ = [
   {
     question: "Are NAPLAN past papers still useful?",
     answer:
-      "For content and spotting weak areas, yes. For getting used to the actual test-day experience, less so — they don't reflect the current online, adaptive format. Pair them with the NAP demonstration site for the format side.",
+      "For content and spotting weak areas, yes. For getting used to the actual test-day experience, less so. They don't reflect the current online, adaptive format. Pair them with the NAP demonstration site for the format side.",
   },
   {
     question: "How much NAPLAN practice does my child need?",
     answer:
-      "Not a lot. A couple of familiarity sessions on the demo site, some focused practice on genuine weak areas, and understanding over repetition. Authorities advise against excessive drilling — it tends to raise stress more than results.",
+      "Not a lot. A couple of familiarity sessions on the demo site, some focused practice on genuine weak areas, and understanding over repetition. Authorities advise against excessive drilling, it tends to raise stress more than results.",
   },
   {
     question: "Is ClassUp's diagnostic really free?",
     answer:
-      "Yes — the diagnostic and your first honest report are free. It shows where your child stands across numeracy, reading and language conventions before you decide anything.",
+      "Yes. The diagnostic and your first honest report are free. It shows where your child stands across numeracy, reading and language conventions before you decide anything.",
   },
   {
     question: "What's the best free way to prepare for NAPLAN?",
     answer:
-      "Use the NAP demonstration site for format familiarity, then find your child's real gaps and practise those specifically — rather than drilling every topic equally.",
+      "Use the NAP demonstration site for format familiarity, then find your child's real gaps and practise those specifically, rather than drilling every topic equally.",
   },
 ];
 
@@ -613,7 +613,7 @@ const BLOG_FREE_PRACTICE_SCHEMA = [
     "@type": "Article",
     headline: "Free NAPLAN practice: what's actually useful (and what isn't)",
     description:
-      "An honest guide to free NAPLAN practice — the official resources worth using, what to skip, and why more practice questions isn't the answer.",
+      "An honest guide to free NAPLAN practice: the official resources worth using, what to skip, and why more practice questions isn't the answer.",
     author: ORGANIZATION_REF,
     publisher: ORGANIZATION_REF,
     url: "https://classup.com.au/blog/free-naplan-practice",
@@ -638,14 +638,14 @@ export function BlogPostFreeNaplanPractice() {
     <BlogLayout post={post}>
       <SEO
         title="Free NAPLAN Practice: What's Actually Useful (and What Isn't) | ClassUp"
-        description="An honest guide to free NAPLAN practice — the official resources worth using, what to skip, and why more practice questions isn't the answer."
+        description="An honest guide to free NAPLAN practice: the official resources worth using, what to skip, and why more practice questions isn't the answer."
         canonicalPath="/blog/free-naplan-practice"
         schemaMarkup={BLOG_FREE_PRACTICE_SCHEMA}
       />
       <div className="blog-body">
         <p>
           Search "free NAPLAN practice" and you'll drown in worksheets, past papers and "free" mock tests. A lot of it isn't very
-          useful. Here's the honest guide — the genuinely worthwhile free resources, what to skip, and why the number of practice
+          useful. Here's the honest guide: the genuinely worthwhile free resources, what to skip, and why the number of practice
           questions matters far less than knowing which skills to work on.
         </p>
 
@@ -661,10 +661,10 @@ export function BlogPostFreeNaplanPractice() {
           >
             NAP public demonstration site
           </a>{" "}
-          is the closest thing to a dress rehearsal. It's the real online test interface — the same system your child uses on the
-          day — with sample questions across all four areas and the on-screen tools (calculator, ruler, and so on). No login,
+          is the closest thing to a dress rehearsal. It's the real online test interface: the same system your child uses on the
+          day, with sample questions across all four areas and the on-screen tools (calculator, ruler, and so on). No login,
           completely free. Its best use is familiarity: a child who's seen the format is a calmer child on test day. What it won't
-          do is mark your child or tell you how they went — it's a walk-through, not an assessment.
+          do is mark your child or tell you how they went. It's a walk-through, not an assessment.
         </p>
         <p>
           <a
@@ -675,7 +675,7 @@ export function BlogPostFreeNaplanPractice() {
           >
             ACARA's 2012–2016 past papers
           </a>{" "}
-          are the other one — full paper tests for Years 3, 5, 7 and 9, free to download, with answer keys. They're good for
+          are the other one, full paper tests for Years 3, 5, 7 and 9, free to download, with answer keys. They're good for
           content familiarity and spotting weak areas. One honest caveat: they're paper-based and pre-date the current online,
           adaptive test and the current curriculum, so treat them as content review rather than a realistic test-day simulation.
           ACARA doesn't release the tests sat after 2016.
@@ -686,7 +686,7 @@ export function BlogPostFreeNaplanPractice() {
         <ul>
           <li>
             <strong>"Free" mock tests that are really a sign-up funnel.</strong> Plenty of sites offer a free test as a hook into
-            a paid product. That's fine if you know that going in — just don't expect the free part to be the whole picture.
+            a paid product. That's fine if you know that going in, just don't expect the free part to be the whole picture.
           </li>
           <li>
             <strong>Generic worksheet packs.</strong> Endless questions with no explanation. Your child gets six out of ten, and
@@ -694,7 +694,7 @@ export function BlogPostFreeNaplanPractice() {
           </li>
           <li>
             <strong>Anything promising score jumps or "band improvements".</strong> No honest resource can promise a specific
-            result — and a promise like that is a reason to be more sceptical, not less.
+            result, and a promise like that is a reason to be more sceptical, not less.
           </li>
         </ul>
 
@@ -702,12 +702,12 @@ export function BlogPostFreeNaplanPractice() {
         <p>
           Here's the point most practice resources won't make, because it doesn't sell more worksheets: practising blind is
           inefficient. A pile of questions gives you a score, not a diagnosis. Two children who both score six out of ten can have
-          completely different gaps — one wobbles on fractions, the other on multi-step reading. Drilling everything equally
+          completely different gaps, one wobbles on fractions, the other on multi-step reading. Drilling everything equally
           wastes the very time you're trying to use well.
         </p>
         <p>
           The education authorities make a similar point: excessive coaching and heavy drilling aren't recommended, and tend to
-          raise anxiety more than anything else. What actually helps is understanding over repetition — a child who understands why
+          raise anxiety more than anything else. What actually helps is understanding over repetition: a child who understands why
           an answer is right will outperform one who's memorised hundreds of questions without knowing why.
         </p>
 
@@ -715,7 +715,7 @@ export function BlogPostFreeNaplanPractice() {
         <p>You don't need much. A balanced approach beats a marathon:</p>
         <ul>
           <li>A few weeks out: one or two sessions on the NAP demonstration site, just for format familiarity.</li>
-          <li>Then: work out where the real gaps are, and focus there — not on everything.</li>
+          <li>Then: work out where the real gaps are, and focus there, not on everything.</li>
           <li>Throughout: talk through the questions that tripped your child up. The "why" matters far more than the number right.</li>
           <li>The final week: keep it light. Rest does more than another worksheet.</li>
         </ul>
@@ -729,7 +729,7 @@ export function BlogPostFreeNaplanPractice() {
 
         <h2>Where ClassUp fits (and we'll be straight about it)</h2>
         <p>
-          This is where we come in, so here's the honest version. ClassUp's diagnostic is free — and unlike a worksheet, it
+          This is where we come in, so here's the honest version. ClassUp's diagnostic is free, and unlike a worksheet, it
           doesn't just hand you a score. It tells you which specific skills are solid and which are wobbly across numeracy, reading
           and language conventions, in plain English. From there, practice targets the gaps that matter, with a clear explanation
           for every question so a wrong answer becomes a lesson. For year-level context, see our{" "}
@@ -737,7 +737,7 @@ export function BlogPostFreeNaplanPractice() {
           <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link> guides.
         </p>
         <p>
-          No score promises, no green-tick theatre. If your child is struggling with something, the report says so — which is the
+          No score promises, no green-tick theatre. If your child is struggling with something, the report says so, which is the
           whole point of it.
         </p>
         <InPostCTA />
@@ -750,10 +750,215 @@ export function BlogPostFreeNaplanPractice() {
           </React.Fragment>
         ))}
 
-        <h2>Find your child's real gaps — free.</h2>
+        <h2>Find your child's real gaps, free.</h2>
         <p>
           An honest diagnostic across numeracy, reading and language conventions, and a report that tells you the truth, not just
           a score. About 30 minutes.
+        </p>
+        <InPostCTA />
+      </div>
+    </BlogLayout>
+  );
+}
+
+
+// ============================================================
+// POST: NAPLAN anxiety: helping your child stay calm (~7 min read)
+// ============================================================
+
+const BLOG_NAPLAN_ANXIETY_HELP_FAQ = [
+  {
+    question: "Is it normal for children to feel anxious about NAPLAN?",
+    answer:
+      "Yes. Research suggests around half of high-school students worry about NAPLAN, and up to one in five primary students show physical signs of stress. A little nervousness is normal; it's persistent or physical anxiety that's worth gently addressing.",
+  },
+  {
+    question: "How can I help my anxious child before NAPLAN?",
+    answer:
+      "Acknowledge their feelings, keep your own tone calm (children take their cue from you), reframe the test as a snapshot rather than a judgement, build familiarity with the format rather than cramming, keep normal routines, and praise effort over results.",
+  },
+  {
+    question: "Does practising for NAPLAN reduce or increase anxiety?",
+    answer:
+      "It depends how. Gentle familiarity with the test format reduces anxiety. Heavy drilling and stacks of practice papers tend to increase it, and experts specifically caution against excessive coaching.",
+  },
+  {
+    question: "Should I let my child skip NAPLAN if they're anxious?",
+    answer:
+      "Avoiding the test can sometimes reinforce anxiety rather than ease it. If you're worried, talk to your child's school first. They can help you weigh what's best for your child.",
+  },
+  {
+    question: "When should I seek professional help for NAPLAN anxiety?",
+    answer:
+      "If the anxiety is intense or persistent, with ongoing physical symptoms, real distress, or effects on sleep and daily life, speak to your child's teacher, the school counsellor, or your GP. Headspace supports young people aged 12 to 18.",
+  },
+  {
+    question: "How does ClassUp help reduce NAPLAN stress?",
+    answer:
+      "ClassUp's free diagnostic gives you an honest, low-pressure picture of where your child stands, so any practice is short, focused and calm, targeting real gaps rather than drilling everything. No score promises, no pressure.",
+  },
+];
+
+const BLOG_NAPLAN_ANXIETY_HELP_SCHEMA = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "NAPLAN anxiety: how to help your child stay calm",
+    description:
+      "A calm, evidence-based guide to NAPLAN anxiety: the signs to watch for, what actually helps, what to avoid, and when to seek support.",
+    author: ORGANIZATION_REF,
+    publisher: ORGANIZATION_REF,
+    url: "https://classup.com.au/blog/naplan-anxiety-helping-your-child",
+    datePublished: "2026-07-09",
+    dateModified: "2026-07-09",
+    inLanguage: "en-AU",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: BLOG_NAPLAN_ANXIETY_HELP_FAQ.map((q) => ({
+      "@type": "Question",
+      name: q.question,
+      acceptedAnswer: { "@type": "Answer", text: q.answer },
+    })),
+  },
+];
+
+export function BlogPostNaplanAnxietyHelpingYourChild() {
+  const post = BLOG_POSTS.find((p) => p.slug === "naplan-anxiety-helping-your-child")!;
+  return (
+    <BlogLayout post={post}>
+      <SEO
+        title="NAPLAN Anxiety: How to Help Your Child Stay Calm | ClassUp"
+        description="A calm, evidence-based guide to NAPLAN anxiety: the signs to watch for, what actually helps, what to avoid, and when to seek support."
+        canonicalPath="/blog/naplan-anxiety-helping-your-child"
+        schemaMarkup={BLOG_NAPLAN_ANXIETY_HELP_SCHEMA}
+      />
+      <div className="blog-body">
+        <p>
+          If your child gets anxious about NAPLAN, you're far from alone, and there's a lot you can do. Research suggests around
+          half of high-school students worry about how they'll perform, and up to one in five primary-age children show physical
+          signs of stress like headaches, trouble sleeping or tummy aches. Here's a calm, practical guide: the signs to watch for,
+          what genuinely helps, what to avoid, and when to reach out for support.
+        </p>
+
+        <h2>Why NAPLAN causes anxiety</h2>
+        <p>
+          For many children, NAPLAN is one of the first times they sit a formal, timed, standardised test, and the unfamiliarity
+          alone can be unsettling. Add a sense of being compared to classmates, and it's easy to see why nerves build. But here's
+          the reassuring part experts consistently make: NAPLAN is a snapshot, not a verdict. It measures literacy and numeracy at
+          one moment in time. It isn't a measure of your child's intelligence, worth, or future, and there are no prizes or
+          penalties attached to the result.
+        </p>
+
+        <h2>Signs your child might be anxious about NAPLAN</h2>
+        <p>Anxiety doesn't always show up as "I'm worried." Watch for:</p>
+        <ul>
+          <li>
+            <strong>Physical signs:</strong> headaches, tummy aches, trouble sleeping, or a racing heart around test talk
+          </li>
+          <li>
+            <strong>Avoidance:</strong> not wanting to go to school, or shutting down when NAPLAN comes up
+          </li>
+          <li>
+            <strong>Irritability or tearfulness</strong> that's out of character
+          </li>
+          <li>
+            <strong>Negative self-talk:</strong> "I'm going to fail", "I'm no good at maths"
+          </li>
+        </ul>
+        <p>
+          A little nervousness is normal and even helpful. It shows they care and can sharpen focus. It's the persistent or
+          physical signs that are worth gently addressing.
+        </p>
+
+        <h2>What actually helps (backed by the experts)</h2>
+        <p>The strongest evidence points to a handful of simple things:</p>
+        <ul>
+          <li>
+            <strong>Acknowledge the feeling, don't dismiss it.</strong> "It's okay to feel nervous, lots of kids do" works far
+            better than "don't worry about it" or "it's not a big deal." Validating the emotion helps it settle.
+          </li>
+          <li>
+            <strong>Manage your own tone.</strong> Children take their cue from you, and this is the single most-cited factor. If
+            you're visibly stressed about NAPLAN, they absorb it. Keep the conversation calm and matter-of-fact, like you would
+            about sports day.
+          </li>
+          <li>
+            <strong>Reframe what NAPLAN is.</strong> Talk about it as practice for future tests and a snapshot for their teachers,
+            not a judgement of them. This reframing is one of the most powerful things you can do.
+          </li>
+          <li>
+            <strong>Build familiarity, not cramming.</strong> A lot of test-day stress is simply fear of the unknown. Letting your
+            child explore the official online format ahead of time removes that. Our guide to{" "}
+            <Link href="/blog/free-naplan-practice" style={BLOG_LINK}>free NAPLAN practice</Link> walks through the official
+            resources worth using. Cramming does the opposite: it raises anxiety.
+          </li>
+          <li>
+            <strong>Keep normal routines.</strong> Enough sleep, regular meals, time to relax after school. Boring, but it genuinely
+            reduces stress.
+          </li>
+          <li>
+            <strong>Praise effort, not the result.</strong> "I'm proud of how you kept going" builds resilience; focusing on the
+            score builds pressure.
+          </li>
+        </ul>
+
+        <h2>What to avoid</h2>
+        <ul>
+          <li>
+            Over-talking the test, or assuming your child is anxious when they're not. You can accidentally create the worry.
+          </li>
+          <li>
+            Heavy drilling and stacks of practice papers. Experts specifically caution that excessive coaching tends to raise
+            anxiety more than results.
+          </li>
+          <li>Comparing your child to siblings or classmates.</li>
+          <li>
+            Letting an anxious child skip the test to avoid it. That can quietly reinforce the anxiety rather than easing it. Talk
+            to the school if you're unsure.
+          </li>
+        </ul>
+
+        <h2>A calmer kind of preparation</h2>
+        <p>
+          Here's where the anxiety conversation and the preparation conversation meet. The most stressful way to prepare is a pile
+          of worksheets that tells your child they got six out of ten and nothing more: it's pressure without direction. The calmer,
+          more effective approach is to understand where your child actually stands, then do a little targeted practice on the
+          specific things that wobble, in short, low-pressure sessions.
+        </p>
+        <p>
+          That's how ClassUp is built. The free diagnostic gives you an honest picture of your child's numeracy, reading and
+          language conventions skills, pitched to feel achievable rather than like an exam, so any practice is focused and calm,
+          not a scattergun of stress. No score promises, no pressure. Just clarity about what to work on, well before March. For
+          dates to plan around, see our <Link href="/blog/naplan-2027-dates" style={BLOG_LINK}>NAPLAN 2027 dates</Link> guide. For
+          year-level context, see our <Link href="/naplan-year-5" style={BLOG_LINK}>Year 5 NAPLAN</Link> and{" "}
+          <Link href="/naplan-year-7" style={BLOG_LINK}>Year 7 NAPLAN</Link> hubs. And once results arrive, our guide to{" "}
+          <Link href="/blog/how-to-read-naplan-results" style={BLOG_LINK}>how to read your child's NAPLAN results</Link> walks
+          through what they mean.
+        </p>
+        <InPostCTA />
+
+        <h2>When to seek extra support</h2>
+        <p>
+          If your child's anxiety is intense or persistent, with ongoing physical symptoms, real distress, or effects on sleep and
+          daily life, it's worth reaching out. Your child's teacher or school counsellor is a good first port of call, and your GP
+          can help too. For young people aged 12 to 18, Headspace (Australia's youth mental health service) offers support. There's
+          no need to navigate it alone.
+        </p>
+
+        <h2>Frequently asked questions</h2>
+        {BLOG_NAPLAN_ANXIETY_HELP_FAQ.map((item) => (
+          <React.Fragment key={item.question}>
+            <h3>{item.question}</h3>
+            <p>{item.answer}</p>
+          </React.Fragment>
+        ))}
+
+        <h2>A calmer path to NAPLAN: start free.</h2>
+        <p>
+          An honest diagnostic across numeracy, reading and language conventions, pitched to feel achievable. It tells you what to
+          focus on, so preparation stays calm and targeted. About 30 minutes.
         </p>
         <InPostCTA />
       </div>

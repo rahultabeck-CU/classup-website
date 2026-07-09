@@ -7,7 +7,7 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 interface SEOProps {
   title: string;
   description: string;
-  canonicalPath: string; // e.g. "/naplan/year-5" — will be prefixed with BASE_URL
+  canonicalPath: string; // e.g. "/naplan/year-5", will be prefixed with BASE_URL
   ogImage?: string;
   ogTitle?: string; // falls back to `title` when omitted
   ogDescription?: string; // falls back to `description` when omitted

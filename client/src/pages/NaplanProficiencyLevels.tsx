@@ -26,12 +26,12 @@ const PAGE_FAQ = [
   {
     question: "Is \"Developing\" a bad NAPLAN result?",
     answer:
-      "No. It means your child is still working towards the expected level. It's best read as an early signal — there are specific skills to build, and most of the school year to build them.",
+      "No. It means your child is still working towards the expected level. It's best read as an early signal: there are specific skills to build, and most of the school year to build them.",
   },
   {
     question: "Is \"Strong\" only an average result?",
     answer:
-      "No — \"Strong\" means your child has met the challenging-but-reasonable standard for their year level. It's a genuinely good result and the level most parents can aim for.",
+      "No, \"Strong\" means your child has met the challenging-but-reasonable standard for their year level. It's a genuinely good result and the level most parents can aim for.",
   },
   {
     question: "Can I compare my child's result to an older sibling's NAPLAN band?",
@@ -41,7 +41,7 @@ const PAGE_FAQ = [
   {
     question: "What does the shaded box on the report mean?",
     answer:
-      "It shows the typical range of results for your child's year level. The black dot is your child's own result — inside the box is typical, above is above typical, below flags an area that may need support.",
+      "It shows the typical range of results for your child's year level. The black dot is your child's own result, inside the box is typical, above is above typical, below flags an area that may need support.",
   },
 ];
 
@@ -53,7 +53,7 @@ const LEVEL_ROWS = [
   {
     level: "Strong",
     detail:
-      "Your child has met the challenging-but-reasonable expectations for their year level. This is a good result — it's the level most parents can aim for.",
+      "Your child has met the challenging-but-reasonable expectations for their year level. This is a good result. It's the level most parents can aim for.",
   },
   {
     level: "Developing",
@@ -63,7 +63,7 @@ const LEVEL_ROWS = [
   {
     level: "Needs additional support",
     detail:
-      "Your child isn't yet meeting year-level expectations and would benefit from focused help. The priority is a calm, structured plan — not pressure.",
+      "Your child isn't yet meeting year-level expectations and would benefit from focused help. The priority is a calm, structured plan, not pressure.",
   },
 ];
 
@@ -131,7 +131,7 @@ export default function NaplanProficiencyLevels() {
     <PageLayout>
       <SEO
         title="NAPLAN Proficiency Levels Explained (2026) | ClassUp"
-        description="NAPLAN no longer uses bands. Since 2023 results use four proficiency levels — Exceeding, Strong, Developing, Needs additional support. Here's what each means for your child."
+        description="NAPLAN no longer uses bands. Since 2023 results use four proficiency levels: Exceeding, Strong, Developing, Needs additional support. Here's what each means for your child."
         canonicalPath="/naplan/proficiency-levels-explained"
         schemaMarkup={SCHEMA}
       />
@@ -177,7 +177,7 @@ export default function NaplanProficiencyLevels() {
           <p style={{ fontSize: 18, color: "#444", lineHeight: 1.7, maxWidth: 700, marginBottom: 32 }}>
             If you're looking for "NAPLAN bands", here's the first thing to know: they're gone. Since 2023, NAPLAN no longer uses
             the old ten-band scale or the "National Minimum Standard". Results now come as one of four proficiency levels. Here's
-            what each one actually means — and what's worth doing next.
+            what each one actually means, and what's worth doing next.
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
@@ -192,12 +192,12 @@ export default function NaplanProficiencyLevels() {
           <h2 style={H2}>What changed in 2023 (and why it matters)</h2>
           <p style={P}>
             Until 2022, NAPLAN reported results on a scale of ten numbered bands, with a line called the National Minimum
-            Standard. It confused a lot of parents — a child could sit "above the minimum standard" and still be well behind the
+            Standard. It confused a lot of parents: a child could sit "above the minimum standard" and still be well behind the
             typical range for their year.
           </p>
           <p style={P}>
             From 2023, ACARA replaced that system entirely. Results from 2023 onwards use four proficiency levels and a reset
-            scale — which also means results from 2023 on can't be directly compared with the old band results from 2008–2022. If
+            scale, which also means results from 2023 on can't be directly compared with the old band results from 2008–2022. If
             your older child has a "Band 6" from a few years ago and your younger child has a "Strong", those aren't on the same
             scale.
           </p>
@@ -209,7 +209,7 @@ export default function NaplanProficiencyLevels() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>The four proficiency levels</h2>
           <p style={P}>
-            Each test area — Numeracy, Reading, Writing, Spelling, and Grammar &amp; Punctuation — gets one of these four levels:
+            Each test area, Numeracy, Reading, Writing, Spelling, and Grammar &amp; Punctuation, gets one of these four levels:
           </p>
 
           <div style={{ overflowX: "auto", margin: "0 0 24px", maxWidth: 860 }}>
@@ -280,9 +280,9 @@ export default function NaplanProficiencyLevels() {
           </div>
 
           <p style={P}>
-            Two things parents most often misread. First, "Strong" is not second prize — it means your child is exactly where
+            Two things parents most often misread. First, "Strong" is not second prize, it means your child is exactly where
             they should be. The proficiency standard was set by panels of teachers at a "challenging but reasonable" level, so
-            Strong is a genuinely good result. Second, "Developing" is not failing — it's an early, useful signal that there are
+            Strong is a genuinely good result. Second, "Developing" is not failing. It's an early, useful signal that there are
             specific, workable gaps to close, with most of the school year ahead to close them.
           </p>
         </div>
@@ -293,10 +293,10 @@ export default function NaplanProficiencyLevels() {
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={H2}>How to read the report itself</h2>
           <p style={P}>
-            Your child's report shows a black dot — their result — on a scale for each test area, alongside a shaded box that
+            Your child's report shows a black dot, their result, on a scale for each test area, alongside a shaded box that
             shows the typical range for their year level. A dot inside the box is within the typical range; above the box is above
             typical; below the box flags an area that may need extra support. Some reports also show a scale score. It's a
-            snapshot of tests sat in March — one useful data point, best read alongside school reports and your teacher's view.
+            snapshot of tests sat in March, one useful data point, best read alongside school reports and your teacher's view.
             For a parent's walk-through, see{" "}
             <Link href="/blog/how-to-read-naplan-results" style={LINK}>how to read your child's results</Link>.
           </p>
@@ -309,7 +309,7 @@ export default function NaplanProficiencyLevels() {
           <div style={{ background: "#F5F2EC", border: "1px solid #E8E4D8", borderRadius: 20, padding: "40px 44px", maxWidth: 860 }}>
             <h2 style={{ ...H2, marginBottom: 16 }}>What the level doesn't tell you</h2>
             <p style={{ ...P, marginBottom: 0 }}>
-              This is the honest bit most guides skip. The proficiency level tells you where your child landed — not why.
+              This is the honest bit most guides skip. The proficiency level tells you where your child landed, not why.
               "Developing" in numeracy doesn't tell you whether the issue is fractions, multi-step problems, or simply reading the
               questions too fast. Two children with the same level can have completely different gaps. The report is a flag, not a
               diagnosis.
@@ -321,12 +321,12 @@ export default function NaplanProficiencyLevels() {
       {/* ── WHAT TO DO NEXT ── */}
       <section className="cu-section" style={{ paddingTop: 0 }}>
         <div className="container" style={{ maxWidth: 1000 }}>
-          <h2 style={H2}>What to do next — for each level</h2>
+          <h2 style={H2}>What to do next, for each level</h2>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 18px", maxWidth: 760, display: "flex", flexDirection: "column", gap: 14 }}>
             {[
-              "Exceeding or Strong: solid foundations. The focus is extension, consistency and confidence — keeping your child stretched and engaged, not catching up.",
-              "Developing: this is where targeted help pays off most. Find the specific gaps and work on those, in short sessions, well before next March. Avoid the panic-buy of generic worksheet packs — practising everything is practising nothing.",
-              "Needs additional support: talk to your child's teacher first — the school may already have support in motion — then build a simple, specific plan around the actual gaps. Progress here comes from precision and consistency, not volume.",
+              "Exceeding or Strong: solid foundations. The focus is extension, consistency and confidence, keeping your child stretched and engaged, not catching up.",
+              "Developing: this is where targeted help pays off most. Find the specific gaps and work on those, in short sessions, well before next March. Avoid the panic-buy of generic worksheet packs, practising everything is practising nothing.",
+              "Needs additional support: talk to your child's teacher first, the school may already have support in motion, then build a simple, specific plan around the actual gaps. Progress here comes from precision and consistency, not volume.",
             ].map((item) => (
               <li key={item.slice(0, 24)} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
                 <span style={{ color: "#7F77DD", fontWeight: 800, marginTop: 1 }}>•</span>
@@ -336,7 +336,7 @@ export default function NaplanProficiencyLevels() {
           </ul>
           <p style={P}>
             Whatever the level, the useful next step is the same: find out precisely where your child stands, skill by skill.
-            That's what ClassUp's free diagnostic does — an honest report of what's solid, what's wobbly, and what to work on
+            That's what ClassUp's free diagnostic does: an honest report of what's solid, what's wobbly, and what to work on
             first. It's the approach behind <Link href="/how-it-works" style={LINK}>how it works</Link> and our{" "}
             <Link href="/methodology" style={LINK}>methodology</Link>, with year-specific guidance in the{" "}
             <Link href="/naplan-year-5" style={LINK}>Year 5 NAPLAN</Link> and{" "}
@@ -372,17 +372,17 @@ export default function NaplanProficiencyLevels() {
               {
                 href: "/naplan-year-5",
                 label: "Year 5 NAPLAN",
-                desc: "The full picture of Year 5 NAPLAN — all four tests, preparation, and how ClassUp helps.",
+                desc: "The full picture of Year 5 NAPLAN, all four tests, preparation, and how ClassUp helps.",
               },
               {
                 href: "/naplan-year-7",
                 label: "Year 7 NAPLAN",
-                desc: "The first NAPLAN of high school — what steps up, and how to prepare.",
+                desc: "The first NAPLAN of high school, what steps up, and how to prepare.",
               },
               {
                 href: "/how-it-works",
                 label: "How It Works",
-                desc: "Diagnostic, honest report, then adaptive practice — the ClassUp loop end to end.",
+                desc: "Diagnostic, honest report, then adaptive practice: the ClassUp loop end to end.",
               },
               {
                 href: "/methodology",
@@ -424,7 +424,7 @@ export default function NaplanProficiencyLevels() {
                 marginRight: "auto",
               }}
             >
-              See exactly where your child stands — free.
+              See exactly where your child stands, free.
             </h2>
             <p style={{ fontSize: 16, color: "rgba(255,255,255,0.7)", marginBottom: 32, maxWidth: 560, marginLeft: "auto", marginRight: "auto", lineHeight: 1.65 }}>
               An honest, skill-by-skill diagnostic across numeracy, reading and language conventions. About 30 minutes, and the
