@@ -17,15 +17,15 @@ const HOW_FAQ = [
   },
   {
     question: "What happens after the diagnostic?",
-    answer: "You receive a report showing exactly where your child is solid and where they're stuck -- by skill, not just by domain. From there, your child starts their first coaching session. The coach picks up exactly where the diagnostic identified the gaps.",
+    answer: "You receive a report showing exactly where your child is solid and where they're stuck, by skill, not just by domain. From there, your child starts their first coaching session. The coach picks up exactly where the diagnostic identified the gaps.",
   },
   {
     question: "How long is a typical coaching session?",
-    answer: "Sessions are designed to be 30 minutes. Long enough to make real progress, short enough to fit after school. Your child can do more if they want to -- the session doesn't end at 30 minutes, but the coach is designed to deliver meaningful practice in that time.",
+    answer: "Sessions are designed to be 30 minutes. Long enough to make real progress, short enough to fit after school. Your child can do more if they want to: the session doesn't end at 30 minutes, but the coach is designed to deliver meaningful practice in that time.",
   },
   {
     question: "How often should my child practise?",
-    answer: "4 sessions per week is the target. The adaptive model gets better the more your child practises -- more data means better question selection. But even 2 sessions per week will show progress over a term.",
+    answer: "4 sessions per week is the target. The adaptive model gets better the more your child practises: more data means better question selection. But even 2 sessions per week will show progress over a term.",
   },
   {
     question: "What does the Friday parent email include?",
@@ -33,7 +33,7 @@ const HOW_FAQ = [
   },
   {
     question: "Can I see what questions my child is getting?",
-    answer: "Yes. The parent dashboard shows the full session history -- every question, every answer, every explanation. You can see exactly what your child got wrong and what the coach said. This is intentional: we want parents to understand what's happening, not just receive a summary.",
+    answer: "Yes. The parent dashboard shows the full session history: every question, every answer, every explanation. You can see exactly what your child got wrong and what the coach said. This is intentional: we want parents to understand what's happening, not just receive a summary.",
   },
   {
     question: "What if my child gets stuck and won't continue?",

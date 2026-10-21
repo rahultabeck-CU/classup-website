@@ -64,7 +64,7 @@ const NAPLAN_FAQ = [
   },
   {
     question: "What is the adaptive online format?",
-    answer: "Since 2023, NAPLAN has been conducted online using an adaptive format. This means the questions get harder or easier based on your child's responses. Two children in the same class may see very different questions. The adaptive format is more accurate than a fixed paper test -- it can measure a wider range of ability levels.",
+    answer: "Since 2023, NAPLAN has been conducted online using an adaptive format. This means the questions get harder or easier based on your child's responses. Two children in the same class may see very different questions. The adaptive format is more accurate than a fixed paper test: it can measure a wider range of ability levels.",
   },
   {
     question: "What are the proficiency levels?",

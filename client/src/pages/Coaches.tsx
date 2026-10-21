@@ -41,11 +41,11 @@ function CoachIdentity({
 const COACHES_FAQ = [
   {
     question: "Can my child switch coaches?",
-    answer: "Yes, at any time. You choose Luna or Leo at the start of your first session. If your child tries one and wants to switch, you can do that from the parent dashboard. Some children try both in the first week before settling. That's fine. The coaching quality is identical -- the difference is pace and tone, not rigour.",
+    answer: "Yes, at any time. You choose Luna or Leo at the start of your first session. If your child tries one and wants to switch, you can do that from the parent dashboard. Some children try both in the first week before settling. That's fine. The coaching quality is identical: the difference is pace and tone, not rigour.",
   },
   {
     question: "Are Luna and Leo real teachers?",
-    answer: "No. Luna and Leo are AI coaches. The questions, the trap analysis, and the explanations are reviewed by Australian educators on our content team. The coaching itself -- the question selection, the mistake identification, the next-question logic -- is AI. We say this clearly because we think parents deserve to know exactly what they're paying for.",
+    answer: "No. Luna and Leo are AI coaches. The questions, the trap analysis, and the explanations are reviewed by Australian educators on our content team. The coaching itself (the question selection, the mistake identification, the next-question logic) is AI. We say this clearly because we think parents deserve to know exactly what they're paying for.",
   },
   {
     question: "What if my child doesn't like either coach?",
@@ -57,7 +57,7 @@ const COACHES_FAQ = [
   },
   {
     question: "Do Luna and Leo remember what my child got wrong last time?",
-    answer: "Yes. That's the core of the product. Every session starts from where the last one ended. If your child got place value wrong on Tuesday, Wednesday's session will come back to place value -- from a different angle, with a different question, until it sticks. The coach doesn't reset. It accumulates.",
+    answer: "Yes. That's the core of the product. Every session starts from where the last one ended. If your child got place value wrong on Tuesday, Wednesday's session will come back to place value, from a different angle, with a different question, until it sticks. The coach doesn't reset. It accumulates.",
   },
 ];
 

@@ -33,7 +33,7 @@ const PRICING_FAQ = [
   },
   {
     question: "Does the $59 include everything on the roadmap?",
-    answer: "Yes. Every feature we build -- writing coaching, Speaking and Listening support, school-specific benchmarking, and anything else on the roadmap -- is included in your $59/month subscription. We do not add tiers or charge extra for new features. Your subscription grows with ClassUp.",
+    answer: "Yes. Every feature we build (writing coaching, Speaking and Listening support, school-specific benchmarking, and anything else on the roadmap) is included in your $59/month subscription. We do not add tiers or charge extra for new features. Your subscription grows with ClassUp.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function Pricing() {
   return (
     <PageLayout>
       <SEO
-        title="ClassUp pricing -- $59/month, one plan, everything included"
+        title="ClassUp pricing: $59/month, one plan, everything included"
         description="ClassUp is $59/month for Year 5 and Year 7 families. Free 30-minute diagnostic included. No lock-in. Cancel anytime. Every future feature included."
         canonicalPath="/pricing"
       />
@@ -158,7 +158,7 @@ export default function Pricing() {
             <div className="cu-eyebrow mb-3">YOUR $59 INCLUDES EVERYTHING WE BUILD NEXT</div>
             <h2 className="cu-h2-card mb-4">Your subscription grows with ClassUp.</h2>
             <p style={{ fontSize: 15, color: "#444", lineHeight: 1.75, marginBottom: 20 }}>
-              We are actively building. Writing coaching, Speaking and Listening support, school-specific benchmarking, and more are on the roadmap. Every one of those features is included in your $59/month -- no extra tiers, no upgrade prompts.
+              We are actively building. Writing coaching, Speaking and Listening support, school-specific benchmarking, and more are on the roadmap. Every one of those features is included in your $59/month. No extra tiers, no upgrade prompts.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16 }} className="roadmap-grid">
               {[

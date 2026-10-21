@@ -13,19 +13,19 @@ import { SEO } from "@/components/SEO";
 const LUNA_FAQ = [
   {
     question: "What makes Luna different from Leo?",
-    answer: "Luna is methodical and patient. She explains every mistake in detail before moving on. Leo is more direct -- he names the mistake quickly and moves to the next question. Luna works better for children who get anxious about errors and need to understand why before they can move forward. Leo works better for children who prefer to move fast and circle back.",
+    answer: "Luna is methodical and patient. She explains every mistake in detail before moving on. Leo is more direct: he names the mistake quickly and moves to the next question. Luna works better for children who get anxious about errors and need to understand why before they can move forward. Leo works better for children who prefer to move fast and circle back.",
   },
   {
     question: "Can my child switch from Luna to Leo?",
-    answer: "Yes. Your child can switch coaches at any time from the session screen. The coaching data carries over -- Luna's notes on your child's gaps are visible to Leo, and vice versa. The switch doesn't reset anything.",
+    answer: "Yes. Your child can switch coaches at any time from the session screen. The coaching data carries over: Luna's notes on your child's gaps are visible to Leo, and vice versa. The switch doesn't reset anything.",
   },
   {
     question: "Does Luna cover all four NAPLAN domains?",
-    answer: "Luna covers Numeracy, Reading, and Language Conventions. Writing is a separate module that both Luna and Leo support, but it works differently -- the coach reviews a writing sample and gives structured feedback rather than question-by-question practice.",
+    answer: "Luna covers Numeracy, Reading, and Language Conventions. Writing is a separate module that both Luna and Leo support, but it works differently: the coach reviews a writing sample and gives structured feedback rather than question-by-question practice.",
   },
   {
     question: "How does Luna explain a mistake?",
-    answer: "Luna names the specific reasoning error, not just the correct answer. For example, if a child picks the wrong spelling because they're confusing a vowel pattern, Luna says: 'You chose 'journy' -- that's the most common mistake on this word. The pattern is -ney, not -ny. Here's a different word with the same pattern.' Then she gives a different question on the same skill.",
+    answer: "Luna names the specific reasoning error, not just the correct answer. For example, if a child picks the wrong spelling because they're confusing a vowel pattern, Luna says: 'You chose 'journy'. That's the most common mistake on this word. The pattern is -ney, not -ny. Here's a different word with the same pattern.' Then she gives a different question on the same skill.",
   },
   {
     question: "Is Luna suitable for Year 5 and Year 7?",

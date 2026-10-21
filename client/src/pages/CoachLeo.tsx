@@ -13,19 +13,19 @@ import { SEO } from "@/components/SEO";
 const LEO_FAQ = [
   {
     question: "What makes Leo different from Luna?",
-    answer: "Leo is direct and fast-paced. He names the mistake quickly and moves to the next question. Luna is more methodical -- she explains every mistake in detail before moving on. Leo works better for children who prefer to move fast and circle back to hard things. Luna works better for children who need to understand why before they can move forward.",
+    answer: "Leo is direct and fast-paced. He names the mistake quickly and moves to the next question. Luna is more methodical: she explains every mistake in detail before moving on. Leo works better for children who prefer to move fast and circle back to hard things. Luna works better for children who need to understand why before they can move forward.",
   },
   {
     question: "Can my child switch from Leo to Luna?",
-    answer: "Yes. Your child can switch coaches at any time from the session screen. The coaching data carries over -- Leo's notes on your child's gaps are visible to Luna, and vice versa. The switch doesn't reset anything.",
+    answer: "Yes. Your child can switch coaches at any time from the session screen. The coaching data carries over: Leo's notes on your child's gaps are visible to Luna, and vice versa. The switch doesn't reset anything.",
   },
   {
     question: "Does Leo cover all four NAPLAN domains?",
-    answer: "Leo covers Numeracy, Reading, and Language Conventions. Writing is a separate module that both Leo and Luna support, but it works differently -- the coach reviews a writing sample and gives structured feedback rather than question-by-question practice.",
+    answer: "Leo covers Numeracy, Reading, and Language Conventions. Writing is a separate module that both Leo and Luna support, but it works differently: the coach reviews a writing sample and gives structured feedback rather than question-by-question practice.",
   },
   {
     question: "How does Leo explain a mistake?",
-    answer: "Leo names the specific mistake concisely and immediately gives a different question on the same skill. For example: 'You used the wrong operation -- this is a ratio problem, not a percentage problem. Try this one.' He doesn't dwell. He moves. Children who find Luna's explanations too long often prefer Leo's pace.",
+    answer: "Leo names the specific mistake concisely and immediately gives a different question on the same skill. For example: 'You used the wrong operation: this is a ratio problem, not a percentage problem. Try this one.' He doesn't dwell. He moves. Children who find Luna's explanations too long often prefer Leo's pace.",
   },
   {
     question: "Is Leo suitable for Year 5 and Year 7?",
@@ -72,8 +72,7 @@ export default function CoachLeo() {
               <div className="cu-eyebrow mb-3">ABOUT LEO</div>
               <h2 className="cu-h2-card mb-4">The coach who names the mistake and moves on.</h2>
               <p className="cu-body-card mb-4">
-                Leo is ClassUp's direct coaching system. He is designed for children who learn best by doing
-                , who prefer to be told the mistake quickly and given another chance immediately, rather
+                Leo is ClassUp's direct coaching system. He is designed for children who learn best by doing, who prefer to be told the mistake quickly and given another chance immediately, rather
                 than receiving a detailed explanation before moving on.
               </p>
               <p className="cu-body-card mb-4">
