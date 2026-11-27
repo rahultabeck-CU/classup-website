@@ -179,7 +179,7 @@ export default function NaplanYear7Reading() {
           </p>
           <PrimaryCTA />
           <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
-            Free to start · Your child's first name is all we ask for · About 30 minutes
+            By invitation this summer · Your child's first name is all we ask for · About 30 minutes
           </p>
         </div>
       </section>
@@ -448,7 +448,7 @@ export default function NaplanYear7Reading() {
               {CTA_LABEL} &#8594;
             </a>
             <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginTop: 14 }}>
-              Free to start · Your child's first name is all we ask for · About 30 minutes
+              By invitation this summer · Your child's first name is all we ask for · About 30 minutes
             </p>
           </div>
         </div>
