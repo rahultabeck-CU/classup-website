@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { FAQAccordion } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL, HOLIDAY_PROGRAM_END } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -65,7 +65,7 @@ export default function Pricing() {
             <em className="cu-italic-accent">That's all you need.</em>
           </h1>
           <p className="cu-body-large mb-8" style={{ maxWidth: 680 }}>
-            The diagnostic is always free. Coaching is $59/month. No lock-in. Cancel anytime. Every feature we build is included.
+            The diagnostic is always free. Coaching is $59/month. No lock-in. Cancel anytime. Every feature we build is included. This summer, invited families get the full program free until {HOLIDAY_PROGRAM_END}.
           </p>
 
           {/* Two Pricing Cards */}
@@ -104,14 +104,14 @@ export default function Pricing() {
 
               <div style={{ background: "#EEEDFE", borderRadius: 12, padding: "12px 16px", marginBottom: 20 }}>
                 <span style={{ fontSize: 13, color: "#534AB7", fontWeight: 600 }}>
-                  Introductory offer: use code FOUNDERS for $29/month for your first 6 months.
+                  Free holiday program: invited families get everything free until {HOLIDAY_PROGRAM_END}. No card needed.
                 </span>
               </div>
 
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
                 {CTA_LABEL} &#8594;
               </a>
-              <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
+              <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>By invitation this summer. No credit card.</p>
             </div>
 
             {/* Card 2 — Additional child */}
@@ -145,7 +145,7 @@ export default function Pricing() {
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
                 {CTA_LABEL} &#8594;
               </a>
-              <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
+              <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>By invitation this summer. No credit card.</p>
             </div>
           </div>
 

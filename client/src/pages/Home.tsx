@@ -40,7 +40,7 @@ function HeroSection() {
               </a>
             </div>
             <p style={{ fontSize: 13, color: "#888", marginBottom: 24 }}>
-              Free · No credit card · Pause and finish across 3 short sittings
+              By invitation this summer · Free until 28 February 2027 · No credit card
             </p>
             {/* Rahul bridge pill */}
             <div

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
-import { DIAGNOSTIC_URL, CLASSUP_VERSION, STAGE_VERSIONS, CTA_LABEL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CLASSUP_VERSION, STAGE_VERSIONS, CTA_LABEL, HOLIDAY_PROGRAM_END } from "@/lib/classup";
 import { ORGANIZATION_REF } from "@/lib/schema";
 import { SEO } from "@/components/SEO";
 
@@ -311,9 +311,10 @@ export default function Roadmap() {
                 }}
               >
                 <p style={{ fontSize: 16, color: "#534AB7", lineHeight: 1.7, margin: 0, fontWeight: 500 }}>
-                  And if you join us early, it costs even less to start: use the code{" "}
-                  <strong style={{ fontWeight: 800 }}>FOUNDERS</strong> for $29 a month for your first six months. Our
-                  way of saying thank you to the families who back us before everyone else does.
+                  And if you are invited this summer, it costs nothing to start: the{" "}
+                  <strong style={{ fontWeight: 800 }}>free holiday program</strong> runs until {HOLIDAY_PROGRAM_END},
+                  with no card needed. Our way of saying thank you to the families who back us before everyone else
+                  does.
                 </p>
               </div>
             </div>
@@ -374,7 +375,7 @@ export default function Roadmap() {
             </Link>
           </div>
           <p style={{ fontSize: 14, color: "#888", margin: 0 }}>
-            Free to start · Your child's first name is all we ask for · About 30 minutes
+            By invitation this summer · Your child's first name is all we ask for · About 30 minutes
           </p>
         </div>
       </section>
