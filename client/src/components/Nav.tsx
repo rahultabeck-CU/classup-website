@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { APP_URL, DIAGNOSTIC_URL, FOUNDERS_CODE } from "@/lib/classup";
+import { APP_URL, DIAGNOSTIC_URL, HOLIDAY_PROGRAM_END, CTA_LABEL } from "@/lib/classup";
 
 // ============================================================
 // FOUNDERS BANNER
 // ============================================================
 export function FoundersBanner() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(FOUNDERS_CODE).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
-  };
-
   return (
     <div className="cu-founders-banner">
       <div
@@ -38,28 +29,10 @@ export function FoundersBanner() {
               color: "#7F77DD",
             }}
           >
-            FOUNDERS
+            SUMMER PROGRAM
           </span>
           <span style={{ fontSize: 13, color: "#CCC" }}>
-            Introductory offer: use code{" "}
-            <button
-              onClick={handleCopy}
-              style={{
-                fontFamily: "monospace",
-                fontSize: 12,
-                fontWeight: 700,
-                background: "#2A2A2A",
-                color: "#7F77DD",
-                border: "1px solid #444",
-                borderRadius: 6,
-                padding: "2px 8px",
-                cursor: "pointer",
-              }}
-              aria-label="Copy founders code"
-            >
-              {copied ? "Copied!" : FOUNDERS_CODE}
-            </button>{" "}
-            for $29/month for your first 6 months.
+            The free holiday program runs until {HOLIDAY_PROGRAM_END}. Places are by invitation.
           </span>
         </div>
         <a
@@ -73,7 +46,7 @@ export function FoundersBanner() {
             whiteSpace: "nowrap",
           }}
         >
-          Start free diagnostic →
+          Request an invite →
         </a>
       </div>
     </div>
@@ -199,7 +172,7 @@ export function TopNav() {
               className="cu-btn-primary nav-cta-desktop"
               style={{ fontSize: 13, padding: "10px 18px" }}
             >
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
             {/* Hamburger — mobile only */}
             <button
@@ -287,7 +260,7 @@ export function TopNav() {
                 className="cu-btn-primary"
                 style={{ background: "#FFF", color: "#1A1A1A", textAlign: "center", justifyContent: "center", display: "block", padding: "16px 24px", fontSize: 16 }}
               >
-                Start free diagnostic →
+                {CTA_LABEL} →
               </a>
               <a
                 href={`${APP_URL}/sign-in`}

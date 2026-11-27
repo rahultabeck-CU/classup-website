@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { FounderAvatar, EmailCapture } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -180,7 +180,7 @@ export default function About() {
             </p>
             <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 15, padding: "14px 28px" }}>
-                Start free diagnostic →
+                {CTA_LABEL} →
               </a>
               <Link href="/contact" className="cu-btn-secondary" style={{ fontSize: 15, padding: "14px 28px", display: "inline-flex" }}>
                 Contact us →

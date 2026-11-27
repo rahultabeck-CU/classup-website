@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { SampleQuestionCard, Breadcrumb, InPostCTA, WritingPlaceholderCard } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SAMPLE_6, SAMPLE_7, SAMPLE_8, SAMPLE_9 } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
@@ -45,7 +45,7 @@ function DomainSidebar({ current }: { current: string }) {
           Find your child's specific gaps. Free. No credit card.
         </p>
         <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-          Start free diagnostic →
+          {CTA_LABEL} →
         </a>
       </div>
     </div>

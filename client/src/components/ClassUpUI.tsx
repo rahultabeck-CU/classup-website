@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
 import { toast } from "sonner";
-import { DIAGNOSTIC_URL, type SampleQuestion } from "@/lib/classup";
+import { DIAGNOSTIC_URL, type SampleQuestion, CTA_LABEL } from "@/lib/classup";
 
 // ============================================================
 // SAMPLE QUESTION CARD
@@ -295,13 +295,13 @@ export function StickyCTA() {
     <div
       className={`cu-sticky-cta${visible ? " visible" : ""}`}
       role="complementary"
-      aria-label="Start free diagnostic"
+      aria-label={CTA_LABEL}
     >
       <span style={{ fontSize: 14, fontWeight: 600 }}>
         Free diagnostic for Year 5 and Year 7
       </span>
       <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ background: "#FFF", color: "#1A1A1A" }}>
-        Start free diagnostic →
+        {CTA_LABEL} →
       </a>
     </div>
   );
@@ -317,7 +317,7 @@ export function AskLunaButton() {
       onClick={() => toast("Ask Luna is coming soon.", {
         description: "Start your free diagnostic to meet Luna and Leo in person.",
         action: {
-          label: "Start free diagnostic",
+          label: CTA_LABEL,
           onClick: () => window.open(DIAGNOSTIC_URL, "_blank"),
         },
         duration: 6000,
@@ -448,7 +448,7 @@ export function FinalCTABanner({
           <p style={{ fontSize: 15, color: "#444", marginBottom: 28 }}>{subline}</p>
         )}
         <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px" }}>
-          Start free diagnostic →
+          {CTA_LABEL} →
         </a>
         <p style={{ fontSize: 13, color: "#888", marginTop: 14 }}>
           No credit card. 30 minutes. Honest report.
@@ -485,7 +485,7 @@ export function InPostCTA() {
         </p>
       </div>
       <a href={DIAGNOSTIC_URL} className="cu-btn-primary">
-        Start free diagnostic →
+        {CTA_LABEL} →
       </a>
     </div>
   );

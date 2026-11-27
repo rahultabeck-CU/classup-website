@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { SampleQuestionCard, Breadcrumb, InPostCTA, FAQAccordion, EmailCapture } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_3 } from "@/lib/classup";
+import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_3, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -258,7 +258,7 @@ export default function NAPLANNumeracy() {
                   Find your child's specific Numeracy gaps. Free. No credit card.
                 </p>
                 <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-                  Start free diagnostic →
+                  {CTA_LABEL} →
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { SampleQuestionCard, Breadcrumb, FAQAccordion, InPostCTA, FounderAvatar, EmailCapture } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL, SAMPLE_4 } from "@/lib/classup";
+import { DIAGNOSTIC_URL, SAMPLE_4, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 import { ORGANIZATION_REF } from "@/lib/schema";
 
@@ -217,7 +217,7 @@ export default function NAPLANYear9() {
               <InPostCTA
                 headline="Ready to see where your Year 9 child actually stands?"
                 subheadline="Start with a free 30-minute diagnostic. No credit card required."
-                ctaText="Start Free Diagnostic"
+                ctaText={CTA_LABEL}
                 ctaHref={DIAGNOSTIC_URL}
               />
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { CoachAvatar, FounderAvatar, EmailCapture, FAQAccordion, SampleQuestionCard } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_7 } from "@/lib/classup";
+import { DIAGNOSTIC_URL, SAMPLE_2, SAMPLE_7, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // Left-column identity stack for a coach card — avatar, name, traits and
@@ -351,7 +351,7 @@ export default function Coaches() {
             know by the end of week one.
           </p>
           <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px", display: "inline-flex" }}>
-            Start free diagnostic →
+            {CTA_LABEL} →
           </a>
           <p style={{ fontSize: 13, color: "#666", marginTop: 16 }}>
             Free · No credit card · Pause and finish across 3 short sittings

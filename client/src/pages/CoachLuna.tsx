@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { CoachAvatar, SampleQuestionCard, Breadcrumb, FAQAccordion, EmailCapture } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL, SAMPLE_6, SAMPLE_2, SAMPLE_8 } from "@/lib/classup";
+import { DIAGNOSTIC_URL, SAMPLE_6, SAMPLE_2, SAMPLE_8, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -64,7 +64,7 @@ export default function CoachLuna() {
                 ))}
               </div>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-                Start free diagnostic →
+                {CTA_LABEL} →
               </a>
             </div>
 
@@ -186,7 +186,7 @@ export default function CoachLuna() {
             <h2 className="cu-h2 mb-4">Start with Luna. Switch to Leo anytime.</h2>
             <p style={{ fontSize: 15, color: "#444", marginBottom: 28 }}>The diagnostic is free. Your child chooses their coach after.</p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
         </div>

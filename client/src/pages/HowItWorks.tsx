@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { CoachAvatar, FAQAccordion, EmailCapture, FounderAvatar } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -315,7 +315,7 @@ export default function HowItWorks() {
             <h2 className="cu-h2 mb-4">Start on day one. Free.</h2>
             <p style={{ fontSize: 15, color: "#444", marginBottom: 28 }}>The diagnostic is free. No credit card. 30 minutes. Pause and resume.</p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
 

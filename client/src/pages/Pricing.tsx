@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { FAQAccordion } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -109,7 +109,7 @@ export default function Pricing() {
               </div>
 
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
-                Start free diagnostic &#8594;
+                {CTA_LABEL} &#8594;
               </a>
               <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
             </div>
@@ -143,7 +143,7 @@ export default function Pricing() {
               </div>
 
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex", fontSize: 16, padding: "16px 0", marginTop: "auto" }}>
-                Start free diagnostic &#8594;
+                {CTA_LABEL} &#8594;
               </a>
               <p style={{ fontSize: 13, color: "#888", textAlign: "center", marginTop: 12 }}>No credit card for diagnostic</p>
             </div>
@@ -244,7 +244,7 @@ export default function Pricing() {
             <h2 className="cu-h2 mb-4">Start free. No credit card.</h2>
             <p style={{ fontSize: 15, color: "#444", marginBottom: 28 }}>The diagnostic is always free. See where your child stands before you decide.</p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-              Start free diagnostic &#8594;
+              {CTA_LABEL} &#8594;
             </a>
           </div>
         </div>
