@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { APP_URL, DIAGNOSTIC_URL, HOLIDAY_PROGRAM_END } from "@/lib/classup";
+import { APP_URL, DIAGNOSTIC_URL, HOLIDAY_PROGRAM_END, CTA_LABEL } from "@/lib/classup";
 
 // ============================================================
 // FOUNDERS BANNER
@@ -172,7 +172,7 @@ export function TopNav() {
               className="cu-btn-primary nav-cta-desktop"
               style={{ fontSize: 13, padding: "10px 18px" }}
             >
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
             {/* Hamburger — mobile only */}
             <button
@@ -260,7 +260,7 @@ export function TopNav() {
                 className="cu-btn-primary"
                 style={{ background: "#FFF", color: "#1A1A1A", textAlign: "center", justifyContent: "center", display: "block", padding: "16px 24px", fontSize: 16 }}
               >
-                Start free diagnostic →
+                {CTA_LABEL} →
               </a>
               <a
                 href={`${APP_URL}/sign-in`}

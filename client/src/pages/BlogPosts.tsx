@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { InPostCTA, Breadcrumb } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { BLOG_POSTS } from "./Blog";
 import { SEO } from "@/components/SEO";
 import { ORGANIZATION_REF } from "@/lib/schema";
@@ -35,7 +35,7 @@ function BlogLayout({ post, children }: { post: typeof BLOG_POSTS[0]; children: 
                   See exactly where your child stands. Free. No credit card.
                 </p>
                 <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-                  Start free diagnostic →
+                  {CTA_LABEL} →
                 </a>
               </div>
               <div className="cu-card-large" style={{ padding: 24 }}>

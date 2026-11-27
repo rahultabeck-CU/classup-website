@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { CoachAvatar, FounderAvatar, FAQAccordion, EmailCapture } from "@/components/ClassUpUI";
-import { SAMPLE_2 } from "@/lib/classup";
+import { SAMPLE_2, CTA_LABEL } from "@/lib/classup";
 import { DIAGNOSTIC_URL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 import { ORGANIZATION_ID, ORGANIZATION_REF } from "@/lib/schema";
@@ -36,7 +36,7 @@ function HeroSection() {
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 20 }}>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 15, padding: "15px 28px" }}>
-                Start free diagnostic →
+                {CTA_LABEL} →
               </a>
             </div>
             <p style={{ fontSize: 13, color: "#888", marginBottom: 24 }}>
@@ -1014,7 +1014,7 @@ function ComparisonSection() {
                 <tr style={{ borderTop: "1px solid #E8E4D8", background: "#EEEDFE" }}>
                   <td colSpan={1} style={{ padding: "14px 14px", textAlign: "center" }}>
                     <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 12, padding: "8px 14px" }}>
-                      Start free →
+                      {CTA_LABEL} →
                     </a>
                   </td>
                   <td colSpan={3} style={{ padding: "14px 14px", fontSize: 14, color: "#534AB7", fontStyle: "italic" }}>
@@ -1085,7 +1085,7 @@ function PricingSection() {
               ))}
             </div>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
 
@@ -1110,7 +1110,7 @@ function PricingSection() {
               ))}
             </div>
             <a href={DIAGNOSTIC_URL} className="cu-btn-secondary" style={{ width: "100%", justifyContent: "center", display: "flex" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
         </div>
@@ -1264,7 +1264,7 @@ function FinalCTASection() {
           No credit card. 30 minutes. Honest report.
         </p>
         <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-          Start free diagnostic →
+          {CTA_LABEL} →
         </a>
       </div>
     </section>

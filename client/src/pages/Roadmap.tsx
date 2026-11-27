@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
-import { DIAGNOSTIC_URL, CLASSUP_VERSION, STAGE_VERSIONS } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CLASSUP_VERSION, STAGE_VERSIONS, CTA_LABEL } from "@/lib/classup";
 import { ORGANIZATION_REF } from "@/lib/schema";
 import { SEO } from "@/components/SEO";
 
@@ -261,7 +261,7 @@ export default function Roadmap() {
                 Like your phone: new features just show up, same price, every time.
               </p>
               <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px", background: "#7F77DD", alignSelf: "flex-start" }}>
-                Start the free diagnostic &#8594;
+                {CTA_LABEL} &#8594;
               </a>
               <div style={{ marginTop: "auto", paddingTop: 32 }}>
                 <span
@@ -367,7 +367,7 @@ export default function Roadmap() {
           <h2 className="cu-h2 mb-4">Start free. Grow with us.</h2>
           <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginBottom: 18 }}>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px" }}>
-              Start the free diagnostic &#8594;
+              {CTA_LABEL} &#8594;
             </a>
             <Link href="/pricing" className="cu-btn-secondary" style={{ fontSize: 16, padding: "16px 32px", display: "inline-flex" }}>
               View pricing &#8594;

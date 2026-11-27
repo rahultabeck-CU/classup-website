@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 export const BLOG_POSTS = [
@@ -186,7 +186,7 @@ export default function Blog() {
             <div className="cu-eyebrow mb-4">START FOR FREE</div>
             <h2 className="cu-h2 mb-4">Ready to see where your child actually stands?</h2>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { FAQAccordion } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -114,7 +114,7 @@ const LINK: React.CSSProperties = {
   textUnderlineOffset: 2,
 };
 
-function PrimaryCTA({ label = "Start the free diagnostic" }: { label?: string }) {
+function PrimaryCTA({ label = CTA_LABEL }: { label?: string }) {
   return (
     <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 32px" }}>
       {label} &#8594;
@@ -445,7 +445,7 @@ export default function NaplanYear7Reading() {
               An honest diagnostic across all three reading skills, and a report that tells you the truth. About 30 minutes.
             </p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 17, padding: "18px 40px", background: "#7F77DD", color: "#FFF" }}>
-              Start the free diagnostic &#8594;
+              {CTA_LABEL} &#8594;
             </a>
             <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginTop: 14 }}>
               Free to start · Your child's first name is all we ask for · About 30 minutes

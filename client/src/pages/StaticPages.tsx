@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "wouter";
 import { PageLayout } from "@/components/PageLayout";
 import { Breadcrumb } from "@/components/ClassUpUI";
-import { DIAGNOSTIC_URL } from "@/lib/classup";
+import { DIAGNOSTIC_URL, CTA_LABEL } from "@/lib/classup";
 import { SEO } from "@/components/SEO";
 
 // ============================================================
@@ -354,7 +354,7 @@ export function Resources() {
               The most useful thing we offer for free is the diagnostic. It identifies your child's specific gaps, better than any checklist.
             </p>
             <a href={DIAGNOSTIC_URL} className="cu-btn-primary" style={{ fontSize: 16, padding: "16px 36px" }}>
-              Start free diagnostic →
+              {CTA_LABEL} →
             </a>
           </div>
         </div>
