@@ -3,7 +3,8 @@
 
 export const APP_URL = import.meta.env.VITE_APP_URL ?? "https://app.classup.com.au";
 export const DIAGNOSTIC_URL = `${APP_URL}/auth/sign-up?intent=diagnostic`;
-export const FOUNDERS_CODE = "FOUNDERS";
+// Free holiday program for invited families. The app grants access until this date.
+export const HOLIDAY_PROGRAM_END = "28 February 2027";
 
 // Single source of truth for the displayed product version (footer + roadmap).
 export const CLASSUP_VERSION = "v1.8";
